@@ -1,0 +1,9 @@
+<map id="Graniastoslup::rotacja" name="Graniastoslup::rotacja">
+<area shape="rect" id="node1" title="Metoda obracająca graniastoslup o zadaną Macierz3x3." alt="" coords="523,81,688,108"/>
+<area shape="rect" id="node2" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt." alt="" coords="353,5,446,32"/>
+<area shape="rect" id="node5" href="$classdron.html#add74d8f5673cf96226319b1c88c3439d" title="Metoda odpowidająca za obrót rotorów." alt="" coords="324,56,475,83"/>
+<area shape="rect" id="node6" href="$classdron.html#a064414beef887c2a9c3cb73956f6b8e2" title="Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY Przesuwa dron..." alt="" coords="329,107,470,133"/>
+<area shape="rect" id="node7" href="$classdron.html#a5715e0708e2cae90d853b37da355f755" title="Metoda odpowiadająca za ruch pionowy Przesuwa drona w górę o wartość podaną przez zmienną pion." alt="" coords="325,157,474,184"/>
+<area shape="rect" id="node3" href="$classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="181,81,276,108"/>
+<area shape="rect" id="node4" href="$class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,81,133,108"/>
+</map>

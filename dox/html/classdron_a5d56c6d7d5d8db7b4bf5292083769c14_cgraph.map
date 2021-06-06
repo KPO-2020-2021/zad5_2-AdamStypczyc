@@ -1,0 +1,4 @@
+<map id="dron::pokaz_srodek" name="dron::pokaz_srodek">
+<area shape="rect" id="node1" title="Metoda zwracająca Wektor3D będący środkiem korpusu drona." alt="" coords="5,13,153,39"/>
+<area shape="rect" id="node2" href="$class_graniastoslup.html#a745ff61bd79e1f10c3e66816a1b6dea0" title="Metoda pokazująca wartość środka Umożliwia podgląd wartości środka." alt="" coords="201,5,360,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="PzG::LaczeDoGNUPlota::DodajNazwePliku" name="PzG::LaczeDoGNUPlota::DodajNazwePliku">
+<area shape="rect" id="node1" title="Dodaje nazwę pliku." alt="" coords="337,49,511,90"/>
+<area shape="rect" id="node2" href="$classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="188,5,283,32"/>
+<area shape="rect" id="node4" href="$classdron.html#a2a6f71538eb4a1413c1eddeb82abee54" title="Konstruktor parametryczny klasy dron. Buduje drona i tworzy pliki w których będą zapisywanie punkty...." alt="" coords="191,56,279,83"/>
+<area shape="rect" id="node5" href="$class_scena.html#a8f9fe11b4cfef890123a2acc94672e17" title="Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacz..." alt="" coords="181,107,289,133"/>
+<area shape="rect" id="node3" href="$class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,5,133,32"/>
+</map>

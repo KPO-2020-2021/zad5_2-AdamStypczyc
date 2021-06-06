@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/adam/zad5_2-AdamStypczyc/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/zad5_2-AdamStypczyc/build -I/home/adam/zad5_2-AdamStypczyc/include -I/home/adam/zad5_2-AdamStypczyc/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/example.cpp.o -c /home/adam/zad5_2-AdamStypczyc/src/example.cpp",
+  "file": "/home/adam/zad5_2-AdamStypczyc/src/example.cpp"
+},
+{
+  "directory": "/home/adam/zad5_2-AdamStypczyc/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/zad5_2-AdamStypczyc/build -I/home/adam/zad5_2-AdamStypczyc/include -I/home/adam/zad5_2-AdamStypczyc/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o -c /home/adam/zad5_2-AdamStypczyc/src/lacze_do_gnuplota.cpp",
+  "file": "/home/adam/zad5_2-AdamStypczyc/src/lacze_do_gnuplota.cpp"
+},
+{
+  "directory": "/home/adam/zad5_2-AdamStypczyc/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/zad5_2-AdamStypczyc/build -I/home/adam/zad5_2-AdamStypczyc/include -I/home/adam/zad5_2-AdamStypczyc/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/adam/zad5_2-AdamStypczyc/app/main.cpp",
+  "file": "/home/adam/zad5_2-AdamStypczyc/app/main.cpp"
+},
+{
+  "directory": "/home/adam/zad5_2-AdamStypczyc/build/tests",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/zad5_2-AdamStypczyc/build -I/home/adam/zad5_2-AdamStypczyc/include -I/home/adam/zad5_2-AdamStypczyc/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/adam/zad5_2-AdamStypczyc/tests/main.cpp",
+  "file": "/home/adam/zad5_2-AdamStypczyc/tests/main.cpp"
+},
+{
+  "directory": "/home/adam/zad5_2-AdamStypczyc/build/tests",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/zad5_2-AdamStypczyc/build -I/home/adam/zad5_2-AdamStypczyc/include -I/home/adam/zad5_2-AdamStypczyc/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/dummy.cpp.o -c /home/adam/zad5_2-AdamStypczyc/tests/dummy.cpp",
+  "file": "/home/adam/zad5_2-AdamStypczyc/tests/dummy.cpp"
+},
+{
+  "directory": "/home/adam/zad5_2-AdamStypczyc/build/tests",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/zad5_2-AdamStypczyc/build -I/home/adam/zad5_2-AdamStypczyc/include -I/home/adam/zad5_2-AdamStypczyc/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/testy.cpp.o -c /home/adam/zad5_2-AdamStypczyc/tests/testy.cpp",
+  "file": "/home/adam/zad5_2-AdamStypczyc/tests/testy.cpp"
+}
+]

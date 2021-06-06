@@ -1,0 +1,5 @@
+<map id="dron::przesuniecie" name="dron::przesuniecie">
+<area shape="rect" id="node1" title="Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY Przesuwa dron..." alt="" coords="5,31,147,57"/>
+<area shape="rect" id="node2" href="$class_graniastoslup.html#af28f2a0fb8f52e3f1251e47254a03404" title="Metoda obracająca graniastoslup o zadaną Macierz3x3." alt="" coords="204,5,369,32"/>
+<area shape="rect" id="node3" href="$class_graniastoslup.html#afe0e06825a77641f7e88150f5de6e43e" title="Metoda przesuwająca graniastoslup o zadany wektor3D." alt="" coords="195,56,379,83"/>
+</map>

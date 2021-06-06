@@ -1,0 +1,7 @@
+<map id="dron::dron" name="dron::dron">
+<area shape="rect" id="node1" title="Konstruktor parametryczny klasy dron. Buduje drona i tworzy pliki w których będą zapisywanie punkty...." alt="" coords="5,107,93,134"/>
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="147,5,320,47"/>
+<area shape="rect" id="node3" href="$class_graniastoslup.html#af75f7a863e9ef54c2cccb510b0f03ded" title="Metoda pokazująca nazwę pliku Umożliwia podgląd nazwy pliku." alt="" coords="154,71,313,112"/>
+<area shape="rect" id="node4" href="$class_graniastoslup.html#afe0e06825a77641f7e88150f5de6e43e" title="Metoda przesuwająca graniastoslup o zadany wektor3D." alt="" coords="141,137,325,163"/>
+<area shape="rect" id="node5" href="$class_graniastoslup.html#a8ce7eb4fc97b7ae53699457869d47325" title="Metoda ustawiająca nazwę pliku Umożliwia przypisanie nazwy pliku." alt="" coords="154,188,313,229"/>
+</map>

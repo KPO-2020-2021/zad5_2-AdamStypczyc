@@ -1,0 +1,5 @@
+<map id="PzG::LaczeDoGNUPlota::UstawSkaleXZ" name="PzG::LaczeDoGNUPlota::UstawSkaleXZ">
+<area shape="rect" id="node1" title="Zadaje skalę wzdłuż osi OX i OZ." alt="" coords="5,39,179,80"/>
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a855b8338bfe3e5d294d719f24b11090e" title="Zadaje skalę wzdłuż osi OZ." alt="" coords="227,5,400,47"/>
+<area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab0486db3166d8db6580a221079af241f" title="Zadaje skalę wzdłuż osi OZ." alt="" coords="227,71,400,112"/>
+</map>

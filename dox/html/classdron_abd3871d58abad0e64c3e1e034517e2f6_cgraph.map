@@ -1,0 +1,4 @@
+<map id="dron::przypisz_sciezke" name="dron::przypisz_sciezke">
+<area shape="rect" id="node1" title="Metoda odpowiadjąca za budowę ścieżki lotu drona." alt="" coords="5,13,173,39"/>
+<area shape="rect" id="node2" href="$class_graniastoslup.html#a745ff61bd79e1f10c3e66816a1b6dea0" title="Metoda pokazująca wartość środka Umożliwia podgląd wartości środka." alt="" coords="221,5,380,47"/>
+</map>

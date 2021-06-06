@@ -1,0 +1,55 @@
+\hypertarget{namespacePzG}{}\doxysection{PzG Namespace Reference}
+\label{namespacePzG}\index{PzG@{PzG}}
+
+
+Moduł narzędzi umożliwiających połącznie z G\+N\+U\+Plotem.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPzG_1_1InfoPlikuDoRysowania}{Info\+Pliku\+Do\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Zestaw informacji dotyczący pliku i sposobu rysowania. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classPzG_1_1LaczeDoGNUPlota}{Lacze\+Do\+G\+N\+U\+Plota}}
+\begin{DoxyCompactList}\small\item\em Klasa realizuje interfejs do programu G\+N\+U\+Plot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacePzG_aeedae1ef10c66d720f9e89de408ca4ca}{Tryb\+Rysowania}} \{ {\bfseries T\+R\+\_\+2D}, 
+{\bfseries T\+R\+\_\+3D}
+ \}
+\begin{DoxyCompactList}\small\item\em Określa tryb rysowania realizowanego przez program {\ttfamily gnuplot}. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacePzG_a705c92106f39b7d0c34a6739d10ff0b6}{Rodzaj\+Rysowania}} \{ {\bfseries R\+R\+\_\+\+Ciagly}, 
+{\bfseries R\+R\+\_\+\+Punktowy}
+ \}
+\begin{DoxyCompactList}\small\item\em Sposób rysowania linii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Moduł narzędzi umożliwiających połącznie z G\+N\+U\+Plotem. 
+
+Niniejsza przestrzeń nazw stanowi moduł logiczny zawierający narzędzia umożliwiające realizację połączenia z programem {\ttfamily gnuplot}. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacePzG_a705c92106f39b7d0c34a6739d10ff0b6}\label{namespacePzG_a705c92106f39b7d0c34a6739d10ff0b6}} 
+\index{PzG@{PzG}!RodzajRysowania@{RodzajRysowania}}
+\index{RodzajRysowania@{RodzajRysowania}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{RodzajRysowania}{RodzajRysowania}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacePzG_a705c92106f39b7d0c34a6739d10ff0b6}{Pz\+G\+::\+Rodzaj\+Rysowania}}}
+
+
+
+Sposób rysowania linii. 
+
+Określa sposób rysowania linii. \mbox{\Hypertarget{namespacePzG_aeedae1ef10c66d720f9e89de408ca4ca}\label{namespacePzG_aeedae1ef10c66d720f9e89de408ca4ca}} 
+\index{PzG@{PzG}!TrybRysowania@{TrybRysowania}}
+\index{TrybRysowania@{TrybRysowania}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TrybRysowania}{TrybRysowania}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacePzG_aeedae1ef10c66d720f9e89de408ca4ca}{Pz\+G\+::\+Tryb\+Rysowania}}}
+
+
+
+Określa tryb rysowania realizowanego przez program {\ttfamily gnuplot}. 
+
+Typ wyliczeniowy określające dopuszczalne tryby rysowania realizowanego przez program {\ttfamily gnuplot}. Wybór trybu wiąże się ze zmianą sposobu interpretacji danych zawartych pliku. Jeśli np. wybrany zostanie tryb 2D, to zakłada się, że w każdej linii pliku z danymi znajdują się wartości współrzędnych {\itshape x}, {\itshape y}. Wartości typu\+: \begin{DoxyItemize}
+\item {\ttfamily T\+R\+\_\+2D} -\/ rysowanie w trybie 2D, co sprowadza się do rysowania wykresów funkcji jednej zmiennej. \item {\ttfamily T\+R\+\_\+3D} -\/ rysowanie w trybie 3D. Oznacza to możliwość rysowania wykresów funkcji dwóch zmiennych. \end{DoxyItemize}

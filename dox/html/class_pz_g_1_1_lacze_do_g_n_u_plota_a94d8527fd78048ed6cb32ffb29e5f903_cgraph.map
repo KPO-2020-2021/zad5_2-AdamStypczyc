@@ -1,0 +1,5 @@
+<map id="PzG::LaczeDoGNUPlota::UstawRotacjeXZ" name="PzG::LaczeDoGNUPlota::UstawRotacjeXZ">
+<area shape="rect" id="node1" title="Ustawia rotację wokół osi OX i OZ." alt="" coords="5,39,179,80"/>
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56" title="Ustawia rotację wokół osi OX." alt="" coords="227,5,400,47"/>
+<area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1" title="Ustawia rotację wokół osi OZ." alt="" coords="227,71,400,112"/>
+</map>

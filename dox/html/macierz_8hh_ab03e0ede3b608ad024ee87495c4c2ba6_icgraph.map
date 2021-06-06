@@ -1,0 +1,7 @@
+<map id="Oblicz_Macierz_ObrotuZ" name="Oblicz_Macierz_ObrotuZ">
+<area shape="rect" id="node1" title="Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj..." alt="" coords="523,31,703,57"/>
+<area shape="rect" id="node2" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt." alt="" coords="353,5,446,32"/>
+<area shape="rect" id="node5" href="$classdron.html#add74d8f5673cf96226319b1c88c3439d" title="Metoda odpowidająca za obrót rotorów." alt="" coords="324,56,475,83"/>
+<area shape="rect" id="node3" href="$classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="181,31,276,57"/>
+<area shape="rect" id="node4" href="$class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,31,133,57"/>
+</map>

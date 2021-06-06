@@ -1,0 +1,7 @@
+<map id="Graniastoslup::pokaz_srodek" name="Graniastoslup::pokaz_srodek">
+<area shape="rect" id="node1" title="Metoda pokazująca wartość środka Umożliwia podgląd wartości środka." alt="" coords="593,23,752,65"/>
+<area shape="rect" id="node2" href="$classdron.html#a5d56c6d7d5d8db7b4bf5292083769c14" title="Metoda zwracająca Wektor3D będący środkiem korpusu drona." alt="" coords="181,5,329,32"/>
+<area shape="rect" id="node4" href="$classdron.html#abd3871d58abad0e64c3e1e034517e2f6" title="Metoda odpowiadjąca za budowę ścieżki lotu drona." alt="" coords="377,56,545,83"/>
+<area shape="rect" id="node3" href="$class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,31,133,57"/>
+<area shape="rect" id="node5" href="$classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="208,56,303,83"/>
+</map>

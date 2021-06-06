@@ -1,54 +1,21 @@
-
+## Podsumowanie mojej pracy
+Celem tego zadania było wymodelowanie dwóch dronów i umożliwienie poruszania się tym dronem. Problemów z tym zadaniem miałem wiele. Na samym początku problemem było poprawne zrozumienie diagramu załączonego w opisie zadania. Potem okazało się, że w rzeczywistości diagram jest bardziej poglądowy i trzeba było zrozumieć jak ten program miał wogóle wyglądać i chyba to było jednym z większych problemów. Po napisaniu co najmniej trzech wersji tego programu (nie wrzucałem ich na gita, bo nie wiedziałem czy idę w dobrą stronę) bardzo powili zaczęło się coś klarować. Rozmowy z kolegami na discordzie też pomogły. Krótką zagadką było jak tworzyć graniastosłup sześciokątny formeny, ale to było przyjemne odświeżenie wiadomości z gimnazjum. Większą zagadką było jak zapisywać graniastosłup sześciokątny formeny i prostopadłościan do pliku tak aby gnuplot rysował to jak należy. Następnie samo zbudowanie drona zajęło dużo czasu. Również różne translacje i rotacje były problemem, bo nie wiedziałem jak ma to wyglądać, gdy już myślałem, że jest dobrze dron zamiast ładnie się poruszać teleportował się i na dodatek nie na to miejsce gdzie miał wylądować. Problemów było wiele, nie pamiętam wszystkich, szło jak po gruzie, ale ważne, że jakoś się udało. Testy odpala się za pomoca ./unit_tests, a program za pomocą ./main. Przy testach dałem wymóg aby kliknąć ENTER, aby było możliwe zobaczenie rysunków w gnuplocie. 
 ## Building
 
 Build by making a build directory (i.e. `build/`), run `cmake` in that dir, and then use `make` to build the desired target.
 
-Requirements: cmake, gnuplot, doxygen + dot (in graphviz library)
+Requirements: 
 
 Example:
 
 ``` bash
 > mkdir build && cd build
-> cmake .. #### options: -DCMAKE_BUILD_TYPE=[Debug | Coverage | Release], Debug is default
-> make     #### compilation
-> ./main   #### main() from app
-> make test      #### Compile the tests
-> ./unit_tests -s   #### Start the tests, -s flag - full description of each case
-> make fulltest #### alternative for above, compile & run tests with full decription
-> make coverage  #### Generate a coverage report
-> make doc       #### Generate html documentation
+> cmake .. # options: -DCMAKE_BUILD_TYPE=[Debug | Coverage | Release], Debug is default
+> make
+> ./main
+> make test      # Makes and runs the tests.
+> make coverage  # Generate a coverage report.
+> make doc       # Generate html documentation.
 ```
 
-Things to remember:
-* changes to CMakeLists.txt in the main folder with new files added, i.e.:
-```cpp
-# --------------------------------------------------------------------------------
-#                         Locate files (change as needed).
-# --------------------------------------------------------------------------------
-set(SOURCES          # All .cpp files in src/
-    src/lacze_do_gnuplota
-    src/Matrix2x2.cpp
-    src/Rectangle .cpp
-    src/Vector2D.cpp # etc.
-)
-set(TESTFILES        # All .cpp files in tests/
-    Vector2D.cpp
-    Matrix2x2.cpp
-    Rectangle.cpp # etc.
-)
-set(LIBRARY_NAME zadX)  # Default name for the library built from src/*.cpp (change if you wish)
-```
-* changes to tests/CMakeLists.txt (in tests subfolder) with new files added, i.e.:
-```cpp
-# List all files containing tests. (Change as needed)
-set(TESTFILES        # All .cpp files in tests/
-    main.cpp
-    test_Wektor2D.cpp
-    test_Macierz2x2.cpp
-    test_Prostokat.cpp # etc.
-)
-```
-The `main.cpp` in the folder `tests` is needed. Only there we define `#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN`.
-
-The main loop of the program is in the `app` folder.
 

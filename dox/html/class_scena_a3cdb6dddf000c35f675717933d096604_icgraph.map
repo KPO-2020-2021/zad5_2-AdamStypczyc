@@ -1,0 +1,4 @@
+<map id="Scena::stworz_siatka" name="Scena::stworz_siatka">
+<area shape="rect" id="node1" title="Metoda tworząca podłoże na którym może wylądować dron." alt="" coords="161,5,320,32"/>
+<area shape="rect" id="node2" href="$class_scena.html#a8f9fe11b4cfef890123a2acc94672e17" title="Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacz..." alt="" coords="5,5,113,32"/>
+</map>

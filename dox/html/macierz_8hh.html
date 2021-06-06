@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron 5.1: Dokumentacja pliku /home/adam/zad5_1-AdamStypczyc/include/Macierz.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Zrzut ekranu z 2021-06-05 17-13-31.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron 5.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#typedef-members">Definicje typów</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Macierz.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;macierz.hh&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="wektor_8hh_source.html">wektor.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_wektor3_d_8hh_source.html">Wektor3D.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="size_8hh_source.html">size.hh</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Macierz.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="macierz_8hh__incl.png" border="0" usemap="#_2home_2adam_2zad5__1-_adam_stypczyc_2include_2_macierz_8hh" alt=""/></div>
+<map name="_2home_2adam_2zad5__1-_adam_stypczyc_2include_2_macierz_8hh" id="_2home_2adam_2zad5__1-_adam_stypczyc_2include_2_macierz_8hh">
+<area shape="rect" title=" " alt="" coords="169,5,424,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,100,121"/>
+<area shape="rect" title=" " alt="" coords="131,244,211,271"/>
+<area shape="rect" title=" " alt="" coords="176,95,241,121"/>
+<area shape="rect" title=" " alt="" coords="265,95,328,121"/>
+<area shape="rect" href="wektor_8hh.html" title=" " alt="" coords="323,169,409,196"/>
+<area shape="rect" href="_wektor3_d_8hh.html" title=" " alt="" coords="403,95,510,121"/>
+<area shape="rect" href="size_8hh.html" title=" " alt="" coords="535,95,603,121"/>
+<area shape="rect" title=" " alt="" coords="299,244,369,271"/>
+<area shape="rect" title=" " alt="" coords="393,244,504,271"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="macierz_8hh__dep__incl.png" border="0" usemap="#_2home_2adam_2zad5__1-_adam_stypczyc_2include_2_macierz_8hhdep" alt=""/></div>
+<map name="_2home_2adam_2zad5__1-_adam_stypczyc_2include_2_macierz_8hhdep" id="_2home_2adam_2zad5__1-_adam_stypczyc_2include_2_macierz_8hhdep">
+<area shape="rect" title=" " alt="" coords="144,5,399,47"/>
+<area shape="rect" href="_graniastoslup_8hh.html" title=" " alt="" coords="144,95,399,136"/>
+<area shape="rect" href="_prostopadloscian_8hh.html" title=" " alt="" coords="5,184,260,225"/>
+<area shape="rect" href="_graniastoslup6_8hh.html" title=" " alt="" coords="284,184,539,225"/>
+<area shape="rect" href="dron_8hh.html" title=" " alt="" coords="144,273,399,315"/>
+<area shape="rect" href="_scena_8hh.html" title=" " alt="" coords="144,363,399,404"/>
+</map>
+</div>
+</div>
+<p><a href="macierz_8hh_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_macierz.html">Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Szablon macierzy. Szablon ten jest szablonem klasy macierz. Zawiera on elementy potrzebne do utworzenia macierzy oraz wykonywania na niej różnych operacji. Zawiera on tablicę o rozmiarach odopowiadających naszej macierzy oraz kąty potrzebne do obrotów 2D i 3D (kąty X, Y, Z).  <a href="class_macierz.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Definicje typów</h2></td></tr>
+<tr class="memitem:a521222a45761c65bc0ce5f9fc8d78642"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_macierz.html">Macierz</a>&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a></td></tr>
+<tr class="memdesc:a521222a45761c65bc0ce5f9fc8d78642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deklaracja Macierzy3x3 Deklaracja macierzy 3D.  <a href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Więcej...</a><br /></td></tr>
+<tr class="separator:a521222a45761c65bc0ce5f9fc8d78642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:afb24d6954c7f17e9877a2e706f9641cd"><td class="memTemplParams" colspan="2">template&lt;typename Templ_Typ , unsigned int Templ_Rozmiar&gt; </td></tr>
+<tr class="memitem:afb24d6954c7f17e9877a2e706f9641cd"><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#afb24d6954c7f17e9877a2e706f9641cd">operator&gt;&gt;</a> (std::istream &amp;in, <a class="el" href="class_macierz.html">Macierz</a>&lt; Templ_Typ, Templ_Rozmiar &gt; &amp;mat)</td></tr>
+<tr class="memdesc:afb24d6954c7f17e9877a2e706f9641cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeciążenie operatora strumieniowego in dla macierzy. Umożliwia bezpośredie wczytanie macierzy.  <a href="macierz_8hh.html#afb24d6954c7f17e9877a2e706f9641cd">Więcej...</a><br /></td></tr>
+<tr class="separator:afb24d6954c7f17e9877a2e706f9641cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb0106d7d361fa1b5b9deaa8c6ccd99"><td class="memTemplParams" colspan="2">template&lt;typename Templ_Typ , unsigned int Templ_Rozmiar&gt; </td></tr>
+<tr class="memitem:adcb0106d7d361fa1b5b9deaa8c6ccd99"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#adcb0106d7d361fa1b5b9deaa8c6ccd99">operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="class_macierz.html">Macierz</a>&lt; Templ_Typ, Templ_Rozmiar &gt; const &amp;mat)</td></tr>
+<tr class="memdesc:adcb0106d7d361fa1b5b9deaa8c6ccd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeciążenie operatora strumieniowego out dla macierzy. Umożliwia bezpośredie wyświetlenie macierzy.  <a href="macierz_8hh.html#adcb0106d7d361fa1b5b9deaa8c6ccd99">Więcej...</a><br /></td></tr>
+<tr class="separator:adcb0106d7d361fa1b5b9deaa8c6ccd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f2d415620421f0af240368b8fb1acd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#a11f2d415620421f0af240368b8fb1acd">StopienNaRadianX</a> (double kat_stopnieX)</td></tr>
+<tr class="memdesc:a11f2d415620421f0af240368b8fb1acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamaina stopni na radian 3D wokół OX. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OX. <br  />
+  <a href="macierz_8hh.html#a11f2d415620421f0af240368b8fb1acd">Więcej...</a><br /></td></tr>
+<tr class="separator:a11f2d415620421f0af240368b8fb1acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96260376d8636a98532697b9be1979f5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#a96260376d8636a98532697b9be1979f5">StopienNaRadianY</a> (double kat_stopnieY)</td></tr>
+<tr class="memdesc:a96260376d8636a98532697b9be1979f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamaina stopni na radian 3D wokół OY. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OY. <br  />
+  <a href="macierz_8hh.html#a96260376d8636a98532697b9be1979f5">Więcej...</a><br /></td></tr>
+<tr class="separator:a96260376d8636a98532697b9be1979f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0840da738fad890f0b2e2cbd67c0c78"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78">StopienNaRadianZ</a> (double kat_stopnieZ)</td></tr>
+<tr class="memdesc:ab0840da738fad890f0b2e2cbd67c0c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OZ. <br  />
+  <a href="macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78">Więcej...</a><br /></td></tr>
+<tr class="separator:ab0840da738fad890f0b2e2cbd67c0c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619b64a288fbc0f150584a232d9f7ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#a619b64a288fbc0f150584a232d9f7ac4">Oblicz_Macierz_ObrotuX</a> (double kat_radianX, <a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a> &amp;Mac)</td></tr>
+<tr class="memdesc:a619b64a288fbc0f150584a232d9f7ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obliczająca macierz obrotu 3D OX. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OX.  <a href="macierz_8hh.html#a619b64a288fbc0f150584a232d9f7ac4">Więcej...</a><br /></td></tr>
+<tr class="separator:a619b64a288fbc0f150584a232d9f7ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61604dcde37db920a005329e79e59616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#a61604dcde37db920a005329e79e59616">Oblicz_Macierz_ObrotuY</a> (double kat_radianY, <a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a> &amp;Mac)</td></tr>
+<tr class="memdesc:a61604dcde37db920a005329e79e59616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obliczająca macierz obrotu 3D OY. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OY.  <a href="macierz_8hh.html#a61604dcde37db920a005329e79e59616">Więcej...</a><br /></td></tr>
+<tr class="separator:a61604dcde37db920a005329e79e59616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03e0ede3b608ad024ee87495c4c2ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6">Oblicz_Macierz_ObrotuZ</a> (double kat_radianZ, <a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a> &amp;Mac)</td></tr>
+<tr class="memdesc:ab03e0ede3b608ad024ee87495c4c2ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OZ.  <a href="macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6">Więcej...</a><br /></td></tr>
+<tr class="separator:ab03e0ede3b608ad024ee87495c4c2ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja definicji typów</h2>
+<a id="a521222a45761c65bc0ce5f9fc8d78642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521222a45761c65bc0ce5f9fc8d78642">&#9670;&nbsp;</a></span>Macierz3x3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_macierz.html">Macierz</a>&lt;double, 3&gt; <a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deklaracja Macierzy3x3 Deklaracja macierzy 3D. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00009">9</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a619b64a288fbc0f150584a232d9f7ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619b64a288fbc0f150584a232d9f7ac4">&#9670;&nbsp;</a></span>Oblicz_Macierz_ObrotuX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oblicz_Macierz_ObrotuX </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat_radianX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Mac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja obliczająca macierz obrotu 3D OX. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OX. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00045">45</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+
+</div>
+</div>
+<a id="a61604dcde37db920a005329e79e59616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61604dcde37db920a005329e79e59616">&#9670;&nbsp;</a></span>Oblicz_Macierz_ObrotuY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oblicz_Macierz_ObrotuY </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat_radianY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Mac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja obliczająca macierz obrotu 3D OY. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OY. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00061">61</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+
+</div>
+</div>
+<a id="ab03e0ede3b608ad024ee87495c4c2ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03e0ede3b608ad024ee87495c4c2ba6">&#9670;&nbsp;</a></span>Oblicz_Macierz_ObrotuZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oblicz_Macierz_ObrotuZ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat_radianZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Mac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OZ. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00077">77</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="macierz_8hh_ab03e0ede3b608ad024ee87495c4c2ba6_icgraph.png" border="0" usemap="#macierz_8hh_ab03e0ede3b608ad024ee87495c4c2ba6_icgraph" alt=""/></div>
+<map name="macierz_8hh_ab03e0ede3b608ad024ee87495c4c2ba6_icgraph" id="macierz_8hh_ab03e0ede3b608ad024ee87495c4c2ba6_icgraph">
+<area shape="rect" title="Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj..." alt="" coords="523,31,703,57"/>
+<area shape="rect" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt." alt="" coords="353,5,446,32"/>
+<area shape="rect" href="classdron.html#add74d8f5673cf96226319b1c88c3439d" title="Metoda odpowidająca za obrót rotorów." alt="" coords="324,56,475,83"/>
+<area shape="rect" href="classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="181,31,276,57"/>
+<area shape="rect" href="class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,31,133,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adcb0106d7d361fa1b5b9deaa8c6ccd99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb0106d7d361fa1b5b9deaa8c6ccd99">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Typ , unsigned int Templ_Rozmiar&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_macierz.html">Macierz</a>&lt; Templ_Typ, Templ_Rozmiar &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Przeciążenie operatora strumieniowego out dla macierzy. Umożliwia bezpośredie wyświetlenie macierzy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>strumień wyjściowy </td></tr>
+    <tr><td class="paramname">mat</td><td>macierz odpowiadająca wyświetlaniej macierzy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca strumień wyjściowy out. </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00287">287</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+
+</div>
+</div>
+<a id="afb24d6954c7f17e9877a2e706f9641cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb24d6954c7f17e9877a2e706f9641cd">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Typ , unsigned int Templ_Rozmiar&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_macierz.html">Macierz</a>&lt; Templ_Typ, Templ_Rozmiar &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Przeciążenie operatora strumieniowego in dla macierzy. Umożliwia bezpośredie wczytanie macierzy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>strumień wejściowy </td></tr>
+    <tr><td class="paramname">mat</td><td>macierz odpowiadająca wczytywanej macierzy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca strumień wejściowy in. </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00267">267</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+
+</div>
+</div>
+<a id="a11f2d415620421f0af240368b8fb1acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f2d415620421f0af240368b8fb1acd">&#9670;&nbsp;</a></span>StopienNaRadianX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StopienNaRadianX </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat_stopnieX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zamaina stopni na radian 3D wokół OX. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OX. <br  />
+ </p>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00014">14</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+
+</div>
+</div>
+<a id="a96260376d8636a98532697b9be1979f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96260376d8636a98532697b9be1979f5">&#9670;&nbsp;</a></span>StopienNaRadianY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StopienNaRadianY </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat_stopnieY</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zamaina stopni na radian 3D wokół OY. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OY. <br  />
+ </p>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00024">24</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+
+</div>
+</div>
+<a id="ab0840da738fad890f0b2e2cbd67c0c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0840da738fad890f0b2e2cbd67c0c78">&#9670;&nbsp;</a></span>StopienNaRadianZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StopienNaRadianZ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat_stopnieZ</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OZ. <br  />
+ </p>
+
+<p class="definition">Definicja w linii <a class="el" href="macierz_8hh_source.html#l00034">34</a> pliku <a class="el" href="macierz_8hh_source.html">Macierz.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="macierz_8hh_ab0840da738fad890f0b2e2cbd67c0c78_icgraph.png" border="0" usemap="#macierz_8hh_ab0840da738fad890f0b2e2cbd67c0c78_icgraph" alt=""/></div>
+<map name="macierz_8hh_ab0840da738fad890f0b2e2cbd67c0c78_icgraph" id="macierz_8hh_ab0840da738fad890f0b2e2cbd67c0c78_icgraph">
+<area shape="rect" title="Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach,..." alt="" coords="523,31,665,57"/>
+<area shape="rect" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt." alt="" coords="353,5,446,32"/>
+<area shape="rect" href="classdron.html#add74d8f5673cf96226319b1c88c3439d" title="Metoda odpowidająca za obrót rotorów." alt="" coords="324,56,475,83"/>
+<area shape="rect" href="classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="181,31,276,57"/>
+<area shape="rect" href="class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,31,133,57"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

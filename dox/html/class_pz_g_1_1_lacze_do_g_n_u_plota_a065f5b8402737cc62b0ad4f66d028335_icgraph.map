@@ -1,0 +1,6 @@
+<map id="PzG::LaczeDoGNUPlota::Rysuj" name="PzG::LaczeDoGNUPlota::Rysuj">
+<area shape="rect" id="node1" title=" " alt="" coords="337,23,511,65"/>
+<area shape="rect" id="node2" href="$classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="188,5,283,32"/>
+<area shape="rect" id="node4" href="$class_scena.html#a8f9fe11b4cfef890123a2acc94672e17" title="Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacz..." alt="" coords="181,56,289,83"/>
+<area shape="rect" id="node3" href="$class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,5,133,32"/>
+</map>

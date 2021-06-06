@@ -1,0 +1,7 @@
+<map id="dron::obrot_rotorow" name="dron::obrot_rotorow">
+<area shape="rect" id="node1" title="Metoda odpowidająca za obrót rotorów." alt="" coords="5,81,156,108"/>
+<area shape="rect" id="node2" href="$macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6" title="Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj..." alt="" coords="206,5,386,32"/>
+<area shape="rect" id="node3" href="$class_graniastoslup.html#af28f2a0fb8f52e3f1251e47254a03404" title="Metoda obracająca graniastoslup o zadaną Macierz3x3." alt="" coords="213,56,379,83"/>
+<area shape="rect" id="node4" href="$macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78" title="Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach,..." alt="" coords="225,107,367,133"/>
+<area shape="rect" id="node5" href="$class_graniastoslup.html#afe0e06825a77641f7e88150f5de6e43e" title="Metoda przesuwająca graniastoslup o zadany wektor3D." alt="" coords="204,157,388,184"/>
+</map>

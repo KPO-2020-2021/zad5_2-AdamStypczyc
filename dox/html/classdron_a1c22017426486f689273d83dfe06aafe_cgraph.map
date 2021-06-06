@@ -1,0 +1,18 @@
+<map id="dron::akcja" name="dron::akcja">
+<area shape="rect" id="node1" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="5,223,100,250"/>
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="148,5,321,47"/>
+<area shape="rect" id="node3" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt." alt="" coords="188,122,281,149"/>
+<area shape="rect" id="node8" href="$classdron.html#add74d8f5673cf96226319b1c88c3439d" title="Metoda odpowidająca za obrót rotorów." alt="" coords="159,71,310,98"/>
+<area shape="rect" id="node9" href="$classdron.html#a064414beef887c2a9c3cb73956f6b8e2" title="Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY Przesuwa dron..." alt="" coords="164,223,305,250"/>
+<area shape="rect" id="node10" href="$classdron.html#abd3871d58abad0e64c3e1e034517e2f6" title="Metoda odpowiadjąca za budowę ścieżki lotu drona." alt="" coords="151,274,319,301"/>
+<area shape="rect" id="node12" href="$classdron.html#a5715e0708e2cae90d853b37da355f755" title="Metoda odpowiadająca za ruch pionowy Przesuwa drona w górę o wartość podaną przez zmienną pion." alt="" coords="160,173,309,199"/>
+<area shape="rect" id="node13" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="148,325,321,367"/>
+<area shape="rect" id="node14" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407" title="Usuwa ostatnią nazwę pliku." alt="" coords="148,391,321,432"/>
+<area shape="rect" id="node15" href="$classdron.html#accd205169ce787882dbaeb916a6863f9" title="Metoda zapisujaca drona do plików." alt="" coords="185,457,285,483"/>
+<area shape="rect" id="node4" href="$macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6" title="Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj..." alt="" coords="371,42,551,69"/>
+<area shape="rect" id="node5" href="$class_graniastoslup.html#af28f2a0fb8f52e3f1251e47254a03404" title="Metoda obracająca graniastoslup o zadaną Macierz3x3." alt="" coords="379,143,544,170"/>
+<area shape="rect" id="node6" href="$macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78" title="Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach,..." alt="" coords="390,93,533,119"/>
+<area shape="rect" id="node7" href="$class_graniastoslup.html#afe0e06825a77641f7e88150f5de6e43e" title="Metoda przesuwająca graniastoslup o zadany wektor3D." alt="" coords="369,194,553,221"/>
+<area shape="rect" id="node11" href="$class_graniastoslup.html#a745ff61bd79e1f10c3e66816a1b6dea0" title="Metoda pokazująca wartość środka Umożliwia podgląd wartości środka." alt="" coords="382,267,541,308"/>
+<area shape="rect" id="node16" href="$class_graniastoslup.html#aeae2daf769c021e51bed7583ea926fbd" title="Metoda zapisująca graniastoslup do pliku." alt="" coords="384,457,539,483"/>
+</map>

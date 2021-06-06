@@ -1,0 +1,5 @@
+<map id="dron::ruch_pionowy" name="dron::ruch_pionowy">
+<area shape="rect" id="node1" title="Metoda odpowiadająca za ruch pionowy Przesuwa drona w górę o wartość podaną przez zmienną pion." alt="" coords="5,31,155,57"/>
+<area shape="rect" id="node2" href="$class_graniastoslup.html#af28f2a0fb8f52e3f1251e47254a03404" title="Metoda obracająca graniastoslup o zadaną Macierz3x3." alt="" coords="212,5,377,32"/>
+<area shape="rect" id="node3" href="$class_graniastoslup.html#afe0e06825a77641f7e88150f5de6e43e" title="Metoda przesuwająca graniastoslup o zadany wektor3D." alt="" coords="203,56,387,83"/>
+</map>

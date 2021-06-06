@@ -1,0 +1,5 @@
+<map id="dron::obrot_rotorow" name="dron::obrot_rotorow">
+<area shape="rect" id="node1" title="Metoda odpowidająca za obrót rotorów." alt="" coords="324,5,475,32"/>
+<area shape="rect" id="node2" href="$classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="181,5,276,32"/>
+<area shape="rect" id="node3" href="$class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,5,133,32"/>
+</map>

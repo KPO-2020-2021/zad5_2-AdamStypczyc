@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/unit_tests.dir/main.cpp.o CMakeFiles/unit_tests.dir/dummy.cpp.o CMakeFiles/unit_tests.dir/testy.cpp.o ../CMakeFiles/engine.dir/src/example.cpp.o ../CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o -o ../unit_tests 

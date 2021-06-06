@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron 5.1: Plik źródłowy /home/adam/zad5_1-AdamStypczyc/include/Macierz.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Zrzut ekranu z 2021-06-05 17-13-31.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron 5.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Macierz.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="macierz_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;macierz.hh&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="size_8hh.html">size.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">    9</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_macierz.html">Macierz&lt;double, 3&gt;</a> <a class="code" href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="macierz_8hh.html#a11f2d415620421f0af240368b8fb1acd">   14</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="macierz_8hh.html#a11f2d415620421f0af240368b8fb1acd">StopienNaRadianX</a>(<span class="keywordtype">double</span> kat_stopnieX)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">double</span> kat_radianX;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_macierz.html">   17</a></span>&#160;    kat_radianX = kat_stopnieX * M_PI / 180;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> kat_radianX;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="macierz_8hh.html#a96260376d8636a98532697b9be1979f5">   24</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="macierz_8hh.html#a96260376d8636a98532697b9be1979f5">StopienNaRadianY</a>(<span class="keywordtype">double</span> kat_stopnieY)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">double</span> kat_radianY;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    kat_radianY = kat_stopnieY * M_PI / 180;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> kat_radianY;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78">   34</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78">StopienNaRadianZ</a>(<span class="keywordtype">double</span> kat_stopnieZ)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">double</span> kat_radianZ;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    kat_radianZ = kat_stopnieZ * M_PI / 180;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> kat_radianZ;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="macierz_8hh.html#a619b64a288fbc0f150584a232d9f7ac4">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="macierz_8hh.html#a619b64a288fbc0f150584a232d9f7ac4">Oblicz_Macierz_ObrotuX</a>(<span class="keywordtype">double</span> kat_radianX, <a class="code" href="class_macierz.html">Macierz3x3</a> &amp;Mac)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_macierz.html#a1f402210b496c2aff462c58613052975">   47</a></span>&#160;    Mac(0,0) = 1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Mac(0,1) = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Mac(0,2) = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Mac(1,0) = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Mac(1,1) = cos(kat_radianX);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Mac(1,2) = -sin(kat_radianX);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Mac(2,0) = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Mac(2,1) = sin(kat_radianX);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Mac(2,2) = cos(kat_radianX);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="macierz_8hh.html#a61604dcde37db920a005329e79e59616">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="macierz_8hh.html#a61604dcde37db920a005329e79e59616">Oblicz_Macierz_ObrotuY</a>(<span class="keywordtype">double</span> kat_radianY, <a class="code" href="class_macierz.html">Macierz3x3</a> &amp;Mac)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_macierz.html#a722bc086dd0f12fbc0f34dcb0246e6bc">   63</a></span>&#160;    Mac(0,0) = cos(kat_radianY);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Mac(0,1) = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    Mac(0,2) = sin(kat_radianY);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Mac(1,0) = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Mac(1,1) = 1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Mac(1,2) = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    Mac(2,0) = -sin(kat_radianY);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Mac(2,1) = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Mac(2,2) = cos(kat_radianY);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6">   77</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6">Oblicz_Macierz_ObrotuZ</a>(<span class="keywordtype">double</span> kat_radianZ, <a class="code" href="class_macierz.html">Macierz3x3</a> &amp;Mac)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Mac(0,0) = cos(kat_radianZ);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Mac(0,1) = -sin(kat_radianZ);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    Mac(0,2) = 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_macierz.html#ae15b7b6824830232cbca3e67b166a0e8">   82</a></span>&#160;    Mac(1,0) = sin(kat_radianZ);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    Mac(1,1) = cos(kat_radianZ);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Mac(1,2) = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    Mac(2,0) = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Mac(2,1) = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Mac(2,2) = 1;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="amacierz_8hh_html_ab0840da738fad890f0b2e2cbd67c0c78"><div class="ttname"><a href="macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78">StopienNaRadianZ</a></div><div class="ttdeci">double StopienNaRadianZ(double kat_stopnieZ)</div><div class="ttdoc">Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach,...</div><div class="ttdef"><b>Definition:</b> <a href="macierz_8hh_source.html#l00034">Macierz.hh:34</a></div></div>
+<div class="ttc" id="aclass_macierz_html"><div class="ttname"><a href="class_macierz.html">Macierz&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="amacierz_8hh_html_a61604dcde37db920a005329e79e59616"><div class="ttname"><a href="macierz_8hh.html#a61604dcde37db920a005329e79e59616">Oblicz_Macierz_ObrotuY</a></div><div class="ttdeci">void Oblicz_Macierz_ObrotuY(double kat_radianY, Macierz3x3 &amp;Mac)</div><div class="ttdoc">Funkcja obliczająca macierz obrotu 3D OY. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj...</div><div class="ttdef"><b>Definition:</b> <a href="macierz_8hh_source.html#l00061">Macierz.hh:61</a></div></div>
+<div class="ttc" id="asize_8hh_html"><div class="ttname"><a href="size_8hh.html">size.hh</a></div></div>
+<div class="ttc" id="amacierz_8hh_html_a619b64a288fbc0f150584a232d9f7ac4"><div class="ttname"><a href="macierz_8hh.html#a619b64a288fbc0f150584a232d9f7ac4">Oblicz_Macierz_ObrotuX</a></div><div class="ttdeci">void Oblicz_Macierz_ObrotuX(double kat_radianX, Macierz3x3 &amp;Mac)</div><div class="ttdoc">Funkcja obliczająca macierz obrotu 3D OX. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj...</div><div class="ttdef"><b>Definition:</b> <a href="macierz_8hh_source.html#l00045">Macierz.hh:45</a></div></div>
+<div class="ttc" id="amacierz_8hh_html_a521222a45761c65bc0ce5f9fc8d78642"><div class="ttname"><a href="macierz_8hh.html#a521222a45761c65bc0ce5f9fc8d78642">Macierz3x3</a></div><div class="ttdeci">Macierz&lt; double, 3 &gt; Macierz3x3</div><div class="ttdoc">Deklaracja Macierzy3x3 Deklaracja macierzy 3D.</div><div class="ttdef"><b>Definition:</b> <a href="macierz_8hh_source.html#l00009">Macierz.hh:9</a></div></div>
+<div class="ttc" id="amacierz_8hh_html_a96260376d8636a98532697b9be1979f5"><div class="ttname"><a href="macierz_8hh.html#a96260376d8636a98532697b9be1979f5">StopienNaRadianY</a></div><div class="ttdeci">double StopienNaRadianY(double kat_stopnieY)</div><div class="ttdoc">Zamaina stopni na radian 3D wokół OY. Funkcja zamieniająca wartość stopni na stopnie w radianach,...</div><div class="ttdef"><b>Definition:</b> <a href="macierz_8hh_source.html#l00024">Macierz.hh:24</a></div></div>
+<div class="ttc" id="amacierz_8hh_html_ab03e0ede3b608ad024ee87495c4c2ba6"><div class="ttname"><a href="macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6">Oblicz_Macierz_ObrotuZ</a></div><div class="ttdeci">void Oblicz_Macierz_ObrotuZ(double kat_radianZ, Macierz3x3 &amp;Mac)</div><div class="ttdoc">Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj...</div><div class="ttdef"><b>Definition:</b> <a href="macierz_8hh_source.html#l00077">Macierz.hh:77</a></div></div>
+<div class="ttc" id="amacierz_8hh_html_a11f2d415620421f0af240368b8fb1acd"><div class="ttname"><a href="macierz_8hh.html#a11f2d415620421f0af240368b8fb1acd">StopienNaRadianX</a></div><div class="ttdeci">double StopienNaRadianX(double kat_stopnieX)</div><div class="ttdoc">Zamaina stopni na radian 3D wokół OX. Funkcja zamieniająca wartość stopni na stopnie w radianach,...</div><div class="ttdef"><b>Definition:</b> <a href="macierz_8hh_source.html#l00014">Macierz.hh:14</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

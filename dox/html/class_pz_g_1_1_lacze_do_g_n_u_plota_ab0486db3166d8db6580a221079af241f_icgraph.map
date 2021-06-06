@@ -1,0 +1,5 @@
+<map id="PzG::LaczeDoGNUPlota::UstawSkaleZ" name="PzG::LaczeDoGNUPlota::UstawSkaleZ">
+<area shape="rect" id="node1" title="Zadaje skalę wzdłuż osi OZ." alt="" coords="383,5,556,47"/>
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4308151b54e105d302803146a3238699" title="Zadaje skalę wzdłuż osi OX i OZ." alt="" coords="161,5,335,47"/>
+<area shape="rect" id="node3" href="$class_scena.html#a8f9fe11b4cfef890123a2acc94672e17" title="Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacz..." alt="" coords="5,13,113,39"/>
+</map>
