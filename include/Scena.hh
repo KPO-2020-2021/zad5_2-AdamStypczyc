@@ -11,6 +11,10 @@
  * \param POCZATEK początek siatki
  * \param POLOZENIE_1 położenie startowe drona 0
  * \param POLOZENIE_2 położenie startowe drona 1 
+ * \param POLOZENIE_3 położenie startowe plaskowyzu
+ * \param POLOZENIE_4 położenie startowe ostroslupa 1.
+ * \param POLOZENIE_5 położenie startowe ostroslupa 2.
+ * \param POLOZENIE_6 położenie startowe skarpy
  * \param ROZMIAR ilość kratek w siatce
  */
 #define ZAKRES 700
@@ -30,7 +34,19 @@
 
 #define POLOZENIE_3 \
     {               \
-        600, 600, 0 \
+        400, 200, 0 \
+    }
+#define POLOZENIE_4 \
+    {               \
+        125, 450, 0 \
+    }
+#define POLOZENIE_5 \
+    {               \
+        430, 680, 0 \
+    }
+#define POLOZENIE_6 \
+    {               \
+        550, 650, 0 \
     }
 
 /*!
@@ -46,6 +62,8 @@ class Scena
     std::list<std::shared_ptr<Graniastoslup>> Elementy_powierzchni;
     std::list<std::shared_ptr<dron>> Lst_dronow;
     Wektor3D siatka[ROZMIAR][ROZMIAR];
+    int index_elementu;
+    int index_drona;
 
 public:
     Scena();
@@ -115,6 +133,8 @@ void Scena::stworz_siatka(std::string nazwa)
  */
 Scena::Scena()
 {
+    index_drona = 0;
+    index_elementu = 0;
     Lacze.ZmienTrybRys(PzG::TR_3D);
     Lacze.Inicjalizuj(); // Tutaj startuje gnuplot.
 
@@ -127,12 +147,20 @@ Scena::Scena()
 
     stworz_siatka("../datasets/siatka.dat");
     Lacze.DodajNazwePliku("../datasets/siatka.dat", PzG::RR_Ciagly, 1);
-    Wektor3D pozycja = POLOZENIE_1;
-    tab_dronow[0] = new dron(0, Lacze, pozycja);
-    tab_dronow[0]->zapisz();
-    pozycja = POLOZENIE_2;
-    tab_dronow[1] = new dron(1, Lacze, pozycja);
-    tab_dronow[1]->zapisz();
+
+    Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(POLOZENIE_4, 100, 50, 200, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
+    index_elementu++;
+    Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(POLOZENIE_5, 120, 60, 140, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
+    index_elementu++;
+    Elementy_powierzchni.push_front(std::make_shared<Skarpa>(POLOZENIE_6, 65, 65, 180, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
+    index_elementu++;
+    Elementy_powierzchni.push_front(std::make_shared<Plaskowyz>(POLOZENIE_3, 70, 70, 60, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
+    // Wektor3D pozycja = POLOZENIE_1;
+    // tab_dronow[0] = new dron(0, Lacze, pozycja);
+    // tab_dronow[0]->zapisz();
+    // pozycja = POLOZENIE_2;
+    // tab_dronow[1] = new dron(1, Lacze, pozycja);
+    // tab_dronow[1]->zapisz();
     Lacze.Rysuj();
 }
 /*!
