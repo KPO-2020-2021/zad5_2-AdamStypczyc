@@ -1,6 +1,10 @@
 #pragma once
+#include <list>
 #include <iomanip>
 #include "dron.hh"
+#include "Plaskowyz.hh"
+#include "Ostroslup.hh"
+#include "Skarpa.hh"
 /*!
  * \brief Definicje globalne
  * \param ZAKRES zakres gnuplota
@@ -24,6 +28,11 @@
         400, 400, 15 \
     }
 
+#define POLOZENIE_3 \
+    {               \
+        600, 600, 0 \
+    }
+
 /*!
  * \brief Deklaracja klasy Scena
  * Łączy wszystko w całość
@@ -34,7 +43,8 @@
 class Scena
 {
     PzG::LaczeDoGNUPlota Lacze;
-    dron *tab_dronow[2];
+    std::list<std::shared_ptr<Graniastoslup>> Elementy_powierzchni;
+    std::list<std::shared_ptr<dron>> Lst_dronow;
     Wektor3D siatka[ROZMIAR][ROZMIAR];
 
 public:
@@ -123,7 +133,6 @@ Scena::Scena()
     pozycja = POLOZENIE_2;
     tab_dronow[1] = new dron(1, Lacze, pozycja);
     tab_dronow[1]->zapisz();
-
     Lacze.Rysuj();
 }
 /*!

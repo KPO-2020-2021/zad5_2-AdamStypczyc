@@ -21,16 +21,16 @@
  */
 class dron
 {
-    std::vector<Wektor3D> sciezka;
-    PzG::LaczeDoGNUPlota &Lacze;
-    Prostopadloscian korpus_orginal;
-    Prostopadloscian korpus;
-    Graniastoslup6 rotor_orginal[4];
-    Graniastoslup6 rotor[4];
-    Macierz3x3 obr;
-    Wektor3D droga;
     double kat;
     int index;
+    std::vector<Wektor3D> sciezka;
+    PzG::LaczeDoGNUPlota &Lacze;
+    Graniastoslup6 rotor_orginal[4];
+    Graniastoslup6 rotor[4];
+    Prostopadloscian korpus_orginal;
+    Prostopadloscian korpus;
+    Macierz3x3 obr;
+    Wektor3D droga;
 
 public:
     dron(int ind, PzG::LaczeDoGNUPlota &Lacze1, Wektor3D polozenie);
@@ -154,10 +154,10 @@ void dron::obrot_rotorow()
     tmp = tmp * tmp1;
     Oblicz_Macierz_ObrotuZ(-radian, tmp1);
     tmp_v2 = tmp_v2 * tmp1;
-    rotor[0].rotacja(tmp_v2);
-    rotor[1].rotacja(tmp);
-    rotor[2].rotacja(tmp_v2);
-    rotor[3].rotacja(tmp);
+    rotor[0].rotacja(tmp);
+    rotor[1].rotacja(tmp_v2);
+    rotor[2].rotacja(tmp);
+    rotor[3].rotacja(tmp_v2);
 
     for (int i = 0; i < 4; ++i)
     {

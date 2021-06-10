@@ -22,7 +22,7 @@ public:
  */
 Prostopadloscian::Prostopadloscian(Wektor3D sro, double h, double w, double d, std::string nazwa)
 {
-    wymiar = new Wektor3D({w, d, h});
+    wymiar = std::make_shared<Wektor3D>(w, d, h);
     this->nazwa_pliku = nazwa;
     this->srodek = sro;
     Wektor3D tmp;

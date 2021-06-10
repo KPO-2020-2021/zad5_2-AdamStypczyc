@@ -253,10 +253,19 @@ CMakeFiles/main.dir/app/main.cpp.o: \
  /home/adam/zad5_2-AdamStypczyc/include/size.hh \
  /home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh \
  /home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh \
+ /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/ext/concurrence.h \
+ /usr/include/c++/9/bits/shared_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_base.h \
+ /usr/include/c++/9/bits/allocated_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_atomic.h \
+ /usr/include/c++/9/backward/auto_ptr.h \
+ /usr/include/c++/9/pstl/glue_memory_defs.h \
  /home/adam/zad5_2-AdamStypczyc/app/../include/lacze_do_gnuplota.hh \
  /usr/include/c++/9/list /usr/include/c++/9/bits/stl_list.h \
- /usr/include/c++/9/bits/allocated_ptr.h /usr/include/c++/9/bits/list.tcc \
+ /usr/include/c++/9/bits/list.tcc \
  /home/adam/zad5_2-AdamStypczyc/include/Scena.hh \
  /home/adam/zad5_2-AdamStypczyc/include/dron.hh \
  /home/adam/zad5_2-AdamStypczyc/include/Graniastoslup6.hh \
- /home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh
+ /home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh \
+ /home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh

@@ -3,6 +3,7 @@
 #include "Wektor3D.hh"
 #include <fstream>
 #include <vector>
+#include <memory>
 /*!
  * \brief Klasa Graniastoslup.
  * Deklaracja klasy Graniastoslup. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na graniastoslupach, np. prostopadłościanie i graniastosłupie sześciokątnym foremnym.
@@ -16,7 +17,7 @@ class Graniastoslup
 {
 protected:
     std::vector<Wektor3D> wspol;
-    Wektor3D *wymiar;
+    std::shared_ptr<Wektor3D> wymiar;
     Wektor3D srodek;
     std::string nazwa_pliku;
 
