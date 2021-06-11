@@ -22,7 +22,8 @@ public:
 Graniastoslup6::Graniastoslup6(Wektor3D sro, double h, double r, std::string nazwa)
 {
     double radian = 60 * M_PI / 180;
-    wymiar = std::make_shared<Wektor3D>(0, 0, h);
+    Wektor3D proba = {0,0,h};
+    wymiar = std::make_shared<Wektor3D>(proba);
     this->nazwa_pliku = nazwa;
     this->srodek = sro;
     Wektor3D tmp;

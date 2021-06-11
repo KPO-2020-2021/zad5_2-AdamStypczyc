@@ -65,10 +65,10 @@ dron::dron(int ind, PzG::LaczeDoGNUPlota &Lacze1, Wektor3D polozenie) : Lacze(La
     {
         rotor_orginal[i].ustaw_nazwa("../datasets/rotor" + std::to_string(index) + std::to_string(i) + ".dat");
     }
-    Lacze.DodajNazwePliku(korpus_orginal.pokaz_nazwa().c_str(), PzG::RR_Ciagly, 2);
+    Lacze.DodajNazwePliku(korpus_orginal.pokaz_nazwa().c_str());
     for (int i = 0; i < 4; ++i)
     {
-        Lacze.DodajNazwePliku(rotor_orginal[i].pokaz_nazwa().c_str(), PzG::RR_Ciagly, 2);
+        Lacze.DodajNazwePliku(rotor_orginal[i].pokaz_nazwa().c_str());
     }
     korpus = korpus_orginal;
 
@@ -311,7 +311,7 @@ void dron::akcja(char wybor)
             }
         }
         przypisz_sciezke(droga);
-        Lacze.DodajNazwePliku("../datasets/sciezka.dat", PzG::RR_Ciagly, 1);
+        Lacze.DodajNazwePliku("../datasets/sciezka.dat");
         std::cout << "Wznoszenie..." << std::endl;
         for (int i = 0; i < 400; ++i)
         {
@@ -354,7 +354,7 @@ void dron::akcja(char wybor)
             Lacze.Rysuj();
             usleep(15000);
         }
-        Lacze.UsunOstatniaNazwe();
+        Lacze.UsunOstatniaNazwe_ListaGlobalna();
         Lacze.Rysuj();
         break;
     case 'r':

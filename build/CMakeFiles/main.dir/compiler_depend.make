@@ -342,8 +342,12 @@ CMakeFiles/main.dir/app/main.cpp.o: ../app/main.cpp \
   ../include/dron.hh \
   ../include/Graniastoslup6.hh \
   ../include/lacze_do_gnuplota.hh \
-  ../include/Plaskowyz.hh
+  ../include/Plaskowyz.hh \
+  ../include/Ostroslup.hh \
+  ../include/Skarpa.hh
 
+
+../include/Skarpa.hh:
 
 ../include/Plaskowyz.hh:
 
@@ -864,6 +868,8 @@ CMakeFiles/main.dir/app/main.cpp.o: ../app/main.cpp \
 /usr/include/c++/9/bits/locale_conv.h:
 
 /usr/include/c++/9/bits/locale_facets.h:
+
+../include/Ostroslup.hh:
 
 /usr/include/c++/9/cwctype:
 

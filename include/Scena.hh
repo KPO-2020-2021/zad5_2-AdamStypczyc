@@ -62,12 +62,14 @@ class Scena
     std::list<std::shared_ptr<Graniastoslup>> Elementy_powierzchni;
     std::list<std::shared_ptr<dron>> Lst_dronow;
     Wektor3D siatka[ROZMIAR][ROZMIAR];
-    int index_elementu;
+    int index_elementu_plasko;
+    int index_elementu_ostr;
+    int index_elementu_skr;
     int index_drona;
 
 public:
     Scena();
-    ~Scena();
+    //~Scena();
     bool dzialanie();
     void stworz_siatka(std::string nazwa);
     PzG::LaczeDoGNUPlota pokaz_lacze();
@@ -134,7 +136,9 @@ void Scena::stworz_siatka(std::string nazwa)
 Scena::Scena()
 {
     index_drona = 0;
-    index_elementu = 0;
+    index_elementu_ostr = 0;
+    index_elementu_plasko = 0;
+    index_elementu_skr = 0;
     Lacze.ZmienTrybRys(PzG::TR_3D);
     Lacze.Inicjalizuj(); // Tutaj startuje gnuplot.
 
@@ -146,32 +150,50 @@ Scena::Scena()
     Lacze.UstawSkaleXZ(1, 1);
 
     stworz_siatka("../datasets/siatka.dat");
-    Lacze.DodajNazwePliku("../datasets/siatka.dat", PzG::RR_Ciagly, 1);
+    Lacze.DodajNazwePliku("../datasets/siatka.dat");
 
-    Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(POLOZENIE_4, 100, 50, 200, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
-    index_elementu++;
-    Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(POLOZENIE_5, 120, 60, 140, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
-    index_elementu++;
-    Elementy_powierzchni.push_front(std::make_shared<Skarpa>(POLOZENIE_6, 65, 65, 180, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
-    index_elementu++;
-    Elementy_powierzchni.push_front(std::make_shared<Plaskowyz>(POLOZENIE_3, 70, 70, 60, "../datasets/Elementy_powierzchni" + std::to_string(index_elementu) + ".dat"));
-    // Wektor3D pozycja = POLOZENIE_1;
-    // tab_dronow[0] = new dron(0, Lacze, pozycja);
-    // tab_dronow[0]->zapisz();
-    // pozycja = POLOZENIE_2;
-    // tab_dronow[1] = new dron(1, Lacze, pozycja);
-    // tab_dronow[1]->zapisz();
+    Wektor3D tmp = Wektor3D(POLOZENIE_4);
+    Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(tmp, 100, 50, 200, "../datasets/Elementy_powierzchni_ostr" + std::to_string(index_elementu_ostr) + ".dat"));
+    index_elementu_ostr++;
+    tmp = Wektor3D(POLOZENIE_5);
+    Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(tmp, 120, 60, 140, "../datasets/Elementy_powierzchni_ostr" + std::to_string(index_elementu_ostr) + ".dat"));
+    index_elementu_ostr++;
+    tmp = Wektor3D(POLOZENIE_6);
+    Elementy_powierzchni.push_front(std::make_shared<Skarpa>(tmp, 65, 65, 180, "../datasets/Elementy_powierzchni_skr" + std::to_string(index_elementu_skr) + ".dat"));
+    index_elementu_skr++;
+    tmp = Wektor3D(POLOZENIE_3);
+    Elementy_powierzchni.push_front(std::make_shared<Plaskowyz>(tmp, 70, 70, 60, "../datasets/Elementy_powierzchni_plasko" + std::to_string(index_elementu_plasko) + ".dat"));
+    index_elementu_plasko++;
+
+    for (std::list<std::shared_ptr<Graniastoslup>>::const_iterator i = Elementy_powierzchni.begin(); i != Elementy_powierzchni.end(); ++i)
+    {
+        (*i)->zapis();
+        Lacze.DodajNazwePliku((*i)->pokaz_nazwa().c_str());
+    }
+
+    tmp = Wektor3D(POLOZENIE_1);
+    Lst_dronow.push_front(std::make_shared<dron>(index_drona, Lacze, tmp));
+    index_drona++;
+
+    tmp = Wektor3D(POLOZENIE_2);
+    Lst_dronow.push_front(std::make_shared<dron>(index_drona, Lacze, tmp));
+
+    for (std::list<std::shared_ptr<dron>>::const_iterator i = Lst_dronow.begin(); i != Lst_dronow.end(); ++i)
+    {
+        (*i)->zapisz();
+    }
+
     Lacze.Rysuj();
 }
-/*!
- * \brief Destruktor klasy scena. 
- * Zwalnia pamięć zaalokowaną na drony.
- */
-Scena::~Scena()
-{
-    free(tab_dronow[0]);
-    free(tab_dronow[1]);
-}
+// /*!
+//  * \brief Destruktor klasy scena.
+//  * Zwalnia pamięć zaalokowaną na drony.
+//  */
+// Scena::~Scena()
+// {
+//     free(tab_dronow[0]);
+//     free(tab_dronow[1]);
+// }
 /*!
  * \brief Metoda dająca użytkowikowi dostęp.
  * Metoda sklejająca cały program umożliwiajaca sterowanie dronami i podejmowania akcji.
@@ -189,8 +211,11 @@ bool Scena::dzialanie()
         std::cout << "o - obrot drona o zadany kat" << std::endl;
         std::cout << "t - translacja" << std::endl;
         std::cout << "w - wybor drona" << std::endl;
+        std::cout << "x - usuń drona" << std::endl;
         std::cout << "m - wyswietl menu" << std::endl;
         std::cout << "r - wykonaj lot zwiadowczny" << std::endl;
+        std::cout << "d - dodaj element powierzchni Tytana" << std::endl;
+        std::cout << "u - usuń element powierzchni Tytana" << std::endl;
         std::cout << "k - koniec dzialania programu" << std::endl;
         std::cout << "Twoj wybor? (m - menu) > ";
         std::cin >> wybor;
@@ -198,7 +223,13 @@ bool Scena::dzialanie()
         if (wybor == 'w')
         {
             std::cout << "Aktualny dron to dron nr: " << index << std::endl;
-            std::cout << "Jego współrzędne to: " << tab_dronow[index]->pokaz_srodek() << std::endl;
+            std::list<std::shared_ptr<dron>>::const_iterator wsk_0;
+            wsk_0 = Lst_dronow.begin();
+            for (int i = 0; i < index; ++i)
+            {
+                wsk_0++;
+            }
+            std::cout << "Jego współrzędne to: " << (*wsk_0)->pokaz_srodek() << std::endl;
             while (1)
             {
                 std::cout << "Wpisz 0 lub 1 aby wybrać drona" << std::endl;
@@ -228,6 +259,364 @@ bool Scena::dzialanie()
                 }
             }
         }
+        else if (wybor == 'd')
+        {
+            int numer;
+            std::cout << "Wybierz jaki element powierzchni chcesz dodać: " << std::endl;
+            std::cout << "1 - Plaskowyż" << std::endl;
+            std::cout << "2 - Ostrosłup (GóraZOstrymSzczytem)" << std::endl;
+            std::cout << "3 - Skarpa" << std::endl;
+            std::cout << "4 - Dron" << std::endl;
+            while (1)
+            {
+                std::cout << "Wpisz 1, 2, 3 lub 4" << std::endl;
+                std::cin >> numer;
+                if (std::cin.good())
+                {
+                    if (numer == 1 || numer == 2 || numer == 3 || numer == 4)
+                    {
+                        double tab[3];
+                        if (numer == 1)
+                        {
+                            std::cout << "Podaj wymiary Plaskowyżu" << std::endl;
+                            std::cout << "Podaj skale wzdłóż osi x,y,z\nPodana skala będzie pomnożona razy 2" << std::endl;
+                            while (1)
+                            {
+                                std::cin >> tab[0];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab[1];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab[2];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            std::cout << "Wybierz położenie środka Płaskowyżu\nx,y" << std::endl;
+                            Wektor3D start;
+                            double tab1[3];
+                            while (1)
+                            {
+                                std::cin >> tab1[0];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab1[1];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            tab1[2] = tab[2];
+                            start = Wektor3D({tab1[0], tab1[1], tab1[2]});
+
+                            Elementy_powierzchni.push_front(std::make_shared<Plaskowyz>(start, tab[0], tab[1], tab[2], "../datasets/Elementy_powierzchni_plasko" + std::to_string(index_elementu_plasko) + ".dat"));
+                            index_elementu_plasko++;
+                        }
+                        else if (numer == 2)
+                        {
+                            std::cout << "Podaj wymiary Ostrosłupa" << std::endl;
+                            std::cout << "Podaj skale wzdłóż osi x,y,z\nPodana skala będzie pomnożona razy 2" << std::endl;
+                            while (1)
+                            {
+                                std::cin >> tab[0];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab[1];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab[2];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            std::cout << "Wybierz położenie środka Ostrosłupa\nx,y" << std::endl;
+                            Wektor3D start;
+                            double tab1[3];
+                            while (1)
+                            {
+                                std::cin >> tab1[0];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab1[1];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            tab1[2] = tab[2];
+                            start = Wektor3D({tab1[0], tab1[1], tab1[2]});
+
+                            Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(start, tab[0], tab[1], tab[2], "../datasets/Elementy_powierzchni_ostr" + std::to_string(index_elementu_ostr) + ".dat"));
+                            index_elementu_ostr++;
+                        }
+                        else if (numer == 3)
+                        {
+                            std::cout << "Podaj wymiary Skarpy" << std::endl;
+                            std::cout << "Podaj skale wzdłóż osi x,y,z\nPodana skala będzie pomnożona razy 2" << std::endl;
+                            while (1)
+                            {
+                                std::cin >> tab[0];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab[1];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab[2];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            std::cout << "Wybierz położenie środka Skarpy\nx,y" << std::endl;
+                            Wektor3D start;
+                            double tab1[3];
+                            while (1)
+                            {
+                                std::cin >> tab1[0];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab1[1];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            tab1[2] = tab[2];
+                            start = Wektor3D({tab1[0], tab1[1], tab1[2]});
+
+                            Elementy_powierzchni.push_front(std::make_shared<Skarpa>(start, tab[0], tab[1], tab[2], "../datasets/Elementy_powierzchni_skr" + std::to_string(index_elementu_skr) + ".dat"));
+                            index_elementu_skr++;
+                        }
+                        else if (numer == 4)
+                        {
+                            double tab[3];
+                            std::cout << "Wybierz miejsce startowe drona\nx,y" << std::endl;
+                            while (1)
+                            {
+                                std::cin >> tab[0];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            while (1)
+                            {
+                                std::cin >> tab[1];
+                                if (std::cin.good())
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                                    std::cin.clear();
+                                    std::cin.ignore(1024, '\n');
+                                }
+                            }
+                            tab[2] = 15;
+                            Wektor3D start = Wektor3D({tab[0], tab[1], tab[2]});
+                            Lst_dronow.push_front(std::make_shared<dron>(index_drona, Lacze, start));
+                            index_drona++;
+                            (*Lst_dronow.begin())->zapisz();
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        std::cout << "Nie udało się wybrać elementu :(" << std::endl;
+                        std::cout << "Wybierz jeszcze raz :(" << std::endl;
+                        std::cin.clear();
+                        std::cin.ignore(1024, '\n');
+                    }
+                }
+                else
+                {
+                    std::cout << "Nie udało się wybrać elementu :(" << std::endl;
+                    std::cout << "Wybierz jeszcze raz :(" << std::endl;
+                    std::cin.clear();
+                    std::cin.ignore(1024, '\n');
+                }
+            }
+        }
+        else if (wybor == 'u')
+        {
+            int i = 0;
+            int nr;
+            for (std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin(); j != Elementy_powierzchni.end(); ++j)
+            {
+                std::cout << i << " - " << (*j)->pokaz_nazwa() << " współrzędne: " << (*j)->pokaz_srodek();
+                i++;
+            }
+            std::cout << "Podaj numer elementu, który chcesz usunąć" << std::endl;
+            while (1)
+            {
+                std::cin >> nr;
+                if (std::cin.good())
+                {
+                    break;
+                }
+                else
+                {
+                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                    std::cin.clear();
+                    std::cin.ignore(1024, '\n');
+                }
+            }
+            std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin();
+            for (int k = 0; k < nr; ++k)
+            {
+                j++;
+            }
+            Lacze.UsunNazwePliku((*j)->pokaz_nazwa());
+            Elementy_powierzchni.erase(j);
+        }
+        else if (wybor == 'x')
+        {
+        }
         else if (wybor == 'k')
         {
             std::cout << "--------------------------------------------------------" << std::endl;
@@ -240,7 +629,13 @@ bool Scena::dzialanie()
         }
         else if (wybor == 'o' || wybor == 't' || wybor == 'r')
         {
-            tab_dronow[index]->akcja(wybor);
+            std::list<std::shared_ptr<dron>>::const_iterator wsk_1;
+            wsk_1 = Lst_dronow.begin();
+            for (int i = 0; i < index; ++i)
+            {
+                wsk_1++;
+            }
+            (*wsk_1)->akcja(wybor);
         }
     }
     return false;

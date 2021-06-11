@@ -10,7 +10,7 @@ public:
     Skarpa(Skarpa &Skr);
 };
 
-Skarpa::Skarpa(Wektor3D sro, double skala_x = 1, double skala_y = 1, double skala_z = 1, std::string nazwa = "../datasets/test_obiekt.dat")
+Skarpa::Skarpa(Wektor3D sro, double skala_x, double skala_y, double skala_z, std::string nazwa)
 {
     double w, d, h;
     w = SKALA * skala_x;

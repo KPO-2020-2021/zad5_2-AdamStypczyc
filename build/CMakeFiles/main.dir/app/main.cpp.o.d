@@ -268,4 +268,6 @@ CMakeFiles/main.dir/app/main.cpp.o: \
  /home/adam/zad5_2-AdamStypczyc/include/dron.hh \
  /home/adam/zad5_2-AdamStypczyc/include/Graniastoslup6.hh \
  /home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh \
- /home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh
+ /home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh \
+ /home/adam/zad5_2-AdamStypczyc/include/Ostroslup.hh \
+ /home/adam/zad5_2-AdamStypczyc/include/Skarpa.hh
