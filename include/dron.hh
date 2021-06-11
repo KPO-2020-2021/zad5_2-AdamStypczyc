@@ -46,6 +46,8 @@ public:
     void przypisz_sciezke(double droga);
 
     Wektor3D pokaz_srodek() const;
+
+    void usun_drona();
 };
 /*!
  * \brief Konstruktor parametryczny klasy dron.
@@ -551,4 +553,12 @@ void dron::przypisz_sciezke(double droga)
 Wektor3D dron::pokaz_srodek() const
 {
     return korpus.pokaz_srodek();
+}
+void dron::usun_drona()
+{
+    Lacze.UsunNazwePliku(korpus_orginal.pokaz_nazwa().c_str());
+    for(int i=0;i<4;++i)
+    {
+        Lacze.UsunNazwePliku(rotor_orginal[i].pokaz_nazwa().c_str());
+    }
 }

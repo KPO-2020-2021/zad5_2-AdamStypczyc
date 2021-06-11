@@ -616,6 +616,35 @@ bool Scena::dzialanie()
         }
         else if (wybor == 'x')
         {
+            int i = 0;
+            int nr;
+            for (std::list<std::shared_ptr<dron>>::const_iterator j = Lst_dronow.begin(); j != Lst_dronow.end(); ++j)
+            {
+                std::cout << i << " - "  << " współrzędne: " << (*j)->pokaz_srodek();
+                i++;
+            }
+            std::cout << "Podaj numer drona, którego chcesz usunąć" << std::endl;
+            while (1)
+            {
+                std::cin >> nr;
+                if (std::cin.good())
+                {
+                    break;
+                }
+                else
+                {
+                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                    std::cin.clear();
+                    std::cin.ignore(1024, '\n');
+                }
+            }
+            std::list<std::shared_ptr<dron>>::const_iterator j = Lst_dronow.begin();
+            for (int k = 0; k < nr; ++k)
+            {
+                j++;
+            }
+            (*j)->usun_drona();
+            Lst_dronow.erase(j);
         }
         else if (wybor == 'k')
         {
