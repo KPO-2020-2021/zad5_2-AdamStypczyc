@@ -356,7 +356,7 @@ void dron::akcja(char wybor)
             Lacze.Rysuj();
             usleep(15000);
         }
-        Lacze.UsunOstatniaNazwe_ListaGlobalna();
+        Lacze.UsunOstatniaNazwe_ListaLokalna();
         Lacze.Rysuj();
         break;
     case 'r':

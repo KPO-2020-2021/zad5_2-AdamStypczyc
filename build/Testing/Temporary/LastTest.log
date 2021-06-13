@@ -1,0 +1,19 @@
+Start testing: Jun 13 16:32 CEST
+----------------------------------------------------------
+Unable to find executable: /home/adam/zad5_2-AdamStypczyc/build/unit_tests
+1/1 Testing: engine.unit_tests
+1/1 Test: engine.unit_tests
+Command: ""
+Directory: /home/adam/zad5_2-AdamStypczyc/build/tests
+"engine.unit_tests" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"engine.unit_tests" end time: Jun 13 16:32 CEST
+"engine.unit_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 13 16:32 CEST

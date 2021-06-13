@@ -14,6 +14,22 @@
 //  * wszystko w całość, też zostało przetestowane ręcznie 
 //  * ______________________________________________________________
 //  ****************************************************************/
+// TEST_CASE("ddd")
+// {
+//     PzG::LaczeDoGNUPlota Lacze;
+//     Wektor3D tmp;
+//     Prostopadloscian Pr = Prostopadloscian(tmp);
+//     Lacze.DodajNazwePliku("../datasets/test_prosto.dat");
+//     Lacze.ZmienTrybRys(PzG::TR_3D);
+//     Lacze.UstawZakresX(-100, 100);
+//     Lacze.UstawZakresY(-100, 100);
+//     Lacze.UstawZakresZ(-100, 100);
+//     Pr.zapis();
+//     Lacze.Rysuj();
+//     std::cout << "Wciśnij ENTER";
+//     std::cin.ignore(1024, '\n');
+//     Lacze.UsunNazwePliku("../datasets/test_prosto.dat");
+// }
 // TEST_CASE("Test graniastoslup - test pokaz środek i ustaw środek")
 // {
 //     Graniastoslup Gr;

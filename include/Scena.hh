@@ -612,6 +612,14 @@ bool Scena::dzialanie()
                 j++;
             }
             Lacze.UsunNazwePliku((*j)->pokaz_nazwa());
+            if(remove((*j)->pokaz_nazwa().c_str()) == 0)
+            {
+                std::cout << "Usunięto plik: " << (*j)->pokaz_nazwa() << std::endl;
+            }
+            else
+            {
+                std::cout << "Nie skasowano pliku: " << (*j)->pokaz_nazwa() << std::endl;
+            }
             Elementy_powierzchni.erase(j);
         }
         else if (wybor == 'x')

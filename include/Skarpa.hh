@@ -16,7 +16,8 @@ Skarpa::Skarpa(Wektor3D sro, double skala_x, double skala_y, double skala_z, std
     w = SKALA * skala_x;
     d = SKALA * skala_y;
     h = SKALA * skala_z;
-    wymiar = std::make_shared<Wektor3D>(w, d, h);
+    Wektor3D proba = {w,d,h};
+    wymiar = std::make_shared<Wektor3D>(proba);
     nazwa_pliku = nazwa;
     srodek = sro;
     Wektor3D tmp;
