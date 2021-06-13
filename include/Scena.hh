@@ -42,11 +42,11 @@
     }
 #define POLOZENIE_5 \
     {               \
-        430, 680, 0 \
+        330, 580, 0 \
     }
 #define POLOZENIE_6 \
     {               \
-        550, 650, 0 \
+        550, 550, 0 \
     }
 
 /*!
@@ -69,7 +69,6 @@ class Scena
 
 public:
     Scena();
-    //~Scena();
     bool dzialanie();
     void stworz_siatka(std::string nazwa);
     PzG::LaczeDoGNUPlota pokaz_lacze();
@@ -144,7 +143,7 @@ Scena::Scena()
 
     Lacze.UstawZakresX(0, ZAKRES);
     Lacze.UstawZakresY(0, ZAKRES);
-    Lacze.UstawZakresZ(0, ZAKRES);
+    Lacze.UstawZakresZ(-200, ZAKRES);
 
     Lacze.UstawRotacjeXZ(60, 30);
     Lacze.UstawSkaleXZ(1, 1);
@@ -173,27 +172,16 @@ Scena::Scena()
 
     tmp = Wektor3D(POLOZENIE_1);
     Lst_dronow.push_front(std::make_shared<dron>(index_drona, Lacze, tmp));
+    (*Lst_dronow.begin())->zapisz();
     index_drona++;
 
     tmp = Wektor3D(POLOZENIE_2);
     Lst_dronow.push_front(std::make_shared<dron>(index_drona, Lacze, tmp));
-
-    for (std::list<std::shared_ptr<dron>>::const_iterator i = Lst_dronow.begin(); i != Lst_dronow.end(); ++i)
-    {
-        (*i)->zapisz();
-    }
+    (*Lst_dronow.begin())->zapisz();
+    index_drona++;
 
     Lacze.Rysuj();
 }
-// /*!
-//  * \brief Destruktor klasy scena.
-//  * Zwalnia pamięć zaalokowaną na drony.
-//  */
-// Scena::~Scena()
-// {
-//     free(tab_dronow[0]);
-//     free(tab_dronow[1]);
-// }
 /*!
  * \brief Metoda dająca użytkowikowi dostęp.
  * Metoda sklejająca cały program umożliwiajaca sterowanie dronami i podejmowania akcji.
@@ -222,25 +210,47 @@ bool Scena::dzialanie()
         std::cout << "------------------------------------" << std::endl;
         if (wybor == 'w')
         {
-            std::cout << "Aktualny dron to dron nr: " << index << std::endl;
-            std::list<std::shared_ptr<dron>>::const_iterator wsk_0;
-            wsk_0 = Lst_dronow.begin();
-            for (int i = 0; i < index; ++i)
+            if ((int)Lst_dronow.size() == 0)
             {
-                wsk_0++;
+                std::cout << "Brak dronów!!!" << std::endl;
             }
-            std::cout << "Jego współrzędne to: " << (*wsk_0)->pokaz_srodek() << std::endl;
-            while (1)
+            else
             {
-                std::cout << "Wpisz 0 lub 1 aby wybrać drona" << std::endl;
-                std::cin >> index;
-                if (std::cin.good())
+                std::cout << "Aktualny dron to dron nr: " << index << std::endl;
+                std::list<std::shared_ptr<dron>>::const_iterator wsk_0;
+                wsk_0 = Lst_dronow.begin();
+                for (int i = 0; i < index; ++i)
                 {
-                    if (index == 0 || index == 1)
+                    wsk_0++;
+                }
+                std::cout << "Jego współrzędne to: " << (*wsk_0)->pokaz_srodek() << std::endl;
+                std::cout << "------------------------------------" << std::endl;
+                while (1)
+                {
+                    int i = 0;
+                    std::cout << "Wpisz nr drona aby go wybrać" << std::endl;
+                    for (std::list<std::shared_ptr<dron>>::const_iterator j = Lst_dronow.begin(); j != Lst_dronow.end(); ++j)
                     {
-                        std::cout << "Udało się wybrać drona :)" << std::endl;
-                        std::cout << "Aktualny dron to dron nr: " << index << std::endl;
-                        break;
+                        std::cout << i << " - "
+                                  << " współrzędne: " << (*j)->pokaz_srodek() << std::endl;
+                        i++;
+                    }
+                    std::cin >> index;
+                    if (std::cin.good())
+                    {
+                        if (index >= 0 && index < (int)Lst_dronow.size())
+                        {
+                            std::cout << "Udało się wybrać drona :)" << std::endl;
+                            std::cout << "Aktualny dron to dron nr: " << index << std::endl;
+                            break;
+                        }
+                        else
+                        {
+                            std::cout << "Nie udało się wybrać drona :(" << std::endl;
+                            std::cout << "Wybierz jeszcze raz :(" << std::endl;
+                            std::cin.clear();
+                            std::cin.ignore(1024, '\n');
+                        }
                     }
                     else
                     {
@@ -249,13 +259,6 @@ bool Scena::dzialanie()
                         std::cin.clear();
                         std::cin.ignore(1024, '\n');
                     }
-                }
-                else
-                {
-                    std::cout << "Nie udało się wybrać drona :(" << std::endl;
-                    std::cout << "Wybierz jeszcze raz :(" << std::endl;
-                    std::cin.clear();
-                    std::cin.ignore(1024, '\n');
                 }
             }
         }
@@ -353,10 +356,13 @@ bool Scena::dzialanie()
                                     std::cin.ignore(1024, '\n');
                                 }
                             }
-                            tab1[2] = tab[2];
+                            tab1[2] = 0;
                             start = Wektor3D({tab1[0], tab1[1], tab1[2]});
 
                             Elementy_powierzchni.push_front(std::make_shared<Plaskowyz>(start, tab[0], tab[1], tab[2], "../datasets/Elementy_powierzchni_plasko" + std::to_string(index_elementu_plasko) + ".dat"));
+                            std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin();
+                            (*j)->zapis();
+                            Lacze.DodajNazwePliku((*j)->pokaz_nazwa().c_str());
                             index_elementu_plasko++;
                         }
                         else if (numer == 2)
@@ -436,10 +442,13 @@ bool Scena::dzialanie()
                                     std::cin.ignore(1024, '\n');
                                 }
                             }
-                            tab1[2] = tab[2];
+                            tab1[2] = 0;
                             start = Wektor3D({tab1[0], tab1[1], tab1[2]});
 
                             Elementy_powierzchni.push_front(std::make_shared<Ostroslup>(start, tab[0], tab[1], tab[2], "../datasets/Elementy_powierzchni_ostr" + std::to_string(index_elementu_ostr) + ".dat"));
+                            std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin();
+                            (*j)->zapis();
+                            Lacze.DodajNazwePliku((*j)->pokaz_nazwa().c_str());
                             index_elementu_ostr++;
                         }
                         else if (numer == 3)
@@ -519,10 +528,13 @@ bool Scena::dzialanie()
                                     std::cin.ignore(1024, '\n');
                                 }
                             }
-                            tab1[2] = tab[2];
+                            tab1[2] = 0;
                             start = Wektor3D({tab1[0], tab1[1], tab1[2]});
 
                             Elementy_powierzchni.push_front(std::make_shared<Skarpa>(start, tab[0], tab[1], tab[2], "../datasets/Elementy_powierzchni_skr" + std::to_string(index_elementu_skr) + ".dat"));
+                            std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin();
+                            (*j)->zapis();
+                            Lacze.DodajNazwePliku((*j)->pokaz_nazwa().c_str());
                             index_elementu_skr++;
                         }
                         else if (numer == 4)
@@ -560,8 +572,8 @@ bool Scena::dzialanie()
                             tab[2] = 15;
                             Wektor3D start = Wektor3D({tab[0], tab[1], tab[2]});
                             Lst_dronow.push_front(std::make_shared<dron>(index_drona, Lacze, start));
-                            index_drona++;
                             (*Lst_dronow.begin())->zapisz();
+                            index_drona++;
                         }
                         break;
                     }
@@ -581,78 +593,110 @@ bool Scena::dzialanie()
                     std::cin.ignore(1024, '\n');
                 }
             }
+            Lacze.Rysuj();
         }
         else if (wybor == 'u')
         {
-            int i = 0;
-            int nr;
-            for (std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin(); j != Elementy_powierzchni.end(); ++j)
+            if ((int)Elementy_powierzchni.size() == 0)
             {
-                std::cout << i << " - " << (*j)->pokaz_nazwa() << " współrzędne: " << (*j)->pokaz_srodek();
-                i++;
-            }
-            std::cout << "Podaj numer elementu, który chcesz usunąć" << std::endl;
-            while (1)
-            {
-                std::cin >> nr;
-                if (std::cin.good())
-                {
-                    break;
-                }
-                else
-                {
-                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
-                    std::cin.clear();
-                    std::cin.ignore(1024, '\n');
-                }
-            }
-            std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin();
-            for (int k = 0; k < nr; ++k)
-            {
-                j++;
-            }
-            Lacze.UsunNazwePliku((*j)->pokaz_nazwa());
-            if(remove((*j)->pokaz_nazwa().c_str()) == 0)
-            {
-                std::cout << "Usunięto plik: " << (*j)->pokaz_nazwa() << std::endl;
+                std::cout << "Nie można skasować, bo nie ma żadnych elementów powierzchni" << std::endl;
             }
             else
             {
-                std::cout << "Nie skasowano pliku: " << (*j)->pokaz_nazwa() << std::endl;
-            }
-            Elementy_powierzchni.erase(j);
-        }
-        else if (wybor == 'x')
-        {
-            int i = 0;
-            int nr;
-            for (std::list<std::shared_ptr<dron>>::const_iterator j = Lst_dronow.begin(); j != Lst_dronow.end(); ++j)
-            {
-                std::cout << i << " - "  << " współrzędne: " << (*j)->pokaz_srodek();
-                i++;
-            }
-            std::cout << "Podaj numer drona, którego chcesz usunąć" << std::endl;
-            while (1)
-            {
-                std::cin >> nr;
-                if (std::cin.good())
+                int i = 0;
+                int nr;
+                for (std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin(); j != Elementy_powierzchni.end(); ++j)
                 {
-                    break;
+                    std::cout << i << " - " << (*j)->pokaz_nazwa() << " współrzędne: " << (*j)->pokaz_srodek() << std::endl;
+                    i++;
+                }
+                std::cout << "Podaj numer elementu, który chcesz usunąć" << std::endl;
+                while (1)
+                {
+                    std::cin >> nr;
+                    if (std::cin.good())
+                    {
+                        if (nr >= 0 && nr < (int)Elementy_powierzchni.size())
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            std::cout << "Nie ma takiego numeru\nPodaj nr jeszcze raz" << std::endl;
+                        }
+                    }
+                    else
+                    {
+                        std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                        std::cin.clear();
+                        std::cin.ignore(1024, '\n');
+                    }
+                }
+                std::list<std::shared_ptr<Graniastoslup>>::const_iterator j = Elementy_powierzchni.begin();
+                for (int k = 0; k < nr; ++k)
+                {
+                    j++;
+                }
+                Lacze.UsunNazwePliku((*j)->pokaz_nazwa());
+                if (remove((*j)->pokaz_nazwa().c_str()) == 0)
+                {
+                    std::cout << "Usunięto plik: " << (*j)->pokaz_nazwa() << std::endl;
                 }
                 else
                 {
-                    std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
-                    std::cin.clear();
-                    std::cin.ignore(1024, '\n');
+                    std::cout << "Nie skasowano pliku: " << (*j)->pokaz_nazwa() << std::endl;
                 }
+                Elementy_powierzchni.erase(j);
+                Lacze.Rysuj();
             }
-            std::list<std::shared_ptr<dron>>::const_iterator j = Lst_dronow.begin();
-            for (int k = 0; k < nr; ++k)
+        }
+        else if (wybor == 'x')
+        {
+            if ((int)Lst_dronow.size() == 0)
             {
-                j++;
+                std::cout << "Nie można usunąć, bo nie ma żadnych dronów" << std::endl;
             }
-            (*j)->usun_drona();
-            Lst_dronow.erase(j);
+            else
+            {
+                int i = 0;
+                int nr;
+                for (std::list<std::shared_ptr<dron>>::const_iterator j = Lst_dronow.begin(); j != Lst_dronow.end(); ++j)
+                {
+                    std::cout << i << " - "
+                              << " współrzędne: " << (*j)->pokaz_srodek() << std::endl;
+                    i++;
+                }
+                std::cout << "Podaj numer drona, którego chcesz usunąć" << std::endl;
+                while (1)
+                {
+                    std::cin >> nr;
+                    if (std::cin.good())
+                    {
+                        if (nr >= 0 && nr < (int)Lst_dronow.size())
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            std::cout << "Nie ma takiego numeru\nPodaj nr jeszcze raz" << std::endl;
+                        }
+                    }
+                    else
+                    {
+                        std::cout << "Podana liczba nie była liczbą :0\nPodaj wartość jeszcze raz" << std::endl;
+                        std::cin.clear();
+                        std::cin.ignore(1024, '\n');
+                    }
+                }
+                std::list<std::shared_ptr<dron>>::const_iterator j = Lst_dronow.begin();
+                for (int k = 0; k < nr; ++k)
+                {
+                    j++;
+                }
+                (*j)->usun_drona();
+                Lst_dronow.erase(j);
+                Lacze.Rysuj();
+            }
         }
         else if (wybor == 'k')
         {
@@ -666,13 +710,20 @@ bool Scena::dzialanie()
         }
         else if (wybor == 'o' || wybor == 't' || wybor == 'r')
         {
-            std::list<std::shared_ptr<dron>>::const_iterator wsk_1;
-            wsk_1 = Lst_dronow.begin();
-            for (int i = 0; i < index; ++i)
+            if ((int)Lst_dronow.size() == 0)
             {
-                wsk_1++;
+                std::cout << "Brak dronów!!!" << std::endl;
             }
-            (*wsk_1)->akcja(wybor);
+            else
+            {
+                std::list<std::shared_ptr<dron>>::const_iterator wsk_1;
+                wsk_1 = Lst_dronow.begin();
+                for (int i = 0; i < index; ++i)
+                {
+                    wsk_1++;
+                }
+                (*wsk_1)->akcja(wybor);
+            }
         }
     }
     return false;

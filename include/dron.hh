@@ -61,7 +61,7 @@ dron::dron(int ind, PzG::LaczeDoGNUPlota &Lacze1, Wektor3D polozenie) : Lacze(La
 {
     Wektor3D wek = {0, 0, 7.5};
     kat = 0;
-    this->index = ind;
+    index = ind;
     korpus_orginal.ustaw_nazwa("../datasets/korpus" + std::to_string(index) + ".dat");
     for (int i = 0; i < 4; ++i)
     {
@@ -83,7 +83,7 @@ dron::dron(int ind, PzG::LaczeDoGNUPlota &Lacze1, Wektor3D polozenie) : Lacze(La
     {
         rotor[i].translacja(korpus_orginal[2 * i] + polozenie + wek);
     }
-    this->droga = this->droga + polozenie;
+    droga = droga + polozenie;
 }
 /*!
  * \brief Metoda odpowiadająca za ruch pionowy
@@ -95,9 +95,9 @@ void dron::ruch_pionowy(double pion)
 {
     Wektor3D tmp;
     tmp[2] = pion;
-    this->droga = this->droga + tmp;
-    korpus.rotacja(this->obr);
-    korpus.translacja(this->droga);
+    droga = droga + tmp;
+    korpus.rotacja(obr);
+    korpus.translacja(droga);
 }
 /*!
  * \brief Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY
@@ -111,7 +111,7 @@ void dron::przesuniecie(double droga)
     tmp[0] = droga * cos(kat * M_PI / 180);
     tmp[1] = droga * sin(kat * M_PI / 180);
     this->droga = this->droga + tmp;
-    korpus.rotacja(this->obr);
+    korpus.rotacja(obr);
     korpus.translacja(this->droga);
 }
 
@@ -123,12 +123,12 @@ void dron::przesuniecie(double droga)
  */
 void dron::obrot(double kat_obrotu)
 {
-    this->kat = this->kat + kat_obrotu;
+    kat = kat + kat_obrotu;
     double radian;
-    radian = StopienNaRadianZ(this->kat);
+    radian = StopienNaRadianZ(kat);
     Oblicz_Macierz_ObrotuZ(radian, obr);
     korpus.rotacja(obr);
-    korpus.translacja(this->droga);
+    korpus.translacja(droga);
 }
 /*!
  * \brief Metoda odpowidająca za obrót rotorów
@@ -356,7 +356,8 @@ void dron::akcja(char wybor)
             Lacze.Rysuj();
             usleep(15000);
         }
-        Lacze.UsunOstatniaNazwe_ListaLokalna();
+        //Lacze.UsunOstatniaNazwe_ListaLokalna();
+        Lacze.UsunNazwePliku("../datasets/sciezka.dat");
         Lacze.Rysuj();
         break;
     case 'r':

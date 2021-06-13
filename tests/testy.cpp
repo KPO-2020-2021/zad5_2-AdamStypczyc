@@ -1,6 +1,6 @@
-#include "../tests/doctest/doctest.h"
-#include "lacze_do_gnuplota.hh"
-#include "Scena.hh"
+// #include "../tests/doctest/doctest.h"
+// #include "lacze_do_gnuplota.hh"
+// #include "Scena.hh"
 // /****************************************************************
 //  * --------------------------------------------------------------
 //  * 
