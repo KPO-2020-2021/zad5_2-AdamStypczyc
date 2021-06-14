@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_pz_g_1_1_info_pliku_do_rysowania" kind="class" language="C++" prot="public">
+    <compoundname>PzG::InfoPlikuDoRysowania</compoundname>
+    <includes refid="lacze__do__gnuplota_8hh" local="no">lacze_do_gnuplota.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pz_g_1_1_info_pliku_do_rysowania_1a07ab06c56b9c3179e566a4123ab2a037" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string PzG::InfoPlikuDoRysowania::_NazwaPliku</definition>
+        <argsstring></argsstring>
+        <name>_NazwaPliku</name>
+        <briefdescription>
+<para>Nazwa pliku z danymi do rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Nazwa pliku z danymi do rysowania. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="264" column="19" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_info_pliku_do_rysowania_1abfac1cf81db15ff019db7694b5db7dd8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string PzG::InfoPlikuDoRysowania::_Etykieta</definition>
+        <argsstring></argsstring>
+        <name>_Etykieta</name>
+        <briefdescription>
+<para>Etykieta, która może być umieszczana przy punktach. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Etykieta, którą mogą być oznaczane wyświetlane punkty. Jeśli jest ich więcej niż 1, to do każdej etykiety dopisywany jest kolejny numer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="272" column="19" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_info_pliku_do_rysowania_1a56a03dde7a7a414dbf3c230812a8d741" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PzG::InfoPlikuDoRysowania::_Szerokosc</definition>
+        <argsstring></argsstring>
+        <name>_Szerokosc</name>
+        <briefdescription>
+<para>Szerokość użytego piórka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Określa szerokość piórka, jakie ma być użyte do rysowania obiektów graficznych. W przypadku rysowania obiektów punktowych określa rozmiar tego obiektu. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="280" column="11" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_info_pliku_do_rysowania_1abcbca57f6e9a6d2e6ffe555d0e44cac5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PzG::InfoPlikuDoRysowania::_Styl</definition>
+        <argsstring></argsstring>
+        <name>_Styl</name>
+        <briefdescription>
+<para>Styl rysowanego elementu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Przechowuje informację o typie rysowanego punktu. Jeśli rysowana jest linia, to wartość ta określa typ rysowanej linii (ciągła, kreskowana, kropkowana itd.). Jeśli rysowane są obiekty punktowe, to określa ona typ rysowanego puntku (krzyżyk, kropka, kólko itd.).</para>
+<para>Informację o stylach rysowanych obiektów odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu <emphasis>gnuplot</emphasis>, a następnie wykonania polecenia <emphasis>test</emphasis> na poziomie interakcji z programem <emphasis>gnuplot</emphasis>. Style rysowanych obiektów odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="298" column="11" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_info_pliku_do_rysowania_1a9b7a7f0a0d15587508bbca584649cf2f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PzG::InfoPlikuDoRysowania::_Kolor</definition>
+        <argsstring></argsstring>
+        <name>_Kolor</name>
+        <briefdescription>
+<para>Numer koloru rysowanego elementu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Przechowuje numer koloru jaki ma być użyty do rysowania wykresów lub punktów (w zależności od wyboru trybu rysowania patrz <ref refid="" kindref="compound">_SposobRys</ref>).</para>
+<para>Informację o kolorach odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu <emphasis>gnuplot</emphasis>, a następnie wykonania polecenia <emphasis>test</emphasis> na poziomie interakcji z programem <emphasis>gnuplot</emphasis>. Kolory odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="312" column="11" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_info_pliku_do_rysowania_1aca63803eb3b2807d4f1501aadc54c239" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dc" kindref="member">TypSposobuRysowania</ref></type>
+        <definition>TypSposobuRysowania PzG::InfoPlikuDoRysowania::_SposobRys</definition>
+        <argsstring></argsstring>
+        <name>_SposobRys</name>
+        <briefdescription>
+<para>Sposób rysowania danej linii. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Przechowuje informacje o sposobie rysowania linii. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="319" column="27" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a42f5a6ba16403a4364158fa46176ff7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PzG::InfoPlikuDoRysowania::InfoPlikuDoRysowania</definition>
+        <argsstring>(const char *NazwaPliku, TypSposobuRysowania SposobRys, int Szerokosc=1, int Kolor=1, int Styl=7)</argsstring>
+        <name>InfoPlikuDoRysowania</name>
+        <param>
+          <type>const char *</type>
+          <declname>NazwaPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dc" kindref="member">TypSposobuRysowania</ref></type>
+          <declname>SposobRys</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Szerokosc</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Kolor</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Styl</declname>
+          <defval>7</defval>
+        </param>
+        <briefdescription>
+<para>Inicjalizuje obiekt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="121" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a714aaa4c8e7bbd167ccbb1e797ca158c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; PzG::InfoPlikuDoRysowania::WezNazwePliku</definition>
+        <argsstring>() const</argsstring>
+        <name>WezNazwePliku</name>
+        <briefdescription>
+<para>Udostępia nazwę pliku do rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia nazwę pliku z danymi do rysowania. <simplesect kind="return"><para>Referencja do nazwy pliku w trybie tylko do odczytu. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="133" column="24" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1ae734c69f5cecf9c0584e3a7f433340ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::InfoPlikuDoRysowania::ZmienNazwePliku</definition>
+        <argsstring>(const std::string &amp;NazwaPliku)</argsstring>
+        <name>ZmienNazwePliku</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>NazwaPliku</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia nazwę pliku do rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia nazwę pliku z danymi do rysowania. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">NazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nowa nazwa pliku z danymi do rysowania. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="140" column="11" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="140" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a04e42126ae7873117b96c39f31e0a206" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dc" kindref="member">TypSposobuRysowania</ref></type>
+        <definition>TypSposobuRysowania PzG::InfoPlikuDoRysowania::WezSposobRys</definition>
+        <argsstring>() const</argsstring>
+        <name>WezSposobRys</name>
+        <briefdescription>
+<para>Udostępnia sposób rysowanej linii. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia informację o sposóbie rysowania linii. <simplesect kind="return"><para>Udostępnia wartość wyliczeniową identyfikującą sposób rysowania. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="149" column="26" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a4245bff195e0d6d382ed7d776b5ad645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::InfoPlikuDoRysowania::ZmienSposobRys</definition>
+        <argsstring>(TypSposobuRysowania SposobRys)</argsstring>
+        <name>ZmienSposobRys</name>
+        <param>
+          <type><ref refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dc" kindref="member">TypSposobuRysowania</ref></type>
+          <declname>SposobRys</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia sposób rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia sposób rysowania linii lub płaszczyzny. Rodzaj obiektu zależy od typu przekazywanych danych w pliku skojarzonym z z danym obiektem graficznym. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">SposobRys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nowy sposób rysowania, który będzie przyporządkowany danemu obiektowi graficznemu. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Referencja do zmodyfikowanego obiektu <computeroutput>*this</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="160" column="28" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="160" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a627bb615c50f3b03374774e6b974488b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PzG::InfoPlikuDoRysowania::WezSzerokosc</definition>
+        <argsstring>() const</argsstring>
+        <name>WezSzerokosc</name>
+        <briefdescription>
+<para>Udostępnia informację o szerokości linii. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia informację o szerokości rysowanej linii. <simplesect kind="return"><para>Wartość określająca szerokość rysowanej linii. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="168" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1aa6d4c0fa70db640fde80091aefa1326c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::InfoPlikuDoRysowania::ZmienSzerokosc</definition>
+        <argsstring>(int Szerokosc)</argsstring>
+        <name>ZmienSzerokosc</name>
+        <param>
+          <type>int</type>
+          <declname>Szerokosc</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia szerokość rysowania elementów graficznych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia szerokość rysowania elementów graficznych.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Szerokosc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nowa wartość szerokości rysowanej linii. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Parametr <emphasis>Szerokosc</emphasis> musi mieć warość większą od 0. </para>
+</simplesect>
+<simplesect kind="return"><para>Referencja do zmodyfikowanego obiektu <computeroutput>*this</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="178" column="27" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="178" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a137081c82c29acd7df02badb27c8a2cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PzG::InfoPlikuDoRysowania::WezKolor</definition>
+        <argsstring>() const</argsstring>
+        <name>WezKolor</name>
+        <briefdescription>
+<para>Udostępnia numer koloru. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia numer koloru jakim ma być rysowany dany element. <simplesect kind="return"><para>Wartość określająca kolor rysowania. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="187" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1af5c256daaa945a31a1f137c9b429bc37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::InfoPlikuDoRysowania::ZmienKolor</definition>
+        <argsstring>(int Kolor)</argsstring>
+        <name>ZmienKolor</name>
+        <param>
+          <type>int</type>
+          <declname>Kolor</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia kolor rysowania elementów graficznych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia kolor rysowania elementów graficznych.</para>
+<para>Informację o kolorach rysowanych obiektów odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu <emphasis>gnuplot</emphasis>, a następnie wykonania polecenia <emphasis>test</emphasis> na poziomie interakcji z programem <emphasis>gnuplot</emphasis>. Kolory rysowanych obiektów odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Kolor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- numer nowego koloru rysowania. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Referencja do zmodyfikowanego obiektu <computeroutput>*this</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="203" column="27" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="203" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1acf5b136a9ee8a3308fdba974d0eebd9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PzG::InfoPlikuDoRysowania::WezStyl</definition>
+        <argsstring>() const</argsstring>
+        <name>WezStyl</name>
+        <briefdescription>
+<para>Udostępia oznaczenie liczbowe stylu rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępia oznaczenie liczbowe stylu rysowania danego obiektu graficznego.</para>
+<para>Informację o stylach rysowanych obiektów odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu <emphasis>gnuplot</emphasis>, a następnie wykonania polecenia <emphasis>test</emphasis> na poziomie interakcji z programem <emphasis>gnuplot</emphasis>. Style rysowanych obiektów odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka. <simplesect kind="return"><para>Wartość określająca styl rysowania. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="221" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="221" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a2a7e9e212905112c6f236fe1d0a1f2ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::InfoPlikuDoRysowania::ZmienStyl</definition>
+        <argsstring>(int Styl)</argsstring>
+        <name>ZmienStyl</name>
+        <param>
+          <type>int</type>
+          <declname>Styl</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia styl rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia styl rysowania obiektu graficznego (linii lub punktów).</para>
+<para>Informację o stylach rysowanych obiektów odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu <emphasis>gnuplot</emphasis>, a następnie wykonania polecenia <emphasis>test</emphasis> na poziomie interakcji z programem <emphasis>gnuplot</emphasis>. Style rysowanych obiektów odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Styl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- numer nowego stylu rysowania. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Referencja do zmodyfikowanego obiektu <computeroutput>*this</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="237" column="27" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="237" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1ad73ee82ce7a07a63f3229a2add04b93d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; PzG::InfoPlikuDoRysowania::WezEtykiete</definition>
+        <argsstring>() const</argsstring>
+        <name>WezEtykiete</name>
+        <briefdescription>
+<para>Udostępnia etykietę punktów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia etykietę, która może być użyta do oznaczania punktów. <simplesect kind="return"><para>Referencja do etykiety w trybie tylko do odczytu. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="246" column="24" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="246" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_info_pliku_do_rysowania_1a1497c20c07dd13c716ff76d3cc4d7cf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::InfoPlikuDoRysowania::ZmienEtykiete</definition>
+        <argsstring>(const char *Etykieta)</argsstring>
+        <name>ZmienEtykiete</name>
+        <param>
+          <type>const char *</type>
+          <declname>Etykieta</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia etykietę </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia etykietę, która ma się pojawić przy rysowanym elemencie. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Etykieta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zawartość nowej etykiety. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Referencja do zmodyfikowanego obiektu *this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="255" column="27" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="255" bodyend="256"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Zestaw informacji dotyczący pliku i sposobu rysowania. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Klasa modeluje zestaw informacji dotyczący pliku i sposobu w jaki mają być wizualizowane zawarte w nim dane. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PzG::InfoPlikuDoRysowania</label>
+        <link refid="class_pz_g_1_1_info_pliku_do_rysowania"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="116" column="29" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="116" bodyend="320"/>
+    <listofallmembers>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1abfac1cf81db15ff019db7694b5db7dd8" prot="private" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>_Etykieta</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a9b7a7f0a0d15587508bbca584649cf2f" prot="private" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>_Kolor</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a07ab06c56b9c3179e566a4123ab2a037" prot="private" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>_NazwaPliku</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1aca63803eb3b2807d4f1501aadc54c239" prot="private" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>_SposobRys</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1abcbca57f6e9a6d2e6ffe555d0e44cac5" prot="private" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>_Styl</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a56a03dde7a7a414dbf3c230812a8d741" prot="private" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>_Szerokosc</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a42f5a6ba16403a4364158fa46176ff7a" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>InfoPlikuDoRysowania</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1ad73ee82ce7a07a63f3229a2add04b93d" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>WezEtykiete</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a137081c82c29acd7df02badb27c8a2cf" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>WezKolor</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a714aaa4c8e7bbd167ccbb1e797ca158c" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>WezNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a04e42126ae7873117b96c39f31e0a206" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>WezSposobRys</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1acf5b136a9ee8a3308fdba974d0eebd9a" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>WezStyl</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a627bb615c50f3b03374774e6b974488b" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>WezSzerokosc</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a1497c20c07dd13c716ff76d3cc4d7cf3" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>ZmienEtykiete</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1af5c256daaa945a31a1f137c9b429bc37" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>ZmienKolor</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1ae734c69f5cecf9c0584e3a7f433340ea" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>ZmienNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a4245bff195e0d6d382ed7d776b5ad645" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>ZmienSposobRys</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a2a7e9e212905112c6f236fe1d0a1f2ec" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>ZmienStyl</name></member>
+      <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1aa6d4c0fa70db640fde80091aefa1326c" prot="public" virt="non-virtual"><scope>PzG::InfoPlikuDoRysowania</scope><name>ZmienSzerokosc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

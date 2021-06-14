@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_prostopadloscian_8hh" kind="file" language="C++">
+    <compoundname>Prostopadloscian.hh</compoundname>
+    <includes refid="_graniastoslup_8hh" local="yes">Graniastoslup.hh</includes>
+    <includedby refid="dron_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/dron.hh</includedby>
+    <includedby refid="_ostroslup_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Ostroslup.hh</includedby>
+    <includedby refid="_plaskowyz_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh</includedby>
+    <includedby refid="_skarpa_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Skarpa.hh</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Graniastoslup.hh</label>
+        <link refid="_graniastoslup_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cassert</label>
+      </node>
+      <node id="4">
+        <label>Wektor3D.hh</label>
+        <link refid="_wektor3_d_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh</label>
+        <link refid="_prostopadloscian_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>Macierz.hh</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>wektor.hh</label>
+        <link refid="wektor_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/dron.hh</label>
+        <link refid="dron_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh</label>
+        <link refid="_prostopadloscian_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Skarpa.hh</label>
+        <link refid="_skarpa_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh</label>
+        <link refid="_plaskowyz_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Scena.hh</label>
+        <link refid="_scena_8hh"/>
+      </node>
+      <node id="4">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Ostroslup.hh</label>
+        <link refid="_ostroslup_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_prostopadloscian" prot="public">Prostopadloscian</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_graniastoslup_8hh" kindref="compound">Graniastoslup.hh</ref>&quot;</highlight></codeline>
+<codeline lineno="8" refid="class_prostopadloscian" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_prostopadloscian" kindref="compound">Prostopadloscian</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup" kindref="compound">Graniastoslup</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_prostopadloscian_1a42f6bafe041911060352f7e307dccc58" kindref="member">Prostopadloscian</ref>(<ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>sro<sp/>=<sp/><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref>(),<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>30,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>50,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>50,<sp/>std::string<sp/>nazwa<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../datasets/test_prosto.dat&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23" refid="class_prostopadloscian_1a42f6bafe041911060352f7e307dccc58" refkind="member"><highlight class="normal"><ref refid="class_prostopadloscian_1a42f6bafe041911060352f7e307dccc58" kindref="member">Prostopadloscian::Prostopadloscian</ref>(<ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>sro,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d,<sp/>std::string<sp/>nazwa)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>proba<sp/>=<sp/>{w,d,h};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ab237a62b9735e850a895e9f4d66d45e8" kindref="member">wymiar</ref><sp/>=<sp/>std::make_shared&lt;Wektor3D&gt;(proba);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" kindref="member">nazwa_pliku</ref><sp/>=<sp/>nazwa;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>=<sp/>sro;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>tmp;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/>0________2</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>/|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/|</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>6/_|______4/<sp/>|</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>|<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>|</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>|<sp/><sp/>|<sp/><sp/><sp/>.ś<sp/>|<sp/><sp/>|</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>|<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>|</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>|<sp/><sp/>|1_____|_3|</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>|<sp/>/<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>/</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>|/________|/</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>-<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>+<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>+<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>-<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>+<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>-<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>+<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>+<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>+<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>+<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>+<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>-<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>+<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>-<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>+<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>+<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>-<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>-<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>-<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>-<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>+<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>{<ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[0]<sp/>-<sp/>(w<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[1]<sp/>-<sp/>(d<sp/>/<sp/>2),<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>[2]<sp/>-<sp/>(h<sp/>/<sp/>2)};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.push_back(tmp);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh"/>
+  </compounddef>
+</doxygen>

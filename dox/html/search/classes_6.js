@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['scena_158',['Scena',['../class_scena.html',1,'']]]
+  ['plaskowyz_188',['Plaskowyz',['../class_plaskowyz.html',1,'']]],
+  ['prostopadloscian_189',['Prostopadloscian',['../class_prostopadloscian.html',1,'']]]
 ];

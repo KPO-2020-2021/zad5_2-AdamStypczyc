@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdron" kind="class" language="C++" prot="public">
+    <compoundname>dron</compoundname>
+    <includes refid="dron_8hh" local="no">dron.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdron_1ace406b00cda5a2ab4c36684910c331c0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double dron::kat</definition>
+        <argsstring></argsstring>
+        <name>kat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="24" column="12" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1acbba2a14c093b4be5f1592ad653fb190" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dron::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="25" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1a7ceccb35231388049d537f7723f18b05" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref> &gt;</type>
+        <definition>std::vector&lt;Wektor3D&gt; dron::sciezka</definition>
+        <argsstring></argsstring>
+        <name>sciezka</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="26" column="17" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1a7483cae391ab201e9794ff724664b07f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota" kindref="compound">PzG::LaczeDoGNUPlota</ref> &amp;</type>
+        <definition>PzG::LaczeDoGNUPlota&amp; dron::Lacze</definition>
+        <argsstring></argsstring>
+        <name>Lacze</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="27" column="26" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1a61f2cca004c7c2198a94005597bd0d58" prot="private" static="no" mutable="no">
+        <type><ref refid="class_graniastoslup6" kindref="compound">Graniastoslup6</ref></type>
+        <definition>Graniastoslup6 dron::rotor_orginal[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>rotor_orginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="28" column="20" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1aaaa97cb01370f45065d5ce449d32230d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_graniastoslup6" kindref="compound">Graniastoslup6</ref></type>
+        <definition>Graniastoslup6 dron::rotor[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>rotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="29" column="20" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1a7bfbadd64144dd20d1ae089919dead8a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_prostopadloscian" kindref="compound">Prostopadloscian</ref></type>
+        <definition>Prostopadloscian dron::korpus_orginal</definition>
+        <argsstring></argsstring>
+        <name>korpus_orginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="30" column="22" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1afde3f6c8eb79f81dff05089c1b9aa926" prot="private" static="no" mutable="no">
+        <type><ref refid="class_prostopadloscian" kindref="compound">Prostopadloscian</ref></type>
+        <definition>Prostopadloscian dron::korpus</definition>
+        <argsstring></argsstring>
+        <name>korpus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="31" column="22" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1a6873e14c9b8c4eae0493cf16db436202" prot="private" static="no" mutable="no">
+        <type><ref refid="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" kindref="member">Macierz3x3</ref></type>
+        <definition>Macierz3x3 dron::obr</definition>
+        <argsstring></argsstring>
+        <name>obr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="32" column="16" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdron_1a74c22a020dcefe41df8bb1a12e1521d4" prot="private" static="no" mutable="no">
+        <type><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref></type>
+        <definition>Wektor3D dron::droga</definition>
+        <argsstring></argsstring>
+        <name>droga</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="33" column="14" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdron_1a2a6f71538eb4a1413c1eddeb82abee54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dron::dron</definition>
+        <argsstring>(int ind, PzG::LaczeDoGNUPlota &amp;Lacze1, Wektor3D polozenie)</argsstring>
+        <name>dron</name>
+        <param>
+          <type>int</type>
+          <declname>ind</declname>
+        </param>
+        <param>
+          <type><ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota" kindref="compound">PzG::LaczeDoGNUPlota</ref> &amp;</type>
+          <declname>Lacze1</declname>
+        </param>
+        <param>
+          <type><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref></type>
+          <declname>polozenie</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor parametryczny klasy dron. Buduje drona i tworzy pliki w których będą zapisywanie punkty. Przypisuje dronowi jego index, tworzy Lacze oraz przestawia go o zadany wektor początkowy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zmienna odpowiadająca indeksowi </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Lacze1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zmienna odpowiadająca laczy do gnuplota dzięki ktoremu tworzymy lacze </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>polozenie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wektor o jaki zostanie przestawiony dron </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wek</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wektor o który dodatkowo przesuwamy rotor aby nie był on częściowo zawarty w korpusie drona </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="36" column="5" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="60" bodyend="87"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621">PzG::LaczeDoGNUPlota::DodajNazwePliku</references>
+        <references refid="class_graniastoslup_1af75f7a863e9ef54c2cccb510b0f03ded" compoundref="_graniastoslup_8hh" startline="88" endline="91">Graniastoslup::pokaz_nazwa</references>
+        <references refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" compoundref="_graniastoslup_8hh" startline="97" endline="104">Graniastoslup::translacja</references>
+        <references refid="class_graniastoslup_1a8ce7eb4fc97b7ae53699457869d47325" compoundref="_graniastoslup_8hh" startline="70" endline="73">Graniastoslup::ustaw_nazwa</references>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1a5715e0708e2cae90d853b37da355f755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::ruch_pionowy</definition>
+        <argsstring>(double pion)</argsstring>
+        <name>ruch_pionowy</name>
+        <param>
+          <type>double</type>
+          <declname>pion</declname>
+        </param>
+        <briefdescription>
+<para>Metoda odpowiadająca za ruch pionowy Przesuwa drona w górę o wartość podaną przez zmienną pion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mówi o ile ma przesunąć drona </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wektor3D pomocniczy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="38" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="94" bodyend="101"/>
+        <references refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" compoundref="_graniastoslup_8hh" startline="110" endline="117">Graniastoslup::rotacja</references>
+        <references refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" compoundref="_graniastoslup_8hh" startline="97" endline="104">Graniastoslup::translacja</references>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">akcja</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1a064414beef887c2a9c3cb73956f6b8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::przesuniecie</definition>
+        <argsstring>(double droga)</argsstring>
+        <name>przesuniecie</name>
+        <param>
+          <type>double</type>
+          <declname>droga</declname>
+        </param>
+        <briefdescription>
+<para>Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY Przesuwa drona w płaszczyźnie XY o wartość podaną przez zmienną droga. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>droga</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mówi o ile ma przesunąć drona </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wektor3D pomocniczy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="39" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="108" bodyend="116"/>
+        <references refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" compoundref="_graniastoslup_8hh" startline="110" endline="117">Graniastoslup::rotacja</references>
+        <references refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" compoundref="_graniastoslup_8hh" startline="97" endline="104">Graniastoslup::translacja</references>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">akcja</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1a648ea5308782ad19b74f6651c712708f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::obrot</definition>
+        <argsstring>(double kat_obrotu)</argsstring>
+        <name>obrot</name>
+        <param>
+          <type>double</type>
+          <declname>kat_obrotu</declname>
+        </param>
+        <briefdescription>
+<para>Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kat_obrotu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mówi o ile ma obrócić dron </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radian</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kąt wyrażony w radianach </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="41" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="124" bodyend="132"/>
+        <references refid="macierz_8hh_1ab03e0ede3b608ad024ee87495c4c2ba6" compoundref="macierz_8hh" startline="77" endline="88">Oblicz_Macierz_ObrotuZ</references>
+        <references refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" compoundref="_graniastoslup_8hh" startline="110" endline="117">Graniastoslup::rotacja</references>
+        <references refid="macierz_8hh_1ab0840da738fad890f0b2e2cbd67c0c78" compoundref="macierz_8hh" startline="34" endline="39">StopienNaRadianZ</references>
+        <references refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" compoundref="_graniastoslup_8hh" startline="97" endline="104">Graniastoslup::translacja</references>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">akcja</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1add74d8f5673cf96226319b1c88c3439d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::obrot_rotorow</definition>
+        <argsstring>()</argsstring>
+        <name>obrot_rotorow</name>
+        <briefdescription>
+<para>Metoda odpowidająca za obrót rotorów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz przechowująca macierz obrotu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz obracająca rotory 1 i 3 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp_v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz obracajaca rotory 0 i 2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wek</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wektor o który dodatkowo przesuwamy rotor aby nie &quot;uderzał&quot; on w korpus drona przy obracaniu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="42" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="140" bodyend="168"/>
+        <references refid="macierz_8hh_1ab03e0ede3b608ad024ee87495c4c2ba6" compoundref="macierz_8hh" startline="77" endline="88">Oblicz_Macierz_ObrotuZ</references>
+        <references refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" compoundref="_graniastoslup_8hh" startline="110" endline="117">Graniastoslup::rotacja</references>
+        <references refid="macierz_8hh_1ab0840da738fad890f0b2e2cbd67c0c78" compoundref="macierz_8hh" startline="34" endline="39">StopienNaRadianZ</references>
+        <references refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" compoundref="_graniastoslup_8hh" startline="97" endline="104">Graniastoslup::translacja</references>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">akcja</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1accd205169ce787882dbaeb916a6863f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::zapisz</definition>
+        <argsstring>()</argsstring>
+        <name>zapisz</name>
+        <briefdescription>
+<para>Metoda zapisujaca drona do plików. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="44" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="173" bodyend="180"/>
+        <references refid="class_graniastoslup_1aeae2daf769c021e51bed7583ea926fbd" compoundref="_graniastoslup_8hh" startline="124" endline="149">Graniastoslup::zapis</references>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">akcja</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1a1c22017426486f689273d83dfe06aafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::akcja</definition>
+        <argsstring>(char wybor)</argsstring>
+        <name>akcja</name>
+        <param>
+          <type>char</type>
+          <declname>wybor</declname>
+        </param>
+        <briefdescription>
+<para>Metoda odpowiadająca za porusanie się i animację drona. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wybor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>informacja jaką opcję wybrał użytkownik </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>droga</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zmienna pomocnicza do której przypisywana jest droga </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zmienna do której użytkownik przypisuje kąt obrotu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="45" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="187" bodyend="522"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621">PzG::LaczeDoGNUPlota::DodajNazwePliku</references>
+        <references refid="class_wektor_1a2d1ce5357ce9ff32f9a7d9c6082cb82d" compoundref="wektor_8hh" startline="22">Wektor&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt;::ilosc_stworzonych</references>
+        <references refid="class_wektor_1af40e6b044f9e04e0fe5cb6f3821d7ea3" compoundref="wektor_8hh" startline="22">Wektor&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt;::ilosc_tymczasowych</references>
+        <references refid="classdron_1a648ea5308782ad19b74f6651c712708f" compoundref="dron_8hh" startline="124" endline="132">obrot</references>
+        <references refid="classdron_1add74d8f5673cf96226319b1c88c3439d" compoundref="dron_8hh" startline="140" endline="168">obrot_rotorow</references>
+        <references refid="classdron_1a064414beef887c2a9c3cb73956f6b8e2" compoundref="dron_8hh" startline="108" endline="116">przesuniecie</references>
+        <references refid="classdron_1abd3871d58abad0e64c3e1e034517e2f6" compoundref="dron_8hh" startline="528" endline="550">przypisz_sciezke</references>
+        <references refid="classdron_1a5715e0708e2cae90d853b37da355f755" compoundref="dron_8hh" startline="94" endline="101">ruch_pionowy</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335">PzG::LaczeDoGNUPlota::Rysuj</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7fa4e775e1aee74869fae174c567c2a6">PzG::LaczeDoGNUPlota::UsunNazwePliku</references>
+        <references refid="classdron_1accd205169ce787882dbaeb916a6863f9" compoundref="dron_8hh" startline="173" endline="180">zapisz</references>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1abd3871d58abad0e64c3e1e034517e2f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::przypisz_sciezke</definition>
+        <argsstring>(double droga)</argsstring>
+        <name>przypisz_sciezke</name>
+        <param>
+          <type>double</type>
+          <declname>droga</declname>
+        </param>
+        <briefdescription>
+<para>Metoda odpowiadjąca za budowę ścieżki lotu drona. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>droga</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>długość drogi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="46" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="528" bodyend="550"/>
+        <references refid="class_graniastoslup_1a745ff61bd79e1f10c3e66816a1b6dea0" compoundref="_graniastoslup_8hh" startline="79" endline="82">Graniastoslup::pokaz_srodek</references>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">akcja</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1a5d56c6d7d5d8db7b4bf5292083769c14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref></type>
+        <definition>Wektor3D dron::pokaz_srodek</definition>
+        <argsstring>() const</argsstring>
+        <name>pokaz_srodek</name>
+        <briefdescription>
+<para>Metoda zwracająca Wektor3D będący środkiem korpusu drona. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="48" column="14" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="554" bodyend="557"/>
+        <references refid="class_graniastoslup_1a745ff61bd79e1f10c3e66816a1b6dea0" compoundref="_graniastoslup_8hh" startline="79" endline="82">Graniastoslup::pokaz_srodek</references>
+      </memberdef>
+      <memberdef kind="function" id="classdron_1a6cf04a2beb3431d29b4ad7f0f6ae37de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dron::usun_drona</definition>
+        <argsstring>()</argsstring>
+        <name>usun_drona</name>
+        <briefdescription>
+<para>Metoda usuwająca drona z Lacza. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="50" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="561" bodyend="568"/>
+        <references refid="class_graniastoslup_1af75f7a863e9ef54c2cccb510b0f03ded" compoundref="_graniastoslup_8hh" startline="88" endline="91">Graniastoslup::pokaz_nazwa</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7fa4e775e1aee74869fae174c567c2a6">PzG::LaczeDoGNUPlota::UsunNazwePliku</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa dron Deklaracja klasy dron. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji dronie. Zawiera ona elementy klasy prostopadloscian i gransiatoslup6. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sciezka</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zmienna odpowiadająca za wyświetlanie drogi przebytej przez protopadłościan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Lacze</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lacze do gnuplota </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>korpus_orginal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>prostopadloscian odpowiadajacy oryginalnemu korpusowi </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>korpus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>prostopadloscian odpowiadajacy korpusowi na którym będziemy pracować </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotor_orginal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tablica oryginalnych rotorów </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tablica rotorów na których będziemy pracować </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz obrotu drona </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>droga</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wektor przesuniecia drona </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>kat położenia drona </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numer drona </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dron</label>
+        <link refid="classdron"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" line="23" column="1" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/dron.hh" bodystart="22" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classdron_1a1c22017426486f689273d83dfe06aafe" prot="public" virt="non-virtual"><scope>dron</scope><name>akcja</name></member>
+      <member refid="classdron_1a74c22a020dcefe41df8bb1a12e1521d4" prot="private" virt="non-virtual"><scope>dron</scope><name>droga</name></member>
+      <member refid="classdron_1a2a6f71538eb4a1413c1eddeb82abee54" prot="public" virt="non-virtual"><scope>dron</scope><name>dron</name></member>
+      <member refid="classdron_1acbba2a14c093b4be5f1592ad653fb190" prot="private" virt="non-virtual"><scope>dron</scope><name>index</name></member>
+      <member refid="classdron_1ace406b00cda5a2ab4c36684910c331c0" prot="private" virt="non-virtual"><scope>dron</scope><name>kat</name></member>
+      <member refid="classdron_1afde3f6c8eb79f81dff05089c1b9aa926" prot="private" virt="non-virtual"><scope>dron</scope><name>korpus</name></member>
+      <member refid="classdron_1a7bfbadd64144dd20d1ae089919dead8a" prot="private" virt="non-virtual"><scope>dron</scope><name>korpus_orginal</name></member>
+      <member refid="classdron_1a7483cae391ab201e9794ff724664b07f" prot="private" virt="non-virtual"><scope>dron</scope><name>Lacze</name></member>
+      <member refid="classdron_1a6873e14c9b8c4eae0493cf16db436202" prot="private" virt="non-virtual"><scope>dron</scope><name>obr</name></member>
+      <member refid="classdron_1a648ea5308782ad19b74f6651c712708f" prot="public" virt="non-virtual"><scope>dron</scope><name>obrot</name></member>
+      <member refid="classdron_1add74d8f5673cf96226319b1c88c3439d" prot="public" virt="non-virtual"><scope>dron</scope><name>obrot_rotorow</name></member>
+      <member refid="classdron_1a5d56c6d7d5d8db7b4bf5292083769c14" prot="public" virt="non-virtual"><scope>dron</scope><name>pokaz_srodek</name></member>
+      <member refid="classdron_1a064414beef887c2a9c3cb73956f6b8e2" prot="public" virt="non-virtual"><scope>dron</scope><name>przesuniecie</name></member>
+      <member refid="classdron_1abd3871d58abad0e64c3e1e034517e2f6" prot="public" virt="non-virtual"><scope>dron</scope><name>przypisz_sciezke</name></member>
+      <member refid="classdron_1aaaa97cb01370f45065d5ce449d32230d" prot="private" virt="non-virtual"><scope>dron</scope><name>rotor</name></member>
+      <member refid="classdron_1a61f2cca004c7c2198a94005597bd0d58" prot="private" virt="non-virtual"><scope>dron</scope><name>rotor_orginal</name></member>
+      <member refid="classdron_1a5715e0708e2cae90d853b37da355f755" prot="public" virt="non-virtual"><scope>dron</scope><name>ruch_pionowy</name></member>
+      <member refid="classdron_1a7ceccb35231388049d537f7723f18b05" prot="private" virt="non-virtual"><scope>dron</scope><name>sciezka</name></member>
+      <member refid="classdron_1a6cf04a2beb3431d29b4ad7f0f6ae37de" prot="public" virt="non-virtual"><scope>dron</scope><name>usun_drona</name></member>
+      <member refid="classdron_1accd205169ce787882dbaeb916a6863f9" prot="public" virt="non-virtual"><scope>dron</scope><name>zapisz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

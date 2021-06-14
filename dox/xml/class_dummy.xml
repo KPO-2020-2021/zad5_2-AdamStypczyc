@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_dummy" kind="class" language="C++" prot="public">
+    <compoundname>Dummy</compoundname>
+    <includes refid="example_8h" local="no">example.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dummy_1afe03b8568b4af57481b092f8356ca041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dummy::Dummy</definition>
+        <argsstring>()</argsstring>
+        <name>Dummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor for <ref refid="class_dummy" kindref="compound">Dummy</ref> (does nothing). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/example.h" line="12" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummy_1a6453272d296d2ddf672e9ab0e7731c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dummy::doSomething</definition>
+        <argsstring>()</argsstring>
+        <name>doSomething</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a bool. <simplesect kind="return"><para>Always True. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/example.h" line="17" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a dummy class to demonstrate features of the boiler plate. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Dummy</label>
+        <link refid="class_dummy"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/example.h" line="6" column="12" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/example.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_dummy_1a6453272d296d2ddf672e9ab0e7731c82" prot="public" virt="non-virtual"><scope>Dummy</scope><name>doSomething</name></member>
+      <member refid="class_dummy_1afe03b8568b4af57481b092f8356ca041" prot="public" virt="non-virtual"><scope>Dummy</scope><name>Dummy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_plaskowyz" kind="class" language="C++" prot="public">
+    <compoundname>Plaskowyz</compoundname>
+    <basecompoundref refid="class_graniastoslup" prot="public" virt="non-virtual">Graniastoslup</basecompoundref>
+    <includes refid="_plaskowyz_8hh" local="no">Plaskowyz.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_plaskowyz_1a185082fb51ff0e6841b9bcff1aa04be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Plaskowyz::Plaskowyz</definition>
+        <argsstring>(Wektor3D sro, double skala_x=1, double skala_y=1, double skala_z=1, std::string nazwa=&quot;../datasets/test_obiekt.dat&quot;)</argsstring>
+        <name>Plaskowyz</name>
+        <param>
+          <type><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref></type>
+          <declname>sro</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>skala_x</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>skala_y</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>skala_z</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>nazwa</declname>
+          <defval>&quot;../datasets/test_obiekt.dat&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Konstruktor parametryczny klasy <ref refid="class_plaskowyz" kindref="compound">Plaskowyz</ref> Tworzy <ref refid="class_plaskowyz" kindref="compound">Plaskowyz</ref> względem punktu srodka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>punkt odpowiadający srodkowi </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skala_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wartość o jaką zostanie przemnożona szerokość </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skala_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wartość o jaką zostanie przemnożony głębokość </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skala_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wartość o jaką zostanie przemnożony wysokość </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nazwa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nazwa pliku który przypisujemy danej bryle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pomocznicy Wektor3D dzięki któremu wpisujemy wartosci współrzędnych </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>proba</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>również pomocniczy Wektor3D </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>szerokość </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>głębokość </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wysokosć </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh" line="14" column="5" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh" bodystart="30" bodyend="49"/>
+        <references refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" compoundref="_graniastoslup_8hh" startline="22">Graniastoslup::nazwa_pliku</references>
+        <references refid="_plaskowyz_8hh_1a2184d0dc695f54f26d9420f863f22714" compoundref="_plaskowyz_8hh" startline="4">SKALA</references>
+        <references refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" compoundref="_graniastoslup_8hh" startline="21">Graniastoslup::srodek</references>
+        <references refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" compoundref="_graniastoslup_8hh" startline="19">Graniastoslup::wspol</references>
+        <references refid="class_graniastoslup_1ab237a62b9735e850a895e9f4d66d45e8" compoundref="_graniastoslup_8hh" startline="20">Graniastoslup::wymiar</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa <ref refid="class_plaskowyz" kindref="compound">Plaskowyz</ref>. Deklaracja klasy <ref refid="class_plaskowyz" kindref="compound">Plaskowyz</ref>. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na <ref refid="class_plaskowyz" kindref="compound">Plaskowyz</ref>, które są w większości dziedziczone z klasy Gransiatoslup. Sama w sobie posiada swój konstruktor parametryczny. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Graniastoslup</label>
+        <link refid="class_graniastoslup"/>
+      </node>
+      <node id="1">
+        <label>Plaskowyz</label>
+        <link refid="class_plaskowyz"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Graniastoslup</label>
+        <link refid="class_graniastoslup"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#wymiar</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#wspol</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#nazwa_pliku</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>#srodek</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Wektor&lt; double, 3 &gt;</label>
+        <link refid="class_wektor"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+ilosc_tymczasowych</edgelabel>
+          <edgelabel>+ilosc_stworzonych</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; double, 3 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>shared_ptr&lt; Wektor &gt;</label>
+      </node>
+      <node id="1">
+        <label>Plaskowyz</label>
+        <link refid="class_plaskowyz"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>int</label>
+      </node>
+      <node id="8">
+        <label>Wektor&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt;</label>
+        <link refid="class_wektor"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+ilosc_tymczasowych</edgelabel>
+          <edgelabel>+ilosc_stworzonych</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt; Wektor &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh" line="12" column="1" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh" bodystart="11" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" prot="protected" virt="non-virtual"><scope>Plaskowyz</scope><name>nazwa_pliku</name></member>
+      <member refid="class_graniastoslup_1a7c1ffdbfd151ad506ab5cb7a4ced5cbe" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>operator[]</name></member>
+      <member refid="class_graniastoslup_1a91140297245c2b64fa11e2898902849b" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>operator[]</name></member>
+      <member refid="class_plaskowyz_1a185082fb51ff0e6841b9bcff1aa04be8" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>Plaskowyz</name></member>
+      <member refid="class_graniastoslup_1af75f7a863e9ef54c2cccb510b0f03ded" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>pokaz_nazwa</name></member>
+      <member refid="class_graniastoslup_1a745ff61bd79e1f10c3e66816a1b6dea0" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>pokaz_srodek</name></member>
+      <member refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>rotacja</name></member>
+      <member refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" prot="protected" virt="non-virtual"><scope>Plaskowyz</scope><name>srodek</name></member>
+      <member refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>translacja</name></member>
+      <member refid="class_graniastoslup_1a8ce7eb4fc97b7ae53699457869d47325" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>ustaw_nazwa</name></member>
+      <member refid="class_graniastoslup_1a4cbe39458e25186386b43b804830f8ff" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>ustaw_srodek</name></member>
+      <member refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" prot="protected" virt="non-virtual"><scope>Plaskowyz</scope><name>wspol</name></member>
+      <member refid="class_graniastoslup_1ab237a62b9735e850a895e9f4d66d45e8" prot="protected" virt="non-virtual"><scope>Plaskowyz</scope><name>wymiar</name></member>
+      <member refid="class_graniastoslup_1aeae2daf769c021e51bed7583ea926fbd" prot="public" virt="non-virtual"><scope>Plaskowyz</scope><name>zapis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

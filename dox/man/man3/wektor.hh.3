@@ -1,0 +1,93 @@
+.TH "/home/adam/zad5_2-AdamStypczyc/include/wektor.hh" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/adam/zad5_2-AdamStypczyc/include/wektor.hh
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <cassert>\fP
+.br
+\fC#include <initializer_list>\fP
+.br
+
+.SS "Komponenty"
+
+.in +1c
+.ti -1c
+.RI "class \fBWektor< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >\fP"
+.br
+.RI "Szablon wektora\&. Szablon ten jest szablonem klasy \fBWektor\fP\&. Zawiera on elementy potrzebne do utworzenia wektora oraz wykonywania na nim różnych operacji\&. Zawiera on tablicę o rozmiarach odopowiadających naszemu wektorowi\&. "
+.in -1c
+.SS "Definicje"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMIN_DIFF\fP   0\&.0000000001"
+.br
+.in -1c
+.SS "Funkcje"
+
+.in +1c
+.ti -1c
+.RI "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> std::ostream & \fBoperator<<\fP (std::ostream &out, \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > const &tmp)"
+.br
+.RI "Przeciążenie operatora strumieniowego out dla wektora\&. Umożliwia bezpośrednie wyświetlenie wektora\&. "
+.ti -1c
+.RI "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> std::istream & \fBoperator>>\fP (std::istream &in, \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > &tmp)"
+.br
+.RI "Przeciążenie operatora strumieniowego in dla wektora\&. Umożliwia bezpośredie wczytanie wektora\&. "
+.in -1c
+.SH "Dokumentacja definicji"
+.PP 
+.SS "#define MIN_DIFF   0\&.0000000001"
+
+.PP
+Definicja w linii 6 pliku wektor\&.hh\&.
+.SH "Dokumentacja funkcji"
+.PP 
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> std::ostream& operator<< (std::ostream & out, \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > const & tmp)"
+
+.PP
+Przeciążenie operatora strumieniowego out dla wektora\&. Umożliwia bezpośrednie wyświetlenie wektora\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIout\fP strumień wyjściowy 
+.br
+\fItmp\fP wektor odpowiadający wyświetlanemu wektorowi 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca strumień wejściowy out\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 252 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> std::istream& operator>> (std::istream & in, \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & tmp)"
+
+.PP
+Przeciążenie operatora strumieniowego in dla wektora\&. Umożliwia bezpośredie wczytanie wektora\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIin\fP strumień wejściowy 
+.br
+\fItmp\fP wektor odpowiadający wczytywanemu wektorowi 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca strumień wejściowy in\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 276 pliku wektor\&.hh\&.
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

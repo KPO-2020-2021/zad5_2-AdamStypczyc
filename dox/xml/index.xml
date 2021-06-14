@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classdron" kind="class"><name>dron</name>
+    <member refid="classdron_1ace406b00cda5a2ab4c36684910c331c0" kind="variable"><name>kat</name></member>
+    <member refid="classdron_1acbba2a14c093b4be5f1592ad653fb190" kind="variable"><name>index</name></member>
+    <member refid="classdron_1a7ceccb35231388049d537f7723f18b05" kind="variable"><name>sciezka</name></member>
+    <member refid="classdron_1a7483cae391ab201e9794ff724664b07f" kind="variable"><name>Lacze</name></member>
+    <member refid="classdron_1a61f2cca004c7c2198a94005597bd0d58" kind="variable"><name>rotor_orginal</name></member>
+    <member refid="classdron_1aaaa97cb01370f45065d5ce449d32230d" kind="variable"><name>rotor</name></member>
+    <member refid="classdron_1a7bfbadd64144dd20d1ae089919dead8a" kind="variable"><name>korpus_orginal</name></member>
+    <member refid="classdron_1afde3f6c8eb79f81dff05089c1b9aa926" kind="variable"><name>korpus</name></member>
+    <member refid="classdron_1a6873e14c9b8c4eae0493cf16db436202" kind="variable"><name>obr</name></member>
+    <member refid="classdron_1a74c22a020dcefe41df8bb1a12e1521d4" kind="variable"><name>droga</name></member>
+    <member refid="classdron_1a2a6f71538eb4a1413c1eddeb82abee54" kind="function"><name>dron</name></member>
+    <member refid="classdron_1a5715e0708e2cae90d853b37da355f755" kind="function"><name>ruch_pionowy</name></member>
+    <member refid="classdron_1a064414beef887c2a9c3cb73956f6b8e2" kind="function"><name>przesuniecie</name></member>
+    <member refid="classdron_1a648ea5308782ad19b74f6651c712708f" kind="function"><name>obrot</name></member>
+    <member refid="classdron_1add74d8f5673cf96226319b1c88c3439d" kind="function"><name>obrot_rotorow</name></member>
+    <member refid="classdron_1accd205169ce787882dbaeb916a6863f9" kind="function"><name>zapisz</name></member>
+    <member refid="classdron_1a1c22017426486f689273d83dfe06aafe" kind="function"><name>akcja</name></member>
+    <member refid="classdron_1abd3871d58abad0e64c3e1e034517e2f6" kind="function"><name>przypisz_sciezke</name></member>
+    <member refid="classdron_1a5d56c6d7d5d8db7b4bf5292083769c14" kind="function"><name>pokaz_srodek</name></member>
+    <member refid="classdron_1a6cf04a2beb3431d29b4ad7f0f6ae37de" kind="function"><name>usun_drona</name></member>
+  </compound>
+  <compound refid="class_dummy" kind="class"><name>Dummy</name>
+    <member refid="class_dummy_1afe03b8568b4af57481b092f8356ca041" kind="function"><name>Dummy</name></member>
+    <member refid="class_dummy_1a6453272d296d2ddf672e9ab0e7731c82" kind="function"><name>doSomething</name></member>
+  </compound>
+  <compound refid="class_graniastoslup" kind="class"><name>Graniastoslup</name>
+    <member refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kind="variable"><name>wspol</name></member>
+    <member refid="class_graniastoslup_1ab237a62b9735e850a895e9f4d66d45e8" kind="variable"><name>wymiar</name></member>
+    <member refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kind="variable"><name>srodek</name></member>
+    <member refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" kind="variable"><name>nazwa_pliku</name></member>
+    <member refid="class_graniastoslup_1a7c1ffdbfd151ad506ab5cb7a4ced5cbe" kind="function"><name>operator[]</name></member>
+    <member refid="class_graniastoslup_1a91140297245c2b64fa11e2898902849b" kind="function"><name>operator[]</name></member>
+    <member refid="class_graniastoslup_1a4cbe39458e25186386b43b804830f8ff" kind="function"><name>ustaw_srodek</name></member>
+    <member refid="class_graniastoslup_1a8ce7eb4fc97b7ae53699457869d47325" kind="function"><name>ustaw_nazwa</name></member>
+    <member refid="class_graniastoslup_1a745ff61bd79e1f10c3e66816a1b6dea0" kind="function"><name>pokaz_srodek</name></member>
+    <member refid="class_graniastoslup_1af75f7a863e9ef54c2cccb510b0f03ded" kind="function"><name>pokaz_nazwa</name></member>
+    <member refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" kind="function"><name>translacja</name></member>
+    <member refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" kind="function"><name>rotacja</name></member>
+    <member refid="class_graniastoslup_1aeae2daf769c021e51bed7583ea926fbd" kind="function"><name>zapis</name></member>
+  </compound>
+  <compound refid="class_graniastoslup6" kind="class"><name>Graniastoslup6</name>
+    <member refid="class_graniastoslup6_1a738b94b14a07e9ba2dd2287d313c0c79" kind="function"><name>Graniastoslup6</name></member>
+  </compound>
+  <compound refid="class_pz_g_1_1_info_pliku_do_rysowania" kind="class"><name>PzG::InfoPlikuDoRysowania</name>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a07ab06c56b9c3179e566a4123ab2a037" kind="variable"><name>_NazwaPliku</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1abfac1cf81db15ff019db7694b5db7dd8" kind="variable"><name>_Etykieta</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a56a03dde7a7a414dbf3c230812a8d741" kind="variable"><name>_Szerokosc</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1abcbca57f6e9a6d2e6ffe555d0e44cac5" kind="variable"><name>_Styl</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a9b7a7f0a0d15587508bbca584649cf2f" kind="variable"><name>_Kolor</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1aca63803eb3b2807d4f1501aadc54c239" kind="variable"><name>_SposobRys</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a42f5a6ba16403a4364158fa46176ff7a" kind="function"><name>InfoPlikuDoRysowania</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a714aaa4c8e7bbd167ccbb1e797ca158c" kind="function"><name>WezNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1ae734c69f5cecf9c0584e3a7f433340ea" kind="function"><name>ZmienNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a04e42126ae7873117b96c39f31e0a206" kind="function"><name>WezSposobRys</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a4245bff195e0d6d382ed7d776b5ad645" kind="function"><name>ZmienSposobRys</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a627bb615c50f3b03374774e6b974488b" kind="function"><name>WezSzerokosc</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1aa6d4c0fa70db640fde80091aefa1326c" kind="function"><name>ZmienSzerokosc</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a137081c82c29acd7df02badb27c8a2cf" kind="function"><name>WezKolor</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1af5c256daaa945a31a1f137c9b429bc37" kind="function"><name>ZmienKolor</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1acf5b136a9ee8a3308fdba974d0eebd9a" kind="function"><name>WezStyl</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a2a7e9e212905112c6f236fe1d0a1f2ec" kind="function"><name>ZmienStyl</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1ad73ee82ce7a07a63f3229a2add04b93d" kind="function"><name>WezEtykiete</name></member>
+    <member refid="class_pz_g_1_1_info_pliku_do_rysowania_1a1497c20c07dd13c716ff76d3cc4d7cf3" kind="function"><name>ZmienEtykiete</name></member>
+  </compound>
+  <compound refid="class_pz_g_1_1_lacze_do_g_n_u_plota" kind="class"><name>PzG::LaczeDoGNUPlota</name>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab9194cd75d079c04ef3e2c65ef9ca55d" kind="variable"><name>_InfoPlikow_Glb</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1abb57c6afa7e391036b0ad9ef3e454913" kind="variable"><name>_InfoPlikow_Lok</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adc3a2250216c2473a61da379da70b2d7" kind="variable"><name>_Wejscie_GNUPlota</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d05a4767a35ee494d59724bb740dbc2" kind="variable"><name>_Wyjscie_GNUPlota</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2f2800f14ebfe1caef0b4d30c410a7fe" kind="variable"><name>_WyswietlajKomunikatyOBledach</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adfbeb93c17ba42215c8e901b2de911fd" kind="variable"><name>_Preambula_RotacjaSkala</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d9bde70af80b5224c5771f4768a9bab" kind="variable"><name>_TrybRys</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a69d530edfe769e38448972e897456deb" kind="variable"><name>_Xmin</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a847e00678a413ab076ccbcb7eba3ae58" kind="variable"><name>_Xmax</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1abc555fd6b82b0d5c9efb4802b58dc317" kind="variable"><name>_Ymin</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad7dfd3fad82ea0720ec89eacc18410bf" kind="variable"><name>_Ymax</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8f9797e881df35f4206cb7d8030e5edc" kind="variable"><name>_Zmin</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a26949eedd421832f0f206ce3c8f90694" kind="variable"><name>_Zmax</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2c9303c4dbb4c9f0ddc4f1fe02eb3f70" kind="variable"><name>_Xskala</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a85446d06b2d714b2f852ef43c47c73c1" kind="variable"><name>_Zskala</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a21e77f0a2bfb7fed989b6dc2d64b5a7e" kind="variable"><name>_Xrotacja</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aa65781b1ff96dfb31a780e98ee28d6ed" kind="variable"><name>_Zrotacja</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a833aa8994b9913786f920ec8c259731f" kind="variable"><name>_PokazOs_OX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae8d9b4dac5eae6ce86b7043c45b70ed8" kind="variable"><name>_PokazOs_OY</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a25585ec3f1bd3b6bf42f374c38b8d237" kind="function"><name>DopiszPlikiDoPoleceniaRysowania</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4579aecf7b4777fdde0cae4e98c275c2" kind="function"><name>ZapiszUstawienieZakresu</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aa92b463e8cbae31b50dd797a4183bce8" kind="function"><name>ZapiszUstawienieRotacjiISkali</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5063854b7232a7951d120a21df63f2b7" kind="function"><name>PrzeslijDoGNUPlota</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5e4f3a226ed36f7110032d802d84847c" kind="function"><name>CzyWyswietlacKomunikaty</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1c7b9acc40de8d8bbb40fb0722512933" kind="function"><name>UtworzProcesPotomny</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae5f907633699e898710cce4351193330" kind="function"><name>KomunikatBledu</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a087d906ddd4b2e3db32ef61ce4cd5e60" kind="function"><name>BudujPreambulePoleceniaRysowania</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1add41e4bb92ccf9991b1cb15699f8c3d6" kind="function"><name>BudujPreambule_2D</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae3b2f34035fdfbbcab696057022341ab" kind="function"><name>BudujPreambule_3D</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a11421d7c67deab6b7524cc492407e897" kind="function"><name>PokazOs_OX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae112972af57167c3b053bf922bce6bbf" kind="function"><name>PokazOs_OX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7c3db909b266fc30808e86406c04b516" kind="function"><name>PokazOs_OY</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7298f469f6932f5c808dcf620650b4b8" kind="function"><name>PokazOs_OY</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a66836c9749bf179420e4ca3e9447efd7" kind="function"><name>Xmin</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8e23479629af3df3d352b7839ae396b8" kind="function"><name>Xmax</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9352c0382bfaeaaba9f65399a7383164" kind="function"><name>Ymin</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac54e4e7448ce3bd324efdc94a999f535" kind="function"><name>Ymax</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9068bd9a9873ba9c6d70016f1ae7cd7f" kind="function"><name>Zmin</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a20a5d03e1fc19c682032bffc54340f12" kind="function"><name>Zmax</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" kind="function"><name>ZmienTrybRys</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae2fbf0d8f3f248f750804cec606a7983" kind="function"><name>WezTrybRys</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9c91987dfc869d6fcea96205c581daef" kind="function"><name>UstawZakresX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a54c6e9cf9ab2eae479451fd953c2717c" kind="function"><name>UstawZakresY</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1dbbb2b86fb13b8632e6bad9df2a82e3" kind="function"><name>UstawZakresZ</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4b1eb252fd785a5aeff938e7b2dce2b1" kind="function"><name>SkalaX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a44f922ccbc508d6cd7809c669238dae3" kind="function"><name>SkalaZ</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a855b8338bfe3e5d294d719f24b11090e" kind="function"><name>UstawSkaleX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab0486db3166d8db6580a221079af241f" kind="function"><name>UstawSkaleZ</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4308151b54e105d302803146a3238699" kind="function"><name>UstawSkaleXZ</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1addf0b844f626f3f5220de70efcbbdbb3" kind="function"><name>RotacjaX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9dac73754fab10644b287756003e9c79" kind="function"><name>RotacjaZ</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1acb7456c930015c9a48f43b8618bd9391" kind="function"><name>UstawRotacjeX</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab9c4c731e2cebe67e04221e0bb528809" kind="function"><name>UstawRotacjeZ</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac48fed259e4ebf93072e3111264c9433" kind="function"><name>UstawRotacjeXZ</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a409f4f4ba52b2b246d5695daef12167d" kind="function"><name>WyswietlajKomunikatyBledow</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621" kind="function"><name>DodajNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a56735c657e7157d7699dfb1c982bd99f" kind="function"><name>DodajNazwePliku_Lamana</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a060bd85935b14e50a16acb2c07d20e46" kind="function"><name>DodajNazwePliku_JednakowePunkty</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a6ee6cc8b13fcc0be093ed105b24253d4" kind="function"><name>DodajNazwePliku_PunktyRoznejWielkosci</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5c3a514dc7fbd4b2050037ab2b38293f" kind="function"><name>ZnajdzNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a18cd7faad7325343107a93db114cb290" kind="function"><name>ZnajdzNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5100a047b8a1490dcaa6f6bcc338862a" kind="function"><name>ZnajdzNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a80edeb736c353cf64715f16e6a81ee1b" kind="function"><name>ZnajdzNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7fa4e775e1aee74869fae174c567c2a6" kind="function"><name>UsunNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9f31ec3f418db5df94e2b24096dfc64d" kind="function"><name>UsunNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a29f5e5b048a278b4c032b6d9275d0826" kind="function"><name>UsunNazwePliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad3d7607946b82aa941d786dcd086d27e" kind="function"><name>DopiszRysowanieZPlikow</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aee10e48fe1b9fba6e2897b4ccfa27aef" kind="function"><name>DopiszRysowanieZRoznychPunktow</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1af8be8aeb3b1b524fab67d4411cba5b9e" kind="function"><name>CzyPolaczenieJestZainicjowane</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335" kind="function"><name>Rysuj</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aacb7ae45d283c741fb330f27b132e1a3" kind="function"><name>RysujDoPliku</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a200ce6bdb980c314a9eafe49e8f2dd5e" kind="function"><name>Inicjalizuj</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a263a9dba2ef8030028a48217a183ecdf" kind="function"><name>UsunOstatniaNazwe_ListaLokalna</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac9b77a032e256c3143b984509a8b4bb5" kind="function"><name>UsunOstatniaNazwe_ListaGlobalna</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a89a1d90d017d264cd26398464d074073" kind="function"><name>UsunWszystkieNazwyPlikow</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5845189b5ab8c3634acf57024e5deeaf" kind="function"><name>LaczeDoGNUPlota</name></member>
+    <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4f088b3c3f67cb82f71ce1c6db357f42" kind="function"><name>~LaczeDoGNUPlota</name></member>
+  </compound>
+  <compound refid="class_macierz" kind="class"><name>Macierz</name>
+    <member refid="class_macierz_1a5a33db0f7248a09e5c79219d45919fa9" kind="variable"><name>value</name></member>
+    <member refid="class_macierz_1a1f402210b496c2aff462c58613052975" kind="function"><name>Macierz</name></member>
+    <member refid="class_macierz_1a722bc086dd0f12fbc0f34dcb0246e6bc" kind="function"><name>Macierz</name></member>
+    <member refid="class_macierz_1ae15b7b6824830232cbca3e67b166a0e8" kind="function"><name>operator+</name></member>
+    <member refid="class_macierz_1a7a94716cbc755234ac5b262bf9d0be46" kind="function"><name>operator-</name></member>
+    <member refid="class_macierz_1a36e87998f8a55df5e348998ca5986be2" kind="function"><name>operator*</name></member>
+    <member refid="class_macierz_1ac61686ed38815fcf2f3df8964283b22b" kind="function"><name>operator*</name></member>
+    <member refid="class_macierz_1a8943f28245aed2fb025147646845e00a" kind="function"><name>operator*</name></member>
+    <member refid="class_macierz_1a8bf536ce83525919ec6c076d477d5340" kind="function"><name>operator()</name></member>
+    <member refid="class_macierz_1a5c2afc47782a3f39a68175d6bd470014" kind="function"><name>operator()</name></member>
+    <member refid="class_macierz_1a531f90669d173d208c8ad8980e90c535" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="class_ostroslup" kind="class"><name>Ostroslup</name>
+    <member refid="class_ostroslup_1abe986f58499862c12d636f06456a1acc" kind="function"><name>Ostroslup</name></member>
+  </compound>
+  <compound refid="class_plaskowyz" kind="class"><name>Plaskowyz</name>
+    <member refid="class_plaskowyz_1a185082fb51ff0e6841b9bcff1aa04be8" kind="function"><name>Plaskowyz</name></member>
+  </compound>
+  <compound refid="class_prostopadloscian" kind="class"><name>Prostopadloscian</name>
+    <member refid="class_prostopadloscian_1a42f6bafe041911060352f7e307dccc58" kind="function"><name>Prostopadloscian</name></member>
+  </compound>
+  <compound refid="class_scena" kind="class"><name>Scena</name>
+    <member refid="class_scena_1ae8d7d121ba09af12c456a6dfe6da316b" kind="variable"><name>Lacze</name></member>
+    <member refid="class_scena_1a1ffe6f6ddc2c265792f7f078d81b0067" kind="variable"><name>Elementy_powierzchni</name></member>
+    <member refid="class_scena_1a1119a2f9471e8fd18c79313db89fdd99" kind="variable"><name>Lst_dronow</name></member>
+    <member refid="class_scena_1af81976943f39155f066940fca07777d8" kind="variable"><name>siatka</name></member>
+    <member refid="class_scena_1a5a690b1b742a990b95193c2b7a1940e5" kind="variable"><name>index_elementu_plasko</name></member>
+    <member refid="class_scena_1ac5e4e4737cc23449263390f33426e47c" kind="variable"><name>index_elementu_ostr</name></member>
+    <member refid="class_scena_1a2b258770e17117b283418530e0916cf2" kind="variable"><name>index_elementu_skr</name></member>
+    <member refid="class_scena_1a9a0e984be57ec319db4417add4de6795" kind="variable"><name>index_drona</name></member>
+    <member refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" kind="function"><name>Scena</name></member>
+    <member refid="class_scena_1a72a743882412d881649a79de572e3e33" kind="function"><name>dzialanie</name></member>
+    <member refid="class_scena_1a3cdb6dddf000c35f675717933d096604" kind="function"><name>stworz_siatka</name></member>
+    <member refid="class_scena_1abc8bec7db7b74e0a17948475b0162e35" kind="function"><name>pokaz_lacze</name></member>
+  </compound>
+  <compound refid="class_skarpa" kind="class"><name>Skarpa</name>
+    <member refid="class_skarpa_1ae954fe8f0f6a0a663a226a1c86f827d1" kind="function"><name>Skarpa</name></member>
+  </compound>
+  <compound refid="class_wektor" kind="class"><name>Wektor</name>
+    <member refid="class_wektor_1a6c2747bf3c5800cea5a8f5aaf3e17bee" kind="variable"><name>wektorek</name></member>
+    <member refid="class_wektor_1a2d1ce5357ce9ff32f9a7d9c6082cb82d" kind="variable"><name>ilosc_stworzonych</name></member>
+    <member refid="class_wektor_1af40e6b044f9e04e0fe5cb6f3821d7ea3" kind="variable"><name>ilosc_tymczasowych</name></member>
+    <member refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" kind="function"><name>Wektor</name></member>
+    <member refid="class_wektor_1a3ef5a8b9dc89e49be8b542d13b9d99ef" kind="function"><name>Wektor</name></member>
+    <member refid="class_wektor_1a95760189d5415ca53afd9ec3efc75b44" kind="function"><name>~Wektor</name></member>
+    <member refid="class_wektor_1a5fc23f984fd2eb4788e561fcafa1c1fe" kind="function"><name>Wektor</name></member>
+    <member refid="class_wektor_1a4c6910a4ce56325cef1fc89ce5c436a7" kind="function"><name>operator[]</name></member>
+    <member refid="class_wektor_1ae57dfa8496b4df4ef85ec67b559d97a8" kind="function"><name>operator[]</name></member>
+    <member refid="class_wektor_1a4bd732d99786870aa38d18dbc70de8ec" kind="function"><name>operator+</name></member>
+    <member refid="class_wektor_1ad970b50d0b351d5201d56c3edcc06c3d" kind="function"><name>operator-</name></member>
+    <member refid="class_wektor_1ac4d71482f3c0acce5fe888fb80abc4c4" kind="function"><name>operator*</name></member>
+    <member refid="class_wektor_1ab748d5dae960ff468f85c17015b99092" kind="function"><name>operator/</name></member>
+    <member refid="class_wektor_1a58df1b7c1709d159244719b48da1597e" kind="function"><name>operator==</name></member>
+    <member refid="class_wektor_1a17a1c8dcfd255eabb660f7b8f690fb8b" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="namespace_pz_g" kind="namespace"><name>PzG</name>
+    <member refid="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944" kind="enum"><name>TypTrybuRysowania</name></member>
+    <member refid="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4" kind="enumvalue"><name>TR_2D</name></member>
+    <member refid="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2" kind="enumvalue"><name>TR_3D</name></member>
+    <member refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dc" kind="enum"><name>TypSposobuRysowania</name></member>
+    <member refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546" kind="enumvalue"><name>SR_Ciagly</name></member>
+    <member refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4" kind="enumvalue"><name>SR_Punktowy</name></member>
+    <member refid="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317" kind="enumvalue"><name>SR_PunktowyNiejednorodny</name></member>
+    <member refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kind="enum"><name>TypDostepuDoZasobu</name></member>
+    <member refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kind="enumvalue"><name>DZ_Lokalny</name></member>
+    <member refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9" kind="enumvalue"><name>DZ_Globalny</name></member>
+  </compound>
+  <compound refid="dron_8hh" kind="file"><name>dron.hh</name>
+  </compound>
+  <compound refid="example_8h" kind="file"><name>example.h</name>
+  </compound>
+  <compound refid="_graniastoslup_8hh" kind="file"><name>Graniastoslup.hh</name>
+  </compound>
+  <compound refid="_graniastoslup6_8hh" kind="file"><name>Graniastoslup6.hh</name>
+  </compound>
+  <compound refid="lacze__do__gnuplota_8hh" kind="file"><name>lacze_do_gnuplota.hh</name>
+  </compound>
+  <compound refid="macierz_8hh" kind="file"><name>macierz.hh</name>
+  </compound>
+  <compound refid="macierz_8hh" kind="file"><name>Macierz.hh</name>
+    <member refid="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" kind="typedef"><name>Macierz3x3</name></member>
+    <member refid="macierz_8hh_1afb24d6954c7f17e9877a2e706f9641cd" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="macierz_8hh_1adcb0106d7d361fa1b5b9deaa8c6ccd99" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="macierz_8hh_1a11f2d415620421f0af240368b8fb1acd" kind="function"><name>StopienNaRadianX</name></member>
+    <member refid="macierz_8hh_1a96260376d8636a98532697b9be1979f5" kind="function"><name>StopienNaRadianY</name></member>
+    <member refid="macierz_8hh_1ab0840da738fad890f0b2e2cbd67c0c78" kind="function"><name>StopienNaRadianZ</name></member>
+    <member refid="macierz_8hh_1a619b64a288fbc0f150584a232d9f7ac4" kind="function"><name>Oblicz_Macierz_ObrotuX</name></member>
+    <member refid="macierz_8hh_1a61604dcde37db920a005329e79e59616" kind="function"><name>Oblicz_Macierz_ObrotuY</name></member>
+    <member refid="macierz_8hh_1ab03e0ede3b608ad024ee87495c4c2ba6" kind="function"><name>Oblicz_Macierz_ObrotuZ</name></member>
+  </compound>
+  <compound refid="_ostroslup_8hh" kind="file"><name>Ostroslup.hh</name>
+    <member refid="_ostroslup_8hh_1a2184d0dc695f54f26d9420f863f22714" kind="define"><name>SKALA</name></member>
+  </compound>
+  <compound refid="_plaskowyz_8hh" kind="file"><name>Plaskowyz.hh</name>
+    <member refid="_plaskowyz_8hh_1a2184d0dc695f54f26d9420f863f22714" kind="define"><name>SKALA</name></member>
+  </compound>
+  <compound refid="_prostopadloscian_8hh" kind="file"><name>Prostopadloscian.hh</name>
+  </compound>
+  <compound refid="_scena_8hh" kind="file"><name>Scena.hh</name>
+    <member refid="_scena_8hh_1ab9a2aba8d08170105908677864bdd5db" kind="define"><name>ZAKRES</name></member>
+    <member refid="_scena_8hh_1a83d70a57459e7449da6b9daa8ed6c77c" kind="define"><name>POCZATEK</name></member>
+    <member refid="_scena_8hh_1aa50aa866c5823769bb02e986d29a0589" kind="define"><name>ROZMIAR</name></member>
+    <member refid="_scena_8hh_1aff3f2cb281e3d0eba9c3ca3b353e8176" kind="define"><name>POLOZENIE_1</name></member>
+    <member refid="_scena_8hh_1a2cc8e391374b3dec24a573d145dfa2f8" kind="define"><name>POLOZENIE_2</name></member>
+    <member refid="_scena_8hh_1affc46e3cbf69f01f335f1af996f62c45" kind="define"><name>POLOZENIE_3</name></member>
+    <member refid="_scena_8hh_1a8102b5949a252687713cd8f12c09ab56" kind="define"><name>POLOZENIE_4</name></member>
+    <member refid="_scena_8hh_1afec1d1386eab941069d9b282dc4cfbf3" kind="define"><name>POLOZENIE_5</name></member>
+    <member refid="_scena_8hh_1a1ee5835261d5c8b80f065b4b0fba549d" kind="define"><name>POLOZENIE_6</name></member>
+  </compound>
+  <compound refid="size_8hh" kind="file"><name>size.hh</name>
+    <member refid="size_8hh_1a0ae4b10cd6576f2ccf0da832de940dae" kind="variable"><name>SIZE</name></member>
+    <member refid="size_8hh_1a420a4ef34d814698ab14b40f95057142" kind="variable"><name>SIZES</name></member>
+    <member refid="size_8hh_1a24958dc574095a927402e6d7f427c690" kind="variable"><name>SZER</name></member>
+  </compound>
+  <compound refid="_skarpa_8hh" kind="file"><name>Skarpa.hh</name>
+    <member refid="_skarpa_8hh_1a2184d0dc695f54f26d9420f863f22714" kind="define"><name>SKALA</name></member>
+  </compound>
+  <compound refid="wektor_8hh" kind="file"><name>wektor.hh</name>
+    <member refid="wektor_8hh_1a5fe46f1cba27f30988a9b549f4ca69f8" kind="define"><name>MIN_DIFF</name></member>
+    <member refid="wektor_8hh_1acbb3f684eb48078571fafe9035bed5a8" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="wektor_8hh_1aa5a0a826892962785bfa8101202362f6" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="_wektor3_d_8hh" kind="file"><name>Wektor3D.hh</name>
+    <member refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kind="typedef"><name>Wektor3D</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/adam/zad5_2-AdamStypczyc/include</name>
+  </compound>
+</doxygenindex>

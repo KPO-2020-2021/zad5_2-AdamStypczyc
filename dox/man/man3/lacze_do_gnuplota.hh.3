@@ -1,0 +1,61 @@
+.TH "/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+\fC#include <list>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Komponenty"
+
+.in +1c
+.ti -1c
+.RI "class \fBPzG::InfoPlikuDoRysowania\fP"
+.br
+.RI "Zestaw informacji dotyczący pliku i sposobu rysowania\&. "
+.ti -1c
+.RI "class \fBPzG::LaczeDoGNUPlota\fP"
+.br
+.RI "Klasa realizuje interfejs do programu GNUPlot\&. "
+.in -1c
+.SS "Przestrzenie nazw"
+
+.in +1c
+.ti -1c
+.RI " \fBPzG\fP"
+.br
+.RI "Moduł narzędzi umożliwiających połącznie z GNUPlotem\&. "
+.in -1c
+.SS "Wyliczenia"
+
+.in +1c
+.ti -1c
+.RI "enum \fBPzG::TypTrybuRysowania\fP { \fBPzG::TR_2D\fP, \fBPzG::TR_3D\fP }"
+.br
+.RI "Określa tryb rysowania realizowanego przez program \fCgnuplot\fP\&. "
+.ti -1c
+.RI "enum \fBPzG::TypSposobuRysowania\fP { \fBPzG::SR_Ciagly\fP, \fBPzG::SR_Punktowy\fP, \fBPzG::SR_PunktowyNiejednorodny\fP }"
+.br
+.RI "Sposób rysowania linii lub punktów\&. "
+.ti -1c
+.RI "enum \fBPzG::TypDostepuDoZasobu\fP { \fBPzG::DZ_Lokalny\fP, \fBPzG::DZ_Globalny\fP }"
+.br
+.RI "Typ dostępu do plik z danymi\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Plik zawiera definicję klasy realizującej interfejs komunikacyjny do programu gnuplot\&.
+.PP
+Ostatnia modyfikacja: 2020\&.06\&.07 
+.PP
+Definicja w pliku \fBlacze_do_gnuplota\&.hh\fP\&.
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

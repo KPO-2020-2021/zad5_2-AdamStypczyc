@@ -1,0 +1,154 @@
+.TH "PzG" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PzG \- Moduł narzędzi umożliwiających połącznie z GNUPlotem\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Komponenty"
+
+.in +1c
+.ti -1c
+.RI "class \fBInfoPlikuDoRysowania\fP"
+.br
+.RI "Zestaw informacji dotyczący pliku i sposobu rysowania\&. "
+.ti -1c
+.RI "class \fBLaczeDoGNUPlota\fP"
+.br
+.RI "Klasa realizuje interfejs do programu GNUPlot\&. "
+.in -1c
+.SS "Wyliczenia"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTypTrybuRysowania\fP { \fBTR_2D\fP, \fBTR_3D\fP }"
+.br
+.RI "Określa tryb rysowania realizowanego przez program \fCgnuplot\fP\&. "
+.ti -1c
+.RI "enum \fBTypSposobuRysowania\fP { \fBSR_Ciagly\fP, \fBSR_Punktowy\fP, \fBSR_PunktowyNiejednorodny\fP }"
+.br
+.RI "Sposób rysowania linii lub punktów\&. "
+.ti -1c
+.RI "enum \fBTypDostepuDoZasobu\fP { \fBDZ_Lokalny\fP, \fBDZ_Globalny\fP }"
+.br
+.RI "Typ dostępu do plik z danymi\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Moduł narzędzi umożliwiających połącznie z GNUPlotem\&. 
+
+Niniejsza przestrzeń nazw stanowi moduł logiczny zawierający narzędzia umożliwiające realizację połączenia z programem \fCgnuplot\fP\&. 
+.SH "Dokumentacja typów wyliczanych"
+.PP 
+.SS "enum \fBPzG::TypDostepuDoZasobu\fP"
+
+.PP
+Typ dostępu do plik z danymi\&. Typ dostepu do plik z danymi, tzn\&. czy jest on lokalny tylko z poziomu pojedynczego łącza czy też z pozmiomu wszystkich łącz 
+.PP
+\fBWartości wyliczeń\fP
+.in +1c
+.TP
+\fB\fIDZ_Lokalny \fP\fP
+
+.IP "\(bu" 2
+dostęp tylko z poziomu pojedynczego łącza\&. Dane z pliku będą wizualizowane tylko w jednym okienku graficznym odpowiadające danym łączu\&. 
+.PP
+
+.TP
+\fB\fIDZ_Globalny \fP\fP
+
+.IP "\(bu" 2
+dostęp ze poziomu wszystkich łączy\&. Dane z pliku będą wizualizowane we okienkach graficznych odpowiadającym utworzonym łączom\&. 
+.PP
+
+.PP
+Definicja w linii 95 pliku lacze_do_gnuplota\&.hh\&.
+.SS "enum \fBPzG::TypSposobuRysowania\fP"
+
+.PP
+Sposób rysowania linii lub punktów\&. Sposób rysowania linii lub punktów\&. 
+.PP
+\fBWartości wyliczeń\fP
+.in +1c
+.TP
+\fB\fISR_Ciagly \fP\fP
+
+.PP
+.nf
+     - rysowana jest linia łaman łącząca kolejne punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach.
+
+.fi
+.PP
+ 
+.PP
+.nf
+       20    30
+       41.5  62
+
+.fi
+.PP
+ 
+.TP
+\fB\fISR_Punktowy \fP\fP
+
+.PP
+.nf
+     - rysowane są jednakowe punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach, np.
+     \verbatim
+   20    30
+   41.5  62
+
+.fi
+.PP
+  
+.TP
+\fB\fISR_PunktowyNiejednorodny \fP\fP
+
+.PP
+.nf
+     - rysowane są punkty o różnych rozmiarach.
+     Współrzędne punktów \e x i \e y oraz ich rozmiary 
+     zadawane są w pliku tekstowym.
+     Wartość rozmiaru musi być liczbą całkowitą większą od 0.
+     Współrzędne i rozmiar muszą być w osobnych liniach, np.
+     \verbatim
+   20    30   5
+   41.5  62   2
+
+.fi
+.PP
+  
+.PP
+Definicja w linii 55 pliku lacze_do_gnuplota\&.hh\&.
+.SS "enum \fBPzG::TypTrybuRysowania\fP"
+
+.PP
+Określa tryb rysowania realizowanego przez program \fCgnuplot\fP\&. Typ wyliczeniowy określające dopuszczalne tryby rysowania realizowanego przez program \fCgnuplot\fP\&. Wybór trybu wiąże się ze zmianą sposobu interpretacji danych zawartych pliku\&. Jeśli np\&. wybrany zostanie tryb 2D, to zakłada się, że w każdej linii pliku z danymi znajdują się wartości współrzędnych \fIx\fP, \fIy\fP\&. 
+.PP
+\fBWartości wyliczeń\fP
+.in +1c
+.TP
+\fB\fITR_2D \fP\fP
+
+.IP "\(bu" 2
+rysowanie w trybie 2D, co sprowadza się do rysowania wykresów funkcji jednej zmiennej\&. 
+.PP
+
+.TP
+\fB\fITR_3D \fP\fP
+
+.IP "\(bu" 2
+rysowanie w trybie 3D\&. Oznacza to możliwość rysowania wykresów funkcji dwóch zmiennych\&. 
+.PP
+
+.PP
+Definicja w linii 38 pliku lacze_do_gnuplota\&.hh\&.
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

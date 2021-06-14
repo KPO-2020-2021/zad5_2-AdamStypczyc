@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['laczedognuplota_154',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html',1,'PzG']]]
+  ['laczedognuplota_184',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html',1,'PzG']]]
 ];

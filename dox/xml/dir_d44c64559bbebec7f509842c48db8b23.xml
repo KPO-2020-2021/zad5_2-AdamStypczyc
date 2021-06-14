@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/home/adam/zad5_2-AdamStypczyc/include</compoundname>
+    <innerfile refid="dron_8hh">dron.hh</innerfile>
+    <innerfile refid="example_8h">example.h</innerfile>
+    <innerfile refid="_graniastoslup_8hh">Graniastoslup.hh</innerfile>
+    <innerfile refid="_graniastoslup6_8hh">Graniastoslup6.hh</innerfile>
+    <innerfile refid="lacze__do__gnuplota_8hh">lacze_do_gnuplota.hh</innerfile>
+    <innerfile refid="macierz_8hh">macierz.hh</innerfile>
+    <innerfile refid="macierz_8hh">Macierz.hh</innerfile>
+    <innerfile refid="_ostroslup_8hh">Ostroslup.hh</innerfile>
+    <innerfile refid="_plaskowyz_8hh">Plaskowyz.hh</innerfile>
+    <innerfile refid="_prostopadloscian_8hh">Prostopadloscian.hh</innerfile>
+    <innerfile refid="_scena_8hh">Scena.hh</innerfile>
+    <innerfile refid="size_8hh">size.hh</innerfile>
+    <innerfile refid="_skarpa_8hh">Skarpa.hh</innerfile>
+    <innerfile refid="wektor_8hh">wektor.hh</innerfile>
+    <innerfile refid="_wektor3_d_8hh">Wektor3D.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/"/>
+  </compounddef>
+</doxygen>

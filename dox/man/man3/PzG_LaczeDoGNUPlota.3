@@ -1,0 +1,1206 @@
+.TH "PzG::LaczeDoGNUPlota" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PzG::LaczeDoGNUPlota \- Klasa realizuje interfejs do programu GNUPlot\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <lacze_do_gnuplota\&.hh>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBPokazOs_OX\fP (bool Pokaz)"
+.br
+.RI "Umożliwia lub zabrania rysowania osi OX\&. "
+.ti -1c
+.RI "bool \fBPokazOs_OX\fP () const"
+.br
+.RI "Czy oś OX ma być rysowana\&. "
+.ti -1c
+.RI "void \fBPokazOs_OY\fP (bool Pokaz)"
+.br
+.RI "Umożliwia lub zabrania rysowania osi OY\&. "
+.ti -1c
+.RI "bool \fBPokazOs_OY\fP () const"
+.br
+.RI "Czy oś OY ma być rysowana\&. "
+.ti -1c
+.RI "float \fBXmin\fP () const"
+.br
+.RI "Dolna wartość zakresu dla osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fBXmax\fP () const"
+.br
+.RI "Górną wartość zakresu dla osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fBYmin\fP () const"
+.br
+.RI "Dolną wartość zakresu dla osi \fIOY\fP\&. "
+.ti -1c
+.RI "float \fBYmax\fP () const"
+.br
+.RI "Górną wartość zakresu dla osi \fIOY\fP\&. "
+.ti -1c
+.RI "float \fBZmin\fP () const"
+.br
+.RI "Dolną wartość zakresu dla osi \fIOZ\fP\&. "
+.ti -1c
+.RI "float \fBZmax\fP () const"
+.br
+.RI "Górną wartość zakresu dla osi \fIOZ\fP\&. "
+.ti -1c
+.RI "void \fBZmienTrybRys\fP (\fBTypTrybuRysowania\fP Tryb)"
+.br
+.RI "Zmienia tryb rysowania\&. "
+.ti -1c
+.RI "\fBTypTrybuRysowania\fP \fBWezTrybRys\fP () const"
+.br
+.RI "Udostępnia aktualny tryb rysowania\&. "
+.ti -1c
+.RI "void \fBUstawZakresX\fP (float Xo, float Xn)"
+.br
+.RI "Ustawia zakres osi \fIOX\fP\&. "
+.ti -1c
+.RI "void \fBUstawZakresY\fP (float Yo, float Yn)"
+.br
+.RI "Ustawia zakres osi \fIOY\fP\&. "
+.ti -1c
+.RI "void \fBUstawZakresZ\fP (float Zo, float Zn)"
+.br
+.RI "Ustawia zakres osi \fIOZ\fP\&. "
+.ti -1c
+.RI "float \fBSkalaX\fP () const"
+.br
+.RI "Udostępnia skalę dla osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fBSkalaZ\fP () const"
+.br
+.RI "Udostępnia skalę dla osi \fIOZ\fP\&. "
+.ti -1c
+.RI "void \fBUstawSkaleX\fP (float skala_x)"
+.br
+.RI "Zadaje skalę wzdłuż osi \fIOZ\fP\&. "
+.ti -1c
+.RI "void \fBUstawSkaleZ\fP (float skala_z)"
+.br
+.RI "Zadaje skalę wzdłuż osi \fIOZ\fP\&. "
+.ti -1c
+.RI "void \fBUstawSkaleXZ\fP (float skala_x, float skala_z)"
+.br
+.RI "Zadaje skalę wzdłuż osi \fIOX\fP i \fIOZ\fP\&. "
+.ti -1c
+.RI "float \fBRotacjaX\fP () const"
+.br
+.RI "Wartość kąta rotacji względem osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fBRotacjaZ\fP () const"
+.br
+.RI "Wartość kąta rotacji względem osi \fIOZ\fP\&. "
+.ti -1c
+.RI "void \fBUstawRotacjeX\fP (float KatX_st)"
+.br
+.RI "Ustawia rotację wokół osi \fIOX\fP\&. "
+.ti -1c
+.RI "void \fBUstawRotacjeZ\fP (float KatZ_st)"
+.br
+.RI "Ustawia rotację wokół osi \fIOZ\fP\&. "
+.ti -1c
+.RI "void \fBUstawRotacjeXZ\fP (float KatX_st, float KatZ_st)"
+.br
+.RI "Ustawia rotację wokół osi \fIOX\fP i \fIOZ\fP\&. "
+.ti -1c
+.RI "void \fBWyswietlajKomunikatyBledow\fP (bool WyswietlajKomunikaty=true)"
+.br
+.RI "Zezwala lub zabrania wyświetlania komunikatów\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBDodajNazwePliku\fP (const char *sNazwaPliku, bool SprawdzIstnienie=false, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Dodaje nazwę pliku\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBDodajNazwePliku_Lamana\fP (const char *sNazwaPliku, bool SprawdzIstnienie=false, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Dodaje nazwę pliku\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBDodajNazwePliku_JednakowePunkty\fP (const char *sNazwaPliku, bool SprawdzIstnienie=false, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Dodaje nazwę pliku\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBDodajNazwePliku_PunktyRoznejWielkosci\fP (const char *sNazwaPliku, bool SprawdzIstnienie=false, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Dodaje nazwę pliku\&. "
+.ti -1c
+.RI "const \fBInfoPlikuDoRysowania\fP * \fBZnajdzNazwePliku\fP (const char *sNazwaPliku, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP) const"
+.br
+.RI "Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. "
+.ti -1c
+.RI "const \fBInfoPlikuDoRysowania\fP * \fBZnajdzNazwePliku\fP (const std::string &NazwaPliku, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP) const"
+.br
+.RI "Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP * \fBZnajdzNazwePliku\fP (const char *sNazwaPliku, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP * \fBZnajdzNazwePliku\fP (const std::string &NazwaPliku, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. "
+.ti -1c
+.RI "bool \fBUsunNazwePliku\fP (const \fBInfoPlikuDoRysowania\fP *wInfoPliku, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę\&. "
+.ti -1c
+.RI "bool \fBUsunNazwePliku\fP (const char *sNazwaPliku, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę\&. "
+.ti -1c
+.RI "bool \fBUsunNazwePliku\fP (const std::string &NazwaPliku, \fBTypDostepuDoZasobu\fP Dostep=\fBDZ_Lokalny\fP)"
+.br
+.RI "Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę\&. "
+.ti -1c
+.RI "bool \fBDopiszRysowanieZPlikow\fP (std::string &Polecenie, char const **Sep)"
+.br
+.RI "Tworzy listę parametrów umożliwiających rysowanie brył z plików\&. "
+.ti -1c
+.RI "bool \fBDopiszRysowanieZRoznychPunktow\fP (std::string &Polecenie, char const *Sep)"
+.br
+.RI "Tworzy listę parametrów umożliwiających rysowanie brył z plików\&. "
+.ti -1c
+.RI "bool \fBCzyPolaczenieJestZainicjowane\fP () const"
+.br
+.RI "Informuje, czy połączenie z \fIgnuplot'em\fP jest zainicjalizowane\&. "
+.ti -1c
+.RI "bool \fBRysuj\fP ()"
+.br
+.RI "Generuje polecenie rysowania i przesyła je do gnuplota\&. "
+.ti -1c
+.RI "bool \fBRysujDoPliku\fP (const char *sNazwaPliku)"
+.br
+.RI "Generuje polecenie rysowania do pliku i przesyła je do gnuplota\&. "
+.ti -1c
+.RI "bool \fBInicjalizuj\fP ()"
+.br
+.RI "Inicjalizuje połączenie z programem \fIgnuplot\fP\&. "
+.ti -1c
+.RI "void \fBUsunOstatniaNazwe_ListaLokalna\fP ()"
+.br
+.RI "Usuwa ostatnią nazwę pliku\&. "
+.ti -1c
+.RI "void \fBUsunOstatniaNazwe_ListaGlobalna\fP ()"
+.br
+.RI "Usuwa ostatnią nazwę pliku\&. "
+.ti -1c
+.RI "void \fBUsunWszystkieNazwyPlikow\fP ()"
+.br
+.RI "Kasuje zawartość listy nazw plików\&. "
+.ti -1c
+.RI "\fBLaczeDoGNUPlota\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~LaczeDoGNUPlota\fP ()"
+.br
+.in -1c
+.SS "Metody chronione"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBDopiszPlikiDoPoleceniaRysowania\fP (std::string &Polecenie, char const **Sep)"
+.br
+.RI "Tworzy listę parametrów umożliwiających rysowanie dodatkowych elementów\&. "
+.ti -1c
+.RI "std::string \fBZapiszUstawienieZakresu\fP (char Os) const"
+.br
+.RI "Tworzy polecenie ustawiające zakres dla danej współrzędnej\&. "
+.ti -1c
+.RI "std::string \fBZapiszUstawienieRotacjiISkali\fP () const"
+.br
+.RI "Tworzy polecenie ustawiające punkt obserwacji\&. "
+.ti -1c
+.RI "bool \fBPrzeslijDoGNUPlota\fP (const char *Polecenie)"
+.br
+.RI "Przesyła polecenie do gnuplota\&. "
+.ti -1c
+.RI "bool \fBCzyWyswietlacKomunikaty\fP () const"
+.br
+.RI "Udostępnia informację czy mają być wyświetlane informacje o błędach\&. "
+.ti -1c
+.RI "bool \fBUtworzProcesPotomny\fP ()"
+.br
+.RI "Uruchamia program \fIgnuplot\fP jako proces potomny\&. "
+.ti -1c
+.RI "void \fBKomunikatBledu\fP (const char *sKomunikat) const"
+.br
+.RI "Wyświetla komunika błędu\&. "
+.ti -1c
+.RI "void \fBBudujPreambulePoleceniaRysowania\fP (std::string &Preambula)"
+.br
+.RI "Tworzy preambułę poprzedzającą polecenie rysowania\&. "
+.ti -1c
+.RI "void \fBBudujPreambule_2D\fP (std::string &Preambula)"
+.br
+.RI "Tworzy preambułę poprzedzającą polecenie rysowania w trybie 2D\&. "
+.ti -1c
+.RI "void \fBBudujPreambule_3D\fP (std::string &Preambula)"
+.br
+.RI "Tworzy preambułę poprzedzającą polecenie rysowania w trybie 3D\&. "
+.in -1c
+.SS "Atrybuty chronione"
+
+.in +1c
+.ti -1c
+.RI "std::list< \fBInfoPlikuDoRysowania\fP > \fB_InfoPlikow_Lok\fP"
+.br
+.RI "Lista nazw plików z danymi dla \fIgnuplota\fP\&. "
+.ti -1c
+.RI "int \fB_Wejscie_GNUPlota\fP"
+.br
+.RI "Deskryptor wejścia standardowego procesu gnuplota\&. "
+.ti -1c
+.RI "int \fB_Wyjscie_GNUPlota\fP"
+.br
+.RI "Deskryptor wejścia standardowego procesu gnuplota\&. "
+.ti -1c
+.RI "bool \fB_WyswietlajKomunikatyOBledach\fP"
+.br
+.RI "Decyduje czy mają być wyświetlane komunikaty o błędach\&. "
+.ti -1c
+.RI "std::string \fB_Preambula_RotacjaSkala\fP"
+.br
+.RI "Zawiera zestaw poleceń, które muszą być wysłane do gnuplota przed rysowaniem\&. "
+.ti -1c
+.RI "\fBTypTrybuRysowania\fP \fB_TrybRys\fP"
+.br
+.RI "Określa aktualny tryb rysowania\&. "
+.ti -1c
+.RI "float \fB_Xmin\fP"
+.br
+.RI "Dolny zakres wyświetlanej skali skali dla osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fB_Xmax\fP"
+.br
+.RI "Górny zakres wyświetlanej skali skali dla osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fB_Ymin\fP"
+.br
+.RI "Dolny zakres wyświetlanej skali skali dla osi \fIOY\fP\&. "
+.ti -1c
+.RI "float \fB_Ymax\fP"
+.br
+.RI "Górny zakres wyświetlanej skali skali dla osi \fIOY\fP\&. "
+.ti -1c
+.RI "float \fB_Zmin\fP"
+.br
+.RI "Dolny zakres wyświetlanej skali skali dla osi \fIOZ\fP\&. "
+.ti -1c
+.RI "float \fB_Zmax\fP"
+.br
+.RI "Górny zakres wyświetlanej skali skali dla osi \fIOZ\fP\&. "
+.ti -1c
+.RI "float \fB_Xskala\fP"
+.br
+.RI "Skala rysunku wzdłuż osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fB_Zskala\fP"
+.br
+.RI "Skala rysunku wzdłuż osi \fIOZ\fP\&. "
+.ti -1c
+.RI "float \fB_Xrotacja\fP"
+.br
+.RI "Rotacja rysunku względem osi \fIOX\fP\&. "
+.ti -1c
+.RI "float \fB_Zrotacja\fP"
+.br
+.RI "Rotacja rysunku względem osi \fIOZ\fP\&. "
+.ti -1c
+.RI "bool \fB_PokazOs_OX\fP"
+.br
+.RI "Czy oś OX ma być widoczna\&. "
+.ti -1c
+.RI "bool \fB_PokazOs_OY\fP"
+.br
+.RI "Czy oś OY ma być widoczna\&. "
+.in -1c
+.SS "Statyczne atrybuty chronione"
+
+.in +1c
+.ti -1c
+.RI "static std::list< \fBInfoPlikuDoRysowania\fP > \fB_InfoPlikow_Glb\fP"
+.br
+.RI "Lista nazw plików z danymi dla \fIgnuplota\fP\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa realizuje interfejs do programu GNUPlot\&. 
+
+Klasa realizuje interfejs do programu GNUPlot\&. Pozwala ona na wskazanie zbioru punktów płaszczyzn umieszczonych w pliku lub plikach\&. Każdy taki zbiór może być następnie wizualizowany przez program gnuplot w postaci oddzielnych płaszczyzn z wycinaniem części zasłanianych\&. 
+.PP
+Definicja w linii 331 pliku lacze_do_gnuplota\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "PzG::LaczeDoGNUPlota::LaczeDoGNUPlota ()"
+
+.SS "virtual PzG::LaczeDoGNUPlota::~LaczeDoGNUPlota ()\fC [virtual]\fP"
+
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void PzG::LaczeDoGNUPlota::BudujPreambule_2D (std::string & Preambula)\fC [protected]\fP"
+
+.PP
+Tworzy preambułę poprzedzającą polecenie rysowania w trybie 2D\&. Tworzy zbiór poleceń, które ustawiają właściwy tryb rysowania oraz zakresy współrzędnych, jak też wszystkie inne parametry wynikające z trybu rysowania 2D\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIPreambula\fP - zawiera treść stworzonej preambuły\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::BudujPreambule_3D (std::string & Preambula)\fC [protected]\fP"
+
+.PP
+Tworzy preambułę poprzedzającą polecenie rysowania w trybie 3D\&. Tworzy zbiór poleceń, które ustawiają właściwy tryb rysowania oraz zakresy współrzędnych, jak też wszystkie inne parametry wynikające z trybu rysowania 3D\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIPreambula\fP - zawiera treść stworzonej preambuły\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania (std::string & Preambula)\fC [protected]\fP"
+
+.PP
+Tworzy preambułę poprzedzającą polecenie rysowania\&. Tworzy zbiór poleceń, które ustawiają właściwy tryb rysowania oraz zakresy współrzędnych, jak też wszystkie inne parametry wynikające z przyjętego trybu rysowania\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIPreambula\fP - zawiera treść stworzonej preambuły\&. 
+.RE
+.PP
+
+.SS "bool PzG::LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane () const"
+
+.PP
+Informuje, czy połączenie z \fIgnuplot'em\fP jest zainicjalizowane\&. Informuje, czy połączenie z programem \fIgnuplot\fP jest zainicjowane\&. 
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - jeśli tak, 
+.br
+\fIfalse\fP - w przypadku przeciwnym\&. 
+.RE
+.PP
+
+.SS "bool PzG::LaczeDoGNUPlota::CzyWyswietlacKomunikaty () const\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Udostępnia informację czy mają być wyświetlane informacje o błędach\&. Udostępnia wartość pola \fB_WyswietlajKomunikatyOBledach\fP\&. Określa ono, czy mają być wyświetlane komunikaty o błędach na wyjście standardowe, czy też nie\&. 
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - komunikaty mają być wyswietlane na wejściu \fCstandard\fP \fCerror\fP\&. 
+.br
+\fIfalse\fP - komunikaty nie mają być wyświetlane\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 544 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::LaczeDoGNUPlota::DodajNazwePliku (const char * sNazwaPliku, bool SprawdzIstnienie = \fCfalse\fP, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)"
+
+.PP
+Dodaje nazwę pliku\&. Powoduje dodanie do listy plików zawierajacych dane dla \fIgnuplota\fP, nowej nazwy pliku\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIsNazwaPliku\fP - nazwa pliku z danymi dla gnuplota\&. 
+.br
+\fISprawdzIstnienie\fP - decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody\&. 
+.br
+\fIDostep\fP - decyduje o tym, czy dany plik będzie \fIwidziany\fP przez wszystkie łącza, czy też przez tylko jedno\&. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu \fIgnuplot\fP\&. Oznacza to uruchmienie tylu procesów programu \fIgnuplot\fP ile jest okienek\&. Parametr \fIDostep\fP decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku\&. 
+.RE
+.PP
+
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::LaczeDoGNUPlota::DodajNazwePliku_JednakowePunkty (const char * sNazwaPliku, bool SprawdzIstnienie = \fCfalse\fP, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)"
+
+.PP
+Dodaje nazwę pliku\&. Powoduje dodanie do listy plików zawierajacych dane dla \fIgnuplota\fP, nowej nazwy pliku\&. Domyślnie dane z tego pliku będą rysowane jako zbiór jednakowych punktów o podanych współrzędnych\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIsNazwaPliku\fP - nazwa pliku z danymi dla gnuplota\&. 
+.br
+\fISprawdzIstnienie\fP - decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody\&. 
+.br
+\fIDostep\fP - decyduje o tym, czy dany plik będzie \fIwidziany\fP przez wszystkie instancje łącza, czy też przez tylko jedno\&. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu \fIgnuplot\fP\&. Oznacza to uruchmienie tylu procesów programu \fIgnuplot\fP ile jest okienek\&. Parametr \fIDostep\fP decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku\&. 
+.RE
+.PP
+
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::LaczeDoGNUPlota::DodajNazwePliku_Lamana (const char * sNazwaPliku, bool SprawdzIstnienie = \fCfalse\fP, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)"
+
+.PP
+Dodaje nazwę pliku\&. Powoduje dodanie do listy plików zawierajacych dane dla \fIgnuplota\fP, nowej nazwy pliku\&. Domyślnie dane z tego pliku będą rysowane jako łamana łącząca punkty o podanych współrzędnych\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIsNazwaPliku\fP - nazwa pliku z danymi dla gnuplota\&. 
+.br
+\fISprawdzIstnienie\fP - decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody\&. 
+.br
+\fIDostep\fP - decyduje o tym, czy dany plik będzie \fIwidziany\fP przez wszystkie instancje łącza, czy też przez tylko jedno\&. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu \fIgnuplot\fP\&. Oznacza to uruchmienie tylu procesów programu \fIgnuplot\fP ile jest okienek\&. Parametr \fIDostep\fP decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku\&. 
+.RE
+.PP
+
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::LaczeDoGNUPlota::DodajNazwePliku_PunktyRoznejWielkosci (const char * sNazwaPliku, bool SprawdzIstnienie = \fCfalse\fP, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)"
+
+.PP
+Dodaje nazwę pliku\&. Powoduje dodanie do listy plików zawierajacych dane dla \fIgnuplota\fP, nowej nazwy pliku\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIsNazwaPliku\fP - nazwa pliku z danymi dla gnuplota\&. 
+.br
+\fISprawdzIstnienie\fP - decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody\&. 
+.br
+\fIDostep\fP - decyduje o tym, czy dany plik będzie \fIwidziany\fP przez wszystkie instancje łącza, czy też przez tylko jedno\&. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu \fIgnuplot\fP\&. Oznacza to uruchmienie tylu procesów programu \fIgnuplot\fP ile jest okienek\&. Parametr \fIDostep\fP decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku\&. 
+.RE
+.PP
+
+.SS "bool PzG::LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania (std::string & Polecenie, char const ** Sep)\fC [inline]\fP, \fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Tworzy listę parametrów umożliwiających rysowanie dodatkowych elementów\&. Metoda ta przewidziana jest jako element rozszerzenia pozwalającego w klasach pochodnych powiększyć listę rysowanych elementów\&. 
+.PP
+\fBWarunek wstępny\fP
+.RS 4
+Parametr \fIPolecenie\fP powinien zawierać polecenie \fIplot\fP lub \fIsplot\fP, do którego będzie możliwe dopisanie dalszego ciągu\&. 
+.RE
+.PP
+\fBParametry\fP
+.RS 4
+\fIPolecenie\fP - polecenie rysowania, do którego mają być dopisane nazwy plików i odpowiednie parametry dla polecenia plot\&. 
+.br
+\fISep\fP - zawiera znak separatora między poszczególnymi parametrami\&. Jeżeli parametry listy przeszkód są generowane jako pierwsze, to zmienna ta musi być wskaźnikiem do wskaźnika na łańcuch: ' '\&. 
+.RE
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - operacja powiodła się, 
+.br
+\fIfalse\fP - w przypadku przeciwnym\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 1181 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::DopiszRysowanieZPlikow (std::string & Polecenie, char const ** Sep)"
+
+.PP
+Tworzy listę parametrów umożliwiających rysowanie brył z plików\&. 
+.SS "bool PzG::LaczeDoGNUPlota::DopiszRysowanieZRoznychPunktow (std::string & Polecenie, char const * Sep)"
+
+.PP
+Tworzy listę parametrów umożliwiających rysowanie brył z plików\&. 
+.SS "bool PzG::LaczeDoGNUPlota::Inicjalizuj ()"
+
+.PP
+Inicjalizuje połączenie z programem \fIgnuplot\fP\&. Inicjalizuje połączenie z programem \fIgnuplot\fP\&. Realizowane jest to poprzez rozwidlenie procesu i uruchomienie jako procesu potomnego programu \fIgnuplot\fP\&. Komunikacja z programem \fIgnuplot\fP realizowana jest poprzez przejęcie jego wejścia i wyjścia standardowego\&.
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - gdy połączenie z programem \fI0gnuplot\fP zostało poprawnie zainicjalizowane lub gdy już wcześniej było zainicjalizowane\&. 
+.br
+\fIfalse\fP - gdy proces inicjalizacji połączenia zakończył się niepowodzeniem\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::KomunikatBledu (const char * sKomunikat) const\fC [protected]\fP"
+
+.PP
+Wyświetla komunika błędu\&. Wyświetla na wyjście 'standard error' komunikat (przekazany jako parametr), o ile pole \fB_WyswietlajKomunikatyOBledach\fP ma wartość \fCtrue\fP\&. W przypadku przeciwnym komunikat nie jest wyświetlany\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIsKomunikat\fP - treść komunikatu, który ma być wyświetlony\&. 
+.RE
+.PP
+
+.SS "bool PzG::LaczeDoGNUPlota::PokazOs_OX () const\fC [inline]\fP"
+
+.PP
+Czy oś OX ma być rysowana\&. Udostępnia informację czy oś \fIOX\fP ma być rysowana, czy też nie\&. 
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - gdy oś \fIOX\fP ma być rysowana, 
+.br
+\fIfalse\fP - w przypadku przeciwnym\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 616 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::LaczeDoGNUPlota::PokazOs_OX (bool Pokaz)\fC [inline]\fP"
+
+.PP
+Umożliwia lub zabrania rysowania osi OX\&. Umożliwia lub zabrania rysowania osi \fIOX\fP na rysunku wykresu\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIPokaz\fP - decyduje o tym czy oś \fIOX\fP będzie rysowana (\fCtrue\fP), czy też nie (\fCfalse\fP)\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 606 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::PokazOs_OY () const\fC [inline]\fP"
+
+.PP
+Czy oś OY ma być rysowana\&. Udostępnia informację czy oś \fIOY\fP ma być rysowana, czy też nie\&. 
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - gdy oś \fIOY\fP ma być rysowana, 
+.br
+\fIfalse\fP - w przypadku przeciwnym\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 636 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::LaczeDoGNUPlota::PokazOs_OY (bool Pokaz)\fC [inline]\fP"
+
+.PP
+Umożliwia lub zabrania rysowania osi OY\&. Umożliwia lub zabrania rysowania osi \fIOY\fP na rysunku wykresu\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIPokaz\fP - decyduje o tym czy oś \fIOY\fP będzie rysowana (\fCtrue\fP), czy też nie (\fCfalse\fP)\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 626 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::PrzeslijDoGNUPlota (const char * Polecenie)\fC [protected]\fP"
+
+.PP
+Przesyła polecenie do gnuplota\&. Przesyła na wejście programu \fIgnuplot\fP zadany ciąg znaków\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIPolecenie\fP - komunikat przeznaczony do przeslania\&.
+.RE
+.PP
+\fBWarunek wstępny\fP
+.RS 4
+Musi być zainicjowane połączenie z programem gnuplot\&.
+.RE
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - jesli przeslanie polecenia zakończyło się powodzeniem, 
+.br
+\fIfalse\fP - w przypadku przeciwnym\&. 
+.RE
+.PP
+
+.SS "float PzG::LaczeDoGNUPlota::RotacjaX () const\fC [inline]\fP"
+
+.PP
+Wartość kąta rotacji względem osi \fIOX\fP\&. Udostępnia wartość kąta rotacji renderowanego rysunku wokół osi \fIOX\fP\&. Zwracana wartość wyrażona jest w stopiniach\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Wyrażona w stopniach wartość kąta rotacji wokół osi \fIOX\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 772 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::RotacjaZ () const\fC [inline]\fP"
+
+.PP
+Wartość kąta rotacji względem osi \fIOZ\fP\&. Udostępnia wartość kąta rotacji renderowanego rysunku wokół osi \fIOZ\fP\&. Zwracana wartość wyrażona jest w stopiniach\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Wyrażona w stopniach wartość kąta rotacji wokół osi \fIOZ\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 780 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::Rysuj ()"
+
+.PP
+Generuje polecenie rysowania i przesyła je do gnuplota\&. Jeżeli lista plików nie jest pusta, to generuje sekwencje poleceń dla programu \fIgnuplot\fP mająca na celu narysowanie płaszczyzn na na podstawie danych zawartych w plikach z listy\&.
+.PP
+\fBWarunek wstępny\fP
+.RS 4
+Lista plików nie powinna być pusta\&. Nazwy plików na niej można umieścić za pomoca metody \fBDodajNazwePliku\fP jak też innych tego typu metod\&. Metoda nie wymaga wcześniejszego zainicjowania połączenia z \fIgnuplotem\fP\&. 
+.RE
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - gdy zostają poprawnie wysłane polecenia dla gnuplota\&. Nie oznacza to jednak, że proces rysowania zakończył się pomyślnie\&. 
+.br
+\fIfalse\fP - gdy połączenie z gnuplotem nie może zostać poprawnie zainicjalizowane lub gdy lista plików jest pusta\&. 
+.RE
+.PP
+
+.SS "bool PzG::LaczeDoGNUPlota::RysujDoPliku (const char * sNazwaPliku)"
+
+.PP
+Generuje polecenie rysowania do pliku i przesyła je do gnuplota\&. Działa analogicznie jak metoda \fBRysuj\fP, z tą różnicą, że rysunek robota składowany jest w pliku o nazwie przekazanej przez parametr \fINazwaPliku\fP\&. Rysunek jest zapisywany w formacie \fIPNG\fP\&.
+.PP
+\fBWarunek wstępny\fP
+.RS 4
+Lista plików nie powinna być pusta ponadto powinno być możliwe otwarcie do zapisu pliku o nazwie przekazanej przez parametr \fINazwaPliku\fP, do której dołączane jest rozszerzenie \&.ps \&. Metoda nie wymaga wcześniejszego zainicjowania połączenia z programem \fIgnuplot\fP\&.
+.RE
+.PP
+\fBParametry\fP
+.RS 4
+\fIsNazwaPliku\fP - nazwa pliku, w którym ma być zapisny rysunek tworzony przez gnuplot\&.
+.RE
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - gdy zostają poprawnie wysłane polecenia dla \fIgnuplota\fP\&. Nie oznacza to jednak, że proces rysowania zakończył się pomyślnie\&. 
+.br
+\fIfalse\fP - gdy połączenie z gnuplotem nie może zostać poprawnie zainicjalizowane lub gdy lista plików jest pusta lub też gdy nie można otworzyć pliku do zapisu\&. 
+.RE
+.PP
+
+.SS "float PzG::LaczeDoGNUPlota::SkalaX () const\fC [inline]\fP"
+
+.PP
+Udostępnia skalę dla osi \fIOX\fP\&. Udostępnia skalę dla osi \fIOX\fP dla tworzonego rysunku\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Skala dla osi \fIOX\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 734 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::SkalaZ () const\fC [inline]\fP"
+
+.PP
+Udostępnia skalę dla osi \fIOZ\fP\&. Udostępnia skalę dla osi \fIOZ\fP dla tworzonego rysunku\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Skala dla osi \fIOZ\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 741 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::LaczeDoGNUPlota::UstawRotacjeX (float KatX_st)"
+
+.PP
+Ustawia rotację wokół osi \fIOX\fP\&. Zadaje kąt rotacji wokół osi \fIOX\fP\&. Umożliwia to zmianę punktu obserwacji renderowanego rysunku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIKatX_st\fP - wartość kąta rotacji\&. Jego wartość podawana jest w stopniach\&. Dopuszczalne wartości mieszczą się w zakresie [-360,360]\&. Wartości spoza tego zakresu mogą powodować nieprawidłowe ustawienie punktu obserwacji\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::UstawRotacjeXZ (float KatX_st, float KatZ_st)"
+
+.PP
+Ustawia rotację wokół osi \fIOX\fP i \fIOZ\fP\&. Zadaje jednocześnie kąt rotacji wokół osi \fIOX\fP i \fIOZ\fP\&. Umożliwia to zmianę punktu obserwacji renderowanego rysunku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIKatX_st\fP - wartość kąta rotacji względem osi \fIOX\fP\&. Jego wartość podawana jest w stopniach\&. 
+.br
+\fIKatZ_st\fP - wartość kąta rotacji względem osi \fIOZ\fP\&. Jego wartość podawana jest w stopniach\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::UstawRotacjeZ (float KatZ_st)"
+
+.PP
+Ustawia rotację wokół osi \fIOZ\fP\&. Zadaje kąt rotacji wokół osi \fIOZ\fP\&. Umożliwia to zmianę punktu obserwacji renderowanego rysunku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIKatZ_st\fP - wartość kąta rotacji\&. Jego wartość podawana jest w stopniach\&. Dopuszczalne wartości mieszczą się w zakresie [-360,360]\&. Wartości spoza tego zakresu mogą powodować nieprawidłowe ustawienie punktu obserwacji\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::UstawSkaleX (float skala_x)"
+
+.PP
+Zadaje skalę wzdłuż osi \fIOZ\fP\&. Zadaje skalę wzdłuż osi \fIOX\fP dla tworzonego rysunku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIskala_x\fP - skala wzdłuż osi \fIOX\fP\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::UstawSkaleXZ (float skala_x, float skala_z)"
+
+.PP
+Zadaje skalę wzdłuż osi \fIOX\fP i \fIOZ\fP\&. Zadaje skalę wzdłuż osi \fIOX\fP i \fIOZ\fP dla tworzonego rysunku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIskala_x\fP - skala wzdłuż osi \fIOX\fP\&. 
+.br
+\fIskala_z\fP - skala wzdłuż osi \fIOZ\fP\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::UstawSkaleZ (float skala_z)"
+
+.PP
+Zadaje skalę wzdłuż osi \fIOZ\fP\&. Zadaje skalę wzdłuż osi \fIOZ\fP dla tworzonego rysunku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIskala_z\fP - skala wzdłuż osi \fIOZ\fP\&. 
+.RE
+.PP
+
+.SS "void PzG::LaczeDoGNUPlota::UstawZakresX (float Xo, float Xn)\fC [inline]\fP"
+
+.PP
+Ustawia zakres osi \fIOX\fP\&. Ustawia zakres osi \fIOX\fP\&. Ogranicza to obszar, który będzie zwizualizowany przez programa \fIgnuplot\fP\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIXo\fP - dolna granica obszaru rysowania dla osi \fIOX\fP\&. 
+.br
+\fIXn\fP - górna granica obszaru rysowania dla osi \fIOX\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 707 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::LaczeDoGNUPlota::UstawZakresY (float Yo, float Yn)\fC [inline]\fP"
+
+.PP
+Ustawia zakres osi \fIOY\fP\&. Ustawia zakres osi \fIOY\fP\&. Ogranicza to obszar, który będzie zwizualizowany przez programa \fIgnuplot\fP\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIYo\fP - dolna granica obszaru rysowania dla osi \fIOY\fP\&. 
+.br
+\fIYn\fP - górna granica obszaru rysowania dla osi \fIOY\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 716 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::LaczeDoGNUPlota::UstawZakresZ (float Zo, float Zn)\fC [inline]\fP"
+
+.PP
+Ustawia zakres osi \fIOZ\fP\&. Ustawia zakres osi \fIOZ\fP\&. Ogranicza to obszar, który będzie zwizualizowany przez programa \fIgnuplot\fP\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIZo\fP - dolna granica obszaru rysowania dla osi \fIOZ\fP\&. 
+.br
+\fIZn\fP - górna granica obszaru rysowania dla osi \fIOZ\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 725 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::UsunNazwePliku (const char * sNazwaPliku, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)"
+
+.PP
+Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę\&. 
+.SS "bool PzG::LaczeDoGNUPlota::UsunNazwePliku (const \fBInfoPlikuDoRysowania\fP * wInfoPliku, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)"
+
+.PP
+Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę\&. 
+.SS "bool PzG::LaczeDoGNUPlota::UsunNazwePliku (const std::string & NazwaPliku, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)"
+
+.PP
+Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę\&. 
+.SS "void PzG::LaczeDoGNUPlota::UsunOstatniaNazwe_ListaGlobalna ()"
+
+.PP
+Usuwa ostatnią nazwę pliku\&. Usuwa ostatnią nazwę z globalnej listy nazw plików, tzn\&. listy, która jest widoczna we wszystkich łączach z programem \fIgnuplot\fP\&. 
+.SS "void PzG::LaczeDoGNUPlota::UsunOstatniaNazwe_ListaLokalna ()"
+
+.PP
+Usuwa ostatnią nazwę pliku\&. Usuwa ostatnią nazwę z lokalnej listy nazw plików, tzn\&. listy, która jest widoczna tylko w danym łączu z programem \fIgnuplot\fP\&. 
+.SS "void PzG::LaczeDoGNUPlota::UsunWszystkieNazwyPlikow ()"
+
+.PP
+Kasuje zawartość listy nazw plików\&. Calkowicie kasuje zawartość listy nazw plików\&. 
+.SS "bool PzG::LaczeDoGNUPlota::UtworzProcesPotomny ()\fC [protected]\fP"
+
+.PP
+Uruchamia program \fIgnuplot\fP jako proces potomny\&. Uruchamia program \fIgnuplot\fP jako proces potomny\&. 
+.PP
+\fBZwracane wartości\fP
+.RS 4
+\fItrue\fP - jeśli operacja powiodła się\&. 
+.br
+\fIfalse\fP - w przypadku przeciwnym\&. 
+.RE
+.PP
+
+.SS "\fBTypTrybuRysowania\fP PzG::LaczeDoGNUPlota::WezTrybRys () const\fC [inline]\fP"
+
+.PP
+Udostępnia aktualny tryb rysowania\&. Udostępnia informację o aktualnym trybie rysowania\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Informacja o aktualnym trybie rysowania\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 697 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::LaczeDoGNUPlota::WyswietlajKomunikatyBledow (bool WyswietlajKomunikaty = \fCtrue\fP)"
+
+.PP
+Zezwala lub zabrania wyświetlania komunikatów\&. Metoda pozwala, albo też zabrania wyświetlania komunikatów o blędach\&. Jeżeli jakaś z operacji nie powiedzie się, to jako wynik zwracana jest wartość \fCfalse\fP\&. Oprócz tego metody takie moga wyświetlać komunikaty, które kierowane są na wyjście 'standard error' Domyślnie przymuje się, że programista nie chce, aby wyświetlały się dodatkwe komunikaty\&. Wywołując tę metodę można to zmienić\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIWyswietlajKomunikaty\fP - wartość parametru zostaje zapamiętana\&. Jeśli jest ona \fCtrue\fP (domyślna wartość parametru), to komunikaty będą wyświetlane\&. Gdy jest ona \fCfalse\fP, to komunikaty nie będą wyświetlane\&. 
+.RE
+.PP
+
+.SS "float PzG::LaczeDoGNUPlota::Xmax () const\fC [inline]\fP"
+
+.PP
+Górną wartość zakresu dla osi \fIOX\fP\&. Udostępnia górną wartość zakresu skali wzdłuż osi \fIOX\fP\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Górną wartość zakresu skali wzdłuż osi \fIOX\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 652 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::Xmin () const\fC [inline]\fP"
+
+.PP
+Dolna wartość zakresu dla osi \fIOX\fP\&. Udostępnia dolną wartość zakresu skali wzdłuż osi \fIOX\fP\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Dolną wartość zakresu skali wzdłuż osi \fIOX\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 645 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::Ymax () const\fC [inline]\fP"
+
+.PP
+Górną wartość zakresu dla osi \fIOY\fP\&. Udostępnia górną wartość zakresu skali wzdłuż osi \fIOY\fP\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Górną wartość zakresu skali wzdłuż osi \fIOY\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 666 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::Ymin () const\fC [inline]\fP"
+
+.PP
+Dolną wartość zakresu dla osi \fIOY\fP\&. Udostępnia dolną wartość zakresu skali wzdłuż osi \fIOY\fP\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Dolną wartość zakresu skali wzdłuż osi \fIOY\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 659 pliku lacze_do_gnuplota\&.hh\&.
+.SS "std::string PzG::LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali () const\fC [protected]\fP"
+
+.PP
+Tworzy polecenie ustawiające punkt obserwacji\&. Tworzy polecenie dla programu \fIgnuplot\fP ustawiajające punkt obserwacji poprzez zadanie rotacji i skali dla poszczególnych osi\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Napis będący utworzonym poleceniem dla programu \fIgnuplot\fP\&. 
+.RE
+.PP
+
+.SS "std::string PzG::LaczeDoGNUPlota::ZapiszUstawienieZakresu (char Os) const\fC [protected]\fP"
+
+.PP
+Tworzy polecenie ustawiające zakres dla danej współrzędnej\&. Tworzy polecenie dla programu \fIgnuplot\fP ustawiające zakres współrzędnych wybranej współrzędnej \fIx\fP, \fIy\fP lub \fIz\fP, dla której ma być tworzony dany rysunek\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIOs\fP - zawiera znak określający współrzędną, dla której ma zostać wygenerowane polecenie ustawienia zakresu\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Łańcuch znaków polecenia ustawiającego żądany zakres dla wybranej współrzędnej\&. 
+.RE
+.PP
+
+.SS "float PzG::LaczeDoGNUPlota::Zmax () const\fC [inline]\fP"
+
+.PP
+Górną wartość zakresu dla osi \fIOZ\fP\&. Udostępnia górną wartość zakresu skali wzdłuż osi \fIOZ\fP\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Górną wartość zakresu skali wzdłuż osi \fIOZ\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 680 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::LaczeDoGNUPlota::ZmienTrybRys (\fBTypTrybuRysowania\fP Tryb)\fC [inline]\fP"
+
+.PP
+Zmienia tryb rysowania\&. Zmienia tryb rysowania jaki zostanie wymuszony na programie \fCgnuplot\fP\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fITryb\fP - wartość parametru określa nowy tryb rysowania\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 689 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::Zmin () const\fC [inline]\fP"
+
+.PP
+Dolną wartość zakresu dla osi \fIOZ\fP\&. Udostępnia dolną wartość zakresu skali wzdłuż osi \fIOZ\fP\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Dolną wartość zakresu skali wzdłuż osi \fIOZ\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 673 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBInfoPlikuDoRysowania\fP* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku (const char * sNazwaPliku, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)\fC [inline]\fP"
+
+.PP
+Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. Odszukuje strukturę zawierającą nazwę pliku, w którym powinny być zapisane współrzędne punktów do rysunku odpowiedniej łamanej lub powierzchni (w zależności od wcześniejszego wyboru trybu rysowania - patrz metoda \fBZmienTrybRys()\fP)\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIsNazwaPliku\fP - nazwa pliku, dla którego ma zostać odnaleziony obiekt zawierające dane określające sposób rysowania łamanej lub powierzchni\&. 
+.br
+\fIDostep\fP - decyduje o tym, czy dany plik będzie szukany wsród plików, które mają być \fIwidziane\fP przez wszystkie instancje programu gnuplot, czy też pośród tych, które są widoczne tylko przez tą instancję, dla której wywołana zostaje ta metoda\&. Domyślnie przyjmuje się ten drugi wariant\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Jeżeli w liście nazw plików z danymi dla gnuplota zostanie znaleziony obiekt, który zawiera identyczną nazwę, jak ta przekazana przez parametr \fIsNazwaPliku\fP, to metoda zwraca wskaźnik do tego obiektu\&. Jest on zwracany w trybie do modyfikacji\&. W przypadku przecinym zwracany jest wskaźnik \fCnullptr\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 1008 pliku lacze_do_gnuplota\&.hh\&.
+.SS "const \fBInfoPlikuDoRysowania\fP* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku (const char * sNazwaPliku, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP) const"
+
+.PP
+Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. 
+.SS "\fBInfoPlikuDoRysowania\fP* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku (const std::string & NazwaPliku, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP)\fC [inline]\fP"
+
+.PP
+Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. Odszukuje strukturę zawierającą nazwę pliku, w którym powinny być zapisane współrzędne punktów do rysunku odpowiedniej łamanej lub powierzchni (w zależności od wcześniejszego wyboru trybu rysowania - patrz metoda \fBZmienTrybRys()\fP)\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fINazwaPliku\fP - nazwa pliku, dla którego ma zostać odnaleziony obiekt zawierające dane określające sposób rysowania łamanej lub powierzchni\&. 
+.br
+\fIDostep\fP - decyduje o tym, czy dany plik będzie szukany wsród plików, które mają być \fIwidziane\fP przez wszystkie instancje programu gnuplot, czy też pośród tych, które są widoczne tylko przez tą instancję, dla której wywołana zostaje ta metoda\&. Domyślnie przyjmuje się ten drugi wariant\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Jeżeli w liście nazw plików z danymi dla gnuplota zostanie znaleziony obiekt, który zawiera identyczną nazwę, jak ta przekazana przez parametr \fIsNazwaPliku\fP, to metoda zwraca wskaźnik do tego obiektu\&. Jest on zwracany w trybie do modyfikacji\&. W przypadku przecinym zwracany jest wskaźnik \fCnullptr\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 1037 pliku lacze_do_gnuplota\&.hh\&.
+.SS "const \fBInfoPlikuDoRysowania\fP* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku (const std::string & NazwaPliku, \fBTypDostepuDoZasobu\fP Dostep = \fC\fBDZ_Lokalny\fP\fP) const\fC [inline]\fP"
+
+.PP
+Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania\&. Odszukuje strukturę zawierającą nazwę pliku, w którym powinny być zapisane współrzędne punktów do rysunku odpowiedniej łamanej lub powierzchni (w zależności od wcześniejszego wyboru trybu rysowania - patrz metoda \fBZmienTrybRys()\fP)\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fINazwaPliku\fP - nazwa pliku, dla którego ma zostać odnaleziony obiekt zawierające dane określające sposób rysowania łamanej lub powierzchni\&. 
+.br
+\fIDostep\fP - decyduje o tym, czy dany plik będzie szukany wsród plików, które mają być \fIwidziane\fP przez wszystkie instancje programu gnuplot, czy też pośród tych, które są widoczne tylko przez tą instancję, dla której wywołana zostaje ta metoda\&. Domyślnie przyjmuje się ten drugi wariant\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Jeżeli w liście nazw plików z danymi dla gnuplota zostanie znaleziony obiekt, który zawiera identyczną nazwę, jak ta przekazana przez parametr \fIsNazwaPliku\fP, to metoda zwraca wskaźnik do tego obiektu\&. Jest on zwracany w trybie tylko do odczytu\&. W przypadku przecinym zwracany jest wskaźnik \fCnullptr\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 981 pliku lacze_do_gnuplota\&.hh\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "std::list<\fBInfoPlikuDoRysowania\fP> PzG::LaczeDoGNUPlota::_InfoPlikow_Glb\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Lista nazw plików z danymi dla \fIgnuplota\fP\&. Pole jest zarządcą listy nazw plików, z których są wczytywane dane dotyczące rysowania obrysu brył przez program \fIgnuplot\fP\&. Operacja ta wykonywana jest po wywołaniu polecenia\&. Pole to jest wspólne dla wszystkich łączy\&. \fBRysuj\fP\&. 
+.PP
+Definicja w linii 342 pliku lacze_do_gnuplota\&.hh\&.
+.SS "std::list<\fBInfoPlikuDoRysowania\fP> PzG::LaczeDoGNUPlota::_InfoPlikow_Lok\fC [protected]\fP"
+
+.PP
+Lista nazw plików z danymi dla \fIgnuplota\fP\&. Pole jest zarządcą listy nazw plików, z których są wczytywane dane dotyczące rysowania obrysu brył przez program \fIgnuplot\fP\&. Operacja ta wykonywana jest po wywołaniu polecenia\&. Pole to jest indywidulane dla danego łącza\&. \fBRysuj\fP\&. 
+.PP
+Definicja w linii 352 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::_PokazOs_OX\fC [protected]\fP"
+
+.PP
+Czy oś OX ma być widoczna\&. Przechowuje informację decydującą o tym czy oś OX będzie widoczna na rysunku (\fCtrue\fP), czy też nie (\fCfalse\fP)\&. 
+.PP
+Definicja w linii 468 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::_PokazOs_OY\fC [protected]\fP"
+
+.PP
+Czy oś OY ma być widoczna\&. Przechowuje informację decydującą o tym czy oś OY będzie widoczna na rysunku (\fCtrue\fP), czy też nie (\fCfalse\fP)\&. 
+.PP
+Definicja w linii 476 pliku lacze_do_gnuplota\&.hh\&.
+.SS "std::string PzG::LaczeDoGNUPlota::_Preambula_RotacjaSkala\fC [protected]\fP"
+
+.PP
+Zawiera zestaw poleceń, które muszą być wysłane do gnuplota przed rysowaniem\&. Zawiera zestaw poleceń, które muszą być wysłane do gnuplota przed rysowaniem\&. Polecenia te dotyczą zmiany rotacji wokół osi OX i OZ oraz skali\&. Są one tworzone w momencie wywołania metod zmieniających te parametry\&. 
+.PP
+Definicja w linii 384 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBTypTrybuRysowania\fP PzG::LaczeDoGNUPlota::_TrybRys\fC [protected]\fP"
+
+.PP
+Określa aktualny tryb rysowania\&. Zawartość pola determinuje sposób rysowania, jaki zostanie wymuszony na programie \fCgnuplot\fP poprzez wysłanie do niego odpowiednich poleceń\&. Wspomniane wymuszenie jest realizowane poprzez wywołanie polecenia \fBRysuj()\fP 
+.PP
+Definicja w linii 396 pliku lacze_do_gnuplota\&.hh\&.
+.SS "int PzG::LaczeDoGNUPlota::_Wejscie_GNUPlota\fC [protected]\fP"
+
+.PP
+Deskryptor wejścia standardowego procesu gnuplota\&. Pole przechowuje deskryptor wejścia standardowego związanego z procesem uruchomionego programu gnuplot\&. 
+.PP
+Definicja w linii 360 pliku lacze_do_gnuplota\&.hh\&.
+.SS "int PzG::LaczeDoGNUPlota::_Wyjscie_GNUPlota\fC [protected]\fP"
+
+.PP
+Deskryptor wejścia standardowego procesu gnuplota\&. Pole przechowuje deskryptor do wyjścia standardowego związanego z procesem uruchomionego programu gnuplot\&. 
+.PP
+Definicja w linii 367 pliku lacze_do_gnuplota\&.hh\&.
+.SS "bool PzG::LaczeDoGNUPlota::_WyswietlajKomunikatyOBledach\fC [protected]\fP"
+
+.PP
+Decyduje czy mają być wyświetlane komunikaty o błędach\&. Wartość tego pola decyduje o tym czy komunikaty o błędach będą wyświetlane na wyjście standardowe błędów (\fBcerr\fP), czy też nie\&. 
+.PD 0
+
+.IP "\(bu" 2
+\fCtrue\fP - komunikaty będę wyświetlane, 
+.IP "\(bu" 2
+\fCfalse\fP - komunikaty nie będę wyświetlane\&. 
+.PP
+
+.PP
+Definicja w linii 376 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Xmax\fC [protected]\fP"
+
+.PP
+Górny zakres wyświetlanej skali skali dla osi \fIOX\fP\&. Określa górny zakres wyświetlanej skali dla osi \fIOX\fP\&. 
+.PP
+Definicja w linii 408 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Xmin\fC [protected]\fP"
+
+.PP
+Dolny zakres wyświetlanej skali skali dla osi \fIOX\fP\&. Określa dolny zakres wyświetlanej skali dla osi \fIOX\fP\&. 
+.PP
+Definicja w linii 402 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Xrotacja\fC [protected]\fP"
+
+.PP
+Rotacja rysunku względem osi \fIOX\fP\&. Wartość tego pola definiuje rotację rysunku (zmiane punktu patrzenia) względem osi \fIOX\fP\&. 
+.PP
+Definicja w linii 453 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Xskala\fC [protected]\fP"
+
+.PP
+Skala rysunku wzdłuż osi \fIOX\fP\&. Wartość tego pola definiuje skalowanie rysunku wzdłuż osi \fIOX\fP (oś horyzontalna ekranu)\&. 
+.PP
+Definicja w linii 439 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Ymax\fC [protected]\fP"
+
+.PP
+Górny zakres wyświetlanej skali skali dla osi \fIOY\fP\&. Określa górny zakres wyświetlanej skali dla osi \fIOY\fP\&. 
+.PP
+Definicja w linii 420 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Ymin\fC [protected]\fP"
+
+.PP
+Dolny zakres wyświetlanej skali skali dla osi \fIOY\fP\&. Określa dolny zakres wyświetlanej skali dla osi \fIOY\fP\&. 
+.PP
+Definicja w linii 414 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Zmax\fC [protected]\fP"
+
+.PP
+Górny zakres wyświetlanej skali skali dla osi \fIOZ\fP\&. Określa górny zakres wyświetlanej skali dla osi \fIOZ\fP\&. 
+.PP
+Definicja w linii 432 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Zmin\fC [protected]\fP"
+
+.PP
+Dolny zakres wyświetlanej skali skali dla osi \fIOZ\fP\&. Określa dolny zakres wyświetlanej skali dla osi \fIOZ\fP\&. 
+.PP
+Definicja w linii 426 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Zrotacja\fC [protected]\fP"
+
+.PP
+Rotacja rysunku względem osi \fIOZ\fP\&. Wartość tego pola definiuje rotację rysunku (zmiane punktu patrzenia) względem osi \fIOZ\fP\&. 
+.PP
+Definicja w linii 460 pliku lacze_do_gnuplota\&.hh\&.
+.SS "float PzG::LaczeDoGNUPlota::_Zskala\fC [protected]\fP"
+
+.PP
+Skala rysunku wzdłuż osi \fIOZ\fP\&. Wartość tego pola definiuje skalowanie rysunku wzdłuż osi \fIOZ\fP (oś wertykalna ekranu)\&. 
+.PP
+Definicja w linii 446 pliku lacze_do_gnuplota\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

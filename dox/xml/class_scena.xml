@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_scena" kind="class" language="C++" prot="public">
+    <compoundname>Scena</compoundname>
+    <includes refid="_scena_8hh" local="no">Scena.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_scena_1ae8d7d121ba09af12c456a6dfe6da316b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota" kindref="compound">PzG::LaczeDoGNUPlota</ref></type>
+        <definition>PzG::LaczeDoGNUPlota Scena::Lacze</definition>
+        <argsstring></argsstring>
+        <name>Lacze</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="65" column="26" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scena_1a1ffe6f6ddc2c265792f7f078d81b0067" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::shared_ptr&lt; <ref refid="class_graniastoslup" kindref="compound">Graniastoslup</ref> &gt; &gt;</type>
+        <definition>std::list&lt;std::shared_ptr&lt;Graniastoslup&gt; &gt; Scena::Elementy_powierzchni</definition>
+        <argsstring></argsstring>
+        <name>Elementy_powierzchni</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="66" column="15" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scena_1a1119a2f9471e8fd18c79313db89fdd99" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::shared_ptr&lt; <ref refid="classdron" kindref="compound">dron</ref> &gt; &gt;</type>
+        <definition>std::list&lt;std::shared_ptr&lt;dron&gt; &gt; Scena::Lst_dronow</definition>
+        <argsstring></argsstring>
+        <name>Lst_dronow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="67" column="15" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scena_1af81976943f39155f066940fca07777d8" prot="private" static="no" mutable="no">
+        <type><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref></type>
+        <definition>Wektor3D Scena::siatka[ROZMIAR][ROZMIAR]</definition>
+        <argsstring>[ROZMIAR][ROZMIAR]</argsstring>
+        <name>siatka</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="68" column="14" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scena_1a5a690b1b742a990b95193c2b7a1940e5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scena::index_elementu_plasko</definition>
+        <argsstring></argsstring>
+        <name>index_elementu_plasko</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="69" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scena_1ac5e4e4737cc23449263390f33426e47c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scena::index_elementu_ostr</definition>
+        <argsstring></argsstring>
+        <name>index_elementu_ostr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="70" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scena_1a2b258770e17117b283418530e0916cf2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scena::index_elementu_skr</definition>
+        <argsstring></argsstring>
+        <name>index_elementu_skr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="71" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scena_1a9a0e984be57ec319db4417add4de6795" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scena::index_drona</definition>
+        <argsstring></argsstring>
+        <name>index_drona</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="72" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Scena::Scena</definition>
+        <argsstring>()</argsstring>
+        <name>Scena</name>
+        <briefdescription>
+<para>Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacze i ustawiający jego zakres. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="75" column="5" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="139" bodyend="188"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621">PzG::LaczeDoGNUPlota::DodajNazwePliku</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a200ce6bdb980c314a9eafe49e8f2dd5e">PzG::LaczeDoGNUPlota::Inicjalizuj</references>
+        <references refid="_scena_8hh_1aff3f2cb281e3d0eba9c3ca3b353e8176" compoundref="_scena_8hh" startline="26">POLOZENIE_1</references>
+        <references refid="_scena_8hh_1a2cc8e391374b3dec24a573d145dfa2f8" compoundref="_scena_8hh" startline="30">POLOZENIE_2</references>
+        <references refid="_scena_8hh_1affc46e3cbf69f01f335f1af996f62c45" compoundref="_scena_8hh" startline="35">POLOZENIE_3</references>
+        <references refid="_scena_8hh_1a8102b5949a252687713cd8f12c09ab56" compoundref="_scena_8hh" startline="39">POLOZENIE_4</references>
+        <references refid="_scena_8hh_1afec1d1386eab941069d9b282dc4cfbf3" compoundref="_scena_8hh" startline="43">POLOZENIE_5</references>
+        <references refid="_scena_8hh_1a1ee5835261d5c8b80f065b4b0fba549d" compoundref="_scena_8hh" startline="47">POLOZENIE_6</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335">PzG::LaczeDoGNUPlota::Rysuj</references>
+        <references refid="class_scena_1a3cdb6dddf000c35f675717933d096604" compoundref="_scena_8hh" startline="95" endline="134">stworz_siatka</references>
+        <references refid="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2" compoundref="lacze__do__gnuplota_8hh" startline="48">PzG::TR_3D</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac48fed259e4ebf93072e3111264c9433">PzG::LaczeDoGNUPlota::UstawRotacjeXZ</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4308151b54e105d302803146a3238699">PzG::LaczeDoGNUPlota::UstawSkaleXZ</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9c91987dfc869d6fcea96205c581daef" compoundref="lacze__do__gnuplota_8hh" startline="707" endline="707">PzG::LaczeDoGNUPlota::UstawZakresX</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a54c6e9cf9ab2eae479451fd953c2717c" compoundref="lacze__do__gnuplota_8hh" startline="716" endline="716">PzG::LaczeDoGNUPlota::UstawZakresY</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1dbbb2b86fb13b8632e6bad9df2a82e3" compoundref="lacze__do__gnuplota_8hh" startline="725" endline="725">PzG::LaczeDoGNUPlota::UstawZakresZ</references>
+        <references refid="_scena_8hh_1ab9a2aba8d08170105908677864bdd5db" compoundref="_scena_8hh" startline="20">ZAKRES</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" compoundref="lacze__do__gnuplota_8hh" startline="689" endline="689">PzG::LaczeDoGNUPlota::ZmienTrybRys</references>
+      </memberdef>
+      <memberdef kind="function" id="class_scena_1a72a743882412d881649a79de572e3e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Scena::dzialanie</definition>
+        <argsstring>()</argsstring>
+        <name>dzialanie</name>
+        <briefdescription>
+<para>Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i podejmowania akcji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wybor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wybór użytkownika </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="76" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="194" bodyend="734"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621">PzG::LaczeDoGNUPlota::DodajNazwePliku</references>
+        <references refid="class_wektor_1a2d1ce5357ce9ff32f9a7d9c6082cb82d" compoundref="wektor_8hh" startline="22">Wektor&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt;::ilosc_stworzonych</references>
+        <references refid="class_wektor_1af40e6b044f9e04e0fe5cb6f3821d7ea3" compoundref="wektor_8hh" startline="22">Wektor&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt;::ilosc_tymczasowych</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335">PzG::LaczeDoGNUPlota::Rysuj</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7fa4e775e1aee74869fae174c567c2a6">PzG::LaczeDoGNUPlota::UsunNazwePliku</references>
+      </memberdef>
+      <memberdef kind="function" id="class_scena_1a3cdb6dddf000c35f675717933d096604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scena::stworz_siatka</definition>
+        <argsstring>(std::string nazwa)</argsstring>
+        <name>stworz_siatka</name>
+        <param>
+          <type>std::string</type>
+          <declname>nazwa</declname>
+        </param>
+        <briefdescription>
+<para>Metoda tworząca podłoże na którym może wylądować dron. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nazwa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nazwa pliku do którego ma zostać wpisana siatka </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StrmPlikowy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strumień umożliwiający zapis do pliku </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>odstep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>odległość pomiędzy kratkami w siatce </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="77" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="95" bodyend="134"/>
+        <references refid="_scena_8hh_1a83d70a57459e7449da6b9daa8ed6c77c" compoundref="_scena_8hh" startline="21">POCZATEK</references>
+        <references refid="_scena_8hh_1aa50aa866c5823769bb02e986d29a0589" compoundref="_scena_8hh" startline="25">ROZMIAR</references>
+        <references refid="_scena_8hh_1ab9a2aba8d08170105908677864bdd5db" compoundref="_scena_8hh" startline="20">ZAKRES</references>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_scena_1abc8bec7db7b74e0a17948475b0162e35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota" kindref="compound">PzG::LaczeDoGNUPlota</ref></type>
+        <definition>PzG::LaczeDoGNUPlota Scena::pokaz_lacze</definition>
+        <argsstring>()</argsstring>
+        <name>pokaz_lacze</name>
+        <briefdescription>
+<para>Metoda zwracająca łącze do gnuplota. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Zwraca łącze. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="78" column="26" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="84" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Deklaracja klasy <ref refid="class_scena" kindref="compound">Scena</ref> Łączy wszystko w całość </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Lacze</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>łącze do gnuplota </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tab_dronów</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tablica wskaźników na obiekty klasy dron </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>siatka</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>podłoże na którym ląduje dron </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index_elementu_plasko</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index plaskowyzu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index_elementu_ostr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index ostroslupa </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index_elementu_skr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index skarpy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index_drona</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index drona </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Scena</label>
+        <link refid="class_scena"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" line="64" column="1" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Scena.hh" bodystart="63" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_scena_1a72a743882412d881649a79de572e3e33" prot="public" virt="non-virtual"><scope>Scena</scope><name>dzialanie</name></member>
+      <member refid="class_scena_1a1ffe6f6ddc2c265792f7f078d81b0067" prot="private" virt="non-virtual"><scope>Scena</scope><name>Elementy_powierzchni</name></member>
+      <member refid="class_scena_1a9a0e984be57ec319db4417add4de6795" prot="private" virt="non-virtual"><scope>Scena</scope><name>index_drona</name></member>
+      <member refid="class_scena_1ac5e4e4737cc23449263390f33426e47c" prot="private" virt="non-virtual"><scope>Scena</scope><name>index_elementu_ostr</name></member>
+      <member refid="class_scena_1a5a690b1b742a990b95193c2b7a1940e5" prot="private" virt="non-virtual"><scope>Scena</scope><name>index_elementu_plasko</name></member>
+      <member refid="class_scena_1a2b258770e17117b283418530e0916cf2" prot="private" virt="non-virtual"><scope>Scena</scope><name>index_elementu_skr</name></member>
+      <member refid="class_scena_1ae8d7d121ba09af12c456a6dfe6da316b" prot="private" virt="non-virtual"><scope>Scena</scope><name>Lacze</name></member>
+      <member refid="class_scena_1a1119a2f9471e8fd18c79313db89fdd99" prot="private" virt="non-virtual"><scope>Scena</scope><name>Lst_dronow</name></member>
+      <member refid="class_scena_1abc8bec7db7b74e0a17948475b0162e35" prot="public" virt="non-virtual"><scope>Scena</scope><name>pokaz_lacze</name></member>
+      <member refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" prot="public" virt="non-virtual"><scope>Scena</scope><name>Scena</name></member>
+      <member refid="class_scena_1af81976943f39155f066940fca07777d8" prot="private" virt="non-virtual"><scope>Scena</scope><name>siatka</name></member>
+      <member refid="class_scena_1a3cdb6dddf000c35f675717933d096604" prot="public" virt="non-virtual"><scope>Scena</scope><name>stworz_siatka</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

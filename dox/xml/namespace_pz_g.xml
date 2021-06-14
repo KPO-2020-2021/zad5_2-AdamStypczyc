@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_pz_g" kind="namespace" language="C++">
+    <compoundname>PzG</compoundname>
+    <innerclass refid="class_pz_g_1_1_info_pliku_do_rysowania" prot="public">PzG::InfoPlikuDoRysowania</innerclass>
+    <innerclass refid="class_pz_g_1_1_lacze_do_g_n_u_plota" prot="public">PzG::LaczeDoGNUPlota</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TypTrybuRysowania</name>
+        <enumvalue id="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4" prot="public">
+          <name>TR_2D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><itemizedlist>
+<listitem><para>rysowanie w trybie 2D, co sprowadza się do rysowania wykresów funkcji jednej zmiennej. </para>
+</listitem></itemizedlist>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2" prot="public">
+          <name>TR_3D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><itemizedlist>
+<listitem><para>rysowanie w trybie 3D. Oznacza to możliwość rysowania wykresów funkcji dwóch zmiennych. </para>
+</listitem></itemizedlist>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Określa tryb rysowania realizowanego przez program <computeroutput>gnuplot</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Typ wyliczeniowy określające dopuszczalne tryby rysowania realizowanego przez program <computeroutput>gnuplot</computeroutput>. Wybór trybu wiąże się ze zmianą sposobu interpretacji danych zawartych pliku. Jeśli np. wybrany zostanie tryb 2D, to zakłada się, że w każdej linii pliku z danymi znajdują się wartości współrzędnych <emphasis>x</emphasis>, <emphasis>y</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="38" column="25" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="38" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TypSposobuRysowania</name>
+        <enumvalue id="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546" prot="public">
+          <name>SR_Ciagly</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><verbatim>     - rysowana jest linia łaman łącząca kolejne punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach.
+</verbatim> <verbatim>       20    30
+       41.5  62
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4" prot="public">
+          <name>SR_Punktowy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><verbatim>     - rysowane są jednakowe punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach, np.
+     \verbatim
+   20    30
+   41.5  62
+</verbatim>  </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pz_g_1a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317" prot="public">
+          <name>SR_PunktowyNiejednorodny</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><verbatim>     - rysowane są punkty o różnych rozmiarach.
+     Współrzędne punktów \e x i \e y oraz ich rozmiary 
+     zadawane są w pliku tekstowym.
+     Wartość rozmiaru musi być liczbą całkowitą większą od 0.
+     Współrzędne i rozmiar muszą być w osobnych liniach, np.
+     \verbatim
+   20    30   5
+   41.5  62   2
+</verbatim>  </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Sposób rysowania linii lub punktów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sposób rysowania linii lub punktów. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="55" column="27" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="55" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TypDostepuDoZasobu</name>
+        <enumvalue id="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" prot="public">
+          <name>DZ_Lokalny</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><itemizedlist>
+<listitem><para>dostęp tylko z poziomu pojedynczego łącza. Dane z pliku będą wizualizowane tylko w jednym okienku graficznym odpowiadające danym łączu. </para>
+</listitem></itemizedlist>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9" prot="public">
+          <name>DZ_Globalny</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><itemizedlist>
+<listitem><para>dostęp ze poziomu wszystkich łączy. Dane z pliku będą wizualizowane we okienkach graficznych odpowiadającym utworzonym łączom. </para>
+</listitem></itemizedlist>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Typ dostępu do plik z danymi. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Typ dostepu do plik z danymi, tzn. czy jest on lokalny tylko z poziomu pojedynczego łącza czy też z pozmiomu wszystkich łącz </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="95" column="26" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="95" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Moduł narzędzi umożliwiających połącznie z GNUPlotem. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Niniejsza przestrzeń nazw stanowi moduł logiczny zawierający narzędzia umożliwiające realizację połączenia z programem <computeroutput>gnuplot</computeroutput>. </para>
+    </detaileddescription>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="27" column="13"/>
+  </compounddef>
+</doxygen>

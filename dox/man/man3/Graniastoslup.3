@@ -1,0 +1,232 @@
+.TH "Graniastoslup" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Graniastoslup \- Klasa \fBGraniastoslup\fP\&. Deklaracja klasy \fBGraniastoslup\fP\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na graniastoslupach, np\&. prostopadłościanie i graniastosłupie sześciokątnym foremnym\&. Klasa \fBGraniastoslup6\fP i klasa \fBProstopadloscian\fP dziedziczą z tej klasy\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Graniastoslup\&.hh>\fP
+.PP
+Dziedziczona przez \fBGraniastoslup6\fP, \fBOstroslup\fP, \fBPlaskowyz\fP, \fBProstopadloscian\fP i \fBSkarpa\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBWektor3D\fP & \fBoperator[]\fP (int i)"
+.br
+.RI "Przeciążenie operatora [] set\&. Umożliwia zmianę wartości poszczególnej wszpółrzędnej graniastoslupa\&. "
+.ti -1c
+.RI "const \fBWektor3D\fP \fBoperator[]\fP (int i) const"
+.br
+.RI "Przeciążenie operatora [] get\&. Umożliwia podgląd wartości poszczególnej wszpółrzędnej graniastoslupa\&. "
+.ti -1c
+.RI "void \fBustaw_srodek\fP (\fBWektor3D\fP sro)"
+.br
+.RI "Metoda ustawiająca wartość środka Umożliwia przypisanie Wektora3D środkowi bryły\&. "
+.ti -1c
+.RI "void \fBustaw_nazwa\fP (std::string nazwa)"
+.br
+.RI "Metoda ustawiająca nazwę pliku Umożliwia przypisanie nazwy pliku\&. "
+.ti -1c
+.RI "\fBWektor3D\fP \fBpokaz_srodek\fP () const"
+.br
+.RI "Metoda pokazująca wartość środka Umożliwia podgląd wartości środka\&. "
+.ti -1c
+.RI "std::string \fBpokaz_nazwa\fP () const"
+.br
+.RI "Metoda pokazująca nazwę pliku Umożliwia podgląd nazwy pliku\&. "
+.ti -1c
+.RI "void \fBtranslacja\fP (\fBWektor3D\fP translacja)"
+.br
+.RI "Metoda przesuwająca graniastoslup o zadany wektor3D\&. "
+.ti -1c
+.RI "void \fBrotacja\fP (\fBMacierz3x3\fP obrot)"
+.br
+.RI "Metoda obracająca graniastoslup o zadaną Macierz3x3\&. "
+.ti -1c
+.RI "void \fBzapis\fP ()"
+.br
+.RI "Metoda zapisująca graniastoslup do pliku\&. "
+.in -1c
+.SS "Atrybuty chronione"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBWektor3D\fP > \fBwspol\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBWektor3D\fP > \fBwymiar\fP"
+.br
+.ti -1c
+.RI "\fBWektor3D\fP \fBsrodek\fP"
+.br
+.ti -1c
+.RI "std::string \fBnazwa_pliku\fP"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa \fBGraniastoslup\fP\&. Deklaracja klasy \fBGraniastoslup\fP\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na graniastoslupach, np\&. prostopadłościanie i graniastosłupie sześciokątnym foremnym\&. Klasa \fBGraniastoslup6\fP i klasa \fBProstopadloscian\fP dziedziczą z tej klasy\&. 
+
+
+.PP
+\fBParametry\fP
+.RS 4
+\fIwspol\fP deklaracja graniastoslupa jako wektory 3D\&. Wspol jest skrótem od współrzędna 
+.br
+\fIwymiar\fP przydatny do zapisywania środków podstaw bryły 
+.br
+\fIsrodek\fP Wektor3D odpowiadający środkowi bryły 
+.br
+\fInazwa_pliku\fP zmienna typu string w której przechowujemy nazwę pliku 
+.RE
+.PP
+
+.PP
+Definicja w linii 16 pliku Graniastoslup\&.hh\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "\fBWektor3D\fP & Graniastoslup::operator[] (int i)"
+
+.PP
+Przeciążenie operatora [] set\&. Umożliwia zmianę wartości poszczególnej wszpółrzędnej graniastoslupa\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor3D odpowiadający interesującej nas współrzędnej\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 43 pliku Graniastoslup\&.hh\&.
+.SS "const \fBWektor3D\fP Graniastoslup::operator[] (int i) const"
+
+.PP
+Przeciążenie operatora [] get\&. Umożliwia podgląd wartości poszczególnej wszpółrzędnej graniastoslupa\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor3D odpowiadający interesującej nas współrzędnej\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 52 pliku Graniastoslup\&.hh\&.
+.SS "std::string Graniastoslup::pokaz_nazwa () const"
+
+.PP
+Metoda pokazująca nazwę pliku Umożliwia podgląd nazwy pliku\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca string odpowiadający nazwie pliku\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 88 pliku Graniastoslup\&.hh\&.
+.SS "\fBWektor3D\fP Graniastoslup::pokaz_srodek () const"
+
+.PP
+Metoda pokazująca wartość środka Umożliwia podgląd wartości środka\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor3D środkowi\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 79 pliku Graniastoslup\&.hh\&.
+.SS "void Graniastoslup::rotacja (\fBMacierz3x3\fP obrot)"
+
+.PP
+Metoda obracająca graniastoslup o zadaną Macierz3x3\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIobrot\fP Macierz3x3 odpowiadająca obrotowi 
+.RE
+.PP
+
+.PP
+Definicja w linii 110 pliku Graniastoslup\&.hh\&.
+.SS "void Graniastoslup::translacja (\fBWektor3D\fP translacja)"
+
+.PP
+Metoda przesuwająca graniastoslup o zadany wektor3D\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItranslacja\fP Wektor3D odpowiadający przesunięciu 
+.RE
+.PP
+
+.PP
+Definicja w linii 97 pliku Graniastoslup\&.hh\&.
+.SS "void Graniastoslup::ustaw_nazwa (std::string nazwa)"
+
+.PP
+Metoda ustawiająca nazwę pliku Umożliwia przypisanie nazwy pliku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fInazwa\fP nazwa pliku który chcemy przypisać 
+.RE
+.PP
+
+.PP
+Definicja w linii 70 pliku Graniastoslup\&.hh\&.
+.SS "void Graniastoslup::ustaw_srodek (\fBWektor3D\fP sro)"
+
+.PP
+Metoda ustawiająca wartość środka Umożliwia przypisanie Wektora3D środkowi bryły\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIsro\fP Wektor3D który przypisujemy środkowi 
+.RE
+.PP
+
+.PP
+Definicja w linii 61 pliku Graniastoslup\&.hh\&.
+.SS "void Graniastoslup::zapis ()"
+
+.PP
+Metoda zapisująca graniastoslup do pliku\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIStrmPlikowy\fP strumień dzięki któremy zapiszemy współrzędne punktów do pliku 
+.br
+\fItranslacja_srodka\fP Wektor3D który przesuwa środek bryły do góry i na dół żeby odpowiadały środkowi górnej i środkowi dolnej podstawy 
+.RE
+.PP
+
+.PP
+Definicja w linii 124 pliku Graniastoslup\&.hh\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "std::string Graniastoslup::nazwa_pliku\fC [protected]\fP"
+
+.PP
+Definicja w linii 22 pliku Graniastoslup\&.hh\&.
+.SS "\fBWektor3D\fP Graniastoslup::srodek\fC [protected]\fP"
+
+.PP
+Definicja w linii 21 pliku Graniastoslup\&.hh\&.
+.SS "std::vector<\fBWektor3D\fP> Graniastoslup::wspol\fC [protected]\fP"
+
+.PP
+Definicja w linii 19 pliku Graniastoslup\&.hh\&.
+.SS "std::shared_ptr<\fBWektor3D\fP> Graniastoslup::wymiar\fC [protected]\fP"
+
+.PP
+Definicja w linii 20 pliku Graniastoslup\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

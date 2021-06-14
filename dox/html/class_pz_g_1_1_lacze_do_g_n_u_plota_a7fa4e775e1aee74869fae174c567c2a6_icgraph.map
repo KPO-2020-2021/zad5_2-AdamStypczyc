@@ -1,0 +1,6 @@
+<map id="PzG::LaczeDoGNUPlota::UsunNazwePliku" name="PzG::LaczeDoGNUPlota::UsunNazwePliku">
+<area shape="rect" id="node1" title="Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę." alt="" coords="188,49,361,90"/>
+<area shape="rect" id="node2" href="$classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="25,5,120,32"/>
+<area shape="rect" id="node3" href="$class_scena.html#a72a743882412d881649a79de572e3e33" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="9,56,137,83"/>
+<area shape="rect" id="node4" href="$classdron.html#a6cf04a2beb3431d29b4ad7f0f6ae37de" title="Metoda usuwająca drona z Lacza." alt="" coords="5,107,140,133"/>
+</map>

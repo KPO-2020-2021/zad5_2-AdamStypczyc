@@ -1,0 +1,114 @@
+.TH "Scena" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Scena \- Deklaracja klasy \fBScena\fP Łączy wszystko w całość  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Scena\&.hh>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBScena\fP ()"
+.br
+.RI "Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacze i ustawiający jego zakres\&. "
+.ti -1c
+.RI "bool \fBdzialanie\fP ()"
+.br
+.RI "Metoda dająca użytkowikowi dostęp\&. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i podejmowania akcji\&. "
+.ti -1c
+.RI "void \fBstworz_siatka\fP (std::string nazwa)"
+.br
+.RI "Metoda tworząca podłoże na którym może wylądować dron\&. "
+.ti -1c
+.RI "\fBPzG::LaczeDoGNUPlota\fP \fBpokaz_lacze\fP ()"
+.br
+.RI "Metoda zwracająca łącze do gnuplota\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Deklaracja klasy \fBScena\fP Łączy wszystko w całość 
+
+
+.PP
+\fBParametry\fP
+.RS 4
+\fILacze\fP łącze do gnuplota 
+.br
+\fItab_dronów\fP tablica wskaźników na obiekty klasy dron 
+.br
+\fIsiatka\fP podłoże na którym ląduje dron 
+.br
+\fIindex_elementu_plasko\fP index plaskowyzu 
+.br
+\fIindex_elementu_ostr\fP index ostroslupa 
+.br
+\fIindex_elementu_skr\fP index skarpy 
+.br
+\fIindex_drona\fP index drona 
+.RE
+.PP
+
+.PP
+Definicja w linii 63 pliku Scena\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Scena::Scena ()"
+
+.PP
+Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacze i ustawiający jego zakres\&. 
+.PP
+Definicja w linii 139 pliku Scena\&.hh\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "bool Scena::dzialanie ()"
+
+.PP
+Metoda dająca użytkowikowi dostęp\&. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i podejmowania akcji\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIwybor\fP wybór użytkownika 
+.RE
+.PP
+
+.PP
+Definicja w linii 194 pliku Scena\&.hh\&.
+.SS "\fBPzG::LaczeDoGNUPlota\fP Scena::pokaz_lacze ()"
+
+.PP
+Metoda zwracająca łącze do gnuplota\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca łącze\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 84 pliku Scena\&.hh\&.
+.SS "void Scena::stworz_siatka (std::string nazwa)"
+
+.PP
+Metoda tworząca podłoże na którym może wylądować dron\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fInazwa\fP nazwa pliku do którego ma zostać wpisana siatka 
+.br
+\fIStrmPlikowy\fP strumień umożliwiający zapis do pliku 
+.br
+\fIodstep\fP odległość pomiędzy kratkami w siatce 
+.RE
+.PP
+
+.PP
+Definicja w linii 95 pliku Scena\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

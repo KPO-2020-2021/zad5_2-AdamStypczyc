@@ -1,0 +1,176 @@
+.TH "/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'macierz\&.hh'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include 'wektor\&.hh'\fP
+.br
+\fC#include 'Wektor3D\&.hh'\fP
+.br
+\fC#include 'size\&.hh'\fP
+.br
+
+.SS "Komponenty"
+
+.in +1c
+.ti -1c
+.RI "class \fBMacierz< Templ_Typ, Templ_Rozmiar >\fP"
+.br
+.RI "Szablon macierzy\&. Szablon ten jest szablonem klasy macierz\&. Zawiera on elementy potrzebne do utworzenia macierzy oraz wykonywania na niej różnych operacji\&. Zawiera on tablicę o rozmiarach odopowiadających naszej macierzy oraz kąty potrzebne do obrotów 2D i 3D (kąty X, Y, Z)\&. "
+.in -1c
+.SS "Definicje typów"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBMacierz\fP< double, 3 > \fBMacierz3x3\fP"
+.br
+.RI "Deklaracja Macierzy3x3 Deklaracja macierzy 3D\&. "
+.in -1c
+.SS "Funkcje"
+
+.in +1c
+.ti -1c
+.RI "template<typename Templ_Typ , unsigned int Templ_Rozmiar> std::istream & \fBoperator>>\fP (std::istream &in, \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > &mat)"
+.br
+.RI "Przeciążenie operatora strumieniowego in dla macierzy\&. Umożliwia bezpośredie wczytanie macierzy\&. "
+.ti -1c
+.RI "template<typename Templ_Typ , unsigned int Templ_Rozmiar> std::ostream & \fBoperator<<\fP (std::ostream &out, \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > const &mat)"
+.br
+.RI "Przeciążenie operatora strumieniowego out dla macierzy\&. Umożliwia bezpośredie wyświetlenie macierzy\&. "
+.ti -1c
+.RI "double \fBStopienNaRadianX\fP (double kat_stopnieX)"
+.br
+.RI "Zamaina stopni na radian 3D wokół OX\&. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OX\&. 
+.br
+ "
+.ti -1c
+.RI "double \fBStopienNaRadianY\fP (double kat_stopnieY)"
+.br
+.RI "Zamaina stopni na radian 3D wokół OY\&. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OY\&. 
+.br
+ "
+.ti -1c
+.RI "double \fBStopienNaRadianZ\fP (double kat_stopnieZ)"
+.br
+.RI "Zamaina stopni na radian 3D wokół OZ\&. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OZ\&. 
+.br
+ "
+.ti -1c
+.RI "void \fBOblicz_Macierz_ObrotuX\fP (double kat_radianX, \fBMacierz3x3\fP &Mac)"
+.br
+.RI "Funkcja obliczająca macierz obrotu 3D OX\&. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OX\&. "
+.ti -1c
+.RI "void \fBOblicz_Macierz_ObrotuY\fP (double kat_radianY, \fBMacierz3x3\fP &Mac)"
+.br
+.RI "Funkcja obliczająca macierz obrotu 3D OY\&. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OY\&. "
+.ti -1c
+.RI "void \fBOblicz_Macierz_ObrotuZ\fP (double kat_radianZ, \fBMacierz3x3\fP &Mac)"
+.br
+.RI "Funkcja obliczająca macierz obrotu 3D OZ\&. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OZ\&. "
+.in -1c
+.SH "Dokumentacja definicji typów"
+.PP 
+.SS "typedef \fBMacierz\fP<double, 3> \fBMacierz3x3\fP"
+
+.PP
+Deklaracja Macierzy3x3 Deklaracja macierzy 3D\&. 
+.PP
+Definicja w linii 9 pliku Macierz\&.hh\&.
+.SH "Dokumentacja funkcji"
+.PP 
+.SS "void Oblicz_Macierz_ObrotuX (double kat_radianX, \fBMacierz3x3\fP & Mac)"
+
+.PP
+Funkcja obliczająca macierz obrotu 3D OX\&. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OX\&. 
+.PP
+Definicja w linii 45 pliku Macierz\&.hh\&.
+.SS "void Oblicz_Macierz_ObrotuY (double kat_radianY, \fBMacierz3x3\fP & Mac)"
+
+.PP
+Funkcja obliczająca macierz obrotu 3D OY\&. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OY\&. 
+.PP
+Definicja w linii 61 pliku Macierz\&.hh\&.
+.SS "void Oblicz_Macierz_ObrotuZ (double kat_radianZ, \fBMacierz3x3\fP & Mac)"
+
+.PP
+Funkcja obliczająca macierz obrotu 3D OZ\&. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OZ\&. 
+.PP
+Definicja w linii 77 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> std::ostream& operator<< (std::ostream & out, \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > const & mat)"
+
+.PP
+Przeciążenie operatora strumieniowego out dla macierzy\&. Umożliwia bezpośredie wyświetlenie macierzy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIout\fP strumień wyjściowy 
+.br
+\fImat\fP macierz odpowiadająca wyświetlaniej macierzy 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca strumień wyjściowy out\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 287 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> std::istream& operator>> (std::istream & in, \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > & mat)"
+
+.PP
+Przeciążenie operatora strumieniowego in dla macierzy\&. Umożliwia bezpośredie wczytanie macierzy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIin\fP strumień wejściowy 
+.br
+\fImat\fP macierz odpowiadająca wczytywanej macierzy 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca strumień wejściowy in\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 267 pliku Macierz\&.hh\&.
+.SS "double StopienNaRadianX (double kat_stopnieX)"
+
+.PP
+Zamaina stopni na radian 3D wokół OX\&. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OX\&. 
+.br
+ 
+.PP
+Definicja w linii 14 pliku Macierz\&.hh\&.
+.SS "double StopienNaRadianY (double kat_stopnieY)"
+
+.PP
+Zamaina stopni na radian 3D wokół OY\&. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OY\&. 
+.br
+ 
+.PP
+Definicja w linii 24 pliku Macierz\&.hh\&.
+.SS "double StopienNaRadianZ (double kat_stopnieZ)"
+
+.PP
+Zamaina stopni na radian 3D wokół OZ\&. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OZ\&. 
+.br
+ 
+.PP
+Definicja w linii 34 pliku Macierz\&.hh\&.
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

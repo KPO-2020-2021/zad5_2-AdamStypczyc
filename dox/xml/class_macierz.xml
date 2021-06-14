@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_macierz" kind="class" language="C++" prot="public">
+    <compoundname>Macierz</compoundname>
+    <includes refid="macierz_8hh" local="no">Macierz.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Templ_Typ</type>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>Templ_Rozmiar</declname>
+        <defname>Templ_Rozmiar</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_macierz_1a5a33db0f7248a09e5c79219d45919fa9" prot="private" static="no" mutable="no">
+        <type>Templ_Typ</type>
+        <definition>Templ_Typ Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::value[Templ_Rozmiar][Templ_Rozmiar]</definition>
+        <argsstring>[Templ_Rozmiar][Templ_Rozmiar]</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="21" column="15" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_macierz_1a1f402210b496c2aff462c58613052975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::Macierz</definition>
+        <argsstring>(Templ_Typ tmp[Templ_Rozmiar][Templ_Rozmiar])</argsstring>
+        <name>Macierz</name>
+        <param>
+          <type>Templ_Typ</type>
+          <declname>tmp</declname>
+          <array>[Templ_Rozmiar][Templ_Rozmiar]</array>
+        </param>
+        <briefdescription>
+<para>Konstruktor parametryczny klasy macierz. Konstruktor ten nadaje wartości macierzy poprzez tablicę odpowiadającą jej wymiarom. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tablica poprzez którą będziemy nadawać wartości macierzy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="24" column="5" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1a722bc086dd0f12fbc0f34dcb0246e6bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::Macierz</definition>
+        <argsstring>()</argsstring>
+        <name>Macierz</name>
+        <briefdescription>
+<para>Konstruktor bezparametryczny klasy macierz. Konstruktor wypełnia macierz zerami. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="26" column="5" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="63" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1ae15b7b6824830232cbca3e67b166a0e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+        <definition>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt; Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator+</definition>
+        <argsstring>(Macierz tmp)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora dodawania. Przeciążenie operatora dodawania, aby umożliwić dodawanie dwóch macierzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz odpowiadająca jednej z dodawanych macierzy. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz pomocnicza odpowiadająca macierzy wynikowej dodawania. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wynik dodawania w postaci macierzy result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="28" column="13" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="82" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1a7a94716cbc755234ac5b262bf9d0be46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+        <definition>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt; Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator-</definition>
+        <argsstring>(Macierz tmp)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora odejmowania. Przeciążenie operatora odejmowania, aby umożliwić odejmowanie dwóch macierzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz odpowiadająca jednej z odejmowanych macierzy. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz pomocnicza odpowiadająca macierzy wynikowej odejmowania. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wynik odejmowania w postaci macierzy result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="29" column="13" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="103" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1a36e87998f8a55df5e348998ca5986be2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+        <definition>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt; Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator*</definition>
+        <argsstring>(Macierz tmp)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora mnożenia Macierz*Macierz. Przeciążenie operatora mnożenia, aby umożliwić mnożenie dwóch macierzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz odpowiadająca jednej z mnożonych macierzy. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz pomocnicza odpowiadająca macierzy wynikowej mnożenia. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wynik mnożenia w postaci macierzy result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="30" column="13" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="124" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1ac61686ed38815fcf2f3df8964283b22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+        <definition>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt; Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator*</definition>
+        <argsstring>(double tmp)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>double</type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora mnożenia Macierz*double. Przeciążenie operatora mnożenia, aby umożliwić mnożenie macierzy i jakiejś wartości typu double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zmienna typu double </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz pomocnicza odpowiadająca macierzy wynikowej mnożenia. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wynik mnożenia w postaci macierzy result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="31" column="13" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="169" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1a8943f28245aed2fb025147646845e00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref></type>
+        <definition>Wektor3D Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator*</definition>
+        <argsstring>(Wektor3D tmp)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora mnożenia Macierz*Wektor3D. Przeciążenie operatora mnożenia, aby umożliwić mnożenie macierzy i wektora. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wektor3D </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz pomocnicza odpowiadająca macierzy wynikowej mnożenia. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wynik mnożenia w postaci macierzy result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="32" column="14" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="147" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1a8bf536ce83525919ec6c076d477d5340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Templ_Typ &amp;</type>
+        <definition>Templ_Typ &amp; Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator()</definition>
+        <argsstring>(unsigned int row, unsigned int column)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora () set. Umożliwia zmienienie wartości konkretnego elementu macierzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>odpowiednik numeru wiersza. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>odpowiednik numeru kolumny </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca wartość elementu, który nas interesuje. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="34" column="15" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="190" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1a5c2afc47782a3f39a68175d6bd470014" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const Templ_Typ &amp;</type>
+        <definition>const Templ_Typ &amp; Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator()</definition>
+        <argsstring>(unsigned int row, unsigned int column) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora () get. Umożliwia podgląd wartości konkretnego elementu macierzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>odpowiednik numeru wiersza. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>odpowiednik numeru kolumny </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca wartość elementu, który nas interesuje. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="36" column="21" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="214" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_macierz_1a531f90669d173d208c8ad8980e90c535" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;::operator==</definition>
+        <argsstring>(const Macierz tmp) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_macierz" kindref="compound">Macierz</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora porównania dla macierzy. Przeciążenie operatora porównania umożliwiające porównywanie dwóch macierzy, potrzebne przede wszystkim do testów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz odpowiadająca jednej z porównywanych macierzy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>liczenie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ilość &quot;punktów&quot; odpowiadających ilości zgadzających się elementów macierzy, powinna odpowiadać ilości elementów macierzy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca true albo false w zależności czy ilośc punktów odpowiada elementom macierzy. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="38" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="239" bodyend="257"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Szablon macierzy. Szablon ten jest szablonem klasy macierz. Zawiera on elementy potrzebne do utworzenia macierzy oraz wykonywania na niej różnych operacji. Zawiera on tablicę o rozmiarach odopowiadających naszej macierzy oraz kąty potrzebne do obrotów 2D i 3D (kąty X, Y, Z). </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tablica przechowująca wartości macierzy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;</label>
+        <link refid="class_macierz"/>
+      </node>
+      <node id="2">
+        <label>Macierz&lt; double, 3 &gt;</label>
+        <link refid="class_macierz"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; double, 3 &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Macierz&lt; Templ_Typ, Templ_Rozmiar &gt;</label>
+        <link refid="class_macierz"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="18" column="1" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="17" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_macierz_1a1f402210b496c2aff462c58613052975" prot="public" virt="non-virtual"><scope>Macierz</scope><name>Macierz</name></member>
+      <member refid="class_macierz_1a722bc086dd0f12fbc0f34dcb0246e6bc" prot="public" virt="non-virtual"><scope>Macierz</scope><name>Macierz</name></member>
+      <member refid="class_macierz_1a8bf536ce83525919ec6c076d477d5340" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator()</name></member>
+      <member refid="class_macierz_1a5c2afc47782a3f39a68175d6bd470014" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator()</name></member>
+      <member refid="class_macierz_1a36e87998f8a55df5e348998ca5986be2" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator*</name></member>
+      <member refid="class_macierz_1ac61686ed38815fcf2f3df8964283b22b" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator*</name></member>
+      <member refid="class_macierz_1a8943f28245aed2fb025147646845e00a" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator*</name></member>
+      <member refid="class_macierz_1ae15b7b6824830232cbca3e67b166a0e8" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator+</name></member>
+      <member refid="class_macierz_1a7a94716cbc755234ac5b262bf9d0be46" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator-</name></member>
+      <member refid="class_macierz_1a531f90669d173d208c8ad8980e90c535" prot="public" virt="non-virtual"><scope>Macierz</scope><name>operator==</name></member>
+      <member refid="class_macierz_1a5a33db0f7248a09e5c79219d45919fa9" prot="private" virt="non-virtual"><scope>Macierz</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

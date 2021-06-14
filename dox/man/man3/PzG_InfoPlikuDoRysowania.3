@@ -1,0 +1,278 @@
+.TH "PzG::InfoPlikuDoRysowania" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PzG::InfoPlikuDoRysowania \- Zestaw informacji dotyczący pliku i sposobu rysowania\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <lacze_do_gnuplota\&.hh>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP (const char *NazwaPliku, \fBTypSposobuRysowania\fP SposobRys, int Szerokosc=1, int Kolor=1, int Styl=7)"
+.br
+.RI "Inicjalizuje obiekt\&. "
+.ti -1c
+.RI "const std::string & \fBWezNazwePliku\fP () const"
+.br
+.RI "Udostępia nazwę pliku do rysowania\&. "
+.ti -1c
+.RI "void \fBZmienNazwePliku\fP (const std::string &NazwaPliku)"
+.br
+.RI "Zmienia nazwę pliku do rysowania\&. "
+.ti -1c
+.RI "\fBTypSposobuRysowania\fP \fBWezSposobRys\fP () const"
+.br
+.RI "Udostępnia sposób rysowanej linii\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBZmienSposobRys\fP (\fBTypSposobuRysowania\fP SposobRys)"
+.br
+.RI "Zmienia sposób rysowania\&. "
+.ti -1c
+.RI "int \fBWezSzerokosc\fP () const"
+.br
+.RI "Udostępnia informację o szerokości linii\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBZmienSzerokosc\fP (int Szerokosc)"
+.br
+.RI "Zmienia szerokość rysowania elementów graficznych\&. "
+.ti -1c
+.RI "int \fBWezKolor\fP () const"
+.br
+.RI "Udostępnia numer koloru\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBZmienKolor\fP (int Kolor)"
+.br
+.RI "Zmienia kolor rysowania elementów graficznych\&. "
+.ti -1c
+.RI "int \fBWezStyl\fP () const"
+.br
+.RI "Udostępia oznaczenie liczbowe stylu rysowania\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBZmienStyl\fP (int Styl)"
+.br
+.RI "Zmienia styl rysowania\&. "
+.ti -1c
+.RI "const std::string & \fBWezEtykiete\fP () const"
+.br
+.RI "Udostępnia etykietę punktów\&. "
+.ti -1c
+.RI "\fBInfoPlikuDoRysowania\fP & \fBZmienEtykiete\fP (const char *Etykieta)"
+.br
+.RI "Zmienia etykietę "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Zestaw informacji dotyczący pliku i sposobu rysowania\&. 
+
+Klasa modeluje zestaw informacji dotyczący pliku i sposobu w jaki mają być wizualizowane zawarte w nim dane\&. 
+.PP
+Definicja w linii 116 pliku lacze_do_gnuplota\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "PzG::InfoPlikuDoRysowania::InfoPlikuDoRysowania (const char * NazwaPliku, \fBTypSposobuRysowania\fP SposobRys, int Szerokosc = \fC1\fP, int Kolor = \fC1\fP, int Styl = \fC7\fP)"
+
+.PP
+Inicjalizuje obiekt\&. 
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "const std::string& PzG::InfoPlikuDoRysowania::WezEtykiete () const\fC [inline]\fP"
+
+.PP
+Udostępnia etykietę punktów\&. Udostępnia etykietę, która może być użyta do oznaczania punktów\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Referencja do etykiety w trybie tylko do odczytu\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 246 pliku lacze_do_gnuplota\&.hh\&.
+.SS "int PzG::InfoPlikuDoRysowania::WezKolor () const\fC [inline]\fP"
+
+.PP
+Udostępnia numer koloru\&. Udostępnia numer koloru jakim ma być rysowany dany element\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Wartość określająca kolor rysowania\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 187 pliku lacze_do_gnuplota\&.hh\&.
+.SS "const std::string& PzG::InfoPlikuDoRysowania::WezNazwePliku () const\fC [inline]\fP"
+
+.PP
+Udostępia nazwę pliku do rysowania\&. Udostępnia nazwę pliku z danymi do rysowania\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Referencja do nazwy pliku w trybie tylko do odczytu\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 133 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBTypSposobuRysowania\fP PzG::InfoPlikuDoRysowania::WezSposobRys () const\fC [inline]\fP"
+
+.PP
+Udostępnia sposób rysowanej linii\&. Udostępnia informację o sposóbie rysowania linii\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Udostępnia wartość wyliczeniową identyfikującą sposób rysowania\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 149 pliku lacze_do_gnuplota\&.hh\&.
+.SS "int PzG::InfoPlikuDoRysowania::WezStyl () const\fC [inline]\fP"
+
+.PP
+Udostępia oznaczenie liczbowe stylu rysowania\&. Udostępia oznaczenie liczbowe stylu rysowania danego obiektu graficznego\&.
+.PP
+Informację o stylach rysowanych obiektów odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu \fIgnuplot\fP, a następnie wykonania polecenia \fItest\fP na poziomie interakcji z programem \fIgnuplot\fP\&. Style rysowanych obiektów odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Wartość określająca styl rysowania\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 221 pliku lacze_do_gnuplota\&.hh\&.
+.SS "int PzG::InfoPlikuDoRysowania::WezSzerokosc () const\fC [inline]\fP"
+
+.PP
+Udostępnia informację o szerokości linii\&. Udostępnia informację o szerokości rysowanej linii\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Wartość określająca szerokość rysowanej linii\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 168 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::InfoPlikuDoRysowania::ZmienEtykiete (const char * Etykieta)\fC [inline]\fP"
+
+.PP
+Zmienia etykietę Zmienia etykietę, która ma się pojawić przy rysowanym elemencie\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIEtykieta\fP - zawartość nowej etykiety\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Referencja do zmodyfikowanego obiektu *this\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 255 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::InfoPlikuDoRysowania::ZmienKolor (int Kolor)\fC [inline]\fP"
+
+.PP
+Zmienia kolor rysowania elementów graficznych\&. Zmienia kolor rysowania elementów graficznych\&.
+.PP
+Informację o kolorach rysowanych obiektów odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu \fIgnuplot\fP, a następnie wykonania polecenia \fItest\fP na poziomie interakcji z programem \fIgnuplot\fP\&. Kolory rysowanych obiektów odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIKolor\fP - numer nowego koloru rysowania\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Referencja do zmodyfikowanego obiektu \fC*this\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 203 pliku lacze_do_gnuplota\&.hh\&.
+.SS "void PzG::InfoPlikuDoRysowania::ZmienNazwePliku (const std::string & NazwaPliku)\fC [inline]\fP"
+
+.PP
+Zmienia nazwę pliku do rysowania\&. Zmienia nazwę pliku z danymi do rysowania\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fINazwaPliku\fP - nowa nazwa pliku z danymi do rysowania\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 140 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::InfoPlikuDoRysowania::ZmienSposobRys (\fBTypSposobuRysowania\fP SposobRys)\fC [inline]\fP"
+
+.PP
+Zmienia sposób rysowania\&. Zmienia sposób rysowania linii lub płaszczyzny\&. Rodzaj obiektu zależy od typu przekazywanych danych w pliku skojarzonym z z danym obiektem graficznym\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fISposobRys\fP - nowy sposób rysowania, który będzie przyporządkowany danemu obiektowi graficznemu\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Referencja do zmodyfikowanego obiektu \fC*this\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 160 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::InfoPlikuDoRysowania::ZmienStyl (int Styl)\fC [inline]\fP"
+
+.PP
+Zmienia styl rysowania\&. Zmienia styl rysowania obiektu graficznego (linii lub punktów)\&.
+.PP
+Informację o stylach rysowanych obiektów odpowiadających poszczególnym wartościom można uzyskać poprzez wywołanie programu \fIgnuplot\fP, a następnie wykonania polecenia \fItest\fP na poziomie interakcji z programem \fIgnuplot\fP\&. Style rysowanych obiektów odpowiadające poszczególnym numerom są widoczne po prawej stronie wyświetlonego okienka\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIStyl\fP - numer nowego stylu rysowania\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Referencja do zmodyfikowanego obiektu \fC*this\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 237 pliku lacze_do_gnuplota\&.hh\&.
+.SS "\fBInfoPlikuDoRysowania\fP& PzG::InfoPlikuDoRysowania::ZmienSzerokosc (int Szerokosc)\fC [inline]\fP"
+
+.PP
+Zmienia szerokość rysowania elementów graficznych\&. Zmienia szerokość rysowania elementów graficznych\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fISzerokosc\fP - nowa wartość szerokości rysowanej linii\&. 
+.RE
+.PP
+\fBWarunek wstępny\fP
+.RS 4
+Parametr \fISzerokosc\fP musi mieć warość większą od 0\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Referencja do zmodyfikowanego obiektu \fC*this\fP\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 178 pliku lacze_do_gnuplota\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

@@ -1,5 +1,8 @@
 <map id="Graniastoslup" name="Graniastoslup">
-<area shape="rect" id="node1" title="Klasa Graniastoslup. Deklaracja klasy Graniastoslup. Zawiera ona elementy i metody potrzebne do wykon..." alt="" coords="84,5,196,32"/>
-<area shape="rect" id="node2" href="$class_graniastoslup6.html" title="Klasa Graniastoslup6. Deklaracja klasy Graniastoslup6. Zawiera ona elementy i metody potrzebne do wyk..." alt="" coords="5,80,125,107"/>
-<area shape="rect" id="node3" href="$class_prostopadloscian.html" title="Klasa Prostopadloscian. Deklaracja klasy prostopadłościan. Zawiera ona elementy i metody potrzebne do..." alt="" coords="149,80,283,107"/>
+<area shape="rect" id="node1" title="Klasa Graniastoslup. Deklaracja klasy Graniastoslup. Zawiera ona elementy i metody potrzebne do wykon..." alt="" coords="297,5,435,244"/>
+<area shape="rect" id="node2" href="$class_graniastoslup6.html" title="Klasa Graniastoslup6. Deklaracja klasy Graniastoslup6. Zawiera ona elementy i metody potrzebne do wyk..." alt="" coords="5,292,151,369"/>
+<area shape="rect" id="node3" href="$class_ostroslup.html" title="Klasa Ostroslup. Deklaracja klasy Ostroslup. Zawiera ona elementy i metody potrzebne do wykonywania r..." alt="" coords="175,292,285,369"/>
+<area shape="rect" id="node4" href="$class_plaskowyz.html" title="Klasa Plaskowyz. Deklaracja klasy Plaskowyz. Zawiera ona elementy i metody potrzebne do wykonywania r..." alt="" coords="309,292,423,369"/>
+<area shape="rect" id="node5" href="$class_prostopadloscian.html" title="Klasa Prostopadloscian. Deklaracja klasy prostopadłościan. Zawiera ona elementy i metody potrzebne do..." alt="" coords="448,292,607,369"/>
+<area shape="rect" id="node6" href="$class_skarpa.html" title="Klasa Skarpa. Deklaracja klasy Skarpa. Zawiera ona elementy i metody potrzebne do wykonywania różnych..." alt="" coords="631,292,722,369"/>
 </map>

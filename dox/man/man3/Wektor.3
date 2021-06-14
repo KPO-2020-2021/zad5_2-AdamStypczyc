@@ -1,0 +1,304 @@
+.TH "Wektor< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Wektor< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > \- Szablon wektora\&. Szablon ten jest szablonem klasy \fBWektor\fP\&. Zawiera on elementy potrzebne do utworzenia wektora oraz wykonywania na nim różnych operacji\&. Zawiera on tablicę o rozmiarach odopowiadających naszemu wektorowi\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <wektor\&.hh>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBWektor\fP ()"
+.br
+.RI "Konstruktor bezparametryczny klasy wektor\&. Przypisuje wszystkim elementom tablicy wektorek 0\&. "
+.ti -1c
+.RI "constexpr \fBWektor\fP (const \fBWektor\fP &vector)"
+.br
+.RI "Konstruktor kopiujący klasy wektor\&. Przypisuje elementom klasy wektor wartość innego elementu tej samej klasy\&. "
+.ti -1c
+.RI "\fB~Wektor\fP ()"
+.br
+.RI "Destruktor klasy wektor\&. "
+.ti -1c
+.RI "\fBWektor\fP (const std::initializer_list< Templ_Typ_Wektor > &ListaWsp)"
+.br
+.RI "Konstruktor parametryczny klasy wektor\&. Przypisuje wszystkim elementom tablicy wektorek odpowiednie wartości podane w liście\&. "
+.ti -1c
+.RI "Templ_Typ_Wektor \fBoperator[]\fP (unsigned int Index) const"
+.br
+.RI "Przeciążenie operatora [] get\&. Umożliwia podgląd wartości konkretnego elementu wektora\&. "
+.ti -1c
+.RI "Templ_Typ_Wektor & \fBoperator[]\fP (unsigned int Index)"
+.br
+.RI "Przeciążenie operatora [] set\&. Umożliwia zmienienie wartości konkretnego elementu wektora\&. "
+.ti -1c
+.RI "\fBWektor\fP \fBoperator+\fP (const \fBWektor\fP &v)"
+.br
+.RI "Przeciążenie operatora dodawania dla wektora\&. Przeciążenie umożliwiające dodawanie dwóch wektorów do siebie\&. "
+.ti -1c
+.RI "\fBWektor\fP \fBoperator\-\fP (const \fBWektor\fP &v)"
+.br
+.RI "Przeciążenie operatora odejmowania dla wektora\&. Przeciążenie umożliwiające odejmowanie dwóch wektorów od siebie\&. "
+.ti -1c
+.RI "\fBWektor\fP \fBoperator*\fP (const Templ_Typ_Wektor &tmp)"
+.br
+.RI "Przeciążenie operatora mnożenia dla wektora\&. Przeciążenie umożliwiające mnożenie wektora razy wartość typu odpowiadającego typowi teblicy wektorek\&. "
+.ti -1c
+.RI "\fBWektor\fP \fBoperator/\fP (const Templ_Typ_Wektor &tmp)"
+.br
+.RI "Przeciążenie operatora dzielenia dla wektora\&. Przeciążenie umożliwiające dzielenie wektora przez wartość typu odpowiadającego typowi teblicy wektorek\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBWektor\fP V) const"
+.br
+.RI "Przeciążenie operatora porównania dla wektora\&. Przeciążenie operatora porównania umożliwiające porównywanie dwóch wektorów, potrzebne przede wszystkim do testów\&. "
+.ti -1c
+.RI "\fBWektor\fP & \fBoperator=\fP (const \fBWektor\fP &v)"
+.br
+.RI "Przeciążenie operatora przypisanie dla wektora\&. Przeciążenie umożliwiające przypisanie wektora do innego wektora\&. "
+.in -1c
+.SS "Statyczne atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "static int \fBilosc_stworzonych\fP = 0"
+.br
+.RI "Przypisanie wartości początkowej zmiennej ilosc_stworzonych\&. "
+.ti -1c
+.RI "static int \fBilosc_tymczasowych\fP = 0"
+.br
+.RI "Przypisanie wartości początkowej zmiennej ilosc_tymczasowych\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+
+.SS "template<typename Templ_Typ_Wektor, unsigned int Templ_Rozmiar_Wektor>
+.br
+class Wektor< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >"
+Szablon wektora\&. Szablon ten jest szablonem klasy \fBWektor\fP\&. Zawiera on elementy potrzebne do utworzenia wektora oraz wykonywania na nim różnych operacji\&. Zawiera on tablicę o rozmiarach odopowiadających naszemu wektorowi\&. 
+
+
+.PP
+\fBParametry\fP
+.RS 4
+\fIwektorek\fP tablica w której będą zapisywane wartości wektora 
+.br
+\fIilosc_stworzonych\fP zmienna dzięki której jest możliwe zliczanie ile wektorów stworzyliśmy 
+.br
+\fIilosc_tymczasowych\fP zmienna dzięki której jest możliwe zliczanie ile wektorów aktualnie istnieje 
+.RE
+.PP
+
+.PP
+Definicja w linii 17 pliku wektor\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::\fBWektor\fP"
+
+.PP
+Konstruktor bezparametryczny klasy wektor\&. Przypisuje wszystkim elementom tablicy wektorek 0\&. 
+.PP
+Definicja w linii 79 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> constexpr \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::\fBWektor\fP (const \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & vector)\fC [constexpr]\fP"
+
+.PP
+Konstruktor kopiujący klasy wektor\&. Przypisuje elementom klasy wektor wartość innego elementu tej samej klasy\&. 
+.PP
+Definicja w linii 94 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::~\fBWektor\fP"
+
+.PP
+Destruktor klasy wektor\&. 
+.PP
+Definicja w linii 106 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::\fBWektor\fP (const std::initializer_list< Templ_Typ_Wektor< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > > & ListaWsp)"
+
+.PP
+Konstruktor parametryczny klasy wektor\&. Przypisuje wszystkim elementom tablicy wektorek odpowiednie wartości podane w liście\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIListaWsp\fP lista z wartościami, które mają być przypisane do wektora\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 117 pliku wektor\&.hh\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator* (const Templ_Typ_Wektor< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & tmp)"
+
+.PP
+Przeciążenie operatora mnożenia dla wektora\&. Przeciążenie umożliwiające mnożenie wektora razy wartość typu odpowiadającego typowi teblicy wektorek\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP wartość razy która mnożymy 
+.br
+\fIresult\fP nowopowstały wektor będący wynikiem mnożenia 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 173 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator+ (const \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & v)"
+
+.PP
+Przeciążenie operatora dodawania dla wektora\&. Przeciążenie umożliwiające dodawanie dwóch wektorów do siebie\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIv\fP wektor odpowiadający jednemu z dodawanych wektorów 
+.br
+\fIresult\fP nowopowstały wektor będący wynikiem dodawania 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 137 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator\- (const \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & v)"
+
+.PP
+Przeciążenie operatora odejmowania dla wektora\&. Przeciążenie umożliwiające odejmowanie dwóch wektorów od siebie\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIv\fP wektor odpowiadający jednemu z odejmowanych wektorów 
+.br
+\fIresult\fP nowopowstały wektor będący wynikiem odejmowania 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 155 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator/ (const Templ_Typ_Wektor< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & tmp)"
+
+.PP
+Przeciążenie operatora dzielenia dla wektora\&. Przeciążenie umożliwiające dzielenie wektora przez wartość typu odpowiadającego typowi teblicy wektorek\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP wartość przez którą mnożymy 
+.br
+\fIresult\fP nowopowstały wektor będący wynikiem dzielenia 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 191 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator= (const \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > & v)"
+
+.PP
+Przeciążenie operatora przypisanie dla wektora\&. Przeciążenie umożliwiające przypisanie wektora do innego wektora\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIv\fP wektor którego wartości chcemy przypisać 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wektor wartość *this\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 211 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> bool \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator== (const \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor > V) const"
+
+.PP
+Przeciążenie operatora porównania dla wektora\&. Przeciążenie operatora porównania umożliwiające porównywanie dwóch wektorów, potrzebne przede wszystkim do testów\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIV\fP wektor odpowiadający jednemu z porównywanych wektorów 
+.br
+\fIliczenie\fP ilość 'punktów' odpowiadających ilości zgadzających się elementów wektora, powinna odpowiadać ilości elementów wektora 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca true albo false w zależności czy ilośc punktów odpowiada elementom wektora\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 228 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> Templ_Typ_Wektor& \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator[] (unsigned int Index)\fC [inline]\fP"
+
+.PP
+Przeciążenie operatora [] set\&. Umożliwia zmienienie wartości konkretnego elementu wektora\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIIndex\fP Indeks interesującej nas wartości wektora\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wartość elementu, który nas interesuje\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 44 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> Templ_Typ_Wektor \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::operator[] (unsigned int Index) const\fC [inline]\fP"
+
+.PP
+Przeciążenie operatora [] get\&. Umożliwia podgląd wartości konkretnego elementu wektora\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIIndex\fP Indeks interesującej nas wartości wektora\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wartość elementu, który nas interesuje\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 33 pliku wektor\&.hh\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> int \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::ilosc_stworzonych = 0\fC [static]\fP"
+
+.PP
+Przypisanie wartości początkowej zmiennej ilosc_stworzonych\&. 
+.PP
+Definicja w linii 22 pliku wektor\&.hh\&.
+.SS "template<typename Templ_Typ_Wektor , unsigned int Templ_Rozmiar_Wektor> int \fBWektor\fP< Templ_Typ_Wektor, Templ_Rozmiar_Wektor >::ilosc_tymczasowych = 0\fC [static]\fP"
+
+.PP
+Przypisanie wartości początkowej zmiennej ilosc_tymczasowych\&. 
+.PP
+Definicja w linii 22 pliku wektor\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

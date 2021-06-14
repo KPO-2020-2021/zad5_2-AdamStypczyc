@@ -1,0 +1,64 @@
+.TH "Skarpa" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Skarpa \- Klasa \fBSkarpa\fP\&. Deklaracja klasy \fBSkarpa\fP\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na \fBSkarpa\fP, które są w większości dziedziczone z klasy Gransiatoslup\&. Sama w sobie posiada swój konstruktor parametryczny\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Skarpa\&.hh>\fP
+.PP
+Dziedziczy \fBGraniastoslup\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBSkarpa\fP (\fBWektor3D\fP sro, double skala_x=1, double skala_y=1, double skala_z=1, std::string nazwa='\&.\&./datasets/test_obiekt\&.dat')"
+.br
+.RI "Konstruktor parametryczny klasy \fBSkarpa\fP Tworzy \fBSkarpa\fP względem punktu srodka\&. "
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Klasa \fBSkarpa\fP\&. Deklaracja klasy \fBSkarpa\fP\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na \fBSkarpa\fP, które są w większości dziedziczone z klasy Gransiatoslup\&. Sama w sobie posiada swój konstruktor parametryczny\&. 
+.PP
+Definicja w linii 11 pliku Skarpa\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Skarpa::Skarpa (\fBWektor3D\fP sro, double skala_x = \fC1\fP, double skala_y = \fC1\fP, double skala_z = \fC1\fP, std::string nazwa = \fC'\&.\&./datasets/test_obiekt\&.dat'\fP)"
+
+.PP
+Konstruktor parametryczny klasy \fBSkarpa\fP Tworzy \fBSkarpa\fP względem punktu srodka\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIsro\fP punkt odpowiadający srodkowi 
+.br
+\fIskala_x\fP wartość o jaką zostanie przemnożona szerokość 
+.br
+\fIskala_y\fP wartość o jaką zostanie przemnożony głębokość 
+.br
+\fIskala_z\fP wartość o jaką zostanie przemnożony wysokość 
+.br
+\fInazwa\fP nazwa pliku który przypisujemy danej bryle 
+.br
+\fItmp\fP pomocznicy Wektor3D dzięki któremu wpisujemy wartosci współrzędnych 
+.br
+\fIproba\fP również pomocniczy Wektor3D 
+.br
+\fIw\fP szerokość 
+.br
+\fId\fP głębokość 
+.br
+\fIh\fP wysokosć 
+.RE
+.PP
+
+.PP
+Definicja w linii 31 pliku Skarpa\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

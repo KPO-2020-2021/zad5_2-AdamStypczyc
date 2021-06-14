@@ -1,0 +1,56 @@
+.TH "Prostopadloscian" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Prostopadloscian \- Klasa \fBProstopadloscian\fP\&. Deklaracja klasy prostopadłościan\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na prostopadłościanie, które są w większości dziedziczone z klasy Gransiatoslup\&. Sama w sobie posiada swój konstruktor parametryczny\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Prostopadloscian\&.hh>\fP
+.PP
+Dziedziczy \fBGraniastoslup\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBProstopadloscian\fP (\fBWektor3D\fP sro=\fBWektor3D\fP(), double h=30, double w=50, double d=50, std::string nazwa='\&.\&./datasets/test_prosto\&.dat')"
+.br
+.RI "Konstruktor parametryczny klasy prostopadłościan Tworzy prostopadłościan względem punktu srodka\&. "
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Klasa \fBProstopadloscian\fP\&. Deklaracja klasy prostopadłościan\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji na prostopadłościanie, które są w większości dziedziczone z klasy Gransiatoslup\&. Sama w sobie posiada swój konstruktor parametryczny\&. 
+.PP
+Definicja w linii 8 pliku Prostopadloscian\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Prostopadloscian::Prostopadloscian (\fBWektor3D\fP sro = \fC\fBWektor3D\fP()\fP, double h = \fC30\fP, double w = \fC50\fP, double d = \fC50\fP, std::string nazwa = \fC'\&.\&./datasets/test_prosto\&.dat'\fP)"
+
+.PP
+Konstruktor parametryczny klasy prostopadłościan Tworzy prostopadłościan względem punktu srodka\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIsro\fP punkt odpowiadający srodkowi 
+.br
+\fIh\fP wartość odpowiadająca wysokości korpusu prostopadłościanu, tutaj ustawiona na 30 
+.br
+\fIw\fP wartość odpowiadająca szerokości korpusu prostopadłościanu, tutaj ustawiona na 50 
+.br
+\fId\fP wartość odpowiadająca głębokości korpusu prostopadłościanu, tutaj ustawiona na 50 
+.br
+\fInazwa\fP nazwa pliku który przypisujemy danej bryle 
+.br
+\fItmp\fP pomocznicy Wektor3D dzięki któremu wpisujemy wartosci współrzędnych 
+.RE
+.PP
+
+.PP
+Definicja w linii 23 pliku Prostopadloscian\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

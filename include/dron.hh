@@ -555,6 +555,9 @@ Wektor3D dron::pokaz_srodek() const
 {
     return korpus.pokaz_srodek();
 }
+/*!
+ * \brief Metoda usuwająca drona z Lacza.
+ */
 void dron::usun_drona()
 {
     Lacze.UsunNazwePliku(korpus_orginal.pokaz_nazwa().c_str());

@@ -1,0 +1,260 @@
+.TH "Macierz< Templ_Typ, Templ_Rozmiar >" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Macierz< Templ_Typ, Templ_Rozmiar > \- Szablon macierzy\&. Szablon ten jest szablonem klasy macierz\&. Zawiera on elementy potrzebne do utworzenia macierzy oraz wykonywania na niej różnych operacji\&. Zawiera on tablicę o rozmiarach odopowiadających naszej macierzy oraz kąty potrzebne do obrotów 2D i 3D (kąty X, Y, Z)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Macierz\&.hh>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBMacierz\fP (Templ_Typ tmp[Templ_Rozmiar][Templ_Rozmiar])"
+.br
+.RI "Konstruktor parametryczny klasy macierz\&. Konstruktor ten nadaje wartości macierzy poprzez tablicę odpowiadającą jej wymiarom\&. "
+.ti -1c
+.RI "\fBMacierz\fP ()"
+.br
+.RI "Konstruktor bezparametryczny klasy macierz\&. Konstruktor wypełnia macierz zerami\&. "
+.ti -1c
+.RI "\fBMacierz\fP \fBoperator+\fP (\fBMacierz\fP tmp)"
+.br
+.RI "Przeciążenie operatora dodawania\&. Przeciążenie operatora dodawania, aby umożliwić dodawanie dwóch macierzy\&. "
+.ti -1c
+.RI "\fBMacierz\fP \fBoperator\-\fP (\fBMacierz\fP tmp)"
+.br
+.RI "Przeciążenie operatora odejmowania\&. Przeciążenie operatora odejmowania, aby umożliwić odejmowanie dwóch macierzy\&. "
+.ti -1c
+.RI "\fBMacierz\fP \fBoperator*\fP (\fBMacierz\fP tmp)"
+.br
+.RI "Przeciążenie operatora mnożenia Macierz*Macierz\&. Przeciążenie operatora mnożenia, aby umożliwić mnożenie dwóch macierzy\&. "
+.ti -1c
+.RI "\fBMacierz\fP \fBoperator*\fP (double tmp)"
+.br
+.RI "Przeciążenie operatora mnożenia Macierz*double\&. Przeciążenie operatora mnożenia, aby umożliwić mnożenie macierzy i jakiejś wartości typu double\&. "
+.ti -1c
+.RI "\fBWektor3D\fP \fBoperator*\fP (\fBWektor3D\fP tmp)"
+.br
+.RI "Przeciążenie operatora mnożenia Macierz*Wektor3D\&. Przeciążenie operatora mnożenia, aby umożliwić mnożenie macierzy i wektora\&. "
+.ti -1c
+.RI "Templ_Typ & \fBoperator()\fP (unsigned int row, unsigned int column)"
+.br
+.RI "Przeciążenie operatora () set\&. Umożliwia zmienienie wartości konkretnego elementu macierzy\&. "
+.ti -1c
+.RI "const Templ_Typ & \fBoperator()\fP (unsigned int row, unsigned int column) const"
+.br
+.RI "Przeciążenie operatora () get\&. Umożliwia podgląd wartości konkretnego elementu macierzy\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBMacierz\fP tmp) const"
+.br
+.RI "Przeciążenie operatora porównania dla macierzy\&. Przeciążenie operatora porównania umożliwiające porównywanie dwóch macierzy, potrzebne przede wszystkim do testów\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+
+.SS "template<typename Templ_Typ, unsigned int Templ_Rozmiar>
+.br
+class Macierz< Templ_Typ, Templ_Rozmiar >"
+Szablon macierzy\&. Szablon ten jest szablonem klasy macierz\&. Zawiera on elementy potrzebne do utworzenia macierzy oraz wykonywania na niej różnych operacji\&. Zawiera on tablicę o rozmiarach odopowiadających naszej macierzy oraz kąty potrzebne do obrotów 2D i 3D (kąty X, Y, Z)\&. 
+
+
+.PP
+\fBParametry\fP
+.RS 4
+\fIvalue\fP tablica przechowująca wartości macierzy 
+.RE
+.PP
+
+.PP
+Definicja w linii 17 pliku Macierz\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::\fBMacierz\fP (Templ_Typ tmp[Templ_Rozmiar][Templ_Rozmiar])"
+
+.PP
+Konstruktor parametryczny klasy macierz\&. Konstruktor ten nadaje wartości macierzy poprzez tablicę odpowiadającą jej wymiarom\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP tablica poprzez którą będziemy nadawać wartości macierzy 
+.RE
+.PP
+
+.PP
+Definicja w linii 47 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::\fBMacierz\fP"
+
+.PP
+Konstruktor bezparametryczny klasy macierz\&. Konstruktor wypełnia macierz zerami\&. 
+.PP
+Definicja w linii 63 pliku Macierz\&.hh\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> Templ_Typ & \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator() (unsigned int row, unsigned int column)"
+
+.PP
+Przeciążenie operatora () set\&. Umożliwia zmienienie wartości konkretnego elementu macierzy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIrow\fP odpowiednik numeru wiersza\&. 
+.br
+\fIcolumn\fP odpowiednik numeru kolumny 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wartość elementu, który nas interesuje\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 190 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> const Templ_Typ & \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator() (unsigned int row, unsigned int column) const"
+
+.PP
+Przeciążenie operatora () get\&. Umożliwia podgląd wartości konkretnego elementu macierzy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIrow\fP odpowiednik numeru wiersza\&. 
+.br
+\fIcolumn\fP odpowiednik numeru kolumny 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca wartość elementu, który nas interesuje\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 214 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator* (double tmp)"
+
+.PP
+Przeciążenie operatora mnożenia Macierz*double\&. Przeciążenie operatora mnożenia, aby umożliwić mnożenie macierzy i jakiejś wartości typu double\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP zmienna typu double 
+.br
+\fIresult\fP macierz pomocnicza odpowiadająca macierzy wynikowej mnożenia\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Wynik mnożenia w postaci macierzy result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 169 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator* (\fBMacierz\fP< Templ_Typ, Templ_Rozmiar > tmp)"
+
+.PP
+Przeciążenie operatora mnożenia Macierz*Macierz\&. Przeciążenie operatora mnożenia, aby umożliwić mnożenie dwóch macierzy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP macierz odpowiadająca jednej z mnożonych macierzy\&. 
+.br
+\fIresult\fP macierz pomocnicza odpowiadająca macierzy wynikowej mnożenia\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Wynik mnożenia w postaci macierzy result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 124 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> \fBWektor3D\fP \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator* (\fBWektor3D\fP tmp)"
+
+.PP
+Przeciążenie operatora mnożenia Macierz*Wektor3D\&. Przeciążenie operatora mnożenia, aby umożliwić mnożenie macierzy i wektora\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP Wektor3D 
+.br
+\fIresult\fP macierz pomocnicza odpowiadająca macierzy wynikowej mnożenia\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Wynik mnożenia w postaci macierzy result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 147 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator+ (\fBMacierz\fP< Templ_Typ, Templ_Rozmiar > tmp)"
+
+.PP
+Przeciążenie operatora dodawania\&. Przeciążenie operatora dodawania, aby umożliwić dodawanie dwóch macierzy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP macierz odpowiadająca jednej z dodawanych macierzy\&. 
+.br
+\fIresult\fP macierz pomocnicza odpowiadająca macierzy wynikowej dodawania\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Wynik dodawania w postaci macierzy result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 82 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator\- (\fBMacierz\fP< Templ_Typ, Templ_Rozmiar > tmp)"
+
+.PP
+Przeciążenie operatora odejmowania\&. Przeciążenie operatora odejmowania, aby umożliwić odejmowanie dwóch macierzy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP macierz odpowiadająca jednej z odejmowanych macierzy\&. 
+.br
+\fIresult\fP macierz pomocnicza odpowiadająca macierzy wynikowej odejmowania\&. 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Wynik odejmowania w postaci macierzy result\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 103 pliku Macierz\&.hh\&.
+.SS "template<typename Templ_Typ , unsigned int Templ_Rozmiar> bool \fBMacierz\fP< Templ_Typ, Templ_Rozmiar >::operator== (const \fBMacierz\fP< Templ_Typ, Templ_Rozmiar > tmp) const"
+
+.PP
+Przeciążenie operatora porównania dla macierzy\&. Przeciążenie operatora porównania umożliwiające porównywanie dwóch macierzy, potrzebne przede wszystkim do testów\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp\fP macierz odpowiadająca jednej z porównywanych macierzy 
+.br
+\fIliczenie\fP ilość 'punktów' odpowiadających ilości zgadzających się elementów macierzy, powinna odpowiadać ilości elementów macierzy 
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Zwraca true albo false w zależności czy ilośc punktów odpowiada elementom macierzy\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 239 pliku Macierz\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

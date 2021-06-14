@@ -55,6 +55,10 @@
  * \param Lacze łącze do gnuplota
  * \param tab_dronów tablica wskaźników na obiekty klasy dron
  * \param siatka podłoże na którym ląduje dron
+ * \param index_elementu_plasko index plaskowyzu
+ * \param index_elementu_ostr index ostroslupa
+ * \param index_elementu_skr index skarpy
+ * \param index_drona index drona
  */
 class Scena
 {

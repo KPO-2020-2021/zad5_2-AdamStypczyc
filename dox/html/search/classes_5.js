@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['prostopadloscian_157',['Prostopadloscian',['../class_prostopadloscian.html',1,'']]]
+  ['ostroslup_187',['Ostroslup',['../class_ostroslup.html',1,'']]]
 ];

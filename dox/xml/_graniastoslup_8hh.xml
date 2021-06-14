@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_graniastoslup_8hh" kind="file" language="C++">
+    <compoundname>Graniastoslup.hh</compoundname>
+    <includes local="yes">Macierz.hh</includes>
+    <includes refid="_wektor3_d_8hh" local="yes">Wektor3D.hh</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="_prostopadloscian_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh</includedby>
+    <includedby refid="_graniastoslup6_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup6.hh</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh</label>
+        <link refid="_graniastoslup_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="3">
+        <label>Wektor3D.hh</label>
+        <link refid="_wektor3_d_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>Macierz.hh</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>wektor.hh</label>
+        <link refid="wektor_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>memory</label>
+      </node>
+      <node id="7">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/dron.hh</label>
+        <link refid="dron_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh</label>
+        <link refid="_graniastoslup_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh</label>
+        <link refid="_prostopadloscian_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Skarpa.hh</label>
+        <link refid="_skarpa_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh</label>
+        <link refid="_plaskowyz_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Scena.hh</label>
+        <link refid="_scena_8hh"/>
+      </node>
+      <node id="5">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Ostroslup.hh</label>
+        <link refid="_ostroslup_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup6.hh</label>
+        <link refid="_graniastoslup6_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_graniastoslup" prot="public">Graniastoslup</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Macierz.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wektor3_d_8hh" kindref="compound">Wektor3D.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight></codeline>
+<codeline lineno="16" refid="class_graniastoslup" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_graniastoslup" kindref="compound">Graniastoslup</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Wektor3D&gt;<sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_graniastoslup_1ab237a62b9735e850a895e9f4d66d45e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Wektor3D&gt;<sp/><ref refid="class_graniastoslup_1ab237a62b9735e850a895e9f4d66d45e8" kindref="member">wymiar</ref>;</highlight></codeline>
+<codeline lineno="21" refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" kindref="member">nazwa_pliku</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>&amp;<ref refid="class_graniastoslup_1a7c1ffdbfd151ad506ab5cb7a4ced5cbe" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/><ref refid="class_graniastoslup_1a7c1ffdbfd151ad506ab5cb7a4ced5cbe" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1a4cbe39458e25186386b43b804830f8ff" kindref="member">ustaw_srodek</ref>(<ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>sro);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1a8ce7eb4fc97b7ae53699457869d47325" kindref="member">ustaw_nazwa</ref>(std::string<sp/>nazwa);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/><ref refid="class_graniastoslup_1a745ff61bd79e1f10c3e66816a1b6dea0" kindref="member">pokaz_srodek</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_graniastoslup_1af75f7a863e9ef54c2cccb510b0f03ded" kindref="member">pokaz_nazwa</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" kindref="member">translacja</ref>(<ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/><ref refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" kindref="member">translacja</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" kindref="member">rotacja</ref>(<ref refid="class_macierz" kindref="compound">Macierz3x3</ref><sp/>obrot);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1aeae2daf769c021e51bed7583ea926fbd" kindref="member">zapis</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43" refid="class_graniastoslup_1a7c1ffdbfd151ad506ab5cb7a4ced5cbe" refkind="member"><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>&amp;<ref refid="class_graniastoslup_1a7c1ffdbfd151ad506ab5cb7a4ced5cbe" kindref="member">Graniastoslup::operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[i];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52" refid="class_graniastoslup_1a91140297245c2b64fa11e2898902849b" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/><ref refid="class_graniastoslup_1a7c1ffdbfd151ad506ab5cb7a4ced5cbe" kindref="member">Graniastoslup::operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="53"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[i];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61" refid="class_graniastoslup_1a4cbe39458e25186386b43b804830f8ff" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1a4cbe39458e25186386b43b804830f8ff" kindref="member">Graniastoslup::ustaw_srodek</ref>(<ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>sro)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>=<sp/>sro;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70" refid="class_graniastoslup_1a8ce7eb4fc97b7ae53699457869d47325" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1a8ce7eb4fc97b7ae53699457869d47325" kindref="member">Graniastoslup::ustaw_nazwa</ref>(std::string<sp/>nazwa)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" kindref="member">nazwa_pliku</ref><sp/>=<sp/>nazwa;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79" refid="class_graniastoslup_1a745ff61bd79e1f10c3e66816a1b6dea0" refkind="member"><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/><ref refid="class_graniastoslup_1a745ff61bd79e1f10c3e66816a1b6dea0" kindref="member">Graniastoslup::pokaz_srodek</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="80"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88" refid="class_graniastoslup_1af75f7a863e9ef54c2cccb510b0f03ded" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_graniastoslup_1af75f7a863e9ef54c2cccb510b0f03ded" kindref="member">Graniastoslup::pokaz_nazwa</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="89"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" kindref="member">nazwa_pliku</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" kindref="member">Graniastoslup::translacja</ref>(<ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>translacja)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(int)<ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.size();<sp/>++i)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[i]<sp/>=<sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[i]<sp/>+<sp/><ref refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" kindref="member">translacja</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>=<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>+<sp/><ref refid="class_graniastoslup_1afe0e06825a77641f7e88150f5de6e43e" kindref="member">translacja</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1af28f2a0fb8f52e3f1251e47254a03404" kindref="member">Graniastoslup::rotacja</ref>(<ref refid="class_macierz" kindref="compound">Macierz3x3</ref><sp/>obrot)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(int)<ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.size();<sp/>++i)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[i]<sp/>=<sp/>obrot<sp/>*<sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[i];</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>=<sp/>obrot<sp/>*<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="class_graniastoslup_1aeae2daf769c021e51bed7583ea926fbd" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_graniastoslup_1aeae2daf769c021e51bed7583ea926fbd" kindref="member">Graniastoslup::zapis</ref>()</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>StrmPlikowy;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor3D</ref><sp/>translacja_srodka<sp/>=<sp/>{0,<sp/>0,<sp/>(*wymiar)[2]<sp/>/<sp/>2};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>StrmPlikowy.open(<ref refid="class_graniastoslup_1aaedeb8fa4b31953e4884abb50e2b7c09" kindref="member">nazwa_pliku</ref>,<sp/>std::ios::out);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(int)<ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>.size();<sp/>i<sp/>+=<sp/>2)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StrmPlikowy<sp/>&lt;&lt;<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>+<sp/>translacja_srodka<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>2;<sp/>++j)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StrmPlikowy<sp/>&lt;&lt;<sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[j<sp/>+<sp/>i]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StrmPlikowy<sp/>&lt;&lt;<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>-<sp/>translacja_srodka<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>StrmPlikowy<sp/>&lt;&lt;<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>+<sp/>translacja_srodka<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>StrmPlikowy<sp/>&lt;&lt;<sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[0]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>StrmPlikowy<sp/>&lt;&lt;<sp/><ref refid="class_graniastoslup_1ad3691cc1b8719c6cecf99cd4f84a4b09" kindref="member">wspol</ref>[1]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>StrmPlikowy<sp/>&lt;&lt;<sp/><ref refid="class_graniastoslup_1ab4bf9712bcf046b769c52f904e3df58b" kindref="member">srodek</ref><sp/>-<sp/>translacja_srodka<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>StrmPlikowy.close();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh"/>
+  </compounddef>
+</doxygen>

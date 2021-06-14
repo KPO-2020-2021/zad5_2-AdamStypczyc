@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dron 5.1: Dokumentacja klasy Scena</title>
+<title>Dron 5.2: Dokumentacja klasy Scena</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Zrzut ekranu z 2021-06-05 17-13-31.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dron 5.1
+   <div id="projectname">Dron 5.2
    </div>
   </td>
  </tr>
@@ -74,15 +74,20 @@ $(function() {
  <a href="class_scena.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_scena_8hh_source.html">Scena.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla Scena:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scena__coll__graph.png" border="0" usemap="#_scena_coll__map" alt="Collaboration graph"/></div>
+<map name="_scena_coll__map" id="_scena_coll__map">
+<area shape="rect" title="Deklaracja klasy Scena Łączy wszystko w całość" alt="" coords="5,5,141,127"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a8f9fe11b4cfef890123a2acc94672e17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scena.html#a8f9fe11b4cfef890123a2acc94672e17">Scena</a> ()</td></tr>
 <tr class="memdesc:a8f9fe11b4cfef890123a2acc94672e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacze i ustawiający jego zakres.  <a href="class_scena.html#a8f9fe11b4cfef890123a2acc94672e17">Więcej...</a><br /></td></tr>
 <tr class="separator:a8f9fe11b4cfef890123a2acc94672e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad882b3d3c934c64c5e90a63246a47943"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scena.html#ad882b3d3c934c64c5e90a63246a47943">~Scena</a> ()</td></tr>
-<tr class="memdesc:ad882b3d3c934c64c5e90a63246a47943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klasy scena. Zwalnia pamięć zaalokowaną na drony.  <a href="class_scena.html#ad882b3d3c934c64c5e90a63246a47943">Więcej...</a><br /></td></tr>
-<tr class="separator:ad882b3d3c934c64c5e90a63246a47943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a743882412d881649a79de572e3e33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scena.html#a72a743882412d881649a79de572e3e33">dzialanie</a> ()</td></tr>
 <tr class="memdesc:a72a743882412d881649a79de572e3e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i podejmowania akcji.  <a href="class_scena.html#a72a743882412d881649a79de572e3e33">Więcej...</a><br /></td></tr>
 <tr class="separator:a72a743882412d881649a79de572e3e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,11 +105,15 @@ Metody publiczne</h2></td></tr>
     <tr><td class="paramname">Lacze</td><td>łącze do gnuplota </td></tr>
     <tr><td class="paramname">tab_dronów</td><td>tablica wskaźników na obiekty klasy dron </td></tr>
     <tr><td class="paramname">siatka</td><td>podłoże na którym ląduje dron </td></tr>
+    <tr><td class="paramname">index_elementu_plasko</td><td>index plaskowyzu </td></tr>
+    <tr><td class="paramname">index_elementu_ostr</td><td>index ostroslupa </td></tr>
+    <tr><td class="paramname">index_elementu_skr</td><td>index skarpy </td></tr>
+    <tr><td class="paramname">index_drona</td><td>index drona </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00034">34</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00063">63</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a8f9fe11b4cfef890123a2acc94672e17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f9fe11b4cfef890123a2acc94672e17">&#9670;&nbsp;</a></span>Scena()</h2>
@@ -123,52 +132,25 @@ Metody publiczne</h2></td></tr>
 
 <p>Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacze i ustawiający jego zakres. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00106">106</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00139">139</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scena_a8f9fe11b4cfef890123a2acc94672e17_cgraph.png" border="0" usemap="#class_scena_a8f9fe11b4cfef890123a2acc94672e17_cgraph" alt=""/></div>
 <map name="class_scena_a8f9fe11b4cfef890123a2acc94672e17_cgraph" id="class_scena_a8f9fe11b4cfef890123a2acc94672e17_cgraph">
-<area shape="rect" title="Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacz..." alt="" coords="5,326,113,353"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="161,5,335,47"/>
+<area shape="rect" title="Konstruktor bezparametryczny klasy scena Konstruktor tworzący siatkę i dwa drony, inicjalizujący Lacz..." alt="" coords="5,294,113,321"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#adf4db50ed643b2391e8f582af0c5c621" title="Dodaje nazwę pliku." alt="" coords="161,5,335,47"/>
 <area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot." alt="" coords="161,71,335,112"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="161,136,335,177"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="Generuje polecenie rysowania i przesyła je do gnuplota." alt="" coords="161,136,335,177"/>
 <area shape="rect" href="class_scena.html#a3cdb6dddf000c35f675717933d096604" title="Metoda tworząca podłoże na którym może wylądować dron." alt="" coords="169,202,327,229"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903" title="Ustawia rotację wokół osi OX i OZ." alt="" coords="161,253,335,295"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#ac48fed259e4ebf93072e3111264c9433" title="Ustawia rotację wokół osi OX i OZ." alt="" coords="161,253,335,295"/>
 <area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4308151b54e105d302803146a3238699" title="Zadaje skalę wzdłuż osi OX i OZ." alt="" coords="161,319,335,360"/>
 <area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef" title="Ustawia zakres osi OX." alt="" coords="161,384,335,425"/>
 <area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c" title="Ustawia zakres osi OY." alt="" coords="161,449,335,491"/>
 <area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3" title="Ustawia zakres osi OZ." alt="" coords="161,515,335,556"/>
-<area shape="rect" href="classdron.html#accd205169ce787882dbaeb916a6863f9" title="Metoda zapisujaca drona do plików." alt="" coords="198,581,298,607"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania." alt="" coords="161,632,335,673"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56" title="Ustawia rotację wokół osi OX." alt="" coords="383,188,556,229"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1" title="Ustawia rotację wokół osi OZ." alt="" coords="383,253,556,295"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a855b8338bfe3e5d294d719f24b11090e" title="Zadaje skalę wzdłuż osi OZ." alt="" coords="383,319,556,360"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab0486db3166d8db6580a221079af241f" title="Zadaje skalę wzdłuż osi OZ." alt="" coords="383,384,556,425"/>
-<area shape="rect" href="class_graniastoslup.html#aeae2daf769c021e51bed7583ea926fbd" title="Metoda zapisująca graniastoslup do pliku." alt="" coords="392,581,547,607"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#ae92c65357bf682478cc68f77885b61d8" title="Zmienia tryb rysowania." alt="" coords="161,580,335,621"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="ad882b3d3c934c64c5e90a63246a47943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad882b3d3c934c64c5e90a63246a47943">&#9670;&nbsp;</a></span>~Scena()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Scena::~Scena </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destruktor klasy scena. Zwalnia pamięć zaalokowaną na drony. </p>
-
-<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00133">133</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
 
 </div>
 </div>
@@ -196,30 +178,16 @@ Oto graf wywołań dla tej funkcji:</div>
   </dd>
 </dl>
 
-<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00143">143</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00194">194</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_scena_a72a743882412d881649a79de572e3e33_cgraph.png" border="0" usemap="#class_scena_a72a743882412d881649a79de572e3e33_cgraph" alt=""/></div>
 <map name="class_scena_a72a743882412d881649a79de572e3e33_cgraph" id="class_scena_a72a743882412d881649a79de572e3e33_cgraph">
-<area shape="rect" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,381,133,407"/>
-<area shape="rect" href="classdron.html#a1c22017426486f689273d83dfe06aafe" title="Metoda odpowiadająca za porusanie się i animację drona." alt="" coords="208,279,303,306"/>
-<area shape="rect" href="classdron.html#a5d56c6d7d5d8db7b4bf5292083769c14" title="Metoda zwracająca Wektor3D będący środkiem korpusu drona." alt="" coords="181,406,329,433"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="377,188,551,229"/>
-<area shape="rect" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt." alt="" coords="417,254,511,281"/>
-<area shape="rect" href="classdron.html#add74d8f5673cf96226319b1c88c3439d" title="Metoda odpowidająca za obrót rotorów." alt="" coords="389,305,539,331"/>
-<area shape="rect" href="classdron.html#a064414beef887c2a9c3cb73956f6b8e2" title="Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY Przesuwa dron..." alt="" coords="393,355,535,382"/>
-<area shape="rect" href="classdron.html#abd3871d58abad0e64c3e1e034517e2f6" title="Metoda odpowiadjąca za budowę ścieżki lotu drona." alt="" coords="380,457,548,483"/>
-<area shape="rect" href="classdron.html#a5715e0708e2cae90d853b37da355f755" title="Metoda odpowiadająca za ruch pionowy Przesuwa drona w górę o wartość podaną przez zmienną pion." alt="" coords="389,406,539,433"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="377,5,551,47"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407" title="Usuwa ostatnią nazwę pliku." alt="" coords="377,71,551,112"/>
-<area shape="rect" href="classdron.html#accd205169ce787882dbaeb916a6863f9" title="Metoda zapisujaca drona do plików." alt="" coords="414,137,514,163"/>
-<area shape="rect" href="macierz_8hh.html#ab03e0ede3b608ad024ee87495c4c2ba6" title="Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiaj..." alt="" coords="601,290,781,317"/>
-<area shape="rect" href="class_graniastoslup.html#af28f2a0fb8f52e3f1251e47254a03404" title="Metoda obracająca graniastoslup o zadaną Macierz3x3." alt="" coords="608,391,773,418"/>
-<area shape="rect" href="macierz_8hh.html#ab0840da738fad890f0b2e2cbd67c0c78" title="Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach,..." alt="" coords="619,239,762,266"/>
-<area shape="rect" href="class_graniastoslup.html#afe0e06825a77641f7e88150f5de6e43e" title="Metoda przesuwająca graniastoslup o zadany wektor3D." alt="" coords="599,341,783,367"/>
-<area shape="rect" href="class_graniastoslup.html#a745ff61bd79e1f10c3e66816a1b6dea0" title="Metoda pokazująca wartość środka Umożliwia podgląd wartości środka." alt="" coords="611,464,770,505"/>
-<area shape="rect" href="class_graniastoslup.html#aeae2daf769c021e51bed7583ea926fbd" title="Metoda zapisująca graniastoslup do pliku." alt="" coords="613,137,768,163"/>
+<area shape="rect" title="Metoda dająca użytkowikowi dostęp. Metoda sklejająca cały program umożliwiajaca sterowanie dronami i ..." alt="" coords="5,78,133,105"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#adf4db50ed643b2391e8f582af0c5c621" title="Dodaje nazwę pliku." alt="" coords="181,5,355,47"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="Generuje polecenie rysowania i przesyła je do gnuplota." alt="" coords="181,71,355,112"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7fa4e775e1aee74869fae174c567c2a6" title="Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę." alt="" coords="181,136,355,177"/>
 </map>
 </div>
 
@@ -243,7 +211,7 @@ Oto graf wywołań dla tej funkcji:</div>
 <p>Metoda zwracająca łącze do gnuplota. </p>
 <dl class="section return"><dt>Zwraca</dt><dd>Zwraca łącze. </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00051">51</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00084">84</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
 
 </div>
 </div>
@@ -273,7 +241,7 @@ Oto graf wywołań dla tej funkcji:</div>
   </dd>
 </dl>
 
-<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00062">62</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_scena_8hh_source.html#l00095">95</a> pliku <a class="el" href="_scena_8hh_source.html">Scena.hh</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -287,7 +255,7 @@ Oto graf wywoływań tej funkcji:</div>
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
-<li>/home/adam/zad5_1-AdamStypczyc/include/<a class="el" href="_scena_8hh_source.html">Scena.hh</a></li>
+<li>/home/adam/zad5_2-AdamStypczyc/include/<a class="el" href="_scena_8hh_source.html">Scena.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

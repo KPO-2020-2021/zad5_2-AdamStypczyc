@@ -1,4 +1,5 @@
 <map id="Graniastoslup::pokaz_nazwa" name="Graniastoslup::pokaz_nazwa">
-<area shape="rect" id="node1" title="Metoda pokazująca nazwę pliku Umożliwia podgląd nazwy pliku." alt="" coords="141,5,300,47"/>
-<area shape="rect" id="node2" href="$classdron.html#a2a6f71538eb4a1413c1eddeb82abee54" title="Konstruktor parametryczny klasy dron. Buduje drona i tworzy pliki w których będą zapisywanie punkty...." alt="" coords="5,13,93,39"/>
+<area shape="rect" id="node1" title="Metoda pokazująca nazwę pliku Umożliwia podgląd nazwy pliku." alt="" coords="188,23,347,65"/>
+<area shape="rect" id="node2" href="$classdron.html#a2a6f71538eb4a1413c1eddeb82abee54" title="Konstruktor parametryczny klasy dron. Buduje drona i tworzy pliki w których będą zapisywanie punkty...." alt="" coords="29,5,117,32"/>
+<area shape="rect" id="node3" href="$classdron.html#a6cf04a2beb3431d29b4ad7f0f6ae37de" title="Metoda usuwająca drona z Lacza." alt="" coords="5,56,140,83"/>
 </map>

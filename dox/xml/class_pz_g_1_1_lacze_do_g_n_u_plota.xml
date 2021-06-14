@@ -1,0 +1,2232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_pz_g_1_1_lacze_do_g_n_u_plota" kind="class" language="C++" prot="public">
+    <compoundname>PzG::LaczeDoGNUPlota</compoundname>
+    <includes refid="lacze__do__gnuplota_8hh" local="no">lacze_do_gnuplota.hh</includes>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab9194cd75d079c04ef3e2c65ef9ca55d" prot="protected" static="yes" mutable="no">
+        <type>std::list&lt; <ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &gt;</type>
+        <definition>std::list&lt;InfoPlikuDoRysowania&gt; PzG::LaczeDoGNUPlota::_InfoPlikow_Glb</definition>
+        <argsstring></argsstring>
+        <name>_InfoPlikow_Glb</name>
+        <briefdescription>
+<para>Lista nazw plików z danymi dla <emphasis>gnuplota</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pole jest zarządcą listy nazw plików, z których są wczytywane dane dotyczące rysowania obrysu brył przez program <emphasis>gnuplot</emphasis>. Operacja ta wykonywana jest po wywołaniu polecenia. Pole to jest wspólne dla wszystkich łączy. <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335" kindref="member">Rysuj</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="342" column="21" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1abb57c6afa7e391036b0ad9ef3e454913" prot="protected" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &gt;</type>
+        <definition>std::list&lt;InfoPlikuDoRysowania&gt; PzG::LaczeDoGNUPlota::_InfoPlikow_Lok</definition>
+        <argsstring></argsstring>
+        <name>_InfoPlikow_Lok</name>
+        <briefdescription>
+<para>Lista nazw plików z danymi dla <emphasis>gnuplota</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pole jest zarządcą listy nazw plików, z których są wczytywane dane dotyczące rysowania obrysu brył przez program <emphasis>gnuplot</emphasis>. Operacja ta wykonywana jest po wywołaniu polecenia. Pole to jest indywidulane dla danego łącza. <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335" kindref="member">Rysuj</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="352" column="14" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1adc3a2250216c2473a61da379da70b2d7" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PzG::LaczeDoGNUPlota::_Wejscie_GNUPlota</definition>
+        <argsstring></argsstring>
+        <name>_Wejscie_GNUPlota</name>
+        <briefdescription>
+<para>Deskryptor wejścia standardowego procesu gnuplota. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pole przechowuje deskryptor wejścia standardowego związanego z procesem uruchomionego programu gnuplot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="360" column="17" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d05a4767a35ee494d59724bb740dbc2" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PzG::LaczeDoGNUPlota::_Wyjscie_GNUPlota</definition>
+        <argsstring></argsstring>
+        <name>_Wyjscie_GNUPlota</name>
+        <briefdescription>
+<para>Deskryptor wejścia standardowego procesu gnuplota. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pole przechowuje deskryptor do wyjścia standardowego związanego z procesem uruchomionego programu gnuplot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="367" column="17" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2f2800f14ebfe1caef0b4d30c410a7fe" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::_WyswietlajKomunikatyOBledach</definition>
+        <argsstring></argsstring>
+        <name>_WyswietlajKomunikatyOBledach</name>
+        <briefdescription>
+<para>Decyduje czy mają być wyświetlane komunikaty o błędach. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość tego pola decyduje o tym czy komunikaty o błędach będą wyświetlane na wyjście standardowe błędów (<bold>cerr</bold>), czy też nie. <itemizedlist>
+<listitem><para><computeroutput>true</computeroutput> - komunikaty będę wyświetlane, </para>
+</listitem>
+<listitem><para><computeroutput>false</computeroutput> - komunikaty nie będę wyświetlane. </para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="376" column="17" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="376" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5e4f3a226ed36f7110032d802d84847c" compoundref="lacze__do__gnuplota_8hh" startline="544" endline="544">CzyWyswietlacKomunikaty</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1adfbeb93c17ba42215c8e901b2de911fd" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string PzG::LaczeDoGNUPlota::_Preambula_RotacjaSkala</definition>
+        <argsstring></argsstring>
+        <name>_Preambula_RotacjaSkala</name>
+        <briefdescription>
+<para>Zawiera zestaw poleceń, które muszą być wysłane do gnuplota przed rysowaniem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zawiera zestaw poleceń, które muszą być wysłane do gnuplota przed rysowaniem. Polecenia te dotyczą zmiany rotacji wokół osi OX i OZ oraz skali. Są one tworzone w momencie wywołania metod zmieniających te parametry. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="384" column="17" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d9bde70af80b5224c5771f4768a9bab" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944" kindref="member">TypTrybuRysowania</ref></type>
+        <definition>TypTrybuRysowania PzG::LaczeDoGNUPlota::_TrybRys</definition>
+        <argsstring></argsstring>
+        <name>_TrybRys</name>
+        <briefdescription>
+<para>Określa aktualny tryb rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zawartość pola determinuje sposób rysowania, jaki zostanie wymuszony na programie <computeroutput>gnuplot</computeroutput> poprzez wysłanie do niego odpowiednich poleceń. Wspomniane wymuszenie jest realizowane poprzez wywołanie polecenia <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335" kindref="member">Rysuj()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="396" column="22" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="396" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" compoundref="lacze__do__gnuplota_8hh" startline="689" endline="689">ZmienTrybRys</referencedby>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae2fbf0d8f3f248f750804cec606a7983" compoundref="lacze__do__gnuplota_8hh" startline="697" endline="697">WezTrybRys</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a69d530edfe769e38448972e897456deb" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Xmin</definition>
+        <argsstring></argsstring>
+        <name>_Xmin</name>
+        <briefdescription>
+<para>Dolny zakres wyświetlanej skali skali dla osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Określa dolny zakres wyświetlanej skali dla osi <emphasis>OX</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="402" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="402" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a66836c9749bf179420e4ca3e9447efd7" compoundref="lacze__do__gnuplota_8hh" startline="645" endline="645">Xmin</referencedby>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9c91987dfc869d6fcea96205c581daef" compoundref="lacze__do__gnuplota_8hh" startline="707" endline="707">UstawZakresX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a847e00678a413ab076ccbcb7eba3ae58" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Xmax</definition>
+        <argsstring></argsstring>
+        <name>_Xmax</name>
+        <briefdescription>
+<para>Górny zakres wyświetlanej skali skali dla osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Określa górny zakres wyświetlanej skali dla osi <emphasis>OX</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="408" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="408" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8e23479629af3df3d352b7839ae396b8" compoundref="lacze__do__gnuplota_8hh" startline="652" endline="652">Xmax</referencedby>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9c91987dfc869d6fcea96205c581daef" compoundref="lacze__do__gnuplota_8hh" startline="707" endline="707">UstawZakresX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1abc555fd6b82b0d5c9efb4802b58dc317" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Ymin</definition>
+        <argsstring></argsstring>
+        <name>_Ymin</name>
+        <briefdescription>
+<para>Dolny zakres wyświetlanej skali skali dla osi <emphasis>OY</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Określa dolny zakres wyświetlanej skali dla osi <emphasis>OY</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="414" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="414" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9352c0382bfaeaaba9f65399a7383164" compoundref="lacze__do__gnuplota_8hh" startline="659" endline="659">Ymin</referencedby>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a54c6e9cf9ab2eae479451fd953c2717c" compoundref="lacze__do__gnuplota_8hh" startline="716" endline="716">UstawZakresY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad7dfd3fad82ea0720ec89eacc18410bf" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Ymax</definition>
+        <argsstring></argsstring>
+        <name>_Ymax</name>
+        <briefdescription>
+<para>Górny zakres wyświetlanej skali skali dla osi <emphasis>OY</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Określa górny zakres wyświetlanej skali dla osi <emphasis>OY</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="420" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="420" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac54e4e7448ce3bd324efdc94a999f535" compoundref="lacze__do__gnuplota_8hh" startline="666" endline="666">Ymax</referencedby>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a54c6e9cf9ab2eae479451fd953c2717c" compoundref="lacze__do__gnuplota_8hh" startline="716" endline="716">UstawZakresY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8f9797e881df35f4206cb7d8030e5edc" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Zmin</definition>
+        <argsstring></argsstring>
+        <name>_Zmin</name>
+        <briefdescription>
+<para>Dolny zakres wyświetlanej skali skali dla osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Określa dolny zakres wyświetlanej skali dla osi <emphasis>OZ</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="426" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="426" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9068bd9a9873ba9c6d70016f1ae7cd7f" compoundref="lacze__do__gnuplota_8hh" startline="673" endline="673">Zmin</referencedby>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1dbbb2b86fb13b8632e6bad9df2a82e3" compoundref="lacze__do__gnuplota_8hh" startline="725" endline="725">UstawZakresZ</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a26949eedd421832f0f206ce3c8f90694" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Zmax</definition>
+        <argsstring></argsstring>
+        <name>_Zmax</name>
+        <briefdescription>
+<para>Górny zakres wyświetlanej skali skali dla osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Określa górny zakres wyświetlanej skali dla osi <emphasis>OZ</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="432" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="432" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a20a5d03e1fc19c682032bffc54340f12" compoundref="lacze__do__gnuplota_8hh" startline="680" endline="680">Zmax</referencedby>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1dbbb2b86fb13b8632e6bad9df2a82e3" compoundref="lacze__do__gnuplota_8hh" startline="725" endline="725">UstawZakresZ</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2c9303c4dbb4c9f0ddc4f1fe02eb3f70" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Xskala</definition>
+        <argsstring></argsstring>
+        <name>_Xskala</name>
+        <briefdescription>
+<para>Skala rysunku wzdłuż osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość tego pola definiuje skalowanie rysunku wzdłuż osi <emphasis>OX</emphasis> (oś horyzontalna ekranu). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="439" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="439" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4b1eb252fd785a5aeff938e7b2dce2b1" compoundref="lacze__do__gnuplota_8hh" startline="734" endline="734">SkalaX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a85446d06b2d714b2f852ef43c47c73c1" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Zskala</definition>
+        <argsstring></argsstring>
+        <name>_Zskala</name>
+        <briefdescription>
+<para>Skala rysunku wzdłuż osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość tego pola definiuje skalowanie rysunku wzdłuż osi <emphasis>OZ</emphasis> (oś wertykalna ekranu). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="446" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="446" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a44f922ccbc508d6cd7809c669238dae3" compoundref="lacze__do__gnuplota_8hh" startline="741" endline="741">SkalaZ</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a21e77f0a2bfb7fed989b6dc2d64b5a7e" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Xrotacja</definition>
+        <argsstring></argsstring>
+        <name>_Xrotacja</name>
+        <briefdescription>
+<para>Rotacja rysunku względem osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość tego pola definiuje rotację rysunku (zmiane punktu patrzenia) względem osi <emphasis>OX</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="453" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="453" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1addf0b844f626f3f5220de70efcbbdbb3" compoundref="lacze__do__gnuplota_8hh" startline="772" endline="772">RotacjaX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1aa65781b1ff96dfb31a780e98ee28d6ed" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::_Zrotacja</definition>
+        <argsstring></argsstring>
+        <name>_Zrotacja</name>
+        <briefdescription>
+<para>Rotacja rysunku względem osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość tego pola definiuje rotację rysunku (zmiane punktu patrzenia) względem osi <emphasis>OZ</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="460" column="10" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="460" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9dac73754fab10644b287756003e9c79" compoundref="lacze__do__gnuplota_8hh" startline="780" endline="780">RotacjaZ</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a833aa8994b9913786f920ec8c259731f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::_PokazOs_OX</definition>
+        <argsstring></argsstring>
+        <name>_PokazOs_OX</name>
+        <briefdescription>
+<para>Czy oś OX ma być widoczna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Przechowuje informację decydującą o tym czy oś OX będzie widoczna na rysunku (<computeroutput>true</computeroutput>), czy też nie (<computeroutput>false</computeroutput>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="468" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="468" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a11421d7c67deab6b7524cc492407e897" compoundref="lacze__do__gnuplota_8hh" startline="606" endline="606">PokazOs_OX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae8d9b4dac5eae6ce86b7043c45b70ed8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::_PokazOs_OY</definition>
+        <argsstring></argsstring>
+        <name>_PokazOs_OY</name>
+        <briefdescription>
+<para>Czy oś OY ma być widoczna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Przechowuje informację decydującą o tym czy oś OY będzie widoczna na rysunku (<computeroutput>true</computeroutput>), czy też nie (<computeroutput>false</computeroutput>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="476" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="476" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7c3db909b266fc30808e86406c04b516" compoundref="lacze__do__gnuplota_8hh" startline="626" endline="626">PokazOs_OY</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a25585ec3f1bd3b6bf42f374c38b8d237" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania</definition>
+        <argsstring>(std::string &amp;Polecenie, char const **Sep)</argsstring>
+        <name>DopiszPlikiDoPoleceniaRysowania</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>Polecenie</declname>
+        </param>
+        <param>
+          <type>char const **</type>
+          <declname>Sep</declname>
+        </param>
+        <briefdescription>
+<para>Tworzy listę parametrów umożliwiających rysowanie dodatkowych elementów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Metoda ta przewidziana jest jako element rozszerzenia pozwalającego w klasach pochodnych powiększyć listę rysowanych elementów. <simplesect kind="pre"><para>Parametr <emphasis>Polecenie</emphasis> powinien zawierać polecenie <emphasis>plot</emphasis> lub <emphasis>splot</emphasis>, do którego będzie możliwe dopisanie dalszego ciągu. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">Polecenie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- polecenie rysowania, do którego mają być dopisane nazwy plików i odpowiednie parametry dla polecenia plot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zawiera znak separatora między poszczególnymi parametrami. Jeżeli parametry listy przeszkód są generowane jako pierwsze, to zmienna ta musi być wskaźnikiem do wskaźnika na łańcuch: &quot; &quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- operacja powiodła się, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- w przypadku przeciwnym. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="496" column="16" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="1181" bodyend="1184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4579aecf7b4777fdde0cae4e98c275c2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PzG::LaczeDoGNUPlota::ZapiszUstawienieZakresu</definition>
+        <argsstring>(char Os) const</argsstring>
+        <name>ZapiszUstawienieZakresu</name>
+        <param>
+          <type>char</type>
+          <declname>Os</declname>
+        </param>
+        <briefdescription>
+<para>Tworzy polecenie ustawiające zakres dla danej współrzędnej. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tworzy polecenie dla programu <emphasis>gnuplot</emphasis> ustawiające zakres współrzędnych wybranej współrzędnej <emphasis>x</emphasis>, <emphasis>y</emphasis> lub <emphasis>z</emphasis>, dla której ma być tworzony dany rysunek. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zawiera znak określający współrzędną, dla której ma zostać wygenerowane polecenie ustawienia zakresu. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Łańcuch znaków polecenia ustawiającego żądany zakres dla wybranej współrzędnej. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="511" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1aa92b463e8cbae31b50dd797a4183bce8" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PzG::LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali</definition>
+        <argsstring>() const</argsstring>
+        <name>ZapiszUstawienieRotacjiISkali</name>
+        <briefdescription>
+<para>Tworzy polecenie ustawiające punkt obserwacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tworzy polecenie dla programu <emphasis>gnuplot</emphasis> ustawiajające punkt obserwacji poprzez zadanie rotacji i skali dla poszczególnych osi. <simplesect kind="return"><para>Napis będący utworzonym poleceniem dla programu <emphasis>gnuplot</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="519" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5063854b7232a7951d120a21df63f2b7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::PrzeslijDoGNUPlota</definition>
+        <argsstring>(const char *Polecenie)</argsstring>
+        <name>PrzeslijDoGNUPlota</name>
+        <param>
+          <type>const char *</type>
+          <declname>Polecenie</declname>
+        </param>
+        <briefdescription>
+<para>Przesyła polecenie do gnuplota. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Przesyła na wejście programu <emphasis>gnuplot</emphasis> zadany ciąg znaków. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Polecenie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- komunikat przeznaczony do przeslania.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Musi być zainicjowane połączenie z programem gnuplot.</para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- jesli przeslanie polecenia zakończyło się powodzeniem, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- w przypadku przeciwnym. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="532" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5e4f3a226ed36f7110032d802d84847c" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::CzyWyswietlacKomunikaty</definition>
+        <argsstring>() const</argsstring>
+        <name>CzyWyswietlacKomunikaty</name>
+        <briefdescription>
+<para>Udostępnia informację czy mają być wyświetlane informacje o błędach. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia wartość pola <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2f2800f14ebfe1caef0b4d30c410a7fe" kindref="member">_WyswietlajKomunikatyOBledach</ref>. Określa ono, czy mają być wyświetlane komunikaty o błędach na wyjście standardowe, czy też nie. <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- komunikaty mają być wyswietlane na wejściu <computeroutput>standard</computeroutput> <computeroutput>error</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- komunikaty nie mają być wyświetlane. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="544" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="544" bodyend="544"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2f2800f14ebfe1caef0b4d30c410a7fe" compoundref="lacze__do__gnuplota_8hh" startline="376">_WyswietlajKomunikatyOBledach</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1c7b9acc40de8d8bbb40fb0722512933" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::UtworzProcesPotomny</definition>
+        <argsstring>()</argsstring>
+        <name>UtworzProcesPotomny</name>
+        <briefdescription>
+<para>Uruchamia program <emphasis>gnuplot</emphasis> jako proces potomny. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uruchamia program <emphasis>gnuplot</emphasis> jako proces potomny. <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- jeśli operacja powiodła się. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- w przypadku przeciwnym. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="552" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae5f907633699e898710cce4351193330" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::KomunikatBledu</definition>
+        <argsstring>(const char *sKomunikat) const</argsstring>
+        <name>KomunikatBledu</name>
+        <param>
+          <type>const char *</type>
+          <declname>sKomunikat</declname>
+        </param>
+        <briefdescription>
+<para>Wyświetla komunika błędu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wyświetla na wyjście &quot;standard error&quot; komunikat (przekazany jako parametr), o ile pole <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2f2800f14ebfe1caef0b4d30c410a7fe" kindref="member">_WyswietlajKomunikatyOBledach</ref> ma wartość <computeroutput>true</computeroutput>. W przypadku przeciwnym komunikat nie jest wyświetlany. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sKomunikat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- treść komunikatu, który ma być wyświetlony. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="563" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a087d906ddd4b2e3db32ef61ce4cd5e60" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania</definition>
+        <argsstring>(std::string &amp;Preambula)</argsstring>
+        <name>BudujPreambulePoleceniaRysowania</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>Preambula</declname>
+        </param>
+        <briefdescription>
+<para>Tworzy preambułę poprzedzającą polecenie rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tworzy zbiór poleceń, które ustawiają właściwy tryb rysowania oraz zakresy współrzędnych, jak też wszystkie inne parametry wynikające z przyjętego trybu rysowania. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Preambula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zawiera treść stworzonej preambuły. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="573" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1add41e4bb92ccf9991b1cb15699f8c3d6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::BudujPreambule_2D</definition>
+        <argsstring>(std::string &amp;Preambula)</argsstring>
+        <name>BudujPreambule_2D</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>Preambula</declname>
+        </param>
+        <briefdescription>
+<para>Tworzy preambułę poprzedzającą polecenie rysowania w trybie 2D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tworzy zbiór poleceń, które ustawiają właściwy tryb rysowania oraz zakresy współrzędnych, jak też wszystkie inne parametry wynikające z trybu rysowania 2D. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Preambula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zawiera treść stworzonej preambuły. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="583" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae3b2f34035fdfbbcab696057022341ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::BudujPreambule_3D</definition>
+        <argsstring>(std::string &amp;Preambula)</argsstring>
+        <name>BudujPreambule_3D</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>Preambula</declname>
+        </param>
+        <briefdescription>
+<para>Tworzy preambułę poprzedzającą polecenie rysowania w trybie 3D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tworzy zbiór poleceń, które ustawiają właściwy tryb rysowania oraz zakresy współrzędnych, jak też wszystkie inne parametry wynikające z trybu rysowania 3D. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Preambula</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zawiera treść stworzonej preambuły. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="594" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a11421d7c67deab6b7524cc492407e897" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::PokazOs_OX</definition>
+        <argsstring>(bool Pokaz)</argsstring>
+        <name>PokazOs_OX</name>
+        <param>
+          <type>bool</type>
+          <declname>Pokaz</declname>
+        </param>
+        <briefdescription>
+<para>Umożliwia lub zabrania rysowania osi OX. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Umożliwia lub zabrania rysowania osi <emphasis>OX</emphasis> na rysunku wykresu. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Pokaz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym czy oś <emphasis>OX</emphasis> będzie rysowana (<computeroutput>true</computeroutput>), czy też nie (<computeroutput>false</computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="606" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="606" bodyend="606"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a833aa8994b9913786f920ec8c259731f" compoundref="lacze__do__gnuplota_8hh" startline="468">_PokazOs_OX</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae112972af57167c3b053bf922bce6bbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::PokazOs_OX</definition>
+        <argsstring>() const</argsstring>
+        <name>PokazOs_OX</name>
+        <briefdescription>
+<para>Czy oś OX ma być rysowana. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia informację czy oś <emphasis>OX</emphasis> ma być rysowana, czy też nie. <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy oś <emphasis>OX</emphasis> ma być rysowana, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- w przypadku przeciwnym. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="616" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="616" bodyend="616"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a833aa8994b9913786f920ec8c259731f" compoundref="lacze__do__gnuplota_8hh" startline="468">_PokazOs_OX</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7c3db909b266fc30808e86406c04b516" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::PokazOs_OY</definition>
+        <argsstring>(bool Pokaz)</argsstring>
+        <name>PokazOs_OY</name>
+        <param>
+          <type>bool</type>
+          <declname>Pokaz</declname>
+        </param>
+        <briefdescription>
+<para>Umożliwia lub zabrania rysowania osi OY. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Umożliwia lub zabrania rysowania osi <emphasis>OY</emphasis> na rysunku wykresu. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Pokaz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym czy oś <emphasis>OY</emphasis> będzie rysowana (<computeroutput>true</computeroutput>), czy też nie (<computeroutput>false</computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="626" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="626" bodyend="626"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae8d9b4dac5eae6ce86b7043c45b70ed8" compoundref="lacze__do__gnuplota_8hh" startline="476">_PokazOs_OY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7298f469f6932f5c808dcf620650b4b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::PokazOs_OY</definition>
+        <argsstring>() const</argsstring>
+        <name>PokazOs_OY</name>
+        <briefdescription>
+<para>Czy oś OY ma być rysowana. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia informację czy oś <emphasis>OY</emphasis> ma być rysowana, czy też nie. <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy oś <emphasis>OY</emphasis> ma być rysowana, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- w przypadku przeciwnym. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="636" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="636" bodyend="636"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae8d9b4dac5eae6ce86b7043c45b70ed8" compoundref="lacze__do__gnuplota_8hh" startline="476">_PokazOs_OY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a66836c9749bf179420e4ca3e9447efd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::Xmin</definition>
+        <argsstring>() const</argsstring>
+        <name>Xmin</name>
+        <briefdescription>
+<para>Dolna wartość zakresu dla osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia dolną wartość zakresu skali wzdłuż osi <emphasis>OX</emphasis>. <simplesect kind="return"><para>Dolną wartość zakresu skali wzdłuż osi <emphasis>OX</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="645" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="645" bodyend="645"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a69d530edfe769e38448972e897456deb" compoundref="lacze__do__gnuplota_8hh" startline="402">_Xmin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8e23479629af3df3d352b7839ae396b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::Xmax</definition>
+        <argsstring>() const</argsstring>
+        <name>Xmax</name>
+        <briefdescription>
+<para>Górną wartość zakresu dla osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia górną wartość zakresu skali wzdłuż osi <emphasis>OX</emphasis>. <simplesect kind="return"><para>Górną wartość zakresu skali wzdłuż osi <emphasis>OX</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="652" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="652" bodyend="652"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a847e00678a413ab076ccbcb7eba3ae58" compoundref="lacze__do__gnuplota_8hh" startline="408">_Xmax</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9352c0382bfaeaaba9f65399a7383164" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::Ymin</definition>
+        <argsstring>() const</argsstring>
+        <name>Ymin</name>
+        <briefdescription>
+<para>Dolną wartość zakresu dla osi <emphasis>OY</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia dolną wartość zakresu skali wzdłuż osi <emphasis>OY</emphasis>. <simplesect kind="return"><para>Dolną wartość zakresu skali wzdłuż osi <emphasis>OY</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="659" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="659" bodyend="659"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1abc555fd6b82b0d5c9efb4802b58dc317" compoundref="lacze__do__gnuplota_8hh" startline="414">_Ymin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac54e4e7448ce3bd324efdc94a999f535" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::Ymax</definition>
+        <argsstring>() const</argsstring>
+        <name>Ymax</name>
+        <briefdescription>
+<para>Górną wartość zakresu dla osi <emphasis>OY</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia górną wartość zakresu skali wzdłuż osi <emphasis>OY</emphasis>. <simplesect kind="return"><para>Górną wartość zakresu skali wzdłuż osi <emphasis>OY</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="666" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="666" bodyend="666"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad7dfd3fad82ea0720ec89eacc18410bf" compoundref="lacze__do__gnuplota_8hh" startline="420">_Ymax</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9068bd9a9873ba9c6d70016f1ae7cd7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::Zmin</definition>
+        <argsstring>() const</argsstring>
+        <name>Zmin</name>
+        <briefdescription>
+<para>Dolną wartość zakresu dla osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia dolną wartość zakresu skali wzdłuż osi <emphasis>OZ</emphasis>. <simplesect kind="return"><para>Dolną wartość zakresu skali wzdłuż osi <emphasis>OZ</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="673" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="673" bodyend="673"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8f9797e881df35f4206cb7d8030e5edc" compoundref="lacze__do__gnuplota_8hh" startline="426">_Zmin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a20a5d03e1fc19c682032bffc54340f12" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::Zmax</definition>
+        <argsstring>() const</argsstring>
+        <name>Zmax</name>
+        <briefdescription>
+<para>Górną wartość zakresu dla osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia górną wartość zakresu skali wzdłuż osi <emphasis>OZ</emphasis>. <simplesect kind="return"><para>Górną wartość zakresu skali wzdłuż osi <emphasis>OZ</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="680" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="680" bodyend="680"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a26949eedd421832f0f206ce3c8f90694" compoundref="lacze__do__gnuplota_8hh" startline="432">_Zmax</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::ZmienTrybRys</definition>
+        <argsstring>(TypTrybuRysowania Tryb)</argsstring>
+        <name>ZmienTrybRys</name>
+        <param>
+          <type><ref refid="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944" kindref="member">TypTrybuRysowania</ref></type>
+          <declname>Tryb</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia tryb rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia tryb rysowania jaki zostanie wymuszony na programie <computeroutput>gnuplot</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Tryb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wartość parametru określa nowy tryb rysowania. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="689" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="689" bodyend="689"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d9bde70af80b5224c5771f4768a9bab" compoundref="lacze__do__gnuplota_8hh" startline="396">_TrybRys</references>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae2fbf0d8f3f248f750804cec606a7983" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_pz_g_1aef59d70a0ee2eab473790613c3628944" kindref="member">TypTrybuRysowania</ref></type>
+        <definition>TypTrybuRysowania PzG::LaczeDoGNUPlota::WezTrybRys</definition>
+        <argsstring>() const</argsstring>
+        <name>WezTrybRys</name>
+        <briefdescription>
+<para>Udostępnia aktualny tryb rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia informację o aktualnym trybie rysowania. <simplesect kind="return"><para>Informacja o aktualnym trybie rysowania. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="697" column="21" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="697" bodyend="697"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d9bde70af80b5224c5771f4768a9bab" compoundref="lacze__do__gnuplota_8hh" startline="396">_TrybRys</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9c91987dfc869d6fcea96205c581daef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawZakresX</definition>
+        <argsstring>(float Xo, float Xn)</argsstring>
+        <name>UstawZakresX</name>
+        <param>
+          <type>float</type>
+          <declname>Xo</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Xn</declname>
+        </param>
+        <briefdescription>
+<para>Ustawia zakres osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ustawia zakres osi <emphasis>OX</emphasis>. Ogranicza to obszar, który będzie zwizualizowany przez programa <emphasis>gnuplot</emphasis>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Xo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- dolna granica obszaru rysowania dla osi <emphasis>OX</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Xn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- górna granica obszaru rysowania dla osi <emphasis>OX</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="707" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="707" bodyend="707"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a847e00678a413ab076ccbcb7eba3ae58" compoundref="lacze__do__gnuplota_8hh" startline="408">_Xmax</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a69d530edfe769e38448972e897456deb" compoundref="lacze__do__gnuplota_8hh" startline="402">_Xmin</references>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a54c6e9cf9ab2eae479451fd953c2717c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawZakresY</definition>
+        <argsstring>(float Yo, float Yn)</argsstring>
+        <name>UstawZakresY</name>
+        <param>
+          <type>float</type>
+          <declname>Yo</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Yn</declname>
+        </param>
+        <briefdescription>
+<para>Ustawia zakres osi <emphasis>OY</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ustawia zakres osi <emphasis>OY</emphasis>. Ogranicza to obszar, który będzie zwizualizowany przez programa <emphasis>gnuplot</emphasis>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Yo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- dolna granica obszaru rysowania dla osi <emphasis>OY</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Yn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- górna granica obszaru rysowania dla osi <emphasis>OY</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="716" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="716" bodyend="716"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad7dfd3fad82ea0720ec89eacc18410bf" compoundref="lacze__do__gnuplota_8hh" startline="420">_Ymax</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1abc555fd6b82b0d5c9efb4802b58dc317" compoundref="lacze__do__gnuplota_8hh" startline="414">_Ymin</references>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1dbbb2b86fb13b8632e6bad9df2a82e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawZakresZ</definition>
+        <argsstring>(float Zo, float Zn)</argsstring>
+        <name>UstawZakresZ</name>
+        <param>
+          <type>float</type>
+          <declname>Zo</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Zn</declname>
+        </param>
+        <briefdescription>
+<para>Ustawia zakres osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ustawia zakres osi <emphasis>OZ</emphasis>. Ogranicza to obszar, który będzie zwizualizowany przez programa <emphasis>gnuplot</emphasis>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Zo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- dolna granica obszaru rysowania dla osi <emphasis>OZ</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Zn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- górna granica obszaru rysowania dla osi <emphasis>OZ</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="725" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="725" bodyend="725"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a26949eedd421832f0f206ce3c8f90694" compoundref="lacze__do__gnuplota_8hh" startline="432">_Zmax</references>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8f9797e881df35f4206cb7d8030e5edc" compoundref="lacze__do__gnuplota_8hh" startline="426">_Zmin</references>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4b1eb252fd785a5aeff938e7b2dce2b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::SkalaX</definition>
+        <argsstring>() const</argsstring>
+        <name>SkalaX</name>
+        <briefdescription>
+<para>Udostępnia skalę dla osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia skalę dla osi <emphasis>OX</emphasis> dla tworzonego rysunku. <simplesect kind="return"><para>Skala dla osi <emphasis>OX</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="734" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="734" bodyend="734"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2c9303c4dbb4c9f0ddc4f1fe02eb3f70" compoundref="lacze__do__gnuplota_8hh" startline="439">_Xskala</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a44f922ccbc508d6cd7809c669238dae3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::SkalaZ</definition>
+        <argsstring>() const</argsstring>
+        <name>SkalaZ</name>
+        <briefdescription>
+<para>Udostępnia skalę dla osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia skalę dla osi <emphasis>OZ</emphasis> dla tworzonego rysunku. <simplesect kind="return"><para>Skala dla osi <emphasis>OZ</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="741" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="741" bodyend="741"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a85446d06b2d714b2f852ef43c47c73c1" compoundref="lacze__do__gnuplota_8hh" startline="446">_Zskala</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a855b8338bfe3e5d294d719f24b11090e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawSkaleX</definition>
+        <argsstring>(float skala_x)</argsstring>
+        <name>UstawSkaleX</name>
+        <param>
+          <type>float</type>
+          <declname>skala_x</declname>
+        </param>
+        <briefdescription>
+<para>Zadaje skalę wzdłuż osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zadaje skalę wzdłuż osi <emphasis>OX</emphasis> dla tworzonego rysunku. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skala_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- skala wzdłuż osi <emphasis>OX</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="748" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab0486db3166d8db6580a221079af241f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawSkaleZ</definition>
+        <argsstring>(float skala_z)</argsstring>
+        <name>UstawSkaleZ</name>
+        <param>
+          <type>float</type>
+          <declname>skala_z</declname>
+        </param>
+        <briefdescription>
+<para>Zadaje skalę wzdłuż osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zadaje skalę wzdłuż osi <emphasis>OZ</emphasis> dla tworzonego rysunku. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skala_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- skala wzdłuż osi <emphasis>OZ</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="755" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4308151b54e105d302803146a3238699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawSkaleXZ</definition>
+        <argsstring>(float skala_x, float skala_z)</argsstring>
+        <name>UstawSkaleXZ</name>
+        <param>
+          <type>float</type>
+          <declname>skala_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>skala_z</declname>
+        </param>
+        <briefdescription>
+<para>Zadaje skalę wzdłuż osi <emphasis>OX</emphasis> i <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zadaje skalę wzdłuż osi <emphasis>OX</emphasis> i <emphasis>OZ</emphasis> dla tworzonego rysunku. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skala_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- skala wzdłuż osi <emphasis>OX</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">skala_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- skala wzdłuż osi <emphasis>OZ</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="763" column="8"/>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1addf0b844f626f3f5220de70efcbbdbb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::RotacjaX</definition>
+        <argsstring>() const</argsstring>
+        <name>RotacjaX</name>
+        <briefdescription>
+<para>Wartość kąta rotacji względem osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia wartość kąta rotacji renderowanego rysunku wokół osi <emphasis>OX</emphasis>. Zwracana wartość wyrażona jest w stopiniach. <simplesect kind="return"><para>Wyrażona w stopniach wartość kąta rotacji wokół osi <emphasis>OX</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="772" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="772" bodyend="772"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a21e77f0a2bfb7fed989b6dc2d64b5a7e" compoundref="lacze__do__gnuplota_8hh" startline="453">_Xrotacja</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9dac73754fab10644b287756003e9c79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PzG::LaczeDoGNUPlota::RotacjaZ</definition>
+        <argsstring>() const</argsstring>
+        <name>RotacjaZ</name>
+        <briefdescription>
+<para>Wartość kąta rotacji względem osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia wartość kąta rotacji renderowanego rysunku wokół osi <emphasis>OZ</emphasis>. Zwracana wartość wyrażona jest w stopiniach. <simplesect kind="return"><para>Wyrażona w stopniach wartość kąta rotacji wokół osi <emphasis>OZ</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="780" column="9" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="780" bodyend="780"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aa65781b1ff96dfb31a780e98ee28d6ed" compoundref="lacze__do__gnuplota_8hh" startline="460">_Zrotacja</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1acb7456c930015c9a48f43b8618bd9391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawRotacjeX</definition>
+        <argsstring>(float KatX_st)</argsstring>
+        <name>UstawRotacjeX</name>
+        <param>
+          <type>float</type>
+          <declname>KatX_st</declname>
+        </param>
+        <briefdescription>
+<para>Ustawia rotację wokół osi <emphasis>OX</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zadaje kąt rotacji wokół osi <emphasis>OX</emphasis>. Umożliwia to zmianę punktu obserwacji renderowanego rysunku. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">KatX_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wartość kąta rotacji. Jego wartość podawana jest w stopniach. Dopuszczalne wartości mieszczą się w zakresie [-360,360]. Wartości spoza tego zakresu mogą powodować nieprawidłowe ustawienie punktu obserwacji. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="792" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab9c4c731e2cebe67e04221e0bb528809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawRotacjeZ</definition>
+        <argsstring>(float KatZ_st)</argsstring>
+        <name>UstawRotacjeZ</name>
+        <param>
+          <type>float</type>
+          <declname>KatZ_st</declname>
+        </param>
+        <briefdescription>
+<para>Ustawia rotację wokół osi <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zadaje kąt rotacji wokół osi <emphasis>OZ</emphasis>. Umożliwia to zmianę punktu obserwacji renderowanego rysunku. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">KatZ_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wartość kąta rotacji. Jego wartość podawana jest w stopniach. Dopuszczalne wartości mieszczą się w zakresie [-360,360]. Wartości spoza tego zakresu mogą powodować nieprawidłowe ustawienie punktu obserwacji. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="805" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac48fed259e4ebf93072e3111264c9433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UstawRotacjeXZ</definition>
+        <argsstring>(float KatX_st, float KatZ_st)</argsstring>
+        <name>UstawRotacjeXZ</name>
+        <param>
+          <type>float</type>
+          <declname>KatX_st</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>KatZ_st</declname>
+        </param>
+        <briefdescription>
+<para>Ustawia rotację wokół osi <emphasis>OX</emphasis> i <emphasis>OZ</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zadaje jednocześnie kąt rotacji wokół osi <emphasis>OX</emphasis> i <emphasis>OZ</emphasis>. Umożliwia to zmianę punktu obserwacji renderowanego rysunku. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">KatX_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wartość kąta rotacji względem osi <emphasis>OX</emphasis>. Jego wartość podawana jest w stopniach. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">KatZ_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wartość kąta rotacji względem osi <emphasis>OZ</emphasis>. Jego wartość podawana jest w stopniach. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="819" column="8"/>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a409f4f4ba52b2b246d5695daef12167d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::WyswietlajKomunikatyBledow</definition>
+        <argsstring>(bool WyswietlajKomunikaty=true)</argsstring>
+        <name>WyswietlajKomunikatyBledow</name>
+        <param>
+          <type>bool</type>
+          <declname>WyswietlajKomunikaty</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Zezwala lub zabrania wyświetlania komunikatów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Metoda pozwala, albo też zabrania wyświetlania komunikatów o blędach. Jeżeli jakaś z operacji nie powiedzie się, to jako wynik zwracana jest wartość <computeroutput>false</computeroutput>. Oprócz tego metody takie moga wyświetlać komunikaty, które kierowane są na wyjście &quot;standard error&quot; Domyślnie przymuje się, że programista nie chce, aby wyświetlały się dodatkwe komunikaty. Wywołując tę metodę można to zmienić. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">WyswietlajKomunikaty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wartość parametru zostaje zapamiętana. Jeśli jest ona <computeroutput>true</computeroutput> (domyślna wartość parametru), to komunikaty będą wyświetlane. Gdy jest ona <computeroutput>false</computeroutput>, to komunikaty nie będą wyświetlane. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="835" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::LaczeDoGNUPlota::DodajNazwePliku</definition>
+        <argsstring>(const char *sNazwaPliku, bool SprawdzIstnienie=false, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>DodajNazwePliku</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>SprawdzIstnienie</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Dodaje nazwę pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Powoduje dodanie do listy plików zawierajacych dane dla <emphasis>gnuplota</emphasis>, nowej nazwy pliku.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sNazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku z danymi dla gnuplota. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">SprawdzIstnienie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Dostep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym, czy dany plik będzie <emphasis>widziany</emphasis> przez wszystkie łącza, czy też przez tylko jedno. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu <emphasis>gnuplot</emphasis>. Oznacza to uruchmienie tylu procesów programu <emphasis>gnuplot</emphasis> ile jest okienek. Parametr <emphasis>Dostep</emphasis> decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="859" column="26"/>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">dron::akcja</referencedby>
+        <referencedby refid="classdron_1a2a6f71538eb4a1413c1eddeb82abee54" compoundref="dron_8hh" startline="60" endline="87">dron::dron</referencedby>
+        <referencedby refid="class_scena_1a72a743882412d881649a79de572e3e33" compoundref="_scena_8hh" startline="194" endline="734">Scena::dzialanie</referencedby>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a56735c657e7157d7699dfb1c982bd99f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::LaczeDoGNUPlota::DodajNazwePliku_Lamana</definition>
+        <argsstring>(const char *sNazwaPliku, bool SprawdzIstnienie=false, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>DodajNazwePliku_Lamana</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>SprawdzIstnienie</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Dodaje nazwę pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Powoduje dodanie do listy plików zawierajacych dane dla <emphasis>gnuplota</emphasis>, nowej nazwy pliku. Domyślnie dane z tego pliku będą rysowane jako łamana łącząca punkty o podanych współrzędnych.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sNazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku z danymi dla gnuplota. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">SprawdzIstnienie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Dostep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym, czy dany plik będzie <emphasis>widziany</emphasis> przez wszystkie instancje łącza, czy też przez tylko jedno. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu <emphasis>gnuplot</emphasis>. Oznacza to uruchmienie tylu procesów programu <emphasis>gnuplot</emphasis> ile jest okienek. Parametr <emphasis>Dostep</emphasis> decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="888" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a060bd85935b14e50a16acb2c07d20e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::LaczeDoGNUPlota::DodajNazwePliku_JednakowePunkty</definition>
+        <argsstring>(const char *sNazwaPliku, bool SprawdzIstnienie=false, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>DodajNazwePliku_JednakowePunkty</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>SprawdzIstnienie</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Dodaje nazwę pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Powoduje dodanie do listy plików zawierajacych dane dla <emphasis>gnuplota</emphasis>, nowej nazwy pliku. Domyślnie dane z tego pliku będą rysowane jako zbiór jednakowych punktów o podanych współrzędnych.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sNazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku z danymi dla gnuplota. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">SprawdzIstnienie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Dostep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym, czy dany plik będzie <emphasis>widziany</emphasis> przez wszystkie instancje łącza, czy też przez tylko jedno. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu <emphasis>gnuplot</emphasis>. Oznacza to uruchmienie tylu procesów programu <emphasis>gnuplot</emphasis> ile jest okienek. Parametr <emphasis>Dostep</emphasis> decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="917" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a6ee6cc8b13fcc0be093ed105b24253d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> &amp;</type>
+        <definition>InfoPlikuDoRysowania&amp; PzG::LaczeDoGNUPlota::DodajNazwePliku_PunktyRoznejWielkosci</definition>
+        <argsstring>(const char *sNazwaPliku, bool SprawdzIstnienie=false, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>DodajNazwePliku_PunktyRoznejWielkosci</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>SprawdzIstnienie</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Dodaje nazwę pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Powoduje dodanie do listy plików zawierajacych dane dla <emphasis>gnuplota</emphasis>, nowej nazwy pliku.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sNazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku z danymi dla gnuplota. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">SprawdzIstnienie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym czy będzie sprawdzane istnienie danego pliku w momencie wywołania niniejszej metody. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Dostep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym, czy dany plik będzie <emphasis>widziany</emphasis> przez wszystkie instancje łącza, czy też przez tylko jedno. Parametr ten ma znaczenie tylko wtedy, gdy programista chce aby ukazało się więcej niż jedno okienko programu <emphasis>gnuplot</emphasis>. Oznacza to uruchmienie tylu procesów programu <emphasis>gnuplot</emphasis> ile jest okienek. Parametr <emphasis>Dostep</emphasis> decyduje wówczas, czy dane zawarte w pliku będą wyświetlane w jednym okienku, czy też we wszystkich.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca referencję do obiektu zawierającego atrybuty rysowania danych w podanym pliku. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="946" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5c3a514dc7fbd4b2050037ab2b38293f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> *</type>
+        <definition>const InfoPlikuDoRysowania* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku</definition>
+        <argsstring>(const char *sNazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny) const</argsstring>
+        <name>ZnajdzNazwePliku</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="955" column="30"/>
+        <referencedby refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a18cd7faad7325343107a93db114cb290" compoundref="lacze__do__gnuplota_8hh" startline="981" endline="984">ZnajdzNazwePliku</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a18cd7faad7325343107a93db114cb290" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> *</type>
+        <definition>const InfoPlikuDoRysowania* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku</definition>
+        <argsstring>(const std::string &amp;NazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny) const</argsstring>
+        <name>ZnajdzNazwePliku</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>NazwaPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Odszukuje strukturę zawierającą nazwę pliku, w którym powinny być zapisane współrzędne punktów do rysunku odpowiedniej łamanej lub powierzchni (w zależności od wcześniejszego wyboru trybu rysowania - patrz metoda <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" kindref="member">ZmienTrybRys()</ref>). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">NazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku, dla którego ma zostać odnaleziony obiekt zawierające dane określające sposób rysowania łamanej lub powierzchni. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Dostep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym, czy dany plik będzie szukany wsród plików, które mają być <emphasis>widziane</emphasis> przez wszystkie instancje programu gnuplot, czy też pośród tych, które są widoczne tylko przez tą instancję, dla której wywołana zostaje ta metoda. Domyślnie przyjmuje się ten drugi wariant.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Jeżeli w liście nazw plików z danymi dla gnuplota zostanie znaleziony obiekt, który zawiera identyczną nazwę, jak ta przekazana przez parametr <emphasis>sNazwaPliku</emphasis>, to metoda zwraca wskaźnik do tego obiektu. Jest on zwracany w trybie tylko do odczytu. W przypadku przecinym zwracany jest wskaźnik <computeroutput>nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="981" column="30" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="981" bodyend="984"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5c3a514dc7fbd4b2050037ab2b38293f">ZnajdzNazwePliku</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5100a047b8a1490dcaa6f6bcc338862a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> *</type>
+        <definition>InfoPlikuDoRysowania* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku</definition>
+        <argsstring>(const char *sNazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>ZnajdzNazwePliku</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Odszukuje strukturę zawierającą nazwę pliku, w którym powinny być zapisane współrzędne punktów do rysunku odpowiedniej łamanej lub powierzchni (w zależności od wcześniejszego wyboru trybu rysowania - patrz metoda <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" kindref="member">ZmienTrybRys()</ref>). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sNazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku, dla którego ma zostać odnaleziony obiekt zawierające dane określające sposób rysowania łamanej lub powierzchni. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Dostep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym, czy dany plik będzie szukany wsród plików, które mają być <emphasis>widziane</emphasis> przez wszystkie instancje programu gnuplot, czy też pośród tych, które są widoczne tylko przez tą instancję, dla której wywołana zostaje ta metoda. Domyślnie przyjmuje się ten drugi wariant.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Jeżeli w liście nazw plików z danymi dla gnuplota zostanie znaleziony obiekt, który zawiera identyczną nazwę, jak ta przekazana przez parametr <emphasis>sNazwaPliku</emphasis>, to metoda zwraca wskaźnik do tego obiektu. Jest on zwracany w trybie do modyfikacji. W przypadku przecinym zwracany jest wskaźnik <computeroutput>nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1008" column="24" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="1008" bodyend="1014"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5c3a514dc7fbd4b2050037ab2b38293f">ZnajdzNazwePliku</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a80edeb736c353cf64715f16e6a81ee1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> *</type>
+        <definition>InfoPlikuDoRysowania* PzG::LaczeDoGNUPlota::ZnajdzNazwePliku</definition>
+        <argsstring>(const std::string &amp;NazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>ZnajdzNazwePliku</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>NazwaPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Znajduje obiekt przechowujący nazwę pliku z danymi do rysowania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Odszukuje strukturę zawierającą nazwę pliku, w którym powinny być zapisane współrzędne punktów do rysunku odpowiedniej łamanej lub powierzchni (w zależności od wcześniejszego wyboru trybu rysowania - patrz metoda <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" kindref="member">ZmienTrybRys()</ref>). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">NazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku, dla którego ma zostać odnaleziony obiekt zawierające dane określające sposób rysowania łamanej lub powierzchni. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Dostep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- decyduje o tym, czy dany plik będzie szukany wsród plików, które mają być <emphasis>widziane</emphasis> przez wszystkie instancje programu gnuplot, czy też pośród tych, które są widoczne tylko przez tą instancję, dla której wywołana zostaje ta metoda. Domyślnie przyjmuje się ten drugi wariant.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Jeżeli w liście nazw plików z danymi dla gnuplota zostanie znaleziony obiekt, który zawiera identyczną nazwę, jak ta przekazana przez parametr <emphasis>sNazwaPliku</emphasis>, to metoda zwraca wskaźnik do tego obiektu. Jest on zwracany w trybie do modyfikacji. W przypadku przecinym zwracany jest wskaźnik <computeroutput>nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1037" column="24" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="1037" bodyend="1040"/>
+        <references refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5c3a514dc7fbd4b2050037ab2b38293f">ZnajdzNazwePliku</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7fa4e775e1aee74869fae174c567c2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::UsunNazwePliku</definition>
+        <argsstring>(const InfoPlikuDoRysowania *wInfoPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>UsunNazwePliku</name>
+        <param>
+          <type>const <ref refid="class_pz_g_1_1_info_pliku_do_rysowania" kindref="compound">InfoPlikuDoRysowania</ref> *</type>
+          <declname>wInfoPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1048" column="8"/>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">dron::akcja</referencedby>
+        <referencedby refid="class_scena_1a72a743882412d881649a79de572e3e33" compoundref="_scena_8hh" startline="194" endline="734">Scena::dzialanie</referencedby>
+        <referencedby refid="classdron_1a6cf04a2beb3431d29b4ad7f0f6ae37de" compoundref="dron_8hh" startline="561" endline="568">dron::usun_drona</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9f31ec3f418db5df94e2b24096dfc64d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::UsunNazwePliku</definition>
+        <argsstring>(const char *sNazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>UsunNazwePliku</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1055" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a29f5e5b048a278b4c032b6d9275d0826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::UsunNazwePliku</definition>
+        <argsstring>(const std::string &amp;NazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)</argsstring>
+        <name>UsunNazwePliku</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>NazwaPliku</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4" kindref="member">TypDostepuDoZasobu</ref></type>
+          <declname>Dostep</declname>
+          <defval><ref refid="namespace_pz_g_1af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826" kindref="member">DZ_Lokalny</ref></defval>
+        </param>
+        <briefdescription>
+<para>Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1062" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad3d7607946b82aa941d786dcd086d27e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::DopiszRysowanieZPlikow</definition>
+        <argsstring>(std::string &amp;Polecenie, char const **Sep)</argsstring>
+        <name>DopiszRysowanieZPlikow</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>Polecenie</declname>
+        </param>
+        <param>
+          <type>char const **</type>
+          <declname>Sep</declname>
+        </param>
+        <briefdescription>
+<para>Tworzy listę parametrów umożliwiających rysowanie brył z plików. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1069" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1aee10e48fe1b9fba6e2897b4ccfa27aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::DopiszRysowanieZRoznychPunktow</definition>
+        <argsstring>(std::string &amp;Polecenie, char const *Sep)</argsstring>
+        <name>DopiszRysowanieZRoznychPunktow</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>Polecenie</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>Sep</declname>
+        </param>
+        <briefdescription>
+<para>Tworzy listę parametrów umożliwiających rysowanie brył z plików. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1074" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1af8be8aeb3b1b524fab67d4411cba5b9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane</definition>
+        <argsstring>() const</argsstring>
+        <name>CzyPolaczenieJestZainicjowane</name>
+        <briefdescription>
+<para>Informuje, czy połączenie z <emphasis>gnuplot&apos;em</emphasis> jest zainicjalizowane. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Informuje, czy połączenie z programem <emphasis>gnuplot</emphasis> jest zainicjowane. <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- jeśli tak, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- w przypadku przeciwnym. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1086" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::Rysuj</definition>
+        <argsstring>()</argsstring>
+        <name>Rysuj</name>
+        <briefdescription>
+<para>Generuje polecenie rysowania i przesyła je do gnuplota. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Jeżeli lista plików nie jest pusta, to generuje sekwencje poleceń dla programu <emphasis>gnuplot</emphasis> mająca na celu narysowanie płaszczyzn na na podstawie danych zawartych w plikach z listy.</para>
+<para><simplesect kind="pre"><para>Lista plików nie powinna być pusta. Nazwy plików na niej można umieścić za pomoca metody <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621" kindref="member">DodajNazwePliku</ref> jak też innych tego typu metod. Metoda nie wymaga wcześniejszego zainicjowania połączenia z <emphasis>gnuplotem</emphasis>. </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy zostają poprawnie wysłane polecenia dla gnuplota. Nie oznacza to jednak, że proces rysowania zakończył się pomyślnie. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy połączenie z gnuplotem nie może zostać poprawnie zainicjalizowane lub gdy lista plików jest pusta. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1107" column="8"/>
+        <referencedby refid="classdron_1a1c22017426486f689273d83dfe06aafe" compoundref="dron_8hh" startline="187" endline="522">dron::akcja</referencedby>
+        <referencedby refid="class_scena_1a72a743882412d881649a79de572e3e33" compoundref="_scena_8hh" startline="194" endline="734">Scena::dzialanie</referencedby>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1aacb7ae45d283c741fb330f27b132e1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::RysujDoPliku</definition>
+        <argsstring>(const char *sNazwaPliku)</argsstring>
+        <name>RysujDoPliku</name>
+        <param>
+          <type>const char *</type>
+          <declname>sNazwaPliku</declname>
+        </param>
+        <briefdescription>
+<para>Generuje polecenie rysowania do pliku i przesyła je do gnuplota. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Działa analogicznie jak metoda <ref refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335" kindref="member">Rysuj</ref>, z tą różnicą, że rysunek robota składowany jest w pliku o nazwie przekazanej przez parametr <emphasis>NazwaPliku</emphasis>. Rysunek jest zapisywany w formacie <emphasis>PNG</emphasis>.</para>
+<para><simplesect kind="pre"><para>Lista plików nie powinna być pusta ponadto powinno być możliwe otwarcie do zapisu pliku o nazwie przekazanej przez parametr <emphasis>NazwaPliku</emphasis>, do której dołączane jest rozszerzenie .ps . Metoda nie wymaga wcześniejszego zainicjowania połączenia z programem <emphasis>gnuplot</emphasis>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sNazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku, w którym ma być zapisny rysunek tworzony przez gnuplot.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy zostają poprawnie wysłane polecenia dla <emphasis>gnuplota</emphasis>. Nie oznacza to jednak, że proces rysowania zakończył się pomyślnie. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy połączenie z gnuplotem nie może zostać poprawnie zainicjalizowane lub gdy lista plików jest pusta lub też gdy nie można otworzyć pliku do zapisu. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1136" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a200ce6bdb980c314a9eafe49e8f2dd5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PzG::LaczeDoGNUPlota::Inicjalizuj</definition>
+        <argsstring>()</argsstring>
+        <name>Inicjalizuj</name>
+        <briefdescription>
+<para>Inicjalizuje połączenie z programem <emphasis>gnuplot</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Inicjalizuje połączenie z programem <emphasis>gnuplot</emphasis>. Realizowane jest to poprzez rozwidlenie procesu i uruchomienie jako procesu potomnego programu <emphasis>gnuplot</emphasis>. Komunikacja z programem <emphasis>gnuplot</emphasis> realizowana jest poprzez przejęcie jego wejścia i wyjścia standardowego.</para>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy połączenie z programem <emphasis>0gnuplot</emphasis> zostało poprawnie zainicjalizowane lub gdy już wcześniej było zainicjalizowane. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- gdy proces inicjalizacji połączenia zakończył się niepowodzeniem. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1151" column="8"/>
+        <referencedby refid="class_scena_1a8f9fe11b4cfef890123a2acc94672e17" compoundref="_scena_8hh" startline="139" endline="188">Scena::Scena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a263a9dba2ef8030028a48217a183ecdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UsunOstatniaNazwe_ListaLokalna</definition>
+        <argsstring>()</argsstring>
+        <name>UsunOstatniaNazwe_ListaLokalna</name>
+        <briefdescription>
+<para>Usuwa ostatnią nazwę pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usuwa ostatnią nazwę z lokalnej listy nazw plików, tzn. listy, która jest widoczna tylko w danym łączu z programem <emphasis>gnuplot</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1159" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac9b77a032e256c3143b984509a8b4bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UsunOstatniaNazwe_ListaGlobalna</definition>
+        <argsstring>()</argsstring>
+        <name>UsunOstatniaNazwe_ListaGlobalna</name>
+        <briefdescription>
+<para>Usuwa ostatnią nazwę pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usuwa ostatnią nazwę z globalnej listy nazw plików, tzn. listy, która jest widoczna we wszystkich łączach z programem <emphasis>gnuplot</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1167" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a89a1d90d017d264cd26398464d074073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::LaczeDoGNUPlota::UsunWszystkieNazwyPlikow</definition>
+        <argsstring>()</argsstring>
+        <name>UsunWszystkieNazwyPlikow</name>
+        <briefdescription>
+<para>Kasuje zawartość listy nazw plików. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calkowicie kasuje zawartość listy nazw plików. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1174" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5845189b5ab8c3634acf57024e5deeaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PzG::LaczeDoGNUPlota::LaczeDoGNUPlota</definition>
+        <argsstring>()</argsstring>
+        <name>LaczeDoGNUPlota</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1176" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4f088b3c3f67cb82f71ce1c6db357f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual PzG::LaczeDoGNUPlota::~LaczeDoGNUPlota</definition>
+        <argsstring>()</argsstring>
+        <name>~LaczeDoGNUPlota</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="1177" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa realizuje interfejs do programu GNUPlot. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Klasa realizuje interfejs do programu GNUPlot. Pozwala ona na wskazanie zbioru punktów płaszczyzn umieszczonych w pliku lub plikach. Każdy taki zbiór może być następnie wizualizowany przez program gnuplot w postaci oddzielnych płaszczyzn z wycinaniem części zasłanianych. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>TypTrybuRysowania</label>
+      </node>
+      <node id="1">
+        <label>PzG::LaczeDoGNUPlota</label>
+        <link refid="class_pz_g_1_1_lacze_do_g_n_u_plota"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>#_InfoPlikow_Lok</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#_Zmax</edgelabel>
+          <edgelabel>#_Ymin</edgelabel>
+          <edgelabel>#_Ymax</edgelabel>
+          <edgelabel>#_Xmin</edgelabel>
+          <edgelabel>#_Xmax</edgelabel>
+          <edgelabel>#_Zskala</edgelabel>
+          <edgelabel>#_Zrotacja</edgelabel>
+          <edgelabel>#_Xskala</edgelabel>
+          <edgelabel>#_Xrotacja</edgelabel>
+          <edgelabel>#_Zmin</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#_TrybRys</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>#_InfoPlikow_Glb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#_Wejscie_GNUPlota</edgelabel>
+          <edgelabel>#_Wyjscie_GNUPlota</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>#_Preambula_RotacjaSkala</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>#_WyswietlajKomunikatyOBledach</edgelabel>
+          <edgelabel>#_PokazOs_OX</edgelabel>
+          <edgelabel>#_PokazOs_OY</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>float</label>
+      </node>
+      <node id="5">
+        <label>int</label>
+      </node>
+      <node id="7">
+        <label>bool</label>
+      </node>
+      <node id="2">
+        <label>list&lt; PzG::InfoPlikuDoRysowania &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" line="331" column="22" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/lacze_do_gnuplota.hh" bodystart="331" bodyend="1178"/>
+    <listofallmembers>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab9194cd75d079c04ef3e2c65ef9ca55d" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_InfoPlikow_Glb</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1abb57c6afa7e391036b0ad9ef3e454913" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_InfoPlikow_Lok</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a833aa8994b9913786f920ec8c259731f" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_PokazOs_OX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae8d9b4dac5eae6ce86b7043c45b70ed8" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_PokazOs_OY</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adfbeb93c17ba42215c8e901b2de911fd" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Preambula_RotacjaSkala</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d9bde70af80b5224c5771f4768a9bab" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_TrybRys</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adc3a2250216c2473a61da379da70b2d7" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Wejscie_GNUPlota</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7d05a4767a35ee494d59724bb740dbc2" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Wyjscie_GNUPlota</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2f2800f14ebfe1caef0b4d30c410a7fe" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_WyswietlajKomunikatyOBledach</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a847e00678a413ab076ccbcb7eba3ae58" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Xmax</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a69d530edfe769e38448972e897456deb" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Xmin</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a21e77f0a2bfb7fed989b6dc2d64b5a7e" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Xrotacja</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a2c9303c4dbb4c9f0ddc4f1fe02eb3f70" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Xskala</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad7dfd3fad82ea0720ec89eacc18410bf" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Ymax</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1abc555fd6b82b0d5c9efb4802b58dc317" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Ymin</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a26949eedd421832f0f206ce3c8f90694" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Zmax</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8f9797e881df35f4206cb7d8030e5edc" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Zmin</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aa65781b1ff96dfb31a780e98ee28d6ed" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Zrotacja</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a85446d06b2d714b2f852ef43c47c73c1" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>_Zskala</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1add41e4bb92ccf9991b1cb15699f8c3d6" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>BudujPreambule_2D</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae3b2f34035fdfbbcab696057022341ab" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>BudujPreambule_3D</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a087d906ddd4b2e3db32ef61ce4cd5e60" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>BudujPreambulePoleceniaRysowania</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1af8be8aeb3b1b524fab67d4411cba5b9e" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>CzyPolaczenieJestZainicjowane</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5e4f3a226ed36f7110032d802d84847c" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>CzyWyswietlacKomunikaty</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1adf4db50ed643b2391e8f582af0c5c621" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>DodajNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a060bd85935b14e50a16acb2c07d20e46" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>DodajNazwePliku_JednakowePunkty</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a56735c657e7157d7699dfb1c982bd99f" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>DodajNazwePliku_Lamana</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a6ee6cc8b13fcc0be093ed105b24253d4" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>DodajNazwePliku_PunktyRoznejWielkosci</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a25585ec3f1bd3b6bf42f374c38b8d237" prot="protected" virt="virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>DopiszPlikiDoPoleceniaRysowania</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ad3d7607946b82aa941d786dcd086d27e" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>DopiszRysowanieZPlikow</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aee10e48fe1b9fba6e2897b4ccfa27aef" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>DopiszRysowanieZRoznychPunktow</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a200ce6bdb980c314a9eafe49e8f2dd5e" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Inicjalizuj</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae5f907633699e898710cce4351193330" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>KomunikatBledu</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5845189b5ab8c3634acf57024e5deeaf" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>LaczeDoGNUPlota</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a11421d7c67deab6b7524cc492407e897" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>PokazOs_OX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae112972af57167c3b053bf922bce6bbf" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>PokazOs_OX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7c3db909b266fc30808e86406c04b516" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>PokazOs_OY</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7298f469f6932f5c808dcf620650b4b8" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>PokazOs_OY</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5063854b7232a7951d120a21df63f2b7" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>PrzeslijDoGNUPlota</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1addf0b844f626f3f5220de70efcbbdbb3" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>RotacjaX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9dac73754fab10644b287756003e9c79" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>RotacjaZ</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a065f5b8402737cc62b0ad4f66d028335" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Rysuj</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aacb7ae45d283c741fb330f27b132e1a3" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>RysujDoPliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4b1eb252fd785a5aeff938e7b2dce2b1" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>SkalaX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a44f922ccbc508d6cd7809c669238dae3" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>SkalaZ</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1acb7456c930015c9a48f43b8618bd9391" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawRotacjeX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac48fed259e4ebf93072e3111264c9433" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawRotacjeXZ</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab9c4c731e2cebe67e04221e0bb528809" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawRotacjeZ</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a855b8338bfe3e5d294d719f24b11090e" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawSkaleX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4308151b54e105d302803146a3238699" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawSkaleXZ</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ab0486db3166d8db6580a221079af241f" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawSkaleZ</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9c91987dfc869d6fcea96205c581daef" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawZakresX</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a54c6e9cf9ab2eae479451fd953c2717c" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawZakresY</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1dbbb2b86fb13b8632e6bad9df2a82e3" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UstawZakresZ</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a7fa4e775e1aee74869fae174c567c2a6" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UsunNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9f31ec3f418db5df94e2b24096dfc64d" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UsunNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a29f5e5b048a278b4c032b6d9275d0826" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UsunNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac9b77a032e256c3143b984509a8b4bb5" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UsunOstatniaNazwe_ListaGlobalna</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a263a9dba2ef8030028a48217a183ecdf" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UsunOstatniaNazwe_ListaLokalna</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a89a1d90d017d264cd26398464d074073" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UsunWszystkieNazwyPlikow</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a1c7b9acc40de8d8bbb40fb0722512933" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>UtworzProcesPotomny</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae2fbf0d8f3f248f750804cec606a7983" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>WezTrybRys</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a409f4f4ba52b2b246d5695daef12167d" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>WyswietlajKomunikatyBledow</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a8e23479629af3df3d352b7839ae396b8" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Xmax</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a66836c9749bf179420e4ca3e9447efd7" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Xmin</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ac54e4e7448ce3bd324efdc94a999f535" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Ymax</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9352c0382bfaeaaba9f65399a7383164" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Ymin</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1aa92b463e8cbae31b50dd797a4183bce8" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>ZapiszUstawienieRotacjiISkali</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4579aecf7b4777fdde0cae4e98c275c2" prot="protected" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>ZapiszUstawienieZakresu</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a20a5d03e1fc19c682032bffc54340f12" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Zmax</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1ae92c65357bf682478cc68f77885b61d8" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>ZmienTrybRys</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a9068bd9a9873ba9c6d70016f1ae7cd7f" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>Zmin</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5c3a514dc7fbd4b2050037ab2b38293f" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>ZnajdzNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a18cd7faad7325343107a93db114cb290" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>ZnajdzNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a5100a047b8a1490dcaa6f6bcc338862a" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>ZnajdzNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a80edeb736c353cf64715f16e6a81ee1b" prot="public" virt="non-virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>ZnajdzNazwePliku</name></member>
+      <member refid="class_pz_g_1_1_lacze_do_g_n_u_plota_1a4f088b3c3f67cb82f71ce1c6db357f42" prot="public" virt="virtual"><scope>PzG::LaczeDoGNUPlota</scope><name>~LaczeDoGNUPlota</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

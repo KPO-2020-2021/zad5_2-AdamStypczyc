@@ -21,7 +21,6 @@ class Wektor
 public:
     static int ilosc_stworzonych, ilosc_tymczasowych;
     Wektor();
-    Wektor(Wektor &vector);
     constexpr Wektor(const Wektor &vector);
     ~Wektor();
     Wektor(const std::initializer_list<Templ_Typ_Wektor> &ListaWsp);
@@ -85,15 +84,6 @@ Wektor<Templ_Typ_Wektor, Templ_Rozmiar_Wektor>::Wektor()
     {
         wektork_i = 0;
     }
-}
-template <typename Templ_Typ_Wektor, unsigned int Templ_Rozmiar_Wektor>
-Wektor<Templ_Typ_Wektor, Templ_Rozmiar_Wektor>::Wektor(Wektor &vector)
-{
-    for (unsigned int i = 0; i < Templ_Rozmiar_Wektor; ++i)
-    {
-        wektorek[i] = vector.wektorek[i];
-    }
-    ilosc_tymczasowych++;
 }
 
 template <typename Templ_Typ_Wektor, unsigned int Templ_Rozmiar_Wektor>

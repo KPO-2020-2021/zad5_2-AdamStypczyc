@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="wektor_8hh" kind="file" language="C++">
+    <compoundname>wektor.hh</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">initializer_list</includes>
+    <includedby refid="macierz_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh</includedby>
+    <includedby refid="_wektor3_d_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Wektor3D.hh</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>cassert</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/wektor.hh</label>
+        <link refid="wektor_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/dron.hh</label>
+        <link refid="dron_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh</label>
+        <link refid="_graniastoslup_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Wektor3D.hh</label>
+        <link refid="_wektor3_d_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh</label>
+        <link refid="_prostopadloscian_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Skarpa.hh</label>
+        <link refid="_skarpa_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh</label>
+        <link refid="_plaskowyz_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Scena.hh</label>
+        <link refid="_scena_8hh"/>
+      </node>
+      <node id="7">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Ostroslup.hh</label>
+        <link refid="_ostroslup_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup6.hh</label>
+        <link refid="_graniastoslup6_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/wektor.hh</label>
+        <link refid="wektor_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh</label>
+        <link refid="macierz_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_wektor" prot="public">Wektor</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wektor_8hh_1a5fe46f1cba27f30988a9b549f4ca69f8" prot="public" static="no">
+        <name>MIN_DIFF</name>
+        <initializer>0.0000000001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/wektor.hh" line="6" column="20" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/wektor.hh" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wektor_8hh_1acbb3f684eb48078571fafe9035bed5a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Templ_Typ_Wektor</type>
+          </param>
+          <param>
+            <type>unsigned int</type>
+            <declname>Templ_Rozmiar_Wektor</declname>
+            <defname>Templ_Rozmiar_Wektor</defname>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Wektor&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt; const &amp;tmp)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="class_wektor" kindref="compound">Wektor</ref>&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt; const &amp;</type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora strumieniowego out dla wektora. Umożliwia bezpośrednie wyświetlenie wektora. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strumień wyjściowy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wektor odpowiadający wyświetlanemu wektorowi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca strumień wejściowy out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/wektor.hh" line="252" column="1" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/wektor.hh" bodystart="252" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="wektor_8hh_1aa5a0a826892962785bfa8101202362f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Templ_Typ_Wektor</type>
+          </param>
+          <param>
+            <type>unsigned int</type>
+            <declname>Templ_Rozmiar_Wektor</declname>
+            <defname>Templ_Rozmiar_Wektor</defname>
+          </param>
+        </templateparamlist>
+        <type>std::istream &amp;</type>
+        <definition>std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;in, Wektor&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt; &amp;tmp)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="class_wektor" kindref="compound">Wektor</ref>&lt; Templ_Typ_Wektor, Templ_Rozmiar_Wektor &gt; &amp;</type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora strumieniowego in dla wektora. Umożliwia bezpośredie wczytanie wektora. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strumień wejściowy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wektor odpowiadający wczytywanemu wektorowi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca strumień wejściowy in. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/wektor.hh" line="276" column="14" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/wektor.hh" bodystart="276" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WEKTOR_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WEKTOR_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;initializer_list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="wektor_8hh_1a5fe46f1cba27f30988a9b549f4ca69f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DIFF<sp/>0.0000000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="17" refid="class_wektor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Templ_Typ_Wektor<sp/>wektorek[Templ_Rozmiar_Wektor];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_wektor_1af40e6b044f9e04e0fe5cb6f3821d7ea3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_wektor_1a2d1ce5357ce9ff32f9a7d9c6082cb82d" kindref="member">ilosc_stworzonych</ref>,<sp/><ref refid="class_wektor_1af40e6b044f9e04e0fe5cb6f3821d7ea3" kindref="member">ilosc_tymczasowych</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" kindref="member">Wektor</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" kindref="member">Wektor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>&amp;vector);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor_1a95760189d5415ca53afd9ec3efc75b44" kindref="member">~Wektor</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" kindref="member">Wektor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::initializer_list&lt;Templ_Typ_Wektor&gt;<sp/>&amp;ListaWsp);</highlight></codeline>
+<codeline lineno="33" refid="class_wektor_1a4c6910a4ce56325cef1fc89ce5c436a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Templ_Typ_Wektor<sp/><ref refid="class_wektor_1a4c6910a4ce56325cef1fc89ce5c436a7" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Index)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="34"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(Index<sp/>&lt;<sp/>Templ_Rozmiar_Wektor);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>wektorek[Index];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44" refid="class_wektor_1ae57dfa8496b4df4ef85ec67b559d97a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Templ_Typ_Wektor<sp/>&amp;<ref refid="class_wektor_1ae57dfa8496b4df4ef85ec67b559d97a8" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Index)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(Index<sp/>&lt;<sp/>Templ_Rozmiar_Wektor);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>wektorek[Index];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/><ref refid="class_wektor_1a4bd732d99786870aa38d18dbc70de8ec" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>&amp;v);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/><ref refid="class_wektor_1ad970b50d0b351d5201d56c3edcc06c3d" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>&amp;v);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/><ref refid="class_wektor_1ac4d71482f3c0acce5fe888fb80abc4c4" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor<sp/>&amp;tmp);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/><ref refid="class_wektor_1ab748d5dae960ff468f85c17015b99092" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor<sp/>&amp;tmp);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_wektor_1a58df1b7c1709d159244719b48da1597e" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>V)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>&amp;<ref refid="class_wektor_1a17a1c8dcfd255eabb660f7b8f690fb8b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>&amp;v);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::ilosc_stworzonych</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="72"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::ilosc_tymczasowych</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="79" refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" refkind="member"><highlight class="normal"><ref refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::Wektor</ref>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>ilosc_stworzonych++;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>ilosc_tymczasowych++;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(Templ_Typ_Wektor<sp/>&amp;wektork_i<sp/>:<sp/>wektorek)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wektork_i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="94" refid="class_wektor_1a3ef5a8b9dc89e49be8b542d13b9d99ef" refkind="member"><highlight class="normal">constexpr<sp/><ref refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::Wektor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>&amp;vector)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++i)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wektorek[i]<sp/>=<sp/>vector.wektorek[i];</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>ilosc_tymczasowych++;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="106" refid="class_wektor_1a95760189d5415ca53afd9ec3efc75b44" refkind="member"><highlight class="normal"><ref refid="class_wektor_1a95760189d5415ca53afd9ec3efc75b44" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::~Wektor</ref>()</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>ilosc_tymczasowych--;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="117" refid="class_wektor_1a5fc23f984fd2eb4788e561fcafa1c1fe" refkind="member"><highlight class="normal"><ref refid="class_wektor_1aae1eb498ed2550525c2cc9c65d52745e" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::Wektor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::initializer_list&lt;Templ_Typ_Wektor&gt;<sp/>&amp;ListaWsp)<sp/>:<sp/><ref refid="class_wektor" kindref="compound">Wektor</ref>()</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ListaWsp.size()<sp/>&lt;=<sp/>Templ_Rozmiar_Wektor);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>wartosc_i<sp/>:<sp/>ListaWsp)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wektorek[++index]<sp/>=<sp/>wartosc_i;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor_1a2d1ce5357ce9ff32f9a7d9c6082cb82d" kindref="member">ilosc_stworzonych</ref>++;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor_1af40e6b044f9e04e0fe5cb6f3821d7ea3" kindref="member">ilosc_tymczasowych</ref>++;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="137" refid="class_wektor_1a4bd732d99786870aa38d18dbc70de8ec" refkind="member"><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/><ref refid="class_wektor_1a4bd732d99786870aa38d18dbc70de8ec" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/>&amp;v)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>result;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++i)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result[i]<sp/>=<sp/>wektorek[i]<sp/>+<sp/>v[i];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="155" refid="class_wektor_1ad970b50d0b351d5201d56c3edcc06c3d" refkind="member"><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/><ref refid="class_wektor_1ad970b50d0b351d5201d56c3edcc06c3d" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/>&amp;v)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>result;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++i)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result[i]<sp/>=<sp/>wektorek[i]<sp/>-<sp/>v[i];</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="173" refid="class_wektor_1ac4d71482f3c0acce5fe888fb80abc4c4" refkind="member"><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/><ref refid="class_wektor_1ac4d71482f3c0acce5fe888fb80abc4c4" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor<sp/>&amp;tmp)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>result;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++i)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result[i]<sp/>=<sp/>wektorek[i]<sp/>*=<sp/>tmp;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="191" refid="class_wektor_1ab748d5dae960ff468f85c17015b99092" refkind="member"><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/><ref refid="class_wektor_1ab748d5dae960ff468f85c17015b99092" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor<sp/>&amp;tmp)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>result;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Pamiętaj<sp/>cho...o<sp/>nie<sp/>dziel<sp/>przez<sp/>zero&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++i)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result[i]<sp/>=<sp/>wektorek[i]<sp/>/=<sp/>tmp;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="211" refid="class_wektor_1a17a1c8dcfd255eabb660f7b8f690fb8b" refkind="member"><highlight class="normal"><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/>&amp;<ref refid="class_wektor_1a17a1c8dcfd255eabb660f7b8f690fb8b" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor</ref><sp/>&amp;v)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++i)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wektorek[i]<sp/>=<sp/>v.wektorek[i];</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="228" refid="class_wektor_1a58df1b7c1709d159244719b48da1597e" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_wektor_1a58df1b7c1709d159244719b48da1597e" kindref="member">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/>V)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="229"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>liczenie<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++i)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(wektorek[i]<sp/>-<sp/>V[i])<sp/>&lt;=<sp/><ref refid="wektor_8hh_1a5fe46f1cba27f30988a9b549f4ca69f8" kindref="member">MIN_DIFF</ref>)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++liczenie;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(liczenie<sp/>==<sp/>Templ_Rozmiar_Wektor)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="252" refid="wektor_8hh_1acbb3f684eb48078571fafe9035bed5a8" refkind="member"><highlight class="normal">std::ostream<sp/>&amp;<ref refid="wektor_8hh_1acbb3f684eb48078571fafe9035bed5a8" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;out,<sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;tmp)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Index<sp/>=<sp/>0;<sp/>Index<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++Index)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Index<sp/>!=<sp/>Templ_Rozmiar_Wektor<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>tmp[Index]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>tmp[Index];</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Templ_Typ_Wektor,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Templ_Rozmiar_Wektor&gt;</highlight></codeline>
+<codeline lineno="276" refid="wektor_8hh_1aa5a0a826892962785bfa8101202362f6" refkind="member"><highlight class="normal">std::istream<sp/>&amp;<ref refid="wektor_8hh_1aa5a0a826892962785bfa8101202362f6" kindref="member">operator&gt;&gt;</ref>(std::istream<sp/>&amp;in,<sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;Templ_Typ_Wektor, Templ_Rozmiar_Wektor&gt;</ref><sp/>&amp;tmp)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>Templ_Rozmiar_Wektor;<sp/>++index)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in<sp/>&gt;&gt;<sp/>tmp[index];</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>in;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/wektor.hh"/>
+  </compounddef>
+</doxygen>

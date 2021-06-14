@@ -1,0 +1,226 @@
+.TH "dron" 3 "Pn, 14 cze 2021" "Dron 5.2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dron \- Klasa dron Deklaracja klasy dron\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji dronie\&. Zawiera ona elementy klasy prostopadloscian i gransiatoslup6\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dron\&.hh>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBdron\fP (int ind, \fBPzG::LaczeDoGNUPlota\fP &Lacze1, \fBWektor3D\fP polozenie)"
+.br
+.RI "Konstruktor parametryczny klasy dron\&. Buduje drona i tworzy pliki w których będą zapisywanie punkty\&. Przypisuje dronowi jego index, tworzy Lacze oraz przestawia go o zadany wektor początkowy\&. "
+.ti -1c
+.RI "void \fBruch_pionowy\fP (double pion)"
+.br
+.RI "Metoda odpowiadająca za ruch pionowy Przesuwa drona w górę o wartość podaną przez zmienną pion\&. "
+.ti -1c
+.RI "void \fBprzesuniecie\fP (double droga)"
+.br
+.RI "Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY Przesuwa drona w płaszczyźnie XY o wartość podaną przez zmienną droga\&. "
+.ti -1c
+.RI "void \fBobrot\fP (double kat_obrotu)"
+.br
+.RI "Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt\&. "
+.ti -1c
+.RI "void \fBobrot_rotorow\fP ()"
+.br
+.RI "Metoda odpowidająca za obrót rotorów\&. "
+.ti -1c
+.RI "void \fBzapisz\fP ()"
+.br
+.RI "Metoda zapisujaca drona do plików\&. "
+.ti -1c
+.RI "void \fBakcja\fP (char wybor)"
+.br
+.RI "Metoda odpowiadająca za porusanie się i animację drona\&. "
+.ti -1c
+.RI "void \fBprzypisz_sciezke\fP (double droga)"
+.br
+.RI "Metoda odpowiadjąca za budowę ścieżki lotu drona\&. "
+.ti -1c
+.RI "\fBWektor3D\fP \fBpokaz_srodek\fP () const"
+.br
+.RI "Metoda zwracająca Wektor3D będący środkiem korpusu drona\&. "
+.ti -1c
+.RI "void \fBusun_drona\fP ()"
+.br
+.RI "Metoda usuwająca drona z Lacza\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa dron Deklaracja klasy dron\&. Zawiera ona elementy i metody potrzebne do wykonywania różnych operacji dronie\&. Zawiera ona elementy klasy prostopadloscian i gransiatoslup6\&. 
+
+
+.PP
+\fBParametry\fP
+.RS 4
+\fIsciezka\fP zmienna odpowiadająca za wyświetlanie drogi przebytej przez protopadłościan 
+.br
+\fILacze\fP lacze do gnuplota 
+.br
+\fIkorpus_orginal\fP prostopadloscian odpowiadajacy oryginalnemu korpusowi 
+.br
+\fIkorpus\fP prostopadloscian odpowiadajacy korpusowi na którym będziemy pracować 
+.br
+\fIrotor_orginal\fP tablica oryginalnych rotorów 
+.br
+\fIrotor\fP tablica rotorów na których będziemy pracować 
+.br
+\fIobr\fP macierz obrotu drona 
+.br
+\fIdroga\fP wektor przesuniecia drona 
+.br
+\fIkat\fP kat położenia drona 
+.br
+\fIindex\fP numer drona 
+.RE
+.PP
+
+.PP
+Definicja w linii 22 pliku dron\&.hh\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "dron::dron (int ind, \fBPzG::LaczeDoGNUPlota\fP & Lacze1, \fBWektor3D\fP polozenie)"
+
+.PP
+Konstruktor parametryczny klasy dron\&. Buduje drona i tworzy pliki w których będą zapisywanie punkty\&. Przypisuje dronowi jego index, tworzy Lacze oraz przestawia go o zadany wektor początkowy\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIind\fP zmienna odpowiadająca indeksowi 
+.br
+\fILacze1\fP zmienna odpowiadająca laczy do gnuplota dzięki ktoremu tworzymy lacze 
+.br
+\fIpolozenie\fP wektor o jaki zostanie przestawiony dron 
+.br
+\fIwek\fP wektor o który dodatkowo przesuwamy rotor aby nie był on częściowo zawarty w korpusie drona 
+.RE
+.PP
+
+.PP
+Definicja w linii 60 pliku dron\&.hh\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void dron::akcja (char wybor)"
+
+.PP
+Metoda odpowiadająca za porusanie się i animację drona\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIwybor\fP informacja jaką opcję wybrał użytkownik 
+.br
+\fIdroga\fP zmienna pomocnicza do której przypisywana jest droga 
+.br
+\fIkat\fP zmienna do której użytkownik przypisuje kąt obrotu 
+.RE
+.PP
+
+.PP
+Definicja w linii 187 pliku dron\&.hh\&.
+.SS "void dron::obrot (double kat_obrotu)"
+
+.PP
+Metoda odpowiadająca za obrót drona Obraca drona o zadany kąt\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIkat_obrotu\fP mówi o ile ma obrócić dron 
+.br
+\fIradian\fP kąt wyrażony w radianach 
+.RE
+.PP
+
+.PP
+Definicja w linii 124 pliku dron\&.hh\&.
+.SS "void dron::obrot_rotorow ()"
+
+.PP
+Metoda odpowidająca za obrót rotorów\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItmp1\fP macierz przechowująca macierz obrotu 
+.br
+\fItmp\fP macierz obracająca rotory 1 i 3 
+.br
+\fItmp_v2\fP macierz obracajaca rotory 0 i 2 
+.br
+\fIwek\fP wektor o który dodatkowo przesuwamy rotor aby nie 'uderzał' on w korpus drona przy obracaniu 
+.RE
+.PP
+
+.PP
+Definicja w linii 140 pliku dron\&.hh\&.
+.SS "\fBWektor3D\fP dron::pokaz_srodek () const"
+
+.PP
+Metoda zwracająca Wektor3D będący środkiem korpusu drona\&. 
+.PP
+Definicja w linii 554 pliku dron\&.hh\&.
+.SS "void dron::przesuniecie (double droga)"
+
+.PP
+Metoda odpowiadająca za przesuniecie drona w płaszczyźnie równoległej do płaszczyzny XY Przesuwa drona w płaszczyźnie XY o wartość podaną przez zmienną droga\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIdroga\fP mówi o ile ma przesunąć drona 
+.br
+\fItmp\fP Wektor3D pomocniczy 
+.RE
+.PP
+
+.PP
+Definicja w linii 108 pliku dron\&.hh\&.
+.SS "void dron::przypisz_sciezke (double droga)"
+
+.PP
+Metoda odpowiadjąca za budowę ścieżki lotu drona\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIdroga\fP długość drogi 
+.RE
+.PP
+
+.PP
+Definicja w linii 528 pliku dron\&.hh\&.
+.SS "void dron::ruch_pionowy (double pion)"
+
+.PP
+Metoda odpowiadająca za ruch pionowy Przesuwa drona w górę o wartość podaną przez zmienną pion\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIpion\fP mówi o ile ma przesunąć drona 
+.br
+\fItmp\fP Wektor3D pomocniczy 
+.RE
+.PP
+
+.PP
+Definicja w linii 94 pliku dron\&.hh\&.
+.SS "void dron::usun_drona ()"
+
+.PP
+Metoda usuwająca drona z Lacza\&. 
+.PP
+Definicja w linii 561 pliku dron\&.hh\&.
+.SS "void dron::zapisz ()"
+
+.PP
+Metoda zapisujaca drona do plików\&. 
+.PP
+Definicja w linii 173 pliku dron\&.hh\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Dron 5\&.2\&.

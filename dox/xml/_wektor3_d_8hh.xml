@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_wektor3_d_8hh" kind="file" language="C++">
+    <compoundname>Wektor3D.hh</compoundname>
+    <includes refid="wektor_8hh" local="yes">wektor.hh</includes>
+    <includedby refid="macierz_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh</includedby>
+    <includedby refid="_graniastoslup_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>cassert</label>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Wektor3D.hh</label>
+        <link refid="_wektor3_d_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>wektor.hh</label>
+        <link refid="wektor_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/dron.hh</label>
+        <link refid="dron_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh</label>
+        <link refid="_graniastoslup_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Wektor3D.hh</label>
+        <link refid="_wektor3_d_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh</label>
+        <link refid="_prostopadloscian_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Skarpa.hh</label>
+        <link refid="_skarpa_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh</label>
+        <link refid="_plaskowyz_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Scena.hh</label>
+        <link refid="_scena_8hh"/>
+      </node>
+      <node id="7">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Ostroslup.hh</label>
+        <link refid="_ostroslup_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup6.hh</label>
+        <link refid="_graniastoslup6_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh</label>
+        <link refid="macierz_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" prot="public" static="no">
+        <type><ref refid="class_wektor" kindref="compound">Wektor</ref>&lt; double, 3 &gt;</type>
+        <definition>typedef Wektor&lt;double, 3&gt; Wektor3D</definition>
+        <argsstring></argsstring>
+        <name>Wektor3D</name>
+        <briefdescription>
+<para>Deklaracja Wektora3D Deklaracja Wektora3D. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Wektor3D.hh" line="9" column="16" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Wektor3D.hh" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wektor_8hh" kindref="compound">wektor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_wektor" kindref="compound">Wektor&lt;double, 3&gt;</ref><sp/><ref refid="_wektor3_d_8hh_1a7eb6a5be744c003ed6e4677d885fdbcd" kindref="member">Wektor3D</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/Wektor3D.hh"/>
+  </compounddef>
+</doxygen>

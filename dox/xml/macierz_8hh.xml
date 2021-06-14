@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="macierz_8hh" kind="file" language="C++">
+    <compoundname>Macierz.hh</compoundname>
+    <includes local="yes">macierz.hh</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="wektor_8hh" local="yes">wektor.hh</includes>
+    <includes refid="_wektor3_d_8hh" local="yes">Wektor3D.hh</includes>
+    <includes refid="size_8hh" local="yes">size.hh</includes>
+    <includedby refid="_graniastoslup_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh</includedby>
+    <includedby refid="macierz_8hh" local="yes">/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>cassert</label>
+      </node>
+      <node id="9">
+        <label>Wektor3D.hh</label>
+        <link refid="_wektor3_d_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>macierz.hh</label>
+      </node>
+      <node id="10">
+        <label>size.hh</label>
+        <link refid="size_8hh"/>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>wektor.hh</label>
+        <link refid="wektor_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh</label>
+        <link refid="macierz_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/dron.hh</label>
+        <link refid="dron_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup.hh</label>
+        <link refid="_graniastoslup_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Prostopadloscian.hh</label>
+        <link refid="_prostopadloscian_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Skarpa.hh</label>
+        <link refid="_skarpa_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Plaskowyz.hh</label>
+        <link refid="_plaskowyz_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Scena.hh</label>
+        <link refid="_scena_8hh"/>
+      </node>
+      <node id="6">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Ostroslup.hh</label>
+        <link refid="_ostroslup_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Graniastoslup6.hh</label>
+        <link refid="_graniastoslup6_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh</label>
+        <link refid="macierz_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_macierz" prot="public">Macierz</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" prot="public" static="no">
+        <type><ref refid="class_macierz" kindref="compound">Macierz</ref>&lt; double, 3 &gt;</type>
+        <definition>typedef Macierz&lt;double, 3&gt; Macierz3x3</definition>
+        <argsstring></argsstring>
+        <name>Macierz3x3</name>
+        <briefdescription>
+<para>Deklaracja Macierzy3x3 Deklaracja macierzy 3D. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" line="9" column="17" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="macierz_8hh_1afb24d6954c7f17e9877a2e706f9641cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Templ_Typ</type>
+          </param>
+          <param>
+            <type>unsigned int</type>
+            <declname>Templ_Rozmiar</declname>
+            <defname>Templ_Rozmiar</defname>
+          </param>
+        </templateparamlist>
+        <type>std::istream &amp;</type>
+        <definition>std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;in, Macierz&lt; Templ_Typ, Templ_Rozmiar &gt; &amp;mat)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="class_macierz" kindref="compound">Macierz</ref>&lt; Templ_Typ, Templ_Rozmiar &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora strumieniowego in dla macierzy. Umożliwia bezpośredie wczytanie macierzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strumień wejściowy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz odpowiadająca wczytywanej macierzy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca strumień wejściowy in. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="267" column="14" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="267" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="macierz_8hh_1adcb0106d7d361fa1b5b9deaa8c6ccd99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Templ_Typ</type>
+          </param>
+          <param>
+            <type>unsigned int</type>
+            <declname>Templ_Rozmiar</declname>
+            <defname>Templ_Rozmiar</defname>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Macierz&lt; Templ_Typ, Templ_Rozmiar &gt; const &amp;mat)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="class_macierz" kindref="compound">Macierz</ref>&lt; Templ_Typ, Templ_Rozmiar &gt; const &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Przeciążenie operatora strumieniowego out dla macierzy. Umożliwia bezpośredie wyświetlenie macierzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strumień wyjściowy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macierz odpowiadająca wyświetlaniej macierzy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zwraca strumień wyjściowy out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/macierz.hh" line="287" column="1" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="287" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="macierz_8hh_1a11f2d415620421f0af240368b8fb1acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double StopienNaRadianX</definition>
+        <argsstring>(double kat_stopnieX)</argsstring>
+        <name>StopienNaRadianX</name>
+        <param>
+          <type>double</type>
+          <declname>kat_stopnieX</declname>
+        </param>
+        <briefdescription>
+<para>Zamaina stopni na radian 3D wokół OX. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OX. <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" line="14" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="macierz_8hh_1a96260376d8636a98532697b9be1979f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double StopienNaRadianY</definition>
+        <argsstring>(double kat_stopnieY)</argsstring>
+        <name>StopienNaRadianY</name>
+        <param>
+          <type>double</type>
+          <declname>kat_stopnieY</declname>
+        </param>
+        <briefdescription>
+<para>Zamaina stopni na radian 3D wokół OY. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OY. <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" line="24" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="macierz_8hh_1ab0840da738fad890f0b2e2cbd67c0c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double StopienNaRadianZ</definition>
+        <argsstring>(double kat_stopnieZ)</argsstring>
+        <name>StopienNaRadianZ</name>
+        <param>
+          <type>double</type>
+          <declname>kat_stopnieZ</declname>
+        </param>
+        <briefdescription>
+<para>Zamaina stopni na radian 3D wokół OZ. Funkcja zamieniająca wartość stopni na stopnie w radianach, aby umożliwić obrót 3D wokół osi OZ. <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" line="34" column="8" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="34" bodyend="39"/>
+        <referencedby refid="classdron_1a648ea5308782ad19b74f6651c712708f" compoundref="dron_8hh" startline="124" endline="132">dron::obrot</referencedby>
+        <referencedby refid="classdron_1add74d8f5673cf96226319b1c88c3439d" compoundref="dron_8hh" startline="140" endline="168">dron::obrot_rotorow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="macierz_8hh_1a619b64a288fbc0f150584a232d9f7ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Oblicz_Macierz_ObrotuX</definition>
+        <argsstring>(double kat_radianX, Macierz3x3 &amp;Mac)</argsstring>
+        <name>Oblicz_Macierz_ObrotuX</name>
+        <param>
+          <type>double</type>
+          <declname>kat_radianX</declname>
+        </param>
+        <param>
+          <type><ref refid="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" kindref="member">Macierz3x3</ref> &amp;</type>
+          <declname>Mac</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja obliczająca macierz obrotu 3D OX. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OX. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" line="45" column="6" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="45" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="macierz_8hh_1a61604dcde37db920a005329e79e59616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Oblicz_Macierz_ObrotuY</definition>
+        <argsstring>(double kat_radianY, Macierz3x3 &amp;Mac)</argsstring>
+        <name>Oblicz_Macierz_ObrotuY</name>
+        <param>
+          <type>double</type>
+          <declname>kat_radianY</declname>
+        </param>
+        <param>
+          <type><ref refid="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" kindref="member">Macierz3x3</ref> &amp;</type>
+          <declname>Mac</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja obliczająca macierz obrotu 3D OY. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OY. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" line="61" column="6" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="61" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="macierz_8hh_1ab03e0ede3b608ad024ee87495c4c2ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Oblicz_Macierz_ObrotuZ</definition>
+        <argsstring>(double kat_radianZ, Macierz3x3 &amp;Mac)</argsstring>
+        <name>Oblicz_Macierz_ObrotuZ</name>
+        <param>
+          <type>double</type>
+          <declname>kat_radianZ</declname>
+        </param>
+        <param>
+          <type><ref refid="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" kindref="member">Macierz3x3</ref> &amp;</type>
+          <declname>Mac</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja obliczająca macierz obrotu 3D OZ. Funkcja umożliwiająca obliczenie macierzy obrotu umożliwiającej obrót 3D wokół osi OZ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" line="77" column="6" bodyfile="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh" bodystart="77" bodyend="88"/>
+        <referencedby refid="classdron_1a648ea5308782ad19b74f6651c712708f" compoundref="dron_8hh" startline="124" endline="132">dron::obrot</referencedby>
+        <referencedby refid="classdron_1add74d8f5673cf96226319b1c88c3439d" compoundref="dron_8hh" startline="140" endline="168">dron::obrot_rotorow</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;macierz.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="size_8hh" kindref="compound">size.hh</ref>&quot;</highlight></codeline>
+<codeline lineno="9" refid="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_macierz" kindref="compound">Macierz&lt;double, 3&gt;</ref><sp/><ref refid="macierz_8hh_1a521222a45761c65bc0ce5f9fc8d78642" kindref="member">Macierz3x3</ref>;</highlight></codeline>
+<codeline lineno="14" refid="macierz_8hh_1a11f2d415620421f0af240368b8fb1acd" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="macierz_8hh_1a11f2d415620421f0af240368b8fb1acd" kindref="member">StopienNaRadianX</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_stopnieX)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_radianX;</highlight></codeline>
+<codeline lineno="17" refid="class_macierz" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/>kat_radianX<sp/>=<sp/>kat_stopnieX<sp/>*<sp/>M_PI<sp/>/<sp/>180;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kat_radianX;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24" refid="macierz_8hh_1a96260376d8636a98532697b9be1979f5" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="macierz_8hh_1a96260376d8636a98532697b9be1979f5" kindref="member">StopienNaRadianY</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_stopnieY)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_radianY;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>kat_radianY<sp/>=<sp/>kat_stopnieY<sp/>*<sp/>M_PI<sp/>/<sp/>180;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kat_radianY;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34" refid="macierz_8hh_1ab0840da738fad890f0b2e2cbd67c0c78" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="macierz_8hh_1ab0840da738fad890f0b2e2cbd67c0c78" kindref="member">StopienNaRadianZ</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_stopnieZ)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_radianZ;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>kat_radianZ<sp/>=<sp/>kat_stopnieZ<sp/>*<sp/>M_PI<sp/>/<sp/>180;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kat_radianZ;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="macierz_8hh_1a619b64a288fbc0f150584a232d9f7ac4" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="macierz_8hh_1a619b64a288fbc0f150584a232d9f7ac4" kindref="member">Oblicz_Macierz_ObrotuX</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_radianX,<sp/><ref refid="class_macierz" kindref="compound">Macierz3x3</ref><sp/>&amp;Mac)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47" refid="class_macierz_1a1f402210b496c2aff462c58613052975" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,0)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,2)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,0)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,1)<sp/>=<sp/>cos(kat_radianX);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,2)<sp/>=<sp/>-sin(kat_radianX);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,0)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,1)<sp/>=<sp/>sin(kat_radianX);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,2)<sp/>=<sp/>cos(kat_radianX);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61" refid="macierz_8hh_1a61604dcde37db920a005329e79e59616" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="macierz_8hh_1a61604dcde37db920a005329e79e59616" kindref="member">Oblicz_Macierz_ObrotuY</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_radianY,<sp/><ref refid="class_macierz" kindref="compound">Macierz3x3</ref><sp/>&amp;Mac)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="class_macierz_1a722bc086dd0f12fbc0f34dcb0246e6bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,0)<sp/>=<sp/>cos(kat_radianY);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,2)<sp/>=<sp/>sin(kat_radianY);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,0)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,1)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,2)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,0)<sp/>=<sp/>-sin(kat_radianY);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,2)<sp/>=<sp/>cos(kat_radianY);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77" refid="macierz_8hh_1ab03e0ede3b608ad024ee87495c4c2ba6" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="macierz_8hh_1ab03e0ede3b608ad024ee87495c4c2ba6" kindref="member">Oblicz_Macierz_ObrotuZ</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kat_radianZ,<sp/><ref refid="class_macierz" kindref="compound">Macierz3x3</ref><sp/>&amp;Mac)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,0)<sp/>=<sp/>cos(kat_radianZ);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,1)<sp/>=<sp/>-sin(kat_radianZ);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(0,2)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82" refid="class_macierz_1ae15b7b6824830232cbca3e67b166a0e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,0)<sp/>=<sp/>sin(kat_radianZ);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,1)<sp/>=<sp/>cos(kat_radianZ);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(1,2)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,0)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>Mac(2,2)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/adam/zad5_2-AdamStypczyc/include/Macierz.hh"/>
+  </compounddef>
+</doxygen>
